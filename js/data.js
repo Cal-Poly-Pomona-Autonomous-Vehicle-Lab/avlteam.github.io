@@ -321,11 +321,11 @@ const SITE_INFO = {
     
     // Contact information
     contact: {
-        email: "avl@cpp.edu", // Update with real email
-        location: "Building XX, Room XXX, Cal Poly Pomona",
-        discord: "", // Add Discord invite link
-        instagram: "", // Add Instagram handle
-        github: "" // Add GitHub organization URL
+        email: "autovehiclelab@gmail.com", // Update with real email
+        location: "Building 9, Room 101, Cal Poly Pomona",
+        discord: "https://discord.gg/2D5fEg94eM", // Add Discord invite link
+        instagram: "https://www.instagram.com/autovehiclelab/", // Add Instagram handle
+        github: "https://github.com/Cal-Poly-Pomona-Autonomous-Vehicle-Lab" // Add GitHub organization URL
     }
 };
 
