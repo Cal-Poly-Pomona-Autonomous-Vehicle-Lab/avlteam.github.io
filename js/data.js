@@ -47,7 +47,15 @@ const TEAM_MEMBERS = {
             email: "aknox@cpp.edu"
         },
         {
-            name: "Parsa Ghasemi,
+            name: "Test",
+            role: "Club President",
+            image: "placeholder",
+            bio: "Coordinating club activities and fostering collaboration between researchers and members.",
+            linkedin: "https://www.linkedin.com/in/aspenknox/",
+            email: "aknox@cpp.edu"
+        },
+        {
+            name: "Parsa Ghasemi",
             role: "Vice President",
             image: "placeholder",
             bio: "Supporting operations and leading outreach initiatives.",
@@ -55,6 +63,7 @@ const TEAM_MEMBERS = {
             github: "https://github.com/Paarseus",
             email: "mghasemi@cpp.edu"
         }
+        
     ],
     
     // Research Staff / Lab Hires
