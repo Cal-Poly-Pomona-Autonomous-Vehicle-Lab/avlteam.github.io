@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Autonomous Vehicle Laboratory (AVL) at Cal Poly Pomona - Advancing autonomous vehicle research through hands-on innovation">
+    <meta name="keywords" content="autonomous vehicles, self-driving cars, LiDAR, computer vision, robotics, Cal Poly Pomona, research lab">
+    <meta name="author" content="AVL Team">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Autonomous Vehicle Laboratory | Cal Poly Pomona">
+    <meta property="og:description" content="Advancing autonomous vehicle research through hands-on innovation">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/AVL_Blue_Text.jpg">
+    
+    <title>AVL | Autonomous Vehicle Laboratory - Cal Poly Pomona</title>
+    
+    <!-- Favicon - Replace with your own -->
+    <link rel="icon" type="image/png" href="images/AVL_Logo_Blue_Dots.PNG">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ================================================================
+         NAVIGATION
+         ================================================================ -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">
+                <!-- Replace with your logo or use text -->
+                <img src="images/AVL_Text_No_Background.PNG" alt="AVL Logo">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#hiring">Join Us</a></li>
+                <li><a href="#learn">Learn</a></li>
+            </ul>
+            
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================================================================
+         HERO SECTION
+         ================================================================ -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="particles"></div>
+        
+        <div class="hero-content">
+            <!-- Main Logo - Using your uploaded logo -->
+            <img src="images/AVL_Blue_Text.jpg" alt="AVL - Autonomous Vehicle Laboratory" class="hero-logo">
+            
+            <h1 class="hero-title">AUTONOMOUS VEHICLE LABORATORY</h1>
+            
+            <p class="hero-university">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                Cal Poly Pomona
+            </p>
+            
+            <p class="hero-subtitle">
+                Advancing autonomous vehicle research through hands-on innovation. 
+                From LiDAR processing to digital twins, we're building the future of mobility.
+            </p>
+            
+            <div class="hero-cta">
+                <a href="#hiring" class="btn btn-primary">Join Our Team</a>
+                <a href="#research" class="btn btn-secondary">Explore Research</a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         ABOUT SECTION
+         ================================================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About the Lab</h2>
+                <p>Where research meets real-world application</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card fade-in">
+                    <h3>Our Mission</h3>
+                    <p>The Autonomous Vehicle Laboratory (AVL) at Cal Poly Pomona is dedicated to advancing autonomous vehicle technology through cutting-edge research and hands-on education. As both a research lab and student organization, we bridge the gap between academic theory and real-world application.</p>
+                </div>
+                
+                <div class="about-card fade-in">
+                    <h3>Our Vision</h3>
+                    <p>We envision a future where autonomous vehicles are safe, accessible, and integrated into everyday life. Our work contributes to this vision by developing novel perception systems, path planning algorithms, and digital twin technologies that push the boundaries of what's possible.</p>
+                </div>
+                
+                <div class="about-card fade-in">
+                    <h3>Our Approach</h3>
+                    <p>True to Cal Poly Pomona's "Learn by Doing" philosophy, every member gets hands-on experience with real autonomous vehicle hardware including Velodyne LiDAR, stereo cameras, RTK-GPS, and more. We believe the best way to learn is to build.</p>
+                </div>
+            </div>
+            
+            <!-- Equipment Section -->
+            <div class="equipment-section">
+                <h3 style="text-align: center; color: var(--avl-accent-cyan); margin-bottom: 1rem;">Our Hardware</h3>
+                <div class="equipment-grid" id="equipment-container">
+                    <div class="equipment-item fade-in">
+                        <h4>Velodyne VLP-16 LiDAR</h4>
+                        <p>360° 3D scanning</p>
+                    </div>
+                    <div class="equipment-item fade-in">
+                        <h4>Stereo Camera System</h4>
+                        <p>Depth perception</p>
+                    </div>
+                    <div class="equipment-item fade-in">
+                        <h4>RTK-GPS</h4>
+                        <p>Centimeter-level positioning</p>
+                    </div>
+                    <div class="equipment-item fade-in">
+                        <h4>Xsens IMU</h4>
+                        <p>Motion tracking</p>
+                    </div>
+                    <div class="equipment-item fade-in">
+                        <h4>NVIDIA RTX 5090</h4>
+                        <p>Neural network training</p>
+                    </div>
+                    <div class="equipment-item fade-in">
+                        <h4>Research Vehicle</h4>
+                        <p>Sensor integration platform</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         IMPACT SECTION
+         ================================================================ -->
+    <section class="impact" id="impact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Impact</h2>
+                <p>Measuring our progress in innovation</p>
+            </div>
+            
+            <!-- Stats -->
+            <div class="impact-stats" id="stats-container">
+                <!-- Populated by JavaScript from data.js -->
+            </div>
+            
+            <!-- Achievements -->
+            <h3 style="text-align: center; color: var(--avl-accent-cyan); margin-bottom: 2rem;">Key Achievements</h3>
+            <div class="achievements-grid" id="achievements-container">
+                <!-- Populated by JavaScript from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         TEAM SECTION (President Board / Lab Hires)
+         ================================================================ -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Team</h2>
+                <p>Meet the people driving innovation</p>
+            </div>
+            
+            <div id="team-container">
+                <!-- Populated by JavaScript from data.js -->
+                <!-- To update team members, edit js/data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         RESEARCH AREAS SECTION
+         ================================================================ -->
+    <section class="research" id="research">
+        <div class="container">
+            <div class="section-header">
+                <h2>Areas of Research</h2>
+                <p>Exploring the frontiers of autonomous systems</p>
+            </div>
+            
+            <div class="research-grid" id="research-container">
+                <!-- Populated by JavaScript from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         HIRING SECTION
+         ================================================================ -->
+    <section class="hiring" id="hiring" id="hiring-section">
+        <div class="container">
+            <div class="hiring-banner">
+                <h3>We're Growing</h3>
+                <h2>Join the AVL Team</h2>
+                <p style="color: var(--light-gray); max-width: 600px; margin: 0 auto;">
+                    Whether you're passionate about perception, planning, or just getting started with robotics, 
+                    there's a place for you at AVL. Work on real autonomous vehicle technology and make an impact.
+                </p>
+            </div>
+            
+            <div class="positions-grid" id="positions-container">
+                <!-- Populated by JavaScript from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         LEARN BY DOING SECTION
+         ================================================================ -->
+    <section class="learn" id="learn">
+        <div class="container">
+            <div class="section-header">
+                <h2>Learn by Doing</h2>
+                <p>Hands-on education in autonomous systems</p>
+            </div>
+            
+            <div class="learn-intro">
+                <p class="cal-poly-motto">"Learn by Doing"</p>
+                <p style="color: var(--light-gray);">
+                    At AVL, we believe the best way to master autonomous vehicle technology is through hands-on experience. 
+                    Our workshops and resources are designed to take you from fundamentals to advanced topics, 
+                    with real hardware and real code.
+                </p>
+            </div>
+            
+            <div class="workshops-grid" id="learn-container">
+                <!-- Populated by JavaScript from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         FOOTER
+         ================================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <img src="images/AVL_Text_No_Background.PNG" alt="AVL Logo">
+                    <p>Autonomous Vehicle Laboratory at Cal Poly Pomona. Advancing autonomous vehicle research through hands-on innovation.</p>
+                    <div class="footer-social">
+                        <!-- Populated by JavaScript based on SITE_INFO.contact -->
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#hiring">Join Us</a></li>
+                        <li><a href="#learn">Learn</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Research Areas -->
+                <div class="footer-links">
+                    <h4>Research</h4>
+                    <ul>
+                        <li><a href="#research">LiDAR Processing</a></li>
+                        <li><a href="#research">Computer Vision</a></li>
+                        <li><a href="#research">Path Planning</a></li>
+                        <li><a href="#research">Sensor Fusion</a></li>
+                        <li><a href="#research">Digital Twins</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div class="footer-links footer-contact">
+                    <h4>Contact</h4>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span id="footer-email">avl@cpp.edu</span>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span id="footer-location">Cal Poly Pomona</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> Autonomous Vehicle Laboratory. Cal Poly Pomona. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# AVL Website - Robots.txt
+# https://www.avlteam.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.avlteam.com/sitemap.xml
