@@ -2,7 +2,7 @@
 
 A modern, responsive static website for the Autonomous Vehicle Laboratory at Cal Poly Pomona.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 avl-website/
@@ -10,14 +10,14 @@ avl-website/
 ├── css/
 │   └── styles.css      # All styling
 ├── js/
-│   ├── data.js         # ⭐ EDIT THIS FILE to update content
+│   ├── data.js         # EDIT THIS FILE to update content
 │   └── main.js         # JavaScript functionality
 └── images/             # Logo and image assets
 ```
 
 ---
 
-## ✏️ HOW TO UPDATE CONTENT
+## HOW TO UPDATE CONTENT
 
 ### Updating Team Members
 
@@ -150,7 +150,7 @@ const SITE_INFO = {
 
 ---
 
-## 🌐 CUSTOM DOMAIN (www.AVLTeam.com)
+## CUSTOM DOMAIN (www.AVLTeam.com)
 
 To use a custom domain like `www.avlteam.com`:
 
@@ -177,7 +177,7 @@ To use a custom domain like `www.avlteam.com`:
 
 ---
 
-## 🎨 CUSTOMIZATION
+## CUSTOMIZATION
 
 ### Changing Colors
 
@@ -239,7 +239,7 @@ The site uses Google Fonts. To change:
 
 ---
 
-## 🔧 TROUBLESHOOTING
+## TROUBLESHOOTING
 
 **Images not loading?**
 - Check file paths are correct
@@ -254,7 +254,7 @@ The site uses Google Fonts. To change:
 
 ---
 
-## 📞 SUPPORT
+## SUPPORT
 
 For questions or issues, check:
 - GitHub Pages docs: [docs.github.com/pages](https://docs.github.com/pages)
@@ -262,4 +262,4 @@ For questions or issues, check:
 
 ---
 
-Built with ❤️ for AVL at Cal Poly Pomona
+Built with for AVL at Cal Poly Pomona... and ryan
