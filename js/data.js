@@ -34,7 +34,7 @@ const TEAM_MEMBERS = {
             name: "Dr. Benham Bahr",
             role: "Lab Advisor",
             image: "placeholder",
-            bio: "Leading AVL's mission to advance autonomous vehicle research and education at Cal Poly Pomona.",
+            bio: "Providing academic oversight and mentorship for research and development efforts.",
             linkedin: "https://www.linkedin.com/in/behnam-bahr-b951a279",
             email: "bbahr@cpp.edu"
         },
@@ -47,21 +47,45 @@ const TEAM_MEMBERS = {
             email: "aknox@cpp.edu"
         },
         {
-            name: "Test",
-            role: "Club President",
-            image: "placeholder",
-            bio: "Coordinating club activities and fostering collaboration between researchers and members.",
-            linkedin: "https://www.linkedin.com/in/aspenknox/",
-            email: "aknox@cpp.edu"
-        },
-        {
             name: "Parsa Ghasemi",
             role: "Vice President",
             image: "placeholder",
-            bio: "Supporting operations and leading outreach initiatives.",
+            bio: "Assisting leadership while supporting project coordination and member engagement.",
             linkedin: "https://www.linkedin.com/in/paarseus/",
             github: "https://github.com/Paarseus",
             email: "mghasemi@cpp.edu"
+        },
+        {
+            name: "Roger",
+            role: "Secretary Officer",
+            image: "placeholder",
+            bio: "Managing documentation, finances, records, and internal communication for the organization.",
+            linkedin: "",
+            email: ""
+        },
+        {
+            name: "Tyrese Rogers",
+            role: "Publicity Officer",
+            image: "placeholder",
+            bio: "Promoting lab activities, achievements, and events through outreach and communication channels.",
+            linkedin: "https://www.linkedin.com/in/tyrese-rogers-0933152a5/",
+            email: ""
+        },
+        {
+            name: "Johnny Qiu",
+            role: "Scheduling Officer",
+            image: "placeholder",
+            bio: "Organizing meetings, timelines, and lab access for efficient operations.",
+            linkedin: "https://www.linkedin.com/in/johnnyqiu28/",
+            email: "jqiu@cpp.edu"
+        },
+        {
+            name: "Ryan Simpson",
+            role: "Onboarding Officer",
+            image: "placeholder",
+            bio: "Guiding new members through onboarding, training, and lab procedures to ensure a smooth transition.",
+            linkedin: "https://www.linkedin.com/in/ryan-m-simpson",
+            email: "rmsimpson@cpp.edu"
         }
         
     ],
@@ -69,13 +93,12 @@ const TEAM_MEMBERS = {
     // Research Staff / Lab Hires
     researchers: [
         {
-            name: "Ryan",
-            role: "Research Assistant",
+            name: "Caleb Hylkema",
+            role: "Research Assistant - Electrical Engineering",
             image: "placeholder",
-            bio: "Developing LiDAR processing pipelines and 3D Gaussian Splatting for digital twins.",
-            linkedin: "",
-            github: "",
-            email: ""
+            bio: "Working on the control systems for autonomous driving systems.",
+            linkedin: "https://www.linkedin.com/in/calebhylkema",
+            email: "calebhylkema6@gmail.com"
         },
         {
             name: "Researcher Name",
