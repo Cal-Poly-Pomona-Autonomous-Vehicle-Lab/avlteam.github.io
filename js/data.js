@@ -31,31 +31,29 @@ const TEAM_MEMBERS = {
     // Leadership / Executive Board
     leadership: [
         {
-            name: "Your Name Here",
-            role: "Lab Director",
+            name: "Dr. Benham Bahr",
+            role: "Lab Advisor",
             image: "placeholder",
             bio: "Leading AVL's mission to advance autonomous vehicle research and education at Cal Poly Pomona.",
-            linkedin: "",
-            github: "",
-            email: ""
+            linkedin: "https://www.linkedin.com/in/behnam-bahr-b951a279",
+            email: "bbahr@cpp.edu"
         },
         {
-            name: "President Name",
+            name: "Aspen Knox",
             role: "Club President",
             image: "placeholder",
             bio: "Coordinating club activities and fostering collaboration between researchers and members.",
-            linkedin: "",
-            github: "",
-            email: ""
+            linkedin: "https://www.linkedin.com/in/aspenknox/",
+            email: "aknox@cpp.edu"
         },
         {
-            name: "VP Name",
+            name: "Parsa Ghasemi,
             role: "Vice President",
             image: "placeholder",
             bio: "Supporting operations and leading outreach initiatives.",
-            linkedin: "",
-            github: "",
-            email: ""
+            linkedin: "https://www.linkedin.com/in/paarseus/",
+            github: "https://github.com/Paarseus",
+            email: "mghasemi@cpp.edu"
         }
     ],
     
