@@ -396,13 +396,10 @@ function initScrollAnimations() {
 // ============================================================================
 
 function initParticles() {
-    // Particles disabled to improve performance - I lied there enabled 
-    // Uncomment below to re-enable if needed - Ignore me
-    
     const particlesContainer = document.querySelector('.particles');
     if (!particlesContainer) return;
 
-    const particleCount = 10;  // Reduced count
+    const particleCount = 15;  // Balanced for performance
     
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
