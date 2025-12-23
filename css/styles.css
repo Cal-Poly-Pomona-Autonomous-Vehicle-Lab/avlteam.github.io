@@ -1445,6 +1445,40 @@ section {
     opacity: 1;
 }
 
+/* Clickable equipment items */
+.equipment-item.clickable {
+    cursor: pointer;
+}
+
+.equipment-item .click-hint {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--avl-accent-cyan);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.equipment-item:hover .click-hint {
+    opacity: 1;
+}
+
+/* Clickable achievement cards */
+.achievement-card.clickable {
+    cursor: pointer;
+}
+
+.achievement-card .click-hint {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--avl-accent-cyan);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.achievement-card:hover .click-hint {
+    opacity: 1;
+}
+
 /* ============================================================================
    FOOTER - Larger Logo and Social Icons
    ============================================================================ */
