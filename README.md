@@ -6,7 +6,7 @@ A modern, responsive website for the Autonomous Vehicle Laboratory at Cal Poly P
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 avl-website/
@@ -23,7 +23,7 @@ avl-website/
 
 ---
 
-## ✏️ EDITING CONTENT (data.js)
+## EDITING CONTENT (data.js)
 
 **Location:** `js/data.js`
 
@@ -165,7 +165,7 @@ const SITE_INFO = {
 
 ---
 
-## 🖼️ EDITING IMAGES
+## EDITING IMAGES
 
 ### Replacing Gallery Photos
 
@@ -228,7 +228,7 @@ The slideshow displays these 4 images in order:
 
 ---
 
-## 🎨 EDITING STYLES (styles.css)
+## EDITING STYLES (styles.css)
 
 **Location:** `css/styles.css`
 
@@ -280,7 +280,7 @@ Or edit specific sections by searching for their class name (e.g., `.hero`, `.ab
 
 ---
 
-## 📄 EDITING PAGE STRUCTURE (index.html)
+## EDITING PAGE STRUCTURE (index.html)
 
 **Location:** `index.html`
 
@@ -342,7 +342,7 @@ Find the footer section (~line 392). You can edit:
 
 **Location:** `js/main.js`
 
-⚠️ **Only edit if you know JavaScript!**
+ **Only edit if you know JavaScript!**
 
 This file handles:
 - Navigation scroll effects
@@ -381,7 +381,7 @@ Change `5000` to your desired milliseconds (1000 = 1 second).
 
 ---
 
-## 💡 Tips
+## Tips
 
 1. **Always back up** before making changes - download the repo as a zip first
 2. **Test locally** - open `index.html` in your browser before pushing to GitHub
@@ -391,4 +391,4 @@ Change `5000` to your desired milliseconds (1000 = 1 second).
 
 ---
 
-Built with ❤️ for AVL at Cal Poly Pomona
+Built with from ryan, if anything needs to be changed feel free to reach out at 1143RMS@gmail.com
