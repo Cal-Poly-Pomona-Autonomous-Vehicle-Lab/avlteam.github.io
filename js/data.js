@@ -123,7 +123,7 @@ const TEAM_MEMBERS = {
     // Legacy Members (past contributors)
     members: [
         {
-            name: "Member Name",
+            name: "Mtestame",
             role: "Software Developer",
             image: "placeholder",
             bio: "Contributing to perception systems and ROS integration.",
