@@ -271,7 +271,7 @@ section {
     padding: 2rem;
 }
 
-css.hero-logo {
+.hero-logo {
     max-width: 280px;  /* Reduced from 400px */
     width: 60%;        /* Reduced from 80% */
     margin-bottom: 1.5rem;
