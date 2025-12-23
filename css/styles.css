@@ -1630,3 +1630,91 @@ img {
         page-break-inside: avoid;
     }
 }
+
+
+/* ============================================================================
+   ENHANCED ANIMATIONS
+   ============================================================================ */
+
+/* Glowing effect on hero buttons */
+.btn-primary {
+    animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(0, 102, 255, 0.5), 0 0 20px rgba(0, 102, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(0, 102, 255, 0.8), 0 0 40px rgba(0, 102, 255, 0.5);
+    }
+}
+
+/* Subtle float animation for cards on hover */
+.research-card:hover,
+.achievement-card:hover,
+.equipment-item:hover,
+.team-card:hover {
+    transform: translateY(-8px);
+    transition: transform 0.3s ease;
+}
+
+/* Animated gradient border for section headers */
+.section-header h2::after {
+    background: linear-gradient(90deg, var(--avl-cyber-blue), var(--avl-accent-cyan), var(--avl-cyber-blue));
+    background-size: 200% 100%;
+    animation: gradientMove 3s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Typing cursor effect for hero title (optional - subtle) */
+.hero-title {
+    border-right: 3px solid var(--avl-accent-cyan);
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Smooth scroll indicator bounce */
+.scroll-indicator {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+/* Nav social icons hover effect */
+.nav-social a:hover {
+    animation: iconPop 0.3s ease;
+}
+
+@keyframes iconPop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Stats counter glow */
+.stat-number {
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* Hero grid subtle animation */
+.hero-grid {
+    animation: gridPulse 8s ease-in-out infinite;
+    opacity: 0.4;
+}
+
+@keyframes gridPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.5; }
+}
