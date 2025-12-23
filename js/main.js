@@ -209,19 +209,52 @@ function renderImpactSection() {
         statsContainer.innerHTML = statsHtml;
     }
 
-    // Render achievements
+    // Render achievements with clickable links
     const achievementsContainer = document.getElementById('achievements-container');
     if (achievementsContainer) {
-        const achievementsHtml = ACHIEVEMENTS.map(achievement => `
-            <div class="achievement-card fade-in">
-                <div class="achievement-year">${achievement.year}</div>
-                <h3>${achievement.title}</h3>
-                <p>${achievement.description}</p>
-            </div>
-        `).join('');
+        const achievementsHtml = ACHIEVEMENTS.map(achievement => {
+            const hasLink = achievement.docLink && achievement.docLink.length > 0;
+            const clickableClass = hasLink ? 'clickable' : '';
+            const clickHandler = hasLink ? `onclick="window.open('${achievement.docLink}', '_blank')"` : '';
+            
+            return `
+                <div class="achievement-card fade-in ${clickableClass}" ${clickHandler}>
+                    <div class="achievement-year">${achievement.year}</div>
+                    <h3>${achievement.title}</h3>
+                    <p>${achievement.description}</p>
+                    ${hasLink ? '<div class="click-hint">Click to learn more →</div>' : ''}
+                </div>
+            `;
+        }).join('');
         achievementsContainer.innerHTML = achievementsHtml;
     }
 }
+
+// ============================================================================
+// EQUIPMENT SECTION RENDERING
+// ============================================================================
+
+function renderEquipmentSection() {
+    const equipmentContainer = document.getElementById('equipment-container');
+    if (!equipmentContainer) return;
+
+    const equipmentHtml = EQUIPMENT.map(item => {
+        const hasLink = item.docLink && item.docLink.length > 0;
+        const clickableClass = hasLink ? 'clickable' : '';
+        const clickHandler = hasLink ? `onclick="window.open('${item.docLink}', '_blank')"` : '';
+        
+        return `
+            <div class="equipment-item fade-in ${clickableClass}" ${clickHandler}>
+                <h4>${item.name}</h4>
+                <p>${item.description}</p>
+                ${hasLink ? '<div class="click-hint">Click to learn more →</div>' : ''}
+            </div>
+        `;
+    }).join('');
+
+    equipmentContainer.innerHTML = equipmentHtml;
+}
+
 
 // ============================================================================
 // HIRING SECTION RENDERING
@@ -256,6 +289,7 @@ function renderHiringSection() {
         positionsContainer.innerHTML = positionsHtml;
     }
 }
+
 
 // ============================================================================
 // LEARN BY DOING SECTION RENDERING
