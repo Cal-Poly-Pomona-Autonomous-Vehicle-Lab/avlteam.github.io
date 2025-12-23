@@ -1672,16 +1672,6 @@ img {
     100% { background-position: 0% 50%; }
 }
 
-/* Typing cursor effect for hero title (optional - subtle) */
-.hero-title {
-    border-right: 3px solid var(--avl-accent-cyan);
-    animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-
 /* Smooth scroll indicator bounce */
 .scroll-indicator {
     animation: bounce 2s ease-in-out infinite;
@@ -1703,10 +1693,7 @@ img {
     100% { transform: scale(1); }
 }
 
-/* Stats counter glow */
-.stat-number {
-    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
-}
+
 
 /* Hero grid subtle animation */
 .hero-grid {
