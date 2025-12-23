@@ -348,10 +348,10 @@ const SITE_INFO = {
 // List of major equipment (displayed in About section)
 
 const EQUIPMENT = [
-    { name: "Velodyne VLP-16 LiDAR", description: "360° 3D scanning" },
-    { name: "Stereo Camera System", description: "Depth perception" },
-    { name: "RTK-GPS", description: "Centimeter-level positioning" },
-    { name: "Xsens IMU", description: "Motion tracking" },
-    { name: "NVIDIA RTX 5090", description: "Neural network training" },
-    { name: "Research Vehicle", description: "Sensor integration platform" }
+    { name: "Velodyne VLP-16 LiDAR", description: "360° 3D scanning", docLink: "" },
+    { name: "Stereo Camera System", description: "Depth perception", docLink: "" },
+    { name: "RTK-GPS", description: "Centimeter-level positioning", docLink: "" },
+    { name: "Xsens IMU", description: "Motion tracking", docLink: "" },
+    { name: "NVIDIA RTX 5090", description: "Neural network training", docLink: "" },
+    { name: "Research Vehicle", description: "Sensor integration platform", docLink: "" }
 ];
