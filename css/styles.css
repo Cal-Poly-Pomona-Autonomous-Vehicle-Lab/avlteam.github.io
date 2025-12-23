@@ -1527,7 +1527,7 @@ section {
 
 /* Remove heavy particle animations */
 .particles {
-    display: none;
+    display: block;
 }
 
 /* Reduce animation complexity */
