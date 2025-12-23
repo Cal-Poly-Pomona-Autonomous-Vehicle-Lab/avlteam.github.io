@@ -304,6 +304,17 @@ section {
     animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 
+.hero-university a {
+    color: var(--avl-accent-cyan);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hero-university a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
 .hero-cta {
     display: flex;
     gap: 1.5rem;
