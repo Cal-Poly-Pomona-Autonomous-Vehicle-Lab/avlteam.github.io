@@ -396,9 +396,9 @@ function initScrollAnimations() {
 // ============================================================================
 
 function initParticles() {
-    // Particles disabled to improve performance
-    // Uncomment below to re-enable if needed
-    /*
+    // Particles disabled to improve performance - I lied there enabled 
+    // Uncomment below to re-enable if needed - Ignore me
+    
     const particlesContainer = document.querySelector('.particles');
     if (!particlesContainer) return;
 
@@ -412,7 +412,6 @@ function initParticles() {
         particle.style.animationDuration = (15 + Math.random() * 10) + 's';
         particlesContainer.appendChild(particle);
     }
-    */
 }
 
 // ============================================================================
