@@ -271,10 +271,10 @@ section {
     padding: 2rem;
 }
 
-.hero-logo {
-    max-width: 400px;
-    width: 80%;
-    margin-bottom: 2rem;
+css.hero-logo {
+    max-width: 280px;  /* Reduced from 400px */
+    width: 60%;        /* Reduced from 80% */
+    margin-bottom: 1.5rem;
     animation: fadeInUp 0.8s ease-out;
 }
 
