@@ -6,6 +6,7 @@
 // Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
+    renderEquipmentSection();
     renderTeamSection();
     renderResearchSection();
     renderImpactSection();
