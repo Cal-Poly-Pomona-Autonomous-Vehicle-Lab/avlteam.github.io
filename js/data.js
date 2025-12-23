@@ -255,17 +255,20 @@ const ACHIEVEMENTS = [
     {
         title: "Published Research",
         description: "Imitation learning for day-night autonomous driving using thermal vision",
-        year: "2024"
+        year: "2024",
+        docLink: ""  // Add link to paper or documentation
     },
     {
         title: "Campus Mapping Project",
         description: "Creating the first high-definition digital twin of Cal Poly Pomona campus roads",
-        year: "2024-2025"
+        year: "2024-2025",
+        docLink: ""  // Add link to paper or documentation
     },
     {
         title: "Real-time LiDAR System",
         description: "Developed custom Velodyne decoder achieving 15+ FPS performance",
-        year: "2024"
+        year: "2024",
+        docLink: ""  // Add link to paper or documentation
     }
 ];
 
