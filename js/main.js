@@ -99,11 +99,11 @@ function renderTeamSection() {
         `;
     }
 
-    // General members section
+    // General members section - renamed to Legacy Members
     if (TEAM_MEMBERS.members && TEAM_MEMBERS.members.length > 0) {
         html += `
             <div class="team-category">
-                <h3>Team Members</h3>
+                <h3>Legacy Members</h3>
                 <div class="team-grid">
                     ${TEAM_MEMBERS.members.map(member => createTeamCard(member)).join('')}
                 </div>
@@ -163,23 +163,30 @@ function createTeamCard(member) {
 }
 
 // ============================================================================
-// RESEARCH SECTION RENDERING
+// RESEARCH SECTION RENDERING - Now with clickable cards
 // ============================================================================
 
 function renderResearchSection() {
     const researchContainer = document.getElementById('research-container');
     if (!researchContainer) return;
 
-    const html = RESEARCH_AREAS.map(area => `
-        <div class="research-card fade-in">
-            <div class="research-card-icon">${area.icon || '🔬'}</div>
-            <h3>${area.title}</h3>
-            <p>${area.description}</p>
-            <div class="research-projects">
-                ${area.projects.map(project => `<span>${project}</span>`).join('')}
+    const html = RESEARCH_AREAS.map(area => {
+        const hasLink = area.docLink && area.docLink.length > 0;
+        const clickableClass = hasLink ? 'clickable' : '';
+        const clickHandler = hasLink ? `onclick="window.open('${area.docLink}', '_blank')"` : '';
+        
+        return `
+            <div class="research-card fade-in ${clickableClass}" ${clickHandler}>
+                <div class="research-card-icon">${area.icon || '🔬'}</div>
+                <h3>${area.title}</h3>
+                <p>${area.description}</p>
+                <div class="research-projects">
+                    ${area.projects.map(project => `<span>${project}</span>`).join('')}
+                </div>
+                ${hasLink ? '<div class="click-hint">Click to learn more →</div>' : ''}
             </div>
-        </div>
-    `).join('');
+        `;
+    }).join('');
 
     researchContainer.innerHTML = html;
 }
@@ -350,14 +357,17 @@ function initScrollAnimations() {
 }
 
 // ============================================================================
-// PARTICLE EFFECTS
+// PARTICLE EFFECTS - Disabled for performance
 // ============================================================================
 
 function initParticles() {
+    // Particles disabled to improve performance
+    // Uncomment below to re-enable if needed
+    /*
     const particlesContainer = document.querySelector('.particles');
     if (!particlesContainer) return;
 
-    const particleCount = 20;
+    const particleCount = 10;  // Reduced count
     
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
@@ -367,7 +377,70 @@ function initParticles() {
         particle.style.animationDuration = (15 + Math.random() * 10) + 's';
         particlesContainer.appendChild(particle);
     }
+    */
 }
+
+// ============================================================================
+// PHOTO GALLERY SLIDESHOW
+// ============================================================================
+
+let currentSlide = 0;
+let slideInterval;
+
+function initSlideshow() {
+    // Auto-advance slides every 5 seconds
+    slideInterval = setInterval(() => {
+        changeSlide(1);
+    }, 5000);
+}
+
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (slides.length === 0) return;
+    
+    // Remove active class from current slide
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    
+    // Calculate new slide index
+    currentSlide += direction;
+    if (currentSlide >= slides.length) currentSlide = 0;
+    if (currentSlide < 0) currentSlide = slides.length - 1;
+    
+    // Add active class to new slide
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+    
+    // Reset interval
+    clearInterval(slideInterval);
+    slideInterval = setInterval(() => changeSlide(1), 5000);
+}
+
+function goToSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (slides.length === 0) return;
+    
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    
+    currentSlide = index;
+    
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+    
+    // Reset interval
+    clearInterval(slideInterval);
+    slideInterval = setInterval(() => changeSlide(1), 5000);
+}
+
+// Initialize slideshow when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    initSlideshow();
+});
 
 // ============================================================================
 // UTILITY FUNCTIONS
