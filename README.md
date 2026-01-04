@@ -2,7 +2,7 @@
 
 A modern, responsive website for the Autonomous Vehicle Laboratory at Cal Poly Pomona.
 
-**Live Site:** https://cal-poly-pomona-autonomous-vehicle-lab.github.io/avlteam.github.io/
+**Live Site:** https://autovehiclelab.com/
 
 ---
 
