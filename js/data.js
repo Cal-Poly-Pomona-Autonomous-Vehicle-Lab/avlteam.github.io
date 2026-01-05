@@ -86,15 +86,13 @@ const TEAM_MEMBERS = {
             linkedin: "https://www.linkedin.com/in/calebhylkema",
             email: "calebhylkema6@gmail.com"
         },
-        {
-            name: "Researcher Name",
-            role: "Computer Vision Engineer",
+{
+            name: "Benjamin Ramirez",
+            role: "Research Assistant - Electromechanical Systems Engineering Technology",
             image: "placeholder",
-            bio: "Working on thermal imaging and day-night autonomous driving systems.",
-            linkedin: "",
-            github: "",
-            email: ""
-        },
+            bio: "Working on CAD designs for the mounting of electronic equipment used on AVL 2 and assisting with the design of the electrical layout and organization of the car.",
+            email: "bjmnrmz01@gmail.com"
+},
     ],
     
     // Legacy Members (past contributors)
@@ -103,7 +101,7 @@ const TEAM_MEMBERS = {
             name: "Jaemin Kim",
             role: "Researcher -M.S. Electrical Engineering",
             image: "placeholder",
-            bio: "Developed and optimized C++ and Python code used to control linear actuator, stepper motor, gear selection, and the motorand Integrated inertial measurement unit (IMU), encoders, cameras, and lidar within the car for data collection.",
+            bio: "Developed C++ and Python code used to control linear actuator, stepper motor, gear selection, and Integrated inertial measurement unit within the car for data collection.",
             linkedin: "https://www.linkedin.com/in/jm-k/",
             email: "jaemin.d.kim@gmail.com"
         },
