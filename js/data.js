@@ -236,31 +236,31 @@ const HIRING_INFO = {
 // Showcase lab accomplishments
 
 const IMPACT_STATS = [
-    { number: "300K+", label: "Points Processed Per Second" },
-    { number: "15+", label: "FPS LiDAR Visualization" },
-    { number: "5+", label: "Active Research Projects" },
-    { number: "20+", label: "Lab Members" }
+    { number: "4+", label: "Active Research Papers" },
+    { number: "4", label: "Autonomous Vehicles Platforms" },
+    { number: "5+", label: "Active Projects" },
+    { number: "15+", label: "Lab Members" }
 ];
 
 const ACHIEVEMENTS = [
     {
-        title: "Published Research",
-        description: "Imitation learning for day-night autonomous driving using thermal vision",
+        title: "AVL-001 Deployed",
+        description: "Fully Functioning simple autonomous vehicle platform searving as a proof of concept",
         year: "2024",
         docLink: ""  // Add link to paper or documentation
     },
     {
-        title: "Campus Mapping Project",
-        description: "Creating the first high-definition digital twin of Cal Poly Pomona campus roads",
+        title: "AVL-002 Deployed",
+        description: "Fully Autonomous go-kart platforms serving as the main testbed for perception, imitation learning, and path planning research",
+        year: "2025",
+        docLink: ""  // Add link to paper or documentation
+    },
+    {
+        title: "Project ATAV Launched",
+        description: "Next-generation all-terrain autonomous vehicle combining active suspension, regenerative braking, and fuzzy logic control",
         year: "2024-2025",
-        docLink: ""  // Add link to paper or documentation
+        docLink: ""
     },
-    {
-        title: "Real-time LiDAR System",
-        description: "Developed custom Velodyne decoder achieving 15+ FPS performance",
-        year: "2024",
-        docLink: ""  // Add link to paper or documentation
-    }
 ];
 
 
