@@ -125,12 +125,12 @@ const TEAM_MEMBERS = {
     members: [
         {
             name: "Jaemin Kim",
-            role: "Researcher -M.S. Electrical Engineering",
+            role: "Researcher - Electrical Engineering M.S.",
             image: "images/team/AVL_Jaemin_Kim.jpg",
             bio: "Developed C++ and Python code used to control linear actuator, stepper motor, gear selection, and Integrated inertial measurement unit within the car for data collection.",
             linkedin: "https://www.linkedin.com/in/jm-k/",
             email: "jaemin.d.kim@gmail.com"
-        },
+        }
     ]
 };
 
