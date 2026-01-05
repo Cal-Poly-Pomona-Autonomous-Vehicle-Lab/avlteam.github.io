@@ -271,34 +271,46 @@ const ACHIEVEMENTS = [
 
 const LEARNING_RESOURCES = [
     {
-        title: "Introduction to ROS",
-        type: "Workshop Series",
-        description: "Learn the Robot Operating System from scratch. Covers topics from basic concepts to advanced node development.",
-        level: "Beginner"
-    },
-    {
-        title: "LiDAR Fundamentals",
+        title: "ROS2 & Software Integration",
         type: "Hands-on Lab",
-        description: "Understand how LiDAR works and process real point cloud data from our Velodyne sensors.",
-        level: "Intermediate"
+        description: "Learn advanced robotics software development using ROS2 for autonomous vehicle systems.",
+        level: "Intermediate",
+        docLink: "https://docs.ros.org/en/humble/Tutorials.html"
     },
     {
-        title: "Computer Vision with OpenCV",
-        type: "Workshop",
-        description: "Image processing, object detection, and lane detection for autonomous vehicles.",
-        level: "Beginner"
-    },
-    {
-        title: "Path Planning Algorithms",
+        title: "Machine Learning for Autonomy",
         type: "Technical Deep-Dive",
-        description: "Implement A*, RRT, and dynamic planning algorithms for autonomous navigation.",
-        level: "Advanced"
+        description: "Apply ML techniques for perception, decision-making, and control in autonomous systems.",
+        level: "Advanced",
+        docLink: "https://www.coursera.org/specializations/self-driving-cars"
     },
     {
-        title: "CAN Bus & Vehicle Networks",
-        type: "Security Workshop",
-        description: "Explore automotive communication protocols and cybersecurity considerations.",
-        level: "Intermediate"
+        title: "Embedded Systems & Arduino",
+        type: "Workshop Series",
+        description: "Hands-on experience with embedded systems, power distribution, and vehicle electronics using Arduino.",
+        level: "Beginner",
+        docLink: "https://docs.arduino.cc/learn/"
+    },
+    {
+        title: "Control Theory & PID",
+        type: "Technical Deep-Dive",
+        description: "Learn control systems design including PID controllers for autonomous vehicle steering and speed control.",
+        level: "Advanced",
+        docLink: "https://learnopencv.com/pid-controller-ros-2-carla/"
+    },
+    {
+        title: "Computer Vision & OpenCV",
+        type: "Hands-on Lab",
+        description: "Process camera data for object detection, lane tracking, and environmental perception using OpenCV.",
+        level: "Intermediate",
+        docLink: "https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html"
+    },
+    {
+        title: "LiDAR & Point Cloud Processing",
+        type: "Technical Deep-Dive",
+        description: "Work with 3D LiDAR data for mapping, localization, and obstacle detection.",
+        level: "Intermediate",
+        docLink: "https://pointclouds.org/documentation/tutorials/"
     }
 ];
 
