@@ -315,10 +315,10 @@ const SITE_INFO = {
 // List of major equipment (displayed in About section)
 
 const EQUIPMENT = [
-    { name: "Velodyne VLP-16 LiDAR", description: "360° 3D scanning", docLink: "" },
+    { name: "Velodyne VLP-16 LiDAR", description: "360° 3D scanning", docLink: "https://ouster.com/products/hardware/vlp-16" },
     { name: "Stereo Camera System", description: "Depth perception", docLink: "" },
     { name: "RTK-GPS", description: "Centimeter-level positioning", docLink: "" },
-    { name: "Xsens IMU", description: "Motion tracking", docLink: "" },
-    { name: "NVIDIA RTX 5090", description: "Neural network training", docLink: "" },
-    { name: "Research Vehicle", description: "Sensor integration platform", docLink: "" }
+    { name: "Xsens IMU", description: "Motion tracking", docLink: "https://www.movella.com/sensor-modules" },
+    { name: "NVIDIA RTX 5090", description: "Neural network training", docLink: "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/" },
+    { name: "TrailMaster 200E-XRS", description: "Research vehicle platform", docLink: "https://gokartsusa.com/Trailmaster-200E-XRS-Gokart-Buggy.aspx" }
 ];
