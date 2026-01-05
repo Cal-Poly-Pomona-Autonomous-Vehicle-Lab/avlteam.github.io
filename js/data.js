@@ -32,7 +32,7 @@ const TEAM_MEMBERS = {
     leadership: [
         {
             name: "Dr. Benham Bahr",
-            role: "Lab Advisor",
+            role: "Lab Advisor - Mechanical Engineering",
             image: "placeholder",
             bio: "Providing academic oversight and mentorship for research and development efforts.",
             linkedin: "https://www.linkedin.com/in/behnam-bahr-b951a279",
@@ -40,52 +40,38 @@ const TEAM_MEMBERS = {
         },
         {
             name: "Aspen Knox",
-            role: "Club President",
-            image: "placeholder",
+            role: "Club President - Mechanical Engineering",
+            image: "images/team/AVL_Aspen_Knox.jpg",
             bio: "Coordinating club activities and fostering collaboration between researchers and members.",
             linkedin: "https://www.linkedin.com/in/aspenknox/",
             email: "aknox@cpp.edu"
         },
         {
             name: "Parsa Ghasemi",
-            role: "Vice President",
-            image: "placeholder",
+            role: "Vice President - Computer Engineering",
+            image: "images/team/AVL_Parsa_Ghasemi.jpg",
             bio: "Assisting leadership while supporting project coordination and member engagement.",
             linkedin: "https://www.linkedin.com/in/paarseus/",
             github: "https://github.com/Paarseus",
             email: "mghasemi@cpp.edu"
         },
         {
-            name: "Roger",
-            role: "Secretary Officer",
-            image: "placeholder",
-            bio: "Managing documentation, finances, records, and internal communication for the organization.",
-            linkedin: "",
-            email: ""
-        },
-        {
             name: "Tyrese Rogers",
-            role: "Publicity Officer",
+            role: "Publicity Officer - Mechanical Engineering",
             image: "placeholder",
             bio: "Promoting lab activities, achievements, and events through outreach and communication channels.",
             linkedin: "https://www.linkedin.com/in/tyrese-rogers-0933152a5/",
             email: ""
         },
         {
-            name: "Johnny Qiu",
-            role: "Scheduling Officer",
-            image: "placeholder",
-            bio: "Organizing meetings, timelines, and lab access for efficient operations.",
-            linkedin: "https://www.linkedin.com/in/johnnyqiu28/",
-            email: "jqiu@cpp.edu"
-        },
-        {
             name: "Ryan Simpson",
-            role: "Onboarding Officer",
-            image: "placeholder",
+            role: "Onboarding Officer - Computer Science",
+            image: "images/team/AVL_Ryan_Simpson.jpg",
             bio: "Guiding new members through onboarding, training, and lab procedures to ensure a smooth transition.",
             linkedin: "https://www.linkedin.com/in/ryan-m-simpson",
+            github: "https://github.com/Ryan-Simpson",
             email: "rmsimpson@cpp.edu"
+            
         }
         
     ],
@@ -109,37 +95,18 @@ const TEAM_MEMBERS = {
             github: "",
             email: ""
         },
-        {
-            name: "Researcher Name",
-            role: "Path Planning Developer",
-            image: "placeholder",
-            bio: "Implementing navigation algorithms and sensor fusion systems.",
-            linkedin: "",
-            github: "",
-            email: ""
-        }
     ],
     
     // Legacy Members (past contributors)
     members: [
         {
-            name: "Mtestame",
-            role: "Software Developer",
+            name: "Jaemin Kim",
+            role: "Researcher -M.S. Electrical Engineering",
             image: "placeholder",
-            bio: "Contributing to perception systems and ROS integration.",
-            linkedin: "",
-            github: "",
-            email: ""
+            bio: "Developed and optimized C++ and Python code used to control linear actuator, stepper motor, gear selection, and the motorand Integrated inertial measurement unit (IMU), encoders, cameras, and lidar within the car for data collection.",
+            linkedin: "https://www.linkedin.com/in/jm-k/",
+            email: "jaemin.d.kim@gmail.com"
         },
-        {
-            name: "Member Name",
-            role: "Hardware Engineer",
-            image: "placeholder",
-            bio: "Building and maintaining the vehicle sensor platform.",
-            linkedin: "",
-            github: "",
-            email: ""
-        }
     ]
 };
 
