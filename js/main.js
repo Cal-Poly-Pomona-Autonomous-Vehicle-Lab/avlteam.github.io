@@ -299,14 +299,21 @@ function renderLearnSection() {
     const learnContainer = document.getElementById('learn-container');
     if (!learnContainer) return;
 
-    const workshopsHtml = LEARNING_RESOURCES.map(workshop => `
-        <div class="workshop-card fade-in">
-            <span class="workshop-level ${workshop.level.toLowerCase()}">${workshop.level}</span>
-            <p class="workshop-type">${workshop.type}</p>
-            <h3>${workshop.title}</h3>
-            <p>${workshop.description}</p>
-        </div>
-    `).join('');
+    const workshopsHtml = LEARNING_RESOURCES.map(workshop => {
+        const hasLink = workshop.docLink && workshop.docLink.length > 0;
+        const clickableClass = hasLink ? 'clickable' : '';
+        const clickHint = hasLink ? '<span class="click-hint">Click to learn more →</span>' : '';
+        
+        return `
+            <div class="workshop-card fade-in ${clickableClass}" ${hasLink ? `onclick="window.open('${workshop.docLink}', '_blank')"` : ''}>
+                <span class="workshop-level ${workshop.level.toLowerCase()}">${workshop.level}</span>
+                <p class="workshop-type">${workshop.type}</p>
+                <h3>${workshop.title}</h3>
+                <p>${workshop.description}</p>
+                ${clickHint}
+            </div>
+        `;
+    }).join('');
 
     learnContainer.innerHTML = workshopsHtml;
 }
