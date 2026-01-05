@@ -61,7 +61,7 @@ const TEAM_MEMBERS = {
             image: "placeholder",
             bio: "Promoting lab activities, achievements, and events through outreach and communication channels.",
             linkedin: "https://www.linkedin.com/in/tyrese-rogers-0933152a5/",
-            email: ""
+            email: "tyreserogers101@gmail.com"
         },
         {
             name: "Ryan Simpson",
