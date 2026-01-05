@@ -991,6 +991,33 @@ section {
     font-size: 0.95rem;
 }
 
+/* Clickable Workshop Cards */
+.workshop-card.clickable {
+    cursor: pointer;
+    position: relative;
+}
+
+.workshop-card.clickable:hover {
+    transform: translateY(-8px);
+    border-color: var(--avl-accent-cyan);
+    box-shadow: 0 12px 40px rgba(0, 212, 255, 0.15);
+}
+
+.workshop-card .click-hint {
+    display: block;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(0, 212, 255, 0.2);
+    font-size: 0.85rem;
+    color: var(--avl-accent-cyan);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.workshop-card.clickable:hover .click-hint {
+    opacity: 1;
+}
+
 /* ============================================================================
    FOOTER
    ============================================================================ */
