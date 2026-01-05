@@ -33,7 +33,7 @@ const TEAM_MEMBERS = {
         {
             name: "Dr. Benham Bahr",
             role: "Lab Advisor - Mechanical Engineering",
-            image: "placeholder",
+            image: "images/team/AVL_Dr_Bahr.jpg",
             bio: "Providing academic oversight and mentorship for research and development efforts.",
             linkedin: "https://www.linkedin.com/in/behnam-bahr-b951a279",
             email: "bbahr@cpp.edu"
@@ -58,7 +58,7 @@ const TEAM_MEMBERS = {
         {
             name: "Tyrese Rogers",
             role: "Publicity Officer - Mechanical Engineering",
-            image: "placeholder",
+            image: "images/team/AVL_Tyrese_Rogers.jpg",
             bio: "Promoting lab activities, achievements, and events through outreach and communication channels.",
             linkedin: "https://www.linkedin.com/in/tyrese-rogers-0933152a5/",
             email: "tyreserogers101@gmail.com"
@@ -80,7 +80,7 @@ const TEAM_MEMBERS = {
         {
             name: "Caleb Hylkema",
             role: "Research Assistant - Electrical Engineering",
-            image: "placeholder",
+            image: "images/team/AVL_Caleb_Hylkema.jpg",
             bio: "Working on the control systems for autonomous driving systems.",
             linkedin: "https://www.linkedin.com/in/calebhylkema",
             email: "calebhylkema6@gmail.com"
