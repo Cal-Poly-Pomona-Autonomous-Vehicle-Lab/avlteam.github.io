@@ -70,8 +70,7 @@ const TEAM_MEMBERS = {
             bio: "Guiding new members through onboarding, training, and lab procedures to ensure a smooth transition.",
             linkedin: "https://www.linkedin.com/in/ryan-m-simpson",
             github: "https://github.com/Ryan-Simpson",
-            email: "rmsimpson@cpp.edu"
-            
+            email: "rmsimpson@cpp.edu"   
         }
         
     ],
@@ -86,13 +85,40 @@ const TEAM_MEMBERS = {
             linkedin: "https://www.linkedin.com/in/calebhylkema",
             email: "calebhylkema6@gmail.com"
         },
-{
+        {
             name: "Benjamin Ramirez",
             role: "Research Assistant - Electromechanical Systems Engineering Technology",
             image: "placeholder",
             bio: "Working on CAD designs for the mounting of electronic equipment used on AVL 2 and assisting with the design of the electrical layout and organization of the car.",
+            linkedin: "linkedin.com/in/benjamin-ramirez-98958b303",
             email: "bjmnrmz01@gmail.com"
-},
+        },
+        {
+            name: "Alexander Assal",
+            role: "Research Assistant - Computer Engineering",
+            image: "placeholder",
+            bio: "Working on YoloPv2, Computer Vision and Machine Learning",
+            linkedin: "https://www.linkedin.com/in/alexanderassal",
+            github: "https://github.com/arassal",
+            email: "alexander@asaalfamily.com"
+        },
+        {
+            name: "Deyung Sun",
+            role: "Research Assistant - Mechanical Engineering M.S.",
+            image: "placeholder",
+            bio: "Working on Gazebo Simulation via ROS2 jazzy",
+            linkedin: "www.linkedin.com/in/deyung-sun-634780318",
+            github: "https://github.com/deyungOAO",
+            email: "deyung000@gmail.com"
+        },
+        {
+            name: "Benjamin S Valladolid",
+            role: "Research Assistant - Mechanical Engineering M.S.",
+            image: "placeholder",
+            bio: "Designing Chassis for ATAV, Using MATLAB simulink to develop vehicle simulation through campus.",
+            linkedin: "https://www.linkedin.com/in/benjaminvalladolid/",
+            email: "bsvalladolid@cpp.edu"
+        }
     ],
     
     // Legacy Members (past contributors)
