@@ -96,7 +96,7 @@ const TEAM_MEMBERS = {
         {
             name: "Alexander Assal",
             role: "Research Assistant - Computer Engineering",
-            image: "placeholder",
+            image: "images/team/AVL_Alexander_Assal.jpg",
             bio: "Working on YoloPv2, Computer Vision and Machine Learning",
             linkedin: "https://www.linkedin.com/in/alexanderassal",
             github: "https://github.com/arassal",
