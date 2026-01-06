@@ -405,16 +405,6 @@ section {
     position: relative;
 }
 
-.about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--avl-cyber-blue), transparent);
-}
-
 .about-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -509,7 +499,7 @@ section {
    ============================================================================ */
 
 .impact {
-    background: linear-gradient(180deg, var(--avl-dark) 0%, var(--avl-darker) 100%);
+    background: var(--avl-darker);
     position: relative;
 }
 
@@ -711,7 +701,7 @@ section {
    ============================================================================ */
 
 .research {
-    background: linear-gradient(180deg, var(--avl-dark) 0%, var(--avl-darker) 100%);
+    background: var(--avl-darker);
 }
 
 .research-grid {
@@ -789,17 +779,6 @@ section {
 
 .hiring {
     background: var(--avl-darker);
-    position: relative;
-}
-
-.hiring::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--avl-accent-cyan), transparent);
 }
 
 .hiring-banner {
@@ -913,7 +892,7 @@ section {
    ============================================================================ */
 
 .learn {
-    background: linear-gradient(180deg, var(--avl-dark) 0%, var(--avl-darker) 100%);
+    background: var(--avl-darker);
 }
 
 .learn-intro {
@@ -1333,7 +1312,7 @@ section {
    ============================================================================ */
 
 .gallery {
-    background: linear-gradient(180deg, var(--avl-dark) 0%, var(--avl-darker) 100%);
+    background: var(--avl-darker);
 }
 
 .gallery-slideshow {
