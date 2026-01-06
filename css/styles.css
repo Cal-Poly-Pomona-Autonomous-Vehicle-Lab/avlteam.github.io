@@ -466,6 +466,7 @@ section {
 /* Equipment Grid */
 .equipment-section {
     margin-top: 4rem;
+    margin-bottom: 4rem;
     padding-top: 4rem;
     border-top: 1px solid rgba(0, 102, 255, 0.2);
 }
