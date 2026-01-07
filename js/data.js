@@ -236,7 +236,7 @@ const HIRING_INFO = {
 // Showcase lab accomplishments
 
 const IMPACT_STATS = [
-    { number: "4+", label: "Active Research Papers" },
+    { number: "5+", label: "Active Research Papers" },
     { number: "4", label: "Autonomous Vehicles Platforms" },
     { number: "5+", label: "Active Projects" },
     { number: "15+", label: "Lab Members" }
