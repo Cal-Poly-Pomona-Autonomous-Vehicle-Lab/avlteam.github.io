@@ -152,42 +152,42 @@ const TEAM_MEMBERS = {
 const RESEARCH_AREAS = [
     {
         title: "LiDAR Processing & Perception",
-        icon: "🔴",
+        icon: "",
         description: "Real-time point cloud processing, object detection, and 3D scene understanding using Velodyne VLP-16 sensors.",
         projects: ["High-speed packet decoding", "Occupancy grid mapping", "Point cloud segmentation"],
         docLink: ""  // Add Google Doc or page URL here
     },
     {
         title: "Computer Vision",
-        icon: "👁️",
+        icon: "",
         description: "Multi-modal vision systems including stereo cameras and thermal imaging for robust perception in all conditions.",
         projects: ["YOLOPv2 lane detection", "Thermal-visual fusion", "Day-night driving"],
         docLink: ""  // Add Google Doc or page URL here
     },
     {
         title: "Path Planning & Navigation",
-        icon: "🛤️",
+        icon: "",
         description: "Developing algorithms for safe and efficient autonomous navigation on campus roads.",
         projects: ["Pure Pursuit controllers", "Dynamic Window Approach", "Behavior planning"],
         docLink: ""  // Add Google Doc or page URL here
     },
     {
         title: "Sensor Fusion",
-        icon: "🔗",
+        icon: "",
         description: "Integrating data from LiDAR, cameras, GPS, and IMU for accurate localization and mapping.",
         projects: ["Multi-sensor calibration", "State estimation", "SLAM integration"],
         docLink: ""  // Add Google Doc or page URL here
     },
     {
         title: "Digital Twins & Simulation",
-        icon: "🌐",
+        icon: "",
         description: "Creating photorealistic virtual environments of campus for testing and validation.",
         projects: ["3D Gaussian Splatting", "Neural radiance fields", "Synthetic data generation"],
         docLink: ""  // Add Google Doc or page URL here
     },
     {
         title: "Vehicle Cybersecurity",
-        icon: "🔒",
+        icon: "",
         description: "Researching CAN bus security, intrusion detection, and secure communication protocols.",
         projects: ["CAN message authentication", "Anomaly detection", "Secure boot systems"],
         docLink: ""  // Add Google Doc or page URL here
