@@ -790,8 +790,7 @@ section:not(.hero)::before {
 }
 
 .research-card-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    display: none;
 }
 
 .research-card h3 {
