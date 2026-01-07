@@ -59,6 +59,19 @@ body {
     overflow-x: hidden;
 }
 
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(0, 102, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: -1;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
@@ -74,6 +87,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.75rem); }
 p {
     color: var(--light-gray);
     max-width: 65ch;
+    line-height: 1.8;
 }
 
 a {
@@ -100,11 +114,28 @@ section {
     position: relative;
 }
 
-.section-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
+section:not(.hero)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 102, 255, 0.3), transparent);
 }
 
+.section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    padding-top: 1rem;
+}
+
+.section-header p {
+    opacity: 0.8;
+    font-size: 1.15rem;
+}
 
 .section-header h2 {
     display: inline-block;
@@ -124,7 +155,7 @@ section {
     border-radius: 2px;
 }
 
-.section-header p {
+.section-header > p {
     margin: 0 auto;
     font-size: 1.1rem;
 }
@@ -208,6 +239,14 @@ section {
 }
 
 .nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a.active {
+    color: var(--avl-accent-cyan);
+}
+
+.nav-links a.active::after {
     width: 100%;
 }
 
@@ -522,6 +561,14 @@ section {
 .stat-card:hover {
     transform: scale(1.05);
     border-color: var(--avl-accent-cyan);
+}
+
+.stat-card .stat-number {
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover .stat-number {
+    transform: scale(1.1);
 }
 
 .stat-number {
@@ -1718,8 +1765,6 @@ img {
     100% { transform: scale(1); }
 }
 
-
-
 /* Hero grid subtle animation */
 .hero-grid {
     animation: gridPulse 8s ease-in-out infinite;
@@ -1729,4 +1774,13 @@ img {
 @keyframes gridPulse {
     0%, 100% { opacity: 0.3; }
     50% { opacity: 0.5; }
+}
+
+/* Consistent card shadows */
+.about-card,
+.research-card,
+.workshop-card,
+.position-card,
+.team-card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
