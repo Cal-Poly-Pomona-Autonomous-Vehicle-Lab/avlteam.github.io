@@ -34,7 +34,7 @@ const TEAM_MEMBERS = {
             name: "Dr. Benham Bahr",
             role: "Lab Advisor - Mechanical Engineering",
             image: "images/team/AVL_Dr_Bahr.jpg",
-            bio: "Providing academic oversight and mentorship for research and development efforts.",
+            bio: "Providing academic oversight and mentorship for autonomous vehicle research and development.",
             linkedin: "https://www.linkedin.com/in/behnam-bahr-b951a279",
             email: "bbahr@cpp.edu"
         },
@@ -50,7 +50,7 @@ const TEAM_MEMBERS = {
             name: "Parsa Ghasemi",
             role: "Vice President - Computer Engineering",
             image: "images/team/AVL_Parsa_Ghasemi.jpg",
-            bio: "Assisting leadership while supporting project coordination and member engagement.",
+            bio: "Supporting project coordination, member engagement, and technical development initiatives.",
             linkedin: "https://www.linkedin.com/in/paarseus/",
             github: "https://github.com/Paarseus",
             email: "mghasemi@cpp.edu"
@@ -59,20 +59,27 @@ const TEAM_MEMBERS = {
             name: "Tyrese Rogers",
             role: "Publicity Officer - Mechanical Engineering",
             image: "images/team/AVL_Tyrese_Rogers.jpg",
-            bio: "Promoting lab activities, achievements, and events through outreach and communication channels.",
+            bio: "Promoting lab activities and achievements through outreach and communication channels.",
             linkedin: "https://www.linkedin.com/in/tyrese-rogers-0933152a5/",
             email: "tyreserogers101@gmail.com"
+        },
+        {
+            name: "William Saunders",
+            role: "Research Assistant - Mechanical Engineering",
+            image: "placeholder",
+            bio: "Leading the design and construction of ATAV, an all-terrain vehicle for off-road AI testing.",
+            linkedin: "https://www.linkedin.com/in/william-saunders-02324925a",
+            email: "william.r.saunders.2004@gmail.com"
         },
         {
             name: "Ryan Simpson",
             role: "Onboarding Officer - Computer Science",
             image: "images/team/AVL_Ryan_Simpson.jpg",
-            bio: "Guiding new members through onboarding, training, and lab procedures to ensure a smooth transition.",
+            bio: "Guiding new members through onboarding, training, and lab procedures.",
             linkedin: "https://www.linkedin.com/in/ryan-m-simpson",
             github: "https://github.com/Ryan-Simpson",
             email: "rmsimpson@cpp.edu"   
         }
-        
     ],
     
     // Research Staff / Lab Hires
@@ -81,7 +88,7 @@ const TEAM_MEMBERS = {
             name: "Caleb Hylkema",
             role: "Research Assistant - Electrical Engineering",
             image: "images/team/AVL_Caleb_Hylkema.jpg",
-            bio: "Working on the control systems for autonomous driving systems.",
+            bio: "Developing control systems for autonomous driving, including steering and speed regulation.",
             linkedin: "https://www.linkedin.com/in/calebhylkema",
             email: "calebhylkema6@gmail.com"
         },
@@ -89,15 +96,15 @@ const TEAM_MEMBERS = {
             name: "Benjamin Ramirez",
             role: "Research Assistant - Electromechanical Systems Engineering Technology",
             image: "placeholder",
-            bio: "Working on CAD designs for the mounting of electronic equipment used on AVL 2 and assisting with the design of the electrical layout and organization of the car.",
-            linkedin: "linkedin.com/in/benjamin-ramirez-98958b303",
+            bio: "Designing CAD mounts for sensors and electronics, and organizing electrical systems on AVL-002.",
+            linkedin: "https://www.linkedin.com/in/benjamin-ramirez-98958b303",
             email: "bjmnrmz01@gmail.com"
         },
         {
             name: "Alexander Assal",
             role: "Research Assistant - Computer Engineering",
             image: "images/team/AVL_Alexander_Assal.jpg",
-            bio: "Working on YoloPv2, Computer Vision and Machine Learning",
+            bio: "Implementing YOLOPv2 for computer vision and machine learning in autonomous perception.",
             linkedin: "https://www.linkedin.com/in/alexanderassal",
             github: "https://github.com/arassal",
             email: "alexander@asaalfamily.com"
@@ -106,8 +113,8 @@ const TEAM_MEMBERS = {
             name: "Deyung Sun",
             role: "Research Assistant - Mechanical Engineering M.S.",
             image: "placeholder",
-            bio: "Working on Gazebo Simulation via ROS2 jazzy",
-            linkedin: "www.linkedin.com/in/deyung-sun-634780318",
+            bio: "Developing Gazebo simulations for autonomous vehicle testing using ROS2 Jazzy.",
+            linkedin: "https://www.linkedin.com/in/deyung-sun-634780318",
             github: "https://github.com/deyungOAO",
             email: "deyung000@gmail.com"
         },
@@ -115,10 +122,19 @@ const TEAM_MEMBERS = {
             name: "Benjamin S Valladolid",
             role: "Research Assistant - Mechanical Engineering M.S.",
             image: "placeholder",
-            bio: "Designing Chassis for ATAV, Using MATLAB simulink to develop vehicle simulation through campus.",
+            bio: "Designing the ATAV chassis and developing vehicle dynamics simulations in MATLAB Simulink.",
             linkedin: "https://www.linkedin.com/in/benjaminvalladolid/",
             email: "bsvalladolid@cpp.edu"
-        }
+        },
+        { 
+            name: "Changwe Musonda", 
+            role: "Research Assistant - Computer Engineering", 
+            image: "images/team/AVL_Changwe_Musonda.jpg", 
+            bio: "Working on ROS2, integrating perception, and planning pipelines for autonomous vehicle operation.", 
+            linkedin: "https://www.linkedin.com/in/changwe-musonda-32642a1a8/", 
+            email: "bradley.musonda@gmail.com" 
+}
+        
     ],
     
     // Legacy Members (past contributors)
@@ -127,7 +143,7 @@ const TEAM_MEMBERS = {
             name: "Jaemin Kim",
             role: "Researcher - Electrical Engineering M.S.",
             image: "images/team/AVL_Jaemin_Kim.jpg",
-            bio: "Developed C++ and Python code used to control linear actuator, stepper motor, gear selection, and Integrated inertial measurement unit within the car for data collection.",
+            bio: "Developed embedded control systems for actuators, motors, and IMU data collection.",
             linkedin: "https://www.linkedin.com/in/jm-k/",
             email: "jaemin.d.kim@gmail.com"
         }
