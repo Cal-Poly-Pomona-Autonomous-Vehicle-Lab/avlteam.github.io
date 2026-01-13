@@ -14,7 +14,7 @@ avl-website/
 ├── css/
 │   └── styles.css      # All styling (colors, fonts, layouts, animations)
 ├── js/
-│   ├── data.js         # ⭐ EASIEST TO EDIT - All content lives here
+│   ├── data.js         # EASIEST TO EDIT - All content lives here
 │   └── main.js         # JavaScript functionality (don't edit unless you know JS)
 └── images/
     ├── gallery/        # Photo slideshow images
