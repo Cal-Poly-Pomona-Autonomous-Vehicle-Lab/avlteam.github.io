@@ -130,7 +130,7 @@ const TEAM_MEMBERS = {
             name: "Karoline Braga",
             role: "Research Assistant - Mechanical Engineering",
             image: "images/team/AVL_Karoline_Braga.jpg",
-            bio: "Working on CAD designs and Assembly for IGVC and Thermal Modeling of Battery Active Cooling",
+            bio: "Working on CAD designs and Assembly for IGVC and Thermal Modeling of Battery Active Cooling.",
             linkedin: "www.linkedin.com/in/karolinebraga",
             email: "braga.karoline@hotmail.com"
         }, 
