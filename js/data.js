@@ -126,14 +126,22 @@ const TEAM_MEMBERS = {
             linkedin: "https://www.linkedin.com/in/benjaminvalladolid/",
             email: "bsvalladolid@cpp.edu"
         },
+        {
+            name: "Karoline Braga",
+            role: "Research Assistant - Mechanical Engineering",
+            image: "images/team/AVL_Karoline_Braga.jpg",
+            bio: "Working on CAD designs and Assembly for IGVC and Thermal Modeling of Battery Active Cooling",
+            linkedin: "www.linkedin.com/in/karolinebraga",
+            email: "braga.karoline@hotmail.com"
+        }, 
         { 
             name: "Changwe Musonda", 
-            role: "Research Assistant - Computer Engineering", 
+            role: "Club Member - Computer Engineering", 
             image: "images/team/AVL_Changwe_Musonda.jpg", 
             bio: "Working on ROS2, integrating perception, and planning pipelines for autonomous vehicle operation.", 
             linkedin: "https://www.linkedin.com/in/changwe-musonda-32642a1a8/", 
             email: "bradley.musonda@gmail.com" 
-}
+        }
         
     ],
     
