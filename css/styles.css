@@ -208,14 +208,15 @@ section:not(.hero)::before {
 
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.75rem;
     list-style: none;
+    margin-right: 1.5rem;
 }
 
 .nav-links a {
     color: var(--light-gray);
     font-family: var(--font-heading);
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 500;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -314,7 +315,8 @@ section:not(.hero)::before {
 .hero-logo {
     max-width: 280px;  /* Reduced from 400px */
     width: 60%;        /* Reduced from 80% */
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
     animation: fadeInUp 0.8s ease-out;
 }
 
@@ -1204,7 +1206,12 @@ section:not(.hero)::before {
 
 @media (max-width: 1024px) {
     .nav-links {
-        gap: 1.5rem;
+        gap: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.8rem;
     }
     
     .hero-logo {
