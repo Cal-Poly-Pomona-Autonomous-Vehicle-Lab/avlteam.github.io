@@ -314,7 +314,7 @@ section:not(.hero)::before {
 .hero-logo {
     max-width: 280px;  /* Reduced from 400px */
     width: 60%;        /* Reduced from 80% */
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     animation: fadeInUp 0.8s ease-out;
 }
 
@@ -1635,7 +1635,13 @@ img {
 
 @media (max-width: 768px) {
     .nav-social {
-        display: none;  /* Hide in mobile, show in menu */
+        display: flex;  /* Keep visible on smaller screens */
+        gap: 0.5rem;
+    }
+    
+    .nav-social a {
+        width: 32px;
+        height: 32px;
     }
     
     .hero-logo {
