@@ -31,7 +31,7 @@ const TEAM_MEMBERS = {
     // Leadership / Executive Board
     leadership: [
         {
-            name: "Dr. Benham Bahr",
+            name: "Dr. Behnam Bahr",
             role: "Lab Advisor - Mechanical Engineering",
             image: "images/team/AVL_Dr_Bahr.jpg",
             bio: "Providing academic oversight and mentorship for autonomous vehicle research and development.",
@@ -333,7 +333,7 @@ const HIRING_INFO = {
 
 const IMPACT_STATS = [
     { number: "5+", label: "Active Research Papers" },
-    { number: "4", label: "Autonomous Vehicles Platforms" },
+    { number: "4", label: "Autonomous Vehicle Platforms" },
     { number: "5+", label: "Active Projects" },
     { number: "15+", label: "Lab Members" }
 ];
@@ -341,7 +341,7 @@ const IMPACT_STATS = [
 const ACHIEVEMENTS = [
     {
         title: "AVL-001 Deployed",
-        description: "Fully Functioning simple autonomous vehicle platform searving as a proof of concept",
+        description: "Fully functioning simple autonomous vehicle platform serving as a proof of concept",
         year: "2024",
         docLink: ""  // Add link to paper or documentation
     },
