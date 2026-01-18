@@ -515,4 +515,3 @@ const MEDIA_CONTENT = {
     instagramHandle: "autovehiclelab",
     instagramUrl: "https://www.instagram.com/autovehiclelab/"
 };
-];
