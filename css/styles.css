@@ -1812,3 +1812,269 @@ img {
 .team-card {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* ============================================================================
+   MEDIA SECTION - Video + Instagram
+   ============================================================================ */
+
+.media {
+    background: var(--avl-darker);
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.media-video {
+    background: rgba(26, 13, 171, 0.1);
+    border: 1px solid rgba(0, 102, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.media-video:hover {
+    border-color: var(--avl-cyber-blue);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background: var(--avl-dark);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--medium-gray);
+    gap: 1rem;
+}
+
+.video-placeholder svg {
+    opacity: 0.5;
+}
+
+.media-video h3 {
+    color: var(--white);
+    font-family: var(--font-heading);
+    margin-bottom: 0.5rem;
+}
+
+.media-video p {
+    color: var(--medium-gray);
+    font-size: 0.95rem;
+}
+
+.media-social {
+    background: rgba(26, 13, 171, 0.1);
+    border: 1px solid rgba(0, 102, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.media-social:hover {
+    border-color: var(--avl-cyber-blue);
+}
+
+.instagram-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 102, 255, 0.2);
+}
+
+.instagram-header svg {
+    color: var(--avl-accent-cyan);
+}
+
+.instagram-header span {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+.instagram-feed {
+    min-height: 200px;
+}
+
+.instagram-cta {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.instagram-cta p {
+    color: var(--light-gray);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    max-width: 100%;
+}
+
+.instagram-cta .btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================================================
+   SPONSORS SECTION
+   ============================================================================ */
+
+.sponsors {
+    background: linear-gradient(180deg, var(--avl-darker) 0%, var(--avl-dark) 100%);
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.sponsor-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(26, 13, 171, 0.1);
+    border: 1px solid rgba(0, 102, 255, 0.15);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.sponsor-card:hover {
+    border-color: var(--avl-accent-cyan);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 102, 255, 0.15);
+}
+
+.sponsor-logo {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.sponsor-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.sponsor-fallback {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--avl-cyber-blue), var(--avl-accent-cyan));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.sponsor-info h4 {
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.sponsor-type {
+    color: var(--avl-accent-cyan);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sponsors-placeholder {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: var(--medium-gray);
+    background: rgba(26, 13, 171, 0.05);
+    border: 1px dashed rgba(0, 102, 255, 0.2);
+    border-radius: 12px;
+}
+
+.sponsors-cta {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 102, 255, 0.2);
+}
+
+.sponsors-cta p {
+    color: var(--light-gray);
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .sponsors-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sponsor-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ============================================================================
+   ANIMATED STAT COUNTERS
+   ============================================================================ */
+
+.stat-number {
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover .stat-number {
+    transform: scale(1.1);
+}
+
+/* Counter animation class */
+.stat-number.counting {
+    animation: countPulse 0.1s ease;
+}
+
+@keyframes countPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
