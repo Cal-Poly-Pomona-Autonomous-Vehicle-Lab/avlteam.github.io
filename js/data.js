@@ -141,6 +141,14 @@ const TEAM_MEMBERS = {
             bio: "Working on ROS2, integrating perception, and planning pipelines for autonomous vehicle operation.", 
             linkedin: "https://www.linkedin.com/in/changwe-musonda-32642a1a8/", 
             email: "bradley.musonda@gmail.com" 
+        },
+        {
+            name: "Samuel Andryasian",
+            role: "Club Member - Mechanical Engineering",
+            image: "",
+            bio: "Contributing to mechanical engineering research and development for autonomous vehicle systems.",
+            linkedin: "https://www.linkedin.com/in/samuelandryasian/",
+            email: "samuel.81725@gmail.com"
         }
         
     ],
@@ -149,11 +157,75 @@ const TEAM_MEMBERS = {
     members: [
         {
             name: "Jaemin Kim",
-            role: "Researcher - Electrical Engineering M.S.",
+            role: "Intern at Burbank Water and Power - Electrical Engineering M.S.",
             image: "images/team/AVL_Jaemin_Kim.jpg",
             bio: "Developed embedded control systems for actuators, motors, and IMU data collection.",
             linkedin: "https://www.linkedin.com/in/jm-k/",
             email: "jaemin.d.kim@gmail.com"
+        },
+        {
+            name: "William Masri",
+            role: "Former Research Assistant - Electrical Engineering",
+            image: "",
+            bio: "Developed and integrated autonomous vehicle components, specializing in circuit design and embedded systems.",
+            linkedin: "https://www.linkedin.com/in/williammasri15/",
+            email: "masriw15@yahoo.com"
+        },
+        {
+            name: "Matthew Jabson",
+            role: "Former Lab Admin - Mechanical Engineering M.S.",
+            image: "",
+            bio: "Managed lab operations and developed autonomous systems using ROS, computer vision, and sensor integration.",
+            linkedin: "https://www.linkedin.com/in/matthewjabson/",
+            email: "matthewjabson@gmail.com"
+        },
+        {
+            name: "Adam Sorenson",
+            role: "Engineer at Honda Racing Corporation USA - Mechanical Engineering M.S.",
+            image: "",
+            bio: "Designed autonomous and robotic systems with expertise in embedded systems and mechanical component design.",
+            linkedin: "https://www.linkedin.com/in/asorenson/",
+            email: "adam.d.sorenson@gmail.com"
+        },
+        {
+            name: "Johann Fernandez",
+            role: "Former Research Assistant - Computer Science",
+            image: "",
+            bio: "Developed end-to-end neural networks for autonomous driving using behavior cloning and PyTorch.",
+            linkedin: "https://www.linkedin.com/in/johann-fernandez/",
+            email: "fernandezjohann08@gmail.com"
+        },
+        {
+            name: "Abhishek Vishwakarma",
+            role: "Former Research Assistant - Computer Science M.S.",
+            image: "",
+            bio: "Engineered real-time perception pipelines using YOLOv8 and developed custom ROS2 navigation systems.",
+            linkedin: "https://www.linkedin.com/in/karma218/",
+            email: "abhishekvishwakarma218@gmail.com"
+        },
+        {
+            name: "Calvin Chu",
+            role: "Robotics Systems Engineer at Promaxo - Mechanical Engineering M.S.",
+            image: "",
+            bio: "Designed control algorithms for autonomous parking and developed Gazebo simulations with ROS2 and NAV2 integration.",
+            linkedin: "https://www.linkedin.com/in/calvin-chu-321650226/",
+            email: "calchu54321@gmail.com"
+        },     
+        {
+            name: "Yeachan Okh",
+            role: "Former Research Assistant - Computer Engineering M.S.",
+            image: "",
+            bio: "Developed autonomous motor control systems using ROS2 and simulated LiDAR sensing for SLAM navigation.",
+            linkedin: "https://www.linkedin.com/in/yeachanokh/",
+            email: "yeachanokh@gmail.com"
+        },
+        {
+            name: "Anjali Rai",
+            role: "Former Research Assistant - Computer Science M.S.",
+            image: "",
+            bio: "Developed computer vision and machine learning solutions using ROS, Python, and Linux systems.",
+            linkedin: "https://www.linkedin.com/in/kenneyanjali/",
+            email: "jalraibhardwaj@gmail.com"
         }
     ]
 };
