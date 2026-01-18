@@ -453,8 +453,9 @@ const EQUIPMENT = [
     { name: "Xsens IMU", description: "Motion tracking", docLink: "https://www.movella.com/sensor-modules" },
     { name: "NVIDIA RTX 5090", description: "Neural network training", docLink: "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/" },
     { name: "TrailMaster 200E-XRS", description: "Research vehicle platform", docLink: "https://gokartsusa.com/Trailmaster-200E-XRS-Gokart-Buggy.aspx" }
+];
 
-    // ============================================================================
+// ============================================================================
 // SPONSORS & PARTNERS
 // ============================================================================
 // Add logos to /images/sponsors/ folder
