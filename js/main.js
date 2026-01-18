@@ -484,6 +484,140 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ============================================================================
+// SPONSORS SECTION RENDERING
+// ============================================================================
+
+function renderSponsorsSection() {
+    const sponsorsContainer = document.getElementById('sponsors-container');
+    if (!sponsorsContainer) return;
+    
+    // Check if SPONSORS exists and has items
+    if (typeof SPONSORS === 'undefined' || SPONSORS.length === 0) {
+        sponsorsContainer.innerHTML = `
+            <div class="sponsors-placeholder">
+                <p>Partner logos coming soon</p>
+            </div>
+        `;
+        return;
+    }
+
+    const sponsorsHtml = SPONSORS.map(sponsor => {
+        const hasLogo = sponsor.logo && sponsor.logo.length > 0;
+        const logoHtml = hasLogo 
+            ? `<img src="${sponsor.logo}" alt="${sponsor.name} logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+               <div class="sponsor-fallback" style="display:none;">${sponsor.name.charAt(0)}</div>`
+            : `<div class="sponsor-fallback">${sponsor.name.charAt(0)}</div>`;
+        
+        return `
+            <a href="${sponsor.url}" target="_blank" class="sponsor-card fade-in" title="${sponsor.description}">
+                <div class="sponsor-logo">
+                    ${logoHtml}
+                </div>
+                <div class="sponsor-info">
+                    <h4>${sponsor.name}</h4>
+                    <span class="sponsor-type">${sponsor.type}</span>
+                </div>
+            </a>
+        `;
+    }).join('');
+
+    sponsorsContainer.innerHTML = sponsorsHtml;
+}
+
+// ============================================================================
+// MEDIA SECTION RENDERING
+// ============================================================================
+
+function renderMediaSection() {
+    const videoContainer = document.getElementById('video-container');
+    if (!videoContainer) return;
+    
+    // Check if MEDIA_CONTENT exists
+    if (typeof MEDIA_CONTENT === 'undefined') return;
+    
+    // If we have a YouTube video ID, embed it
+    if (MEDIA_CONTENT.featuredVideoId && MEDIA_CONTENT.featuredVideoId.length > 0) {
+        videoContainer.innerHTML = `
+            <iframe 
+                src="https://www.youtube.com/embed/${MEDIA_CONTENT.featuredVideoId}?rel=0" 
+                title="${MEDIA_CONTENT.videoTitle}"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        `;
+    }
+    // If we have a direct video URL, use video element
+    else if (MEDIA_CONTENT.featuredVideoUrl && MEDIA_CONTENT.featuredVideoUrl.length > 0) {
+        videoContainer.innerHTML = `
+            <video controls poster="images/video-poster.jpg">
+                <source src="${MEDIA_CONTENT.featuredVideoUrl}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        `;
+    }
+    // Otherwise keep the placeholder (already in HTML)
+}
+
+// ============================================================================
+// ANIMATED STAT COUNTERS
+// ============================================================================
+
+function initAnimatedCounters() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    if (statNumbers.length === 0) return;
+    
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px'
+    };
+    
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    // Observe all stat numbers after a small delay to ensure they're rendered
+    setTimeout(() => {
+        document.querySelectorAll('.stat-number').forEach(el => {
+            counterObserver.observe(el);
+        });
+    }, 200);
+}
+
+function animateCounter(element) {
+    const text = element.textContent;
+    const hasPlus = text.includes('+');
+    const numericPart = parseInt(text.replace(/[^0-9]/g, ''));
+    
+    if (isNaN(numericPart)) return;
+    
+    const duration = 2000; // 2 seconds
+    const steps = 60;
+    const stepDuration = duration / steps;
+    let currentStep = 0;
+    
+    const interval = setInterval(() => {
+        currentStep++;
+        const progress = currentStep / steps;
+        // Ease out cubic for smooth deceleration
+        const easedProgress = 1 - Math.pow(1 - progress, 3);
+        const currentValue = Math.floor(easedProgress * numericPart);
+        
+        element.textContent = currentValue + (hasPlus ? '+' : '');
+        
+        if (currentStep >= steps) {
+            clearInterval(interval);
+            element.textContent = text; // Restore original text
+        }
+    }, stepDuration);
+}
+
+// ============================================================================
 // UTILITY FUNCTIONS
 // ============================================================================
 
