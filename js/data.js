@@ -453,4 +453,65 @@ const EQUIPMENT = [
     { name: "Xsens IMU", description: "Motion tracking", docLink: "https://www.movella.com/sensor-modules" },
     { name: "NVIDIA RTX 5090", description: "Neural network training", docLink: "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/" },
     { name: "TrailMaster 200E-XRS", description: "Research vehicle platform", docLink: "https://gokartsusa.com/Trailmaster-200E-XRS-Gokart-Buggy.aspx" }
+
+    // ============================================================================
+// SPONSORS & PARTNERS
+// ============================================================================
+// Add logos to /images/sponsors/ folder
+// Types: "university", "industry", "organization", "faculty"
+
+const SPONSORS = [
+    {
+        name: "Cal Poly Pomona",
+        type: "university",
+        logo: "images/sponsors/cpp_logo.png",
+        url: "https://www.cpp.edu/",
+        description: "Our home university"
+    },
+    {
+        name: "College of Engineering",
+        type: "university", 
+        logo: "images/sponsors/coe_logo.png",
+        url: "https://www.cpp.edu/engineering/",
+        description: "Supporting engineering excellence"
+    },
+    {
+        name: "Department of Mechanical Engineering",
+        type: "university",
+        logo: "images/sponsors/me_logo.png",
+        url: "https://www.cpp.edu/engineering/me/",
+        description: "Faculty support and lab space"
+    }
+    // Add more sponsors as needed:
+    // {
+    //     name: "Company Name",
+    //     type: "industry",
+    //     logo: "images/sponsors/company_logo.png",
+    //     url: "https://company.com",
+    //     description: "Hardware sponsor"
+    // }
+];
+
+
+// ============================================================================
+// MEDIA & VIDEO CONTENT
+// ============================================================================
+// Add YouTube video IDs or direct video URLs
+
+const MEDIA_CONTENT = {
+    // YouTube video ID (the part after v= in YouTube URL)
+    // Example: For https://www.youtube.com/watch?v=dQw4w9WgXcQ, use "dQw4w9WgXcQ"
+    featuredVideoId: "",  // Add your YouTube video ID here
+    
+    // Or use a direct video file
+    featuredVideoUrl: "",  // e.g., "videos/avl_demo.mp4"
+    
+    // Video details
+    videoTitle: "AVL Autonomous Driving Demo",
+    videoDescription: "Watch our autonomous vehicles navigate campus roads",
+    
+    // Instagram
+    instagramHandle: "autovehiclelab",
+    instagramUrl: "https://www.instagram.com/autovehiclelab/"
+};
 ];
