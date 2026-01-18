@@ -12,8 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
     renderImpactSection();
     renderHiringSection();
     renderLearnSection();
+    renderSponsorsSection();
+    renderMediaSection();
     renderFooter();
     initScrollAnimations();
+    initAnimatedCounters();
     initParticles();
 });
 
