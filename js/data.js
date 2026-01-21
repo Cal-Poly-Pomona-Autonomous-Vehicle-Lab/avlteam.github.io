@@ -505,7 +505,7 @@ const MEDIA_CONTENT = {
     featuredVideoId: "",  // Add your YouTube video ID here
     
     // Or use a direct video file
-    featuredVideoUrl: "",  // e.g., "videos/avl_demo.mp4"
+    featuredVideoUrl: "videos/AVL_Video_9-10-25.mp4",  // e.g., "videos/avl_demo.mp4"
     
     // Video details
     videoTitle: "AVL Autonomous Driving Demo",
