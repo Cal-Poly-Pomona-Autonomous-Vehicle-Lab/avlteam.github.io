@@ -145,7 +145,7 @@ const TEAM_MEMBERS = {
         {
             name: "Samuel Andryasian",
             role: "Club Member - Mechanical Engineering",
-            image: "placeholder",
+            image: "images/team/AVL_Samuel_Andryasian.jpg",
             bio: "Contributing to mechanical engineering research and development for autonomous vehicle systems.",
             linkedin: "https://www.linkedin.com/in/samuelandryasian/",
             email: "samuel.81725@gmail.com"
@@ -166,7 +166,7 @@ const TEAM_MEMBERS = {
         {
             name: "William Masri",
             role: "Former Research Assistant - Electrical Engineering",
-            image: "placeholder",
+            image: "images/team/AVL_William_Masri.jpg",
             bio: "Developed and integrated autonomous vehicle components, specializing in circuit design and embedded systems.",
             linkedin: "https://www.linkedin.com/in/williammasri15/",
             email: "masriw15@yahoo.com"
@@ -174,7 +174,7 @@ const TEAM_MEMBERS = {
         {
             name: "Matthew Jabson",
             role: "Former Lab Admin - Mechanical Engineering M.S.",
-            image: "placeholder",
+            image: "images/team/AVL_Matthew_Jabson.jpg",
             bio: "Managed lab operations and developed autonomous systems using ROS, computer vision, and sensor integration.",
             linkedin: "https://www.linkedin.com/in/matthewjabson/",
             email: "matthewjabson@gmail.com"
@@ -182,7 +182,7 @@ const TEAM_MEMBERS = {
         {
             name: "Adam Sorenson",
             role: "Engineer at Honda Racing Corporation USA - Mechanical Engineering M.S.",
-            image: "placeholder",
+            image: "images/team/AVL_Adam_Sorenson.jpg",
             bio: "Designed autonomous and robotic systems with expertise in embedded systems and mechanical component design.",
             linkedin: "https://www.linkedin.com/in/asorenson/",
             email: "adam.d.sorenson@gmail.com"
@@ -190,7 +190,7 @@ const TEAM_MEMBERS = {
         {
             name: "Johann Fernandez",
             role: "Former Research Assistant - Computer Science",
-            image: "placeholder",
+            image: "images/team/AVL_Johann_Fernandez.jpg",
             bio: "Developed end-to-end neural networks for autonomous driving using behavior cloning and PyTorch.",
             linkedin: "https://www.linkedin.com/in/johann-fernandez/",
             email: "fernandezjohann08@gmail.com"
@@ -198,7 +198,7 @@ const TEAM_MEMBERS = {
         {
             name: "Abhishek Vishwakarma",
             role: "Former Research Assistant - Computer Science M.S.",
-            image: "placeholder",
+            image: "images/team/AVL_Abhishek_Vishwakarma.jpg",
             bio: "Engineered real-time perception pipelines using YOLOv8 and developed custom ROS2 navigation systems.",
             linkedin: "https://www.linkedin.com/in/karma218/",
             email: "abhishekvishwakarma218@gmail.com"
@@ -206,7 +206,7 @@ const TEAM_MEMBERS = {
         {
             name: "Calvin Chu",
             role: "Robotics Systems Engineer at Promaxo - Mechanical Engineering M.S.",
-            image: "placeholder",
+            image: "images/team/AVL_Calvin_Chu.jpg",
             bio: "Designed control algorithms for autonomous parking and developed Gazebo simulations with ROS2 and NAV2 integration.",
             linkedin: "https://www.linkedin.com/in/calvin-chu-321650226/",
             email: "calchu54321@gmail.com"
@@ -214,7 +214,7 @@ const TEAM_MEMBERS = {
         {
             name: "Yeachan Okh",
             role: "Former Research Assistant - Computer Engineering M.S.",
-            image: "placeholder",
+            image: "images/team/AVL_Yeachan_Okh.jpg",
             bio: "Developed autonomous motor control systems using ROS2 and simulated LiDAR sensing for SLAM navigation.",
             linkedin: "https://www.linkedin.com/in/yeachanokh/",
             email: "yeachanokh@gmail.com"
@@ -222,7 +222,7 @@ const TEAM_MEMBERS = {
         {
             name: "Anjali Rai",
             role: "Former Research Assistant - Computer Science M.S.",
-            image: "placeholder",
+            image: "images/team/AVL_Anjali_Rai.jpg",
             bio: "Developed computer vision and machine learning solutions using ROS, Python, and Linux systems.",
             linkedin: "https://www.linkedin.com/in/kenneyanjali/",
             email: "jalraibhardwaj@gmail.com"
