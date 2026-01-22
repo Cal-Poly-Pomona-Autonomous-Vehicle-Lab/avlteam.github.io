@@ -367,49 +367,126 @@ const ACHIEVEMENTS = [
 
 const LEARNING_RESOURCES = [
     {
+        title: "Vehicle Dynamics",
+        type: "Lecture Series",
+        description: "Comprehensive vehicle dynamics covering quarter car models, steering behavior, and suspension effects.",
+        level: "Intermediate",
+        docLink: "",
+        modules: [
+            "Module 1 – Introduction",
+            "Module 2 – Quarter Car Model - 1DOF",
+            "Module 3 – Quarter Car Model – 2DOF",
+            "Module 4 – Half Vehicle Model – Rotational DOF",
+            "Module 5 – Low Speed Steady State Turning",
+            "Module 6 – High Speed Cornering",
+            "Module 7 – Characteristic Speed and Critical Speed",
+            "Module 8 – Lateral Acceleration Gain",
+            "Module 9 – Yaw Velocity and Yaw Rate Gain",
+            "Module 10 – Side Slip Angle",
+            "Module 11 – Neutral Steer Point",
+            "Module 12 – Suspension Effects on Cornering"
+        ]
+    },
+    {
+        title: "Electric Vehicle & Energy Storage",
+        type: "Lecture Series",
+        description: "Electric vehicle fundamentals including motor types, charging systems, and battery technologies.",
+        level: "Intermediate",
+        docLink: "",
+        modules: [
+            "Module 1 – Basic Concepts of Electric Vehicles",
+            "Module 2 – Induction Motor as EV Drive",
+            "Module 3 – Fundamentals of Induction Motor Speed Control in EV",
+            "Module 4 – Basic Concepts of Permanent Magnet Synchronous Motors",
+            "Module 5 – Permanent Magnet Brushless AC Motor as EV Drive",
+            "Module 6 – Permanent Magnet Brushless DC Motor as EV Drive",
+            "Module 7 – EV Charging Standards and Equipment",
+            "Module 8 – Converters for EV Wired Charging",
+            "Module 9 – EV Bi-directional Charging",
+            "Module 10 – Regenerative Braking in EV",
+            "Module 11 – Fundamentals of Energy Storage Technologies",
+            "Module 12 – Li-ion Batteries in EV"
+        ]
+    },
+    {
+        title: "Practical Application of Electric Motors",
+        type: "Lecture Series",
+        description: "Hands-on electrical machine analysis including power measurement, generators, and motor characteristics.",
+        level: "Intermediate",
+        docLink: "",
+        modules: [
+            "Module 1 – Power Measurement",
+            "Module 2 – Balanced and Unbalanced 3 Phase Measurement",
+            "Module 3 – Power Factor",
+            "Module 4 – DC Generator Characteristics",
+            "Module 5 – Synchronous Generator Characteristics",
+            "Module 6 – Synchronous Motor",
+            "Module 7 – Induction Motor",
+            "Module 8 – Analysis of a Power System with Electric Machines"
+        ]
+    },
+    {
+        title: "Computer Vision and Image Processing",
+        type: "Lecture Series",
+        description: "Digital image fundamentals, spatial and frequency domain enhancement, and image restoration techniques.",
+        level: "Advanced",
+        docLink: "",
+        modules: [
+            "Module 1.1 – Introduction 1",
+            "Module 1.2 – Introduction 2",
+            "Module 1.3 – Introduction 3",
+            "Module 2.1 – Digital Image Fundamentals 1",
+            "Module 2.2 – Digital Image Fundamentals 2",
+            "Module 3.1 – Image Enhancement in a Spatial Domain 1",
+            "Module 3.2 – Image Enhancement in a Spatial Domain 2",
+            "Module 3.3 – Image Enhancement in a Spatial Domain 3",
+            "Module 3.4 – Image Enhancement in a Spatial Domain 4",
+            "Module 3.5 – Image Enhancement in a Spatial Domain 5",
+            "Module 3.6 – Image Enhancement in a Spatial Domain 6",
+            "Module 4.1 – Image Enhancement in a Frequency Domain 1",
+            "Module 4.2 – Image Enhancement in a Frequency Domain 2",
+            "Module 4.3 – Image Enhancement in a Frequency Domain 3",
+            "Module 4.4 – Image Enhancement in a Frequency Domain 4",
+            "Module 4.5 – Image Enhancement in a Frequency Domain 5",
+            "Module 4.6 – Image Enhancement in a Frequency Domain 6",
+            "Module 5.1 – Image Restoration 1",
+            "Module 5.2 – Image Restoration 2",
+            "Module 5.3 – Image Restoration 3"
+        ]
+    },
+    {
         title: "ROS2 & Software Integration",
         type: "Hands-on Lab",
         description: "Learn advanced robotics software development using ROS2 for autonomous vehicle systems.",
         level: "Intermediate",
-        docLink: "https://docs.ros.org/en/humble/Tutorials.html"
-    },
-    {
-        title: "Machine Learning for Autonomy",
-        type: "Technical Deep-Dive",
-        description: "Apply ML techniques for perception, decision-making, and control in autonomous systems.",
-        level: "Advanced",
-        docLink: "https://www.coursera.org/specializations/self-driving-cars"
+        docLink: "https://docs.ros.org/en/humble/Tutorials.html",
+        modules: []
     },
     {
         title: "Embedded Systems & Arduino",
         type: "Workshop Series",
         description: "Hands-on experience with embedded systems, power distribution, and vehicle electronics using Arduino.",
         level: "Beginner",
-        docLink: "https://docs.arduino.cc/learn/"
+        docLink: "https://docs.arduino.cc/learn/",
+        modules: []
     },
     {
         title: "Control Theory & PID",
         type: "Technical Deep-Dive",
         description: "Learn control systems design including PID controllers for autonomous vehicle steering and speed control.",
         level: "Advanced",
-        docLink: "https://learnopencv.com/pid-controller-ros-2-carla/"
-    },
-    {
-        title: "Computer Vision & OpenCV",
-        type: "Hands-on Lab",
-        description: "Process camera data for object detection, lane tracking, and environmental perception using OpenCV.",
-        level: "Intermediate",
-        docLink: "https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html"
+        docLink: "https://learnopencv.com/pid-controller-ros-2-carla/",
+        modules: []
     },
     {
         title: "LiDAR & Point Cloud Processing",
         type: "Technical Deep-Dive",
         description: "Work with 3D LiDAR data for mapping, localization, and obstacle detection.",
         level: "Intermediate",
-        docLink: "https://pointclouds.org/documentation/tutorials/"
+        docLink: "https://pointclouds.org/documentation/tutorials/",
+        modules: []
     }
 ];
-
 
 // ============================================================================
 // GENERAL SITE INFORMATION
