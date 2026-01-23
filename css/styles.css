@@ -2203,6 +2203,7 @@ img {
 
 .gratitude-content {
     text-align: center;
+    width: 100%;
 }
 
 .gratitude-content h3 {
@@ -2211,6 +2212,8 @@ img {
     color: var(--white);
     margin-bottom: 1.5rem;
     line-height: 1.4;
+    text-align: center;
+    padding: 0;
 }
 
 .gratitude-content p {
@@ -2218,10 +2221,9 @@ img {
     line-height: 1.8;
     margin-bottom: 1.25rem;
     text-align: center;
-}
-
-.gratitude-content p:last-child {
-    margin-bottom: 0;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .gratitude-signature {
@@ -2231,6 +2233,8 @@ img {
     padding-top: 1rem;
     border-top: 1px solid rgba(0, 102, 255, 0.2);
     margin-top: 1.5rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 @media (max-width: 768px) {
