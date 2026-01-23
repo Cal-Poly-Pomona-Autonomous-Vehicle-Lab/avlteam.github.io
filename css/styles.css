@@ -2155,3 +2155,86 @@ img {
 .workshop-card:has(.modules-list) {
     cursor: default;
 }
+
+/* ============================================================================
+   GRATITUDE / TRIBUTE SECTION
+   ============================================================================ */
+
+#gratitude {
+    background: linear-gradient(180deg, var(--avl-dark) 0%, rgba(26, 13, 171, 0.1) 50%, var(--avl-dark) 100%);
+}
+
+.gratitude-card {
+    background: rgba(26, 13, 171, 0.15);
+    border: 1px solid rgba(0, 102, 255, 0.3);
+    border-radius: 16px;
+    padding: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.gratitude-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--gradient-accent);
+    border-radius: 0 0 3px 3px;
+}
+
+.gratitude-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    color: var(--avl-accent-cyan);
+}
+
+.gratitude-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.gratitude-content p {
+    color: var(--light-gray);
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.gratitude-content p:last-child {
+    margin-bottom: 0;
+}
+
+.gratitude-signature {
+    font-style: italic;
+    color: var(--avl-accent-cyan) !important;
+    text-align: center !important;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 102, 255, 0.2);
+    margin-top: 1.5rem !important;
+}
+
+@media (max-width: 768px) {
+    .gratitude-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .gratitude-content h3 {
+        font-size: 1.25rem;
+    }
+}
