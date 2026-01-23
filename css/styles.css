@@ -2237,6 +2237,11 @@ img {
     margin-right: 0 !important;
 }
 
+.gratitude-card * {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 @media (max-width: 768px) {
     .gratitude-card {
         padding: 2rem 1.5rem;
