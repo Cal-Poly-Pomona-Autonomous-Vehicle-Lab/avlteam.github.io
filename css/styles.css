@@ -1866,6 +1866,18 @@ img {
     flex-shrink: 0;
 }
 
+.video-description {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 102, 255, 0.2);
+}
+
+.video-description p {
+    color: var(--light-gray);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
 /* Instagram single photo - make it fill available space */
 .instagram-single-photo {
     display: block;
