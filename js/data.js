@@ -540,33 +540,19 @@ const EQUIPMENT = [
 
 const SPONSORS = [
     {
-        name: "Cal Poly Pomona",
-        type: "university",
-        logo: "images/sponsors/cpp_logo.png",
-        url: "https://www.cpp.edu/",
-        description: "Our home university"
-    },
-    {
-        name: "College of Engineering",
-        type: "university", 
-        logo: "images/sponsors/coe_logo.png",
-        url: "https://www.cpp.edu/engineering/",
-        description: "Supporting engineering excellence"
-    },
-    {
-        name: "Department of Mechanical Engineering",
-        type: "university",
-        logo: "images/sponsors/me_logo.png",
-        url: "https://www.cpp.edu/engineering/me/",
-        description: "Faculty support and lab space"
+        name: "RoboDK",
+        type: "industry",
+        logo: "images/sponsors/AVL_Robodk_Logo.png",
+        url: "https://robodk.com/index",
+        description: "Simulation and offline programming software for industrial robots"
     }
-    // Add more sponsors as needed:
+    // Add more partners as needed:
     // {
     //     name: "Company Name",
     //     type: "industry",
     //     logo: "images/sponsors/company_logo.png",
     //     url: "https://company.com",
-    //     description: "Hardware sponsor"
+    //     description: "Partner description"
     // }
 ];
 
