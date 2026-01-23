@@ -2078,3 +2078,80 @@ img {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.02); }
 }
+
+.modules-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--avl-accent-cyan);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.modules-toggle:hover {
+    background: rgba(0, 212, 255, 0.2);
+    border-color: var(--avl-accent-cyan);
+}
+
+.modules-toggle .toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.modules-toggle.expanded .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.modules-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modules-list.expanded {
+    max-height: 1500px;
+    padding: 1rem 0;
+}
+
+.modules-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modules-list li:last-child {
+    border-bottom: none;
+}
+
+.modules-list li a {
+    color: var(--light-gray);
+    text-decoration: none;
+    display: block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.modules-list li a:hover {
+    color: var(--avl-accent-cyan);
+    background: rgba(0, 212, 255, 0.1);
+    padding-left: 1rem;
+}
+
+/* Adjust workshop card for modules */
+.workshop-card.clickable {
+    cursor: pointer;
+}
+
+.workshop-card:has(.modules-list) {
+    cursor: default;
+}
