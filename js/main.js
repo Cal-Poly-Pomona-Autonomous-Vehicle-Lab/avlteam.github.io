@@ -302,23 +302,64 @@ function renderLearnSection() {
     const learnContainer = document.getElementById('learn-container');
     if (!learnContainer) return;
 
-    const workshopsHtml = LEARNING_RESOURCES.map(workshop => {
+    const workshopsHtml = LEARNING_RESOURCES.map((workshop, index) => {
         const hasLink = workshop.docLink && workshop.docLink.length > 0;
-        const clickableClass = hasLink ? 'clickable' : '';
-        const clickHint = hasLink ? '<span class="click-hint">Click to learn more →</span>' : '';
+        const hasModules = workshop.modules && workshop.modules.length > 0;
+        const clickableClass = (hasLink && !hasModules) ? 'clickable' : '';
+        
+        // Build modules list if they exist
+        let modulesHtml = '';
+        if (hasModules) {
+            const moduleItems = workshop.modules.map(mod => {
+                if (typeof mod === 'object' && mod.url) {
+                    return `<li><a href="${mod.url}" target="_blank">${mod.title}</a></li>`;
+                } else {
+                    return `<li>${mod}</li>`;
+                }
+            }).join('');
+            
+            modulesHtml = `
+                <div class="modules-toggle" onclick="event.stopPropagation(); toggleModules(${index})">
+                    <span>View ${workshop.modules.length} Modules</span>
+                    <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <ul class="modules-list" id="modules-${index}">
+                    ${moduleItems}
+                </ul>
+            `;
+        }
+        
+        const clickHint = (hasLink && !hasModules) ? '<span class="click-hint">Click to learn more →</span>' : '';
         
         return `
-            <div class="workshop-card fade-in ${clickableClass}" ${hasLink ? `onclick="window.open('${workshop.docLink}', '_blank')"` : ''}>
+            <div class="workshop-card fade-in ${clickableClass}" ${(hasLink && !hasModules) ? `onclick="window.open('${workshop.docLink}', '_blank')"` : ''}>
                 <span class="workshop-level ${workshop.level.toLowerCase()}">${workshop.level}</span>
                 <p class="workshop-type">${workshop.type}</p>
                 <h3>${workshop.title}</h3>
                 <p>${workshop.description}</p>
+                ${modulesHtml}
                 ${clickHint}
             </div>
         `;
     }).join('');
 
     learnContainer.innerHTML = workshopsHtml;
+}
+
+// Toggle modules visibility
+function toggleModules(index) {
+    const modulesList = document.getElementById(`modules-${index}`);
+    const toggleBtn = modulesList.previousElementSibling;
+    
+    if (modulesList.classList.contains('expanded')) {
+        modulesList.classList.remove('expanded');
+        toggleBtn.classList.remove('expanded');
+    } else {
+        modulesList.classList.add('expanded');
+        toggleBtn.classList.add('expanded');
+    }
 }
 
 // ============================================================================
