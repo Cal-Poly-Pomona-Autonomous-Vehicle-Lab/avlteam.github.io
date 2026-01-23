@@ -2213,7 +2213,7 @@ img {
     color: var(--light-gray);
     line-height: 1.8;
     margin-bottom: 1.25rem;
-    text-align: left;
+    text-align: center;
 }
 
 .gratitude-content p:last-child {
