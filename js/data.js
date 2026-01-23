@@ -112,7 +112,7 @@ const TEAM_MEMBERS = {
         {
             name: "Deyung Sun",
             role: "Research Assistant - Mechanical Engineering M.S.",
-            image: "placeholder",
+            image: "images/team/AVL_Deyung_Sun.jpg",
             bio: "Developing Gazebo simulations for autonomous vehicle testing using ROS2 Jazzy.",
             linkedin: "https://www.linkedin.com/in/deyung-sun-634780318",
             github: "https://github.com/deyungOAO",
