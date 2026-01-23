@@ -542,7 +542,7 @@ const SPONSORS = [
     {
         name: "RoboDK",
         type: "industry",
-        logo: "images/sponsors/AVL_Robodk_Logo.png",
+        logo: "images/sponsors/AVL_Robodk_Logo.jpeg",
         url: "https://robodk.com/index",
         description: "Simulation and offline programming software for industrial robots"
     }
