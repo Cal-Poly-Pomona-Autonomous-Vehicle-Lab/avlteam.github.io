@@ -1996,8 +1996,8 @@ img {
 }
 
 .sponsor-logo {
-    width: 200px; /* Much wider */
-    height: 100px; /* Taller */
+    width: 280px; /* Even wider for full logo */
+    height: 120px; /* Taller */
     display: flex;
     align-items: center;
     justify-content: center;
