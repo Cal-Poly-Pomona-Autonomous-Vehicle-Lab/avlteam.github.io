@@ -142,6 +142,14 @@ const TEAM_MEMBERS = {
             linkedin: "https://www.linkedin.com/in/changwe-musonda-32642a1a8/", 
             email: "bradley.musonda@gmail.com" 
         },
+        { 
+            name: "Christian Gomez", 
+            role: "Research Assistant - Computer Engineering", 
+            image: "images/team/AVL_Christian_Gomez.jpg", 
+            bio: "Focused on computer vision for autonomous vehicles, integrating perception pipelines for environment understanding.", 
+            linkedin: "linkedin.com/in/christian-gomez-7438b52b6", 
+            email: "" 
+        },
         {
             name: "Samuel Andryasian",
             role: "Club Member - Mechanical Engineering",
