@@ -152,7 +152,7 @@ const TEAM_MEMBERS = {
         },
         {
             name: "Samuel Andryasian",
-            role: "Club Member - Mechanical Engineering",
+            role: "Former President - Mechanical Engineering",
             image: "images/team/AVL_Samuel_Andryasian.jpg",
             bio: "Contributing to mechanical engineering research and development for autonomous vehicle systems.",
             linkedin: "https://www.linkedin.com/in/samuelandryasian/",
@@ -173,7 +173,7 @@ const TEAM_MEMBERS = {
         },
         {
             name: "William Masri",
-            role: "Former Research Assistant - Electrical Engineering",
+            role: "Former Electrical Lead - Electrical Engineering",
             image: "images/team/AVL_William_Masri.jpg",
             bio: "Developed and integrated autonomous vehicle components, specializing in circuit design and embedded systems.",
             linkedin: "https://www.linkedin.com/in/williammasri15/",
