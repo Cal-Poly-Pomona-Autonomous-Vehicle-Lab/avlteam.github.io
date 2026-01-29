@@ -501,7 +501,7 @@ section:not(.hero)::before {
 /* Equipment Grid */
 .equipment-section {
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     padding-top: 4rem;
     border-top: 1px solid rgba(0, 102, 255, 0.2);
 }
@@ -1116,10 +1116,13 @@ section:not(.hero)::before {
 
 .footer-links ul {
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 1.5rem;
 }
 
 .footer-links li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0;
 }
 
 .footer-links a {
