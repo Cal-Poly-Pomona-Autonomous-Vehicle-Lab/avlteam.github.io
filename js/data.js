@@ -148,11 +148,11 @@ const TEAM_MEMBERS = {
             image: "images/team/AVL_Christian_Gomez.jpg", 
             bio: "Focused on computer vision for autonomous vehicles, integrating perception pipelines for environment understanding.", 
             linkedin: "linkedin.com/in/christian-gomez-7438b52b6", 
-            email: "" 
+            email: "gomez.christian1579@gmail.com" 
         },
         {
             name: "Samuel Andryasian",
-            role: "Former President - Mechanical Engineering",
+            role: "Former Vice President - Mechanical Engineering",
             image: "images/team/AVL_Samuel_Andryasian.jpg",
             bio: "Contributing to mechanical engineering research and development for autonomous vehicle systems.",
             linkedin: "https://www.linkedin.com/in/samuelandryasian/",
