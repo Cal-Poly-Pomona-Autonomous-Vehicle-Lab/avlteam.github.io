@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Autonomous Vehicle Laboratory (AVL) at Cal Poly Pomona - Advancing autonomous vehicle research through hands-on innovation">
+    <meta name="keywords" content="autonomous vehicles, self-driving cars, LiDAR, computer vision, robotics, Cal Poly Pomona, research lab">
+    <meta name="author" content="AVL Team">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Autonomous Vehicle Laboratory | Cal Poly Pomona">
+    <meta property="og:description" content="Advancing autonomous vehicle research through hands-on innovation">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/AVL_Blue_Text_1200px-630px.jpg">
+
+    <title>AVL | Autonomous Vehicle Laboratory - Cal Poly Pomona</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/AVL_Logo_Blue_Dots.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ================================================================
+         NAVIGATION
+         ================================================================ -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/AVL_Text_No_Background_400px-115px.png" alt="AVL Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="join.html">Join Our Team</a></li>
+                <li><a href="research.html">Explore Our Work</a></li>
+            </ul>
+
+            <!-- Social links in navbar - always visible -->
+            <div class="nav-social">
+                <a href="https://discord.gg/2D5fEg94eM" target="_blank" aria-label="Discord" title="Join our Discord">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/autovehiclelab/" target="_blank" aria-label="Instagram" title="Follow us on Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Cal-Poly-Pomona-Autonomous-Vehicle-Lab" target="_blank" aria-label="GitHub" title="Check out our code on GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================================================================
+         HERO SECTION
+         ================================================================ -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="particles"></div>
+
+        <div class="hero-content">
+            <img src="images/AVL_Text_No_Background_800px-250px.png" alt="AVL - Autonomous Vehicle Laboratory" class="hero-logo">
+
+            <h1 class="hero-title">AUTONOMOUS VEHICLE LABORATORY</h1>
+
+            <p class="hero-university">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                <a href="https://www.cpp.edu/engineering/autonomous-systems/avl-team.shtml" target="_blank">
+                    Cal Poly Pomona | Official Site
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-left: 4px;">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </p>
+
+            <p class="hero-subtitle">
+                Advancing autonomous vehicle research through hands-on innovation.
+                Building complete autonomous systems from the ground up - hardware, software, and everything in between.
+            </p>
+
+            <div class="hero-cta">
+                <a href="join.html" class="btn btn-primary">Join Our Team</a>
+                <a href="research.html" class="btn btn-secondary">Explore Our Work</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         ABOUT SECTION
+         ================================================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About the Lab</h2>
+                <p>Where research meets real-world application</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card fade-in">
+                    <h3>Our Mission</h3>
+                    <p>The Autonomous Vehicle Laboratory (AVL) at Cal Poly Pomona is dedicated to advancing autonomous vehicle technology through cutting-edge research and hands-on education. As both a research lab and student organization, we bridge the gap between academic theory and real-world application.</p>
+                </div>
+
+                <div class="about-card fade-in">
+                    <h3>Our Vision</h3>
+                    <p>We envision a future where autonomous vehicles are safe, accessible, and integrated into everyday life. Our work contributes to this vision by developing novel perception systems, path planning algorithms, and digital twin technologies that push the boundaries of what's possible.</p>
+                </div>
+
+                <div class="about-card fade-in">
+                    <h3>Our Approach</h3>
+                    <p>True to Cal Poly Pomona's "Learn by Doing" philosophy, every member gets hands-on experience with real autonomous vehicle hardware including Velodyne LiDAR, stereo cameras, RTK-GPS, and more. We believe the best way to learn is to build.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         PHOTO GALLERY SECTION
+         ================================================================ -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <p>See our team in action</p>
+            </div>
+
+            <div class="gallery-slideshow">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="images/gallery/vehicles-team.jpg" alt="AVL team with autonomous vehicles" loading="lazy">
+                        <div class="slide-caption">Our team with AVL-001 and AVL-002 autonomous vehicles</div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery/team-presentation.jpg" alt="AVL presentation at event" loading="lazy">
+                        <div class="slide-caption">Presenting our research at a campus showcase</div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery/kellogg-presentation.jpg" alt="AVL presentation at Kellogg House" loading="lazy">
+                        <div class="slide-caption">AVL presentation at Kellogg House Pomona</div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery/team-photo.jpg" alt="AVL team members" loading="lazy">
+                        <div class="slide-caption">AVL team members at a conference</div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery/AVL_Poster_001_002.jpg" alt="AVL poster detailing car 1 and 2" loading="lazy">
+                        <div class="slide-caption">AVL poster detailing  AVL1 and AVL2</div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery/AVL_Gallery_OutsideSCAIR.jpg" alt="AVL team at SCAIR Conference" loading="lazy">
+                        <div class="slide-caption">AVL Team at SCAIR Conference 2025</div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery/AVL_Gallery_SCAIR2025.jpg" alt="Research presentation at SCAIR" loading="lazy">
+                        <div class="slide-caption">Presenting our research on Day-Night Autonomous Driving at SCAIR</div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery/AVL_Gallery_DTS.jpg" alt="Lab collaboration session with DTS " loading="lazy">
+                        <div class="slide-caption">Lab meeting and collaboration session with DTS</div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/gallery/AVL_Gallery_Zoox.JPG" alt="AVL team at Zoox booth CES 2026" loading="lazy">
+                        <div class="slide-caption">AVL Team visiting Zoox at CES 2025</div>
+                    </div>
+                </div>
+
+                <!-- Navigation arrows -->
+                <button class="slide-nav prev" onclick="changeSlide(-1)" aria-label="Previous slide">&#10094;</button>
+                <button class="slide-nav next" onclick="changeSlide(1)" aria-label="Next slide">&#10095;</button>
+
+                <!-- Dots -->
+                <div class="slide-dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                    <span class="dot" onclick="goToSlide(3)"></span>
+                    <span class="dot" onclick="goToSlide(4)"></span>
+                    <span class="dot" onclick="goToSlide(5)"></span>
+                    <span class="dot" onclick="goToSlide(6)"></span>
+                    <span class="dot" onclick="goToSlide(7)"></span>
+                    <span class="dot" onclick="goToSlide(8)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         IMPACT SECTION
+         ================================================================ -->
+    <section class="impact" id="impact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Impact</h2>
+                <p>Measuring our progress in innovation</p>
+            </div>
+
+            <div class="impact-stats" id="stats-container"></div>
+
+            <h3 style="text-align: center; color: var(--avl-accent-cyan); margin-bottom: 2rem;">Key Achievements</h3>
+            <div class="achievements-grid" id="achievements-container"></div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         MEDIA SECTION - Video + Instagram
+         ================================================================ -->
+    <section class="media" id="media">
+        <div class="container">
+            <div class="section-header">
+                <h2>See Us in Action</h2>
+                <p>Videos, updates, and behind-the-scenes content</p>
+            </div>
+
+            <div class="media-grid">
+                <!-- Featured Video -->
+                <div class="media-video">
+                    <div class="video-container">
+                        <video controls poster="images/AVL_Video_Poster.png">
+                            <source src="videos/AVL_Video_9-10-25.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h3>Featured Video</h3>
+                    <p>Watch our autonomous vehicles navigate campus roads</p>
+
+                    <div class="video-description">
+                        <p>Our autonomous go-kart demonstrates real-time path planning and obstacle avoidance as it navigates Cal Poly Pomona's campus. This platform integrates LiDAR sensing, computer vision, and advanced control algorithms to achieve safe, reliable autonomous navigation in complex environments.</p>
+                    </div>
+                </div>
+
+                <!-- Instagram Feed -->
+                <div class="media-social">
+                    <div class="instagram-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <span>@autovehiclelab</span>
+                    </div>
+
+                    <p style="text-align: center; margin: 1rem 0 1.5rem; color: #8892a6;">
+                        Follow us on Instagram for the latest updates, behind-the-scenes content, and project highlights!
+                    </p>
+
+                    <!-- Single Instagram Photo -->
+                    <a href="https://www.instagram.com/autovehiclelab/" target="_blank" class="instagram-single-photo">
+                        <img src="images/instagram/AVL_Instagram_Post1.JPG" alt="AVL Instagram - Latest post">
+                        <div class="instagram-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <a href="https://www.instagram.com/autovehiclelab/" target="_blank" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                            Follow @autovehiclelab
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         SPONSORS SECTION
+         ================================================================ -->
+    <section class="sponsors" id="sponsors">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industry Partners</h2>
+                <p>Partners and organizations that make our research possible</p>
+            </div>
+
+            <div class="sponsors-grid">
+                <!-- RoboDK Partner -->
+                <a href="https://robodk.com/index" target="_blank" class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <img src="images/sponsors/AVL_RoboDK_Logo.png" alt="RoboDK Logo">
+                    </div>
+                    <div class="sponsor-info">
+                        <h4>RoboDK</h4>
+                        <span class="sponsor-type">Industry</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="sponsors-cta">
+                <p>Interested in supporting autonomous vehicle research at Cal Poly Pomona?</p>
+                <a href="mailto:autovehiclelab@gmail.com" class="btn btn-primary">Become a Partner</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         GRATITUDE SECTION
+         ================================================================ -->
+    <section class="impact" id="gratitude">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Heartfelt Gratitude</h2>
+                <p>To Dr. Ganpat and Manju Patel</p>
+            </div>
+
+            <div class="gratitude-card">
+                <div class="gratitude-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+
+                <div class="gratitude-content">
+                    <h3>Ganpat and Manju Center for International Collaboration and Innovation</h3>
+
+                    <p>The establishment of the Ganpat and Manju Center for International Collaboration and Innovation is a testament to the generosity and vision of engineering alumnus Dr. Ganpat Patel and his wife, Manju Patel. With their charitable contribution of $1 million to the Cal Poly Pomona Philanthropic Foundation, the Patels have significantly enhanced the capabilities and reputation of Cal Poly Pomona's College of Engineering.</p>
+
+                    <p>This center stands as a beacon of academic excellence, fostering a collaborative international exchange that emphasizes solution-based teaching, cutting-edge innovation, and impactful research. It is dedicated to promoting greater student success and nurturing the entrepreneurial spirit, providing our students and faculty with unparalleled opportunities to excel and lead in their fields.</p>
+
+                    <p class="gratitude-signature">We extend our deepest gratitude to Dr. Ganpat and Manju Patel for their unwavering support and commitment to advancing engineering education and inspiring future generations of engineers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         FOOTER
+         ================================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/AVL_Text_No_Background_400px-115px.png" alt="AVL Logo" class="footer-logo-large">
+                    <p>Autonomous Vehicle Laboratory at Cal Poly Pomona. Advancing autonomous vehicle research through hands-on innovation.</p>
+
+                    <div class="footer-social-large">
+                        <a href="https://discord.gg/2D5fEg94eM" target="_blank" aria-label="Discord">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+                            </svg>
+                            <span>Discord</span>
+                        </a>
+                        <a href="https://www.instagram.com/autovehiclelab/" target="_blank" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://github.com/Cal-Poly-Pomona-Autonomous-Vehicle-Lab" target="_blank" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                           <a href="mailto:autovehiclelab@gmail.com" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                            </svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="join.html">Join Our Team</a></li>
+                        <li><a href="research.html">Explore Our Work</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#impact">Impact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Research</h4>
+                    <ul>
+                        <li><a href="research.html#publications">Publications</a></li>
+                        <li><a href="research.html">LiDAR Processing</a></li>
+                        <li><a href="research.html">Computer Vision</a></li>
+                        <li><a href="research.html">Path Planning</a></li>
+                        <li><a href="research.html">Sensor Fusion</a></li>
+                        <li><a href="research.html">Digital Twins</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links footer-contact">
+                    <h4>Contact</h4>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span><a href="mailto:autovehiclelab@gmail.com">autovehiclelab@gmail.com</a></span>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Building 9, Room 101, Cal Poly Pomona</span>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                        </svg>
+                        <a href="https://www.cpp.edu/engineering/autonomous-systems/avl-team.shtml" target="_blank">CPP Official Website</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> Autonomous Vehicle Laboratory. All rights reserved.</p>
+                <p class="footer-tagline">Built with 💙 by the AVL Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript - Data first, then main -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

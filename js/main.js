@@ -1,0 +1,864 @@
+/**
+ * AVL Website - Main JavaScript
+ * Handles dynamic content rendering, navigation, and animations
+ */
+
+// Wait for DOM to be ready
+document.addEventListener('DOMContentLoaded', () => {
+    initNavigation();
+    renderEquipmentSection();
+    renderTeamSection();
+    renderResearchSection();
+    renderImpactSection();
+    renderPublicationsSection();
+    renderHiringSection();
+    renderLearnSection();
+    renderSponsorsSection();
+    renderMediaSection();
+    renderFooter();
+    initScrollAnimations();
+    initAnimatedCounters();
+    initParticles();
+});
+
+// ============================================================================
+// NAVIGATION
+// ============================================================================
+
+function initNavigation() {
+    const navbar = document.querySelector('.navbar');
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const isSubPage = document.querySelector('.page-hero') !== null;
+
+    // On sub-pages, start navbar with scrolled style immediately
+    if (isSubPage && navbar) {
+        navbar.classList.add('scrolled');
+    }
+
+    // Scroll effect for navbar
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100 || isSubPage) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Mobile menu toggle
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+}
+
+// ============================================================================
+// TEAM SECTION RENDERING
+// ============================================================================
+
+function renderTeamSection() {
+    const teamContainer = document.getElementById('team-container');
+    if (!teamContainer) return;
+
+    let html = '';
+
+    // Leadership section
+    if (TEAM_MEMBERS.leadership && TEAM_MEMBERS.leadership.length > 0) {
+        html += `
+            <div class="team-category">
+                <h3>Leadership & Executive Board</h3>
+                <div class="team-grid">
+                    ${TEAM_MEMBERS.leadership.map(member => createTeamCard(member)).join('')}
+                </div>
+            </div>
+        `;
+    }
+
+    // Researchers section
+    if (TEAM_MEMBERS.researchers && TEAM_MEMBERS.researchers.length > 0) {
+        html += `
+            <div class="team-category">
+                <h3>Research Staff</h3>
+                <div class="team-grid">
+                    ${TEAM_MEMBERS.researchers.map(member => createTeamCard(member)).join('')}
+                </div>
+            </div>
+        `;
+    }
+
+    // General members section - renamed to Legacy Members
+    if (TEAM_MEMBERS.members && TEAM_MEMBERS.members.length > 0) {
+        html += `
+            <div class="team-category">
+                <h3>Legacy Members</h3>
+                <div class="team-grid">
+                    ${TEAM_MEMBERS.members.map(member => createTeamCard(member)).join('')}
+                </div>
+            </div>
+        `;
+    }
+
+    teamContainer.innerHTML = html;
+}
+
+function createTeamCard(member) {
+    const initials = member.name.split(' ').map(n => n[0]).join('').toUpperCase();
+    const imageHtml = member.image === 'placeholder' 
+        ? `<div class="placeholder-avatar">${initials}</div>`
+        : `<img src="${member.image}" alt="${member.name}">`;
+
+    let linksHtml = '';
+    if (member.linkedin || member.github || member.email) {
+        linksHtml = '<div class="team-card-links">';
+        if (member.linkedin) {
+            linksHtml += `<a href="${member.linkedin}" target="_blank" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>`;
+        }
+        if (member.github) {
+            linksHtml += `<a href="${member.github}" target="_blank" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>`;
+        }
+        if (member.email) {
+            linksHtml += `<a href="mailto:${member.email}" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                </svg>
+            </a>`;
+        }
+        linksHtml += '</div>';
+    }
+
+    return `
+        <div class="team-card fade-in">
+            <div class="team-card-image">
+                ${imageHtml}
+            </div>
+            <div class="team-card-content">
+                <h4>${member.name}</h4>
+                <p class="team-card-role">${member.role}</p>
+                <p class="team-card-bio">${member.bio}</p>
+                ${linksHtml}
+            </div>
+        </div>
+    `;
+}
+
+// ============================================================================
+// RESEARCH SECTION RENDERING - Now with clickable cards
+// ============================================================================
+
+function renderResearchSection() {
+    const researchContainer = document.getElementById('research-container');
+    if (!researchContainer) return;
+
+    const html = RESEARCH_AREAS.map(area => {
+        const hasLink = area.docLink && area.docLink.length > 0;
+        const clickableClass = hasLink ? 'clickable' : '';
+        const clickHandler = hasLink ? `onclick="window.open('${area.docLink}', '_blank')"` : '';
+        
+        return `
+            <div class="research-card fade-in ${clickableClass}" ${clickHandler}>
+                <div class="research-card-icon">${area.icon || '🔬'}</div>
+                <h3>${area.title}</h3>
+                <p>${area.description}</p>
+                <div class="research-projects">
+                    ${area.projects.map(project => `<span>${project}</span>`).join('')}
+                </div>
+                ${hasLink ? '<div class="click-hint">Click to learn more →</div>' : ''}
+            </div>
+        `;
+    }).join('');
+
+    researchContainer.innerHTML = html;
+}
+
+// ============================================================================
+// IMPACT SECTION RENDERING
+// ============================================================================
+
+function renderImpactSection() {
+    // Render stats
+    const statsContainer = document.getElementById('stats-container');
+    if (statsContainer) {
+        const statsHtml = IMPACT_STATS.map(stat => `
+            <div class="stat-card fade-in">
+                <div class="stat-number">${stat.number}</div>
+                <div class="stat-label">${stat.label}</div>
+            </div>
+        `).join('');
+        statsContainer.innerHTML = statsHtml;
+    }
+
+    // Render achievements with clickable links
+    const achievementsContainer = document.getElementById('achievements-container');
+    if (achievementsContainer) {
+        const achievementsHtml = ACHIEVEMENTS.map(achievement => {
+            const hasLink = achievement.docLink && achievement.docLink.length > 0;
+            const clickableClass = hasLink ? 'clickable' : '';
+            const clickHandler = hasLink ? `onclick="window.open('${achievement.docLink}', '_blank')"` : '';
+            
+            return `
+                <div class="achievement-card fade-in ${clickableClass}" ${clickHandler}>
+                    <div class="achievement-year">${achievement.year}</div>
+                    <h3>${achievement.title}</h3>
+                    <p>${achievement.description}</p>
+                    ${hasLink ? '<div class="click-hint">Click to learn more →</div>' : ''}
+                </div>
+            `;
+        }).join('');
+        achievementsContainer.innerHTML = achievementsHtml;
+    }
+}
+
+// ============================================================================
+// EQUIPMENT SECTION RENDERING
+// ============================================================================
+
+// ============================================================================
+// PUBLICATIONS SECTION RENDERING
+// ============================================================================
+// Renders publication cards from the PUBLICATIONS array in data.js.
+// Supports filtering by publication type (paper, poster, presentation, etc.)
+// and displays author lists, venue badges, abstracts, and resource links.
+
+/**
+ * Tracks the currently active publication filter.
+ * "all" shows every publication; other values match the publication's type field.
+ */
+let activePublicationFilter = 'all';
+
+/**
+ * Renders the entire publications section including filter buttons and cards.
+ * Gracefully exits if the container element is missing or PUBLICATIONS is undefined.
+ */
+function renderPublicationsSection() {
+    const container = document.getElementById('publications-container');
+    const filtersContainer = document.getElementById('publications-filters');
+    if (!container) return;
+
+    // Guard against missing data
+    if (typeof PUBLICATIONS === 'undefined' || PUBLICATIONS.length === 0) {
+        container.innerHTML = '<p style="text-align:center; color: var(--light-gray);">Publications coming soon.</p>';
+        return;
+    }
+
+    // --- Build filter buttons from unique publication types ---
+    if (filtersContainer) {
+        // Collect all unique types present in the data
+        const types = [...new Set(PUBLICATIONS.map(p => p.type))];
+        
+        let filtersHtml = `<button class="pub-filter-btn active" onclick="filterPublications('all')">All</button>`;
+        types.forEach(type => {
+            // Capitalize and pluralize the type label for display
+            const label = type.charAt(0).toUpperCase() + type.slice(1) + 's';
+            filtersHtml += `<button class="pub-filter-btn" onclick="filterPublications('${type}')">${label}</button>`;
+        });
+        filtersContainer.innerHTML = filtersHtml;
+    }
+
+    // --- Render the publication cards ---
+    renderPublicationCards(container, 'all');
+}
+
+/**
+ * Renders publication cards into the given container, filtered by type.
+ * @param {HTMLElement} container - The DOM element to render cards into
+ * @param {string} filterType - "all" or a specific publication type string
+ */
+function renderPublicationCards(container, filterType) {
+    // Filter publications based on the selected type
+    const filtered = filterType === 'all' 
+        ? PUBLICATIONS 
+        : PUBLICATIONS.filter(p => p.type === filterType);
+
+    // Sort by year descending so newest publications appear first
+    filtered.sort((a, b) => parseInt(b.year) - parseInt(a.year));
+
+    const html = filtered.map(pub => {
+        // Format the author list with commas and proper separation
+        const authorList = pub.authors.join(', ');
+
+        // Build the type badge with a CSS class matching the publication type
+        const typeBadge = `<span class="pub-type-badge pub-type-${pub.type}">${pub.type}</span>`;
+
+        // Build resource links (paper, poster, slides) only if URLs are provided
+        let linksHtml = '';
+        if (pub.paperLink || pub.posterLink || pub.slidesLink) {
+            linksHtml = '<div class="pub-links">';
+            if (pub.paperLink) {
+                linksHtml += `<a href="${pub.paperLink}" target="_blank" class="pub-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                    </svg>
+                    Paper
+                </a>`;
+            }
+            if (pub.posterLink) {
+                linksHtml += `<a href="${pub.posterLink}" target="_blank" class="pub-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                    Poster
+                </a>`;
+            }
+            if (pub.slidesLink) {
+                linksHtml += `<a href="${pub.slidesLink}" target="_blank" class="pub-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    Slides
+                </a>`;
+            }
+            linksHtml += '</div>';
+        }
+
+        // Build the tags row from the publication's keyword tags
+        const tagsHtml = pub.tags.map(tag => `<span class="pub-tag">${tag}</span>`).join('');
+
+        // Assemble the complete publication card
+        return `
+            <div class="publication-card fade-in">
+                <div class="pub-card-header">
+                    ${typeBadge}
+                    <span class="pub-venue-badge">${pub.venueShort}</span>
+                </div>
+                <h3 class="pub-title">${pub.title}</h3>
+                <p class="pub-authors">${authorList}</p>
+                <p class="pub-venue">${pub.venue}, ${pub.year}</p>
+                <p class="pub-abstract">${pub.abstract}</p>
+                <div class="pub-tags">${tagsHtml}</div>
+                ${linksHtml}
+            </div>
+        `;
+    }).join('');
+
+    container.innerHTML = html;
+
+    // Re-trigger scroll animations for newly rendered cards
+    setTimeout(() => {
+        container.querySelectorAll('.fade-in').forEach(el => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            observer.observe(el);
+        });
+    }, 50);
+}
+
+/**
+ * Handles filter button clicks to show/hide publications by type.
+ * Updates the active button state and re-renders the card grid.
+ * @param {string} type - The publication type to filter by, or "all"
+ */
+function filterPublications(type) {
+    activePublicationFilter = type;
+    
+    // Update active state on all filter buttons
+    document.querySelectorAll('.pub-filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+
+    // Re-render the cards with the selected filter
+    const container = document.getElementById('publications-container');
+    if (container) {
+        renderPublicationCards(container, type);
+    }
+}
+
+
+// ============================================================================
+// EQUIPMENT SECTION RENDERING
+// ============================================================================
+
+function renderEquipmentSection() {
+    const equipmentContainer = document.getElementById('equipment-container');
+    if (!equipmentContainer) return;
+
+    const equipmentHtml = EQUIPMENT.map(item => {
+        const hasLink = item.docLink && item.docLink.length > 0;
+        const clickableClass = hasLink ? 'clickable' : '';
+        const clickHandler = hasLink ? `onclick="window.open('${item.docLink}', '_blank')"` : '';
+        
+        return `
+            <div class="equipment-item fade-in ${clickableClass}" ${clickHandler}>
+                <h4>${item.name}</h4>
+                <p>${item.description}</p>
+                ${hasLink ? '<div class="click-hint">Click to learn more →</div>' : ''}
+            </div>
+        `;
+    }).join('');
+
+    equipmentContainer.innerHTML = equipmentHtml;
+}
+
+
+// ============================================================================
+// HIRING SECTION RENDERING
+// ============================================================================
+
+function renderHiringSection() {
+    const positionsContainer = document.getElementById('positions-container');
+    if (!positionsContainer) return;
+
+    if (!HIRING_INFO.isHiring) {
+        const hiringSection = document.getElementById('hiring');
+        if (hiringSection) hiringSection.style.display = 'none';
+        return;
+    }
+
+    const positionsHtml = HIRING_INFO.positions.map(position => `
+        <div class="position-card fade-in">
+            <span class="position-type">${position.type}</span>
+            <h3>${position.title}</h3>
+            <p>${position.description}</p>
+            <div class="position-requirements">
+                <h4>Requirements</h4>
+                <ul>
+                    ${position.requirements.map(req => `<li>${req}</li>`).join('')}
+                </ul>
+            </div>
+            ${position.applyLink ? `<a href="${position.applyLink}" class="btn btn-secondary" target="_blank">Apply Now</a>` : ''}
+        </div>
+    `).join('');
+
+    positionsContainer.innerHTML = positionsHtml;
+}
+
+
+// ============================================================================
+// LEARN BY DOING SECTION RENDERING
+// ============================================================================
+
+function renderLearnSection() {
+    const learnContainer = document.getElementById('learn-container');
+    if (!learnContainer) return;
+
+    const workshopsHtml = LEARNING_RESOURCES.map((workshop, index) => {
+        const hasLink = workshop.docLink && workshop.docLink.length > 0;
+        const hasModules = workshop.modules && workshop.modules.length > 0;
+        const clickableClass = (hasLink && !hasModules) ? 'clickable' : '';
+        
+        // Build modules list if they exist
+        let modulesHtml = '';
+        if (hasModules) {
+            const moduleItems = workshop.modules.map(mod => {
+                if (typeof mod === 'object' && mod.url) {
+                    return `<li><a href="${mod.url}" target="_blank">${mod.title}</a></li>`;
+                } else {
+                    return `<li>${mod}</li>`;
+                }
+            }).join('');
+            
+            modulesHtml = `
+                <div class="modules-toggle" onclick="event.stopPropagation(); toggleModules(${index})">
+                    <span>View ${workshop.modules.length} Modules</span>
+                    <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <ul class="modules-list" id="modules-${index}">
+                    ${moduleItems}
+                </ul>
+            `;
+        }
+        
+        const clickHint = (hasLink && !hasModules) ? '<span class="click-hint">Click to learn more →</span>' : '';
+        
+        return `
+            <div class="workshop-card fade-in ${clickableClass}" ${(hasLink && !hasModules) ? `onclick="window.open('${workshop.docLink}', '_blank')"` : ''}>
+                <span class="workshop-level ${workshop.level.toLowerCase()}">${workshop.level}</span>
+                <p class="workshop-type">${workshop.type}</p>
+                <h3>${workshop.title}</h3>
+                <p>${workshop.description}</p>
+                ${modulesHtml}
+                ${clickHint}
+            </div>
+        `;
+    }).join('');
+
+    learnContainer.innerHTML = workshopsHtml;
+}
+
+// Toggle modules visibility
+function toggleModules(index) {
+    const modulesList = document.getElementById(`modules-${index}`);
+    const toggleBtn = modulesList.previousElementSibling;
+    
+    if (modulesList.classList.contains('expanded')) {
+        modulesList.classList.remove('expanded');
+        toggleBtn.classList.remove('expanded');
+    } else {
+        modulesList.classList.add('expanded');
+        toggleBtn.classList.add('expanded');
+    }
+}
+
+// ============================================================================
+// FOOTER RENDERING
+// ============================================================================
+
+function renderFooter() {
+    // Update contact info
+    const emailEl = document.getElementById('footer-email');
+    const locationEl = document.getElementById('footer-location');
+    
+    if (emailEl && SITE_INFO.contact.email) {
+        emailEl.innerHTML = `<a href="mailto:${SITE_INFO.contact.email}">${SITE_INFO.contact.email}</a>`;
+    }
+    if (locationEl && SITE_INFO.contact.location) {
+        locationEl.textContent = SITE_INFO.contact.location;
+    }
+
+    // Update social links
+    const socialContainer = document.querySelector('.footer-social');
+    if (socialContainer) {
+        let socialHtml = '';
+        if (SITE_INFO.contact.github) {
+            socialHtml += `<a href="${SITE_INFO.contact.github}" target="_blank" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>`;
+        }
+        if (SITE_INFO.contact.discord) {
+            socialHtml += `<a href="${SITE_INFO.contact.discord}" target="_blank" aria-label="Discord">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+                </svg>
+            </a>`;
+        }
+        if (SITE_INFO.contact.instagram) {
+            socialHtml += `<a href="${SITE_INFO.contact.instagram}" target="_blank" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>`;
+        }
+        if (socialHtml) {
+            socialContainer.innerHTML = socialHtml;
+        }
+    }
+
+    // Update year
+    const yearEl = document.getElementById('current-year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+}
+
+// ============================================================================
+// SCROLL ANIMATIONS
+// ============================================================================
+
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Observe all fade-in elements
+    setTimeout(() => {
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    }, 100);
+}
+
+// ============================================================================
+// PARTICLE EFFECTS - Disabled for performance
+// ============================================================================
+
+function initParticles() {
+    const particlesContainer = document.querySelector('.particles');
+    if (!particlesContainer) return;
+
+    const particleCount = 15;  // Balanced for performance
+    
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 15 + 's';
+        particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+        particlesContainer.appendChild(particle);
+    }
+}
+
+// ============================================================================
+// PHOTO GALLERY SLIDESHOW
+// ============================================================================
+
+let currentSlide = 0;
+let slideInterval;
+
+function initSlideshow() {
+    // Auto-advance slides every 5 seconds
+    slideInterval = setInterval(() => {
+        changeSlide(1);
+    }, 5000);
+}
+
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (slides.length === 0) return;
+    
+    // Remove active class from current slide
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    
+    // Calculate new slide index
+    currentSlide += direction;
+    if (currentSlide >= slides.length) currentSlide = 0;
+    if (currentSlide < 0) currentSlide = slides.length - 1;
+    
+    // Add active class to new slide
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+    
+    // Reset interval
+    clearInterval(slideInterval);
+    slideInterval = setInterval(() => changeSlide(1), 5000);
+}
+
+function goToSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (slides.length === 0) return;
+    
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    
+    currentSlide = index;
+    
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+    
+    // Reset interval
+    clearInterval(slideInterval);
+    slideInterval = setInterval(() => changeSlide(1), 5000);
+}
+
+// Initialize slideshow when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    initSlideshow();
+});
+
+// ============================================================================
+// SPONSORS SECTION RENDERING
+// ============================================================================
+
+function renderSponsorsSection() {
+    const sponsorsContainer = document.getElementById('sponsors-container');
+    if (!sponsorsContainer) return;
+    
+    // Check if SPONSORS exists and has items
+    if (typeof SPONSORS === 'undefined' || SPONSORS.length === 0) {
+        sponsorsContainer.innerHTML = `
+            <div class="sponsors-placeholder">
+                <p>Partner logos coming soon</p>
+            </div>
+        `;
+        return;
+    }
+
+    const sponsorsHtml = SPONSORS.map(sponsor => {
+        const hasLogo = sponsor.logo && sponsor.logo.length > 0;
+        const logoHtml = hasLogo 
+            ? `<img src="${sponsor.logo}" alt="${sponsor.name} logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+               <div class="sponsor-fallback" style="display:none;">${sponsor.name.charAt(0)}</div>`
+            : `<div class="sponsor-fallback">${sponsor.name.charAt(0)}</div>`;
+        
+        return `
+            <a href="${sponsor.url}" target="_blank" class="sponsor-card fade-in" title="${sponsor.description}">
+                <div class="sponsor-logo">
+                    ${logoHtml}
+                </div>
+                <div class="sponsor-info">
+                    <h4>${sponsor.name}</h4>
+                    <span class="sponsor-type">${sponsor.type}</span>
+                </div>
+            </a>
+        `;
+    }).join('');
+
+    sponsorsContainer.innerHTML = sponsorsHtml;
+}
+
+// ============================================================================
+// MEDIA SECTION RENDERING
+// ============================================================================
+
+function renderMediaSection() {
+    const videoContainer = document.getElementById('video-container');
+    if (!videoContainer) return;
+    
+    // Check if MEDIA_CONTENT exists
+    if (typeof MEDIA_CONTENT === 'undefined') return;
+    
+    // If we have a YouTube video ID, embed it
+    if (MEDIA_CONTENT.featuredVideoId && MEDIA_CONTENT.featuredVideoId.length > 0) {
+        videoContainer.innerHTML = `
+            <iframe 
+                src="https://www.youtube.com/embed/${MEDIA_CONTENT.featuredVideoId}?rel=0" 
+                title="${MEDIA_CONTENT.videoTitle}"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        `;
+    }
+    // If we have a direct video URL, use video element
+    else if (MEDIA_CONTENT.featuredVideoUrl && MEDIA_CONTENT.featuredVideoUrl.length > 0) {
+        videoContainer.innerHTML = `
+            <video controls poster="images/AVL_Video_Poster.png">
+                <source src="${MEDIA_CONTENT.featuredVideoUrl}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        `;
+    }
+    // Otherwise keep the placeholder (already in HTML)
+}
+
+// ============================================================================
+// ANIMATED STAT COUNTERS
+// ============================================================================
+
+function initAnimatedCounters() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    if (statNumbers.length === 0) return;
+    
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px'
+    };
+    
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    // Observe all stat numbers after a small delay to ensure they're rendered
+    setTimeout(() => {
+        document.querySelectorAll('.stat-number').forEach(el => {
+            counterObserver.observe(el);
+        });
+    }, 200);
+}
+
+function animateCounter(element) {
+    const text = element.textContent;
+    const hasPlus = text.includes('+');
+    const numericPart = parseInt(text.replace(/[^0-9]/g, ''));
+    
+    if (isNaN(numericPart)) return;
+    
+    const duration = 2000; // 2 seconds
+    const steps = 60;
+    const stepDuration = duration / steps;
+    let currentStep = 0;
+    
+    const interval = setInterval(() => {
+        currentStep++;
+        const progress = currentStep / steps;
+        // Ease out cubic for smooth deceleration
+        const easedProgress = 1 - Math.pow(1 - progress, 3);
+        const currentValue = Math.floor(easedProgress * numericPart);
+        
+        element.textContent = currentValue + (hasPlus ? '+' : '');
+        
+        if (currentStep >= steps) {
+            clearInterval(interval);
+            element.textContent = text; // Restore original text
+        }
+    }, stepDuration);
+}
+
+// ============================================================================
+// UTILITY FUNCTIONS
+// ============================================================================
+
+// Debounce function for performance
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Throttle function for scroll events
+function throttle(func, limit) {
+    let inThrottle;
+    return function() {
+        const args = arguments;
+        const context = this;
+        if (!inThrottle) {
+            func.apply(context, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    };
+}
