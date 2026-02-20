@@ -65,7 +65,7 @@ const TEAM_MEMBERS = {
         },
         {
             name: "William Saunders",
-            role: "Research Assistant - Mechanical Engineering",
+            role: "Treasurer - Mechanical Engineering",
             image: "placeholder",
             bio: "Leading the design and construction of ATAV, an all-terrain vehicle for off-road AI testing.",
             linkedin: "https://www.linkedin.com/in/william-saunders-02324925a",
@@ -189,7 +189,7 @@ const TEAM_MEMBERS = {
         },
         {
             name: "Adam Sorenson",
-            role: "Former President & Engineer at Honda Racing Corporation USA - Mechanical Engineering M.S.",
+            role: "Former President & Engineer at Honda Racing Corporation USA - Mechanical Engineering",
             image: "images/team/AVL_Adam_Sorenson.jpg",
             bio: "Designed autonomous and robotic systems with expertise in embedded systems and mechanical component design.",
             linkedin: "https://www.linkedin.com/in/asorenson/",
