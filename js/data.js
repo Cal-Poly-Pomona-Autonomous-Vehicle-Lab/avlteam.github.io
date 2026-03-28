@@ -173,7 +173,7 @@ const TEAM_MEMBERS = {
         },
         {
             name: "William Masri",
-            role: "Former Electrical Lead - Electrical Engineering",
+            role: "Circut Design Engineer at Broadcom & Former Electrical Team Lead - Electrical Engineering",
             image: "images/team/AVL_William_Masri.jpg",
             bio: "Developed and integrated autonomous vehicle components, specializing in circuit design and embedded systems.",
             linkedin: "https://www.linkedin.com/in/williammasri15/",
