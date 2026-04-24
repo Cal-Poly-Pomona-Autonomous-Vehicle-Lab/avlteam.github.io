@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AVL Lecture Series: technical talks on autonomous systems, robotics, and related fields at Cal Poly Pomona.">
+    <meta name="keywords" content="AVL lecture series, autonomous vehicles, robotics talks, Cal Poly Pomona, seminar">
+    <meta name="author" content="AVL Team">
+    <meta property="og:title" content="Lecture Series | AVL · Cal Poly Pomona">
+    <meta property="og:description" content="Technical talks and seminars from the Autonomous Vehicle Laboratory at Cal Poly Pomona.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/AVL_Blue_Text_1200px-630px.jpg">
+
+    <title>Lecture Series | AVL · Cal Poly Pomona</title>
+
+    <link rel="icon" type="image/png" href="images/AVL_Logo_Blue_Dots.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar"></nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" id="top">
+        <div class="page-hero-bg"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="section-label" style="color:rgba(160,210,255,0.85);">Knowledge Sharing</span>
+                <h1>Lecture Series</h1>
+                <p>Technical talks on autonomous systems, robotics, perception, and engineering practice, open to the campus community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT THE SERIES -->
+    <section style="padding: var(--section-padding) 0;">
+        <div class="container">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center;" class="lecture-about-grid">
+                <div>
+                    <span class="section-label">About</span>
+                    <h2 style="margin-bottom:1rem;">What Is the AVL Lecture Series?</h2>
+                    <p style="margin-bottom:1rem;">The AVL Lecture Series brings together students, researchers, and industry professionals to discuss topics at the frontier of autonomous systems, from low-level embedded control to high-level AI planning.</p>
+                    <p style="margin-bottom:1.5rem;">Lectures are held periodically throughout the academic year and are open to all Cal Poly Pomona students. Some sessions are recorded and shared with the community.</p>
+                    <a href="mailto:autovehiclelab@gmail.com" class="btn btn-primary">Request a Talk or Topic</a>
+                </div>
+                <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:2rem;">
+                    <h3 style="margin-bottom:1.25rem; font-size:1.1rem;">Series Highlights</h3>
+                    <ul style="list-style:none; display:flex; flex-direction:column; gap:0.75rem;">
+                        <li style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.92rem; color:var(--text-secondary);">
+                            <span style="color:var(--blue-accent); font-size:1.1rem; line-height:1.4;">→</span>
+                            Technical depth: talks go beyond surface level into methods and implementation
+                        </li>
+                        <li style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.92rem; color:var(--text-secondary);">
+                            <span style="color:var(--blue-accent); font-size:1.1rem; line-height:1.4;">→</span>
+                            Student-led sessions alongside external guest speakers
+                        </li>
+                        <li style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.92rem; color:var(--text-secondary);">
+                            <span style="color:var(--blue-accent); font-size:1.1rem; line-height:1.4;">→</span>
+                            Topics span perception, planning, simulation, hardware, and research methods
+                        </li>
+                        <li style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.92rem; color:var(--text-secondary);">
+                            <span style="color:var(--blue-accent); font-size:1.1rem; line-height:1.4;">→</span>
+                            Open Q&amp;A following every session
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARN BY DOING -->
+    <section class="learn section-alt" id="learn">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Education</span>
+                <h2>Learn by Doing</h2>
+                <p>Workshops and resources to take members from fundamentals to research-ready</p>
+            </div>
+
+            <div class="learn-intro">
+                <p class="cal-poly-motto">"Learn by Doing"</p>
+                <p>At AVL, we embody Cal Poly Pomona's motto. Every resource here is designed to give you hands-on experience with real hardware and real code, from first-time robotics to advanced autonomy pipelines.</p>
+            </div>
+
+            <div class="workshops-grid" id="learn-container"></div>
+        </div>
+    </section>
+
+    <!-- UPCOMING LECTURES -->
+    <section style="padding: var(--section-padding) 0;" id="lectures">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Schedule</span>
+                <h2>Upcoming Lectures</h2>
+                <p>Check back for announcements, or follow us on Discord and Instagram for real-time updates</p>
+            </div>
+
+            <div class="lecture-placeholder fade-in">
+                <h3>Lecture Schedule Coming Soon</h3>
+                <p>We're scheduling our next series of talks. Follow us on Discord or Instagram to be notified when new sessions are announced.</p>
+                <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                    <a href="https://discord.gg/2D5fEg94eM" target="_blank" class="btn btn-primary">Join Discord for Updates</a>
+                    <a href="https://www.instagram.com/autovehiclelab/" target="_blank" class="btn btn-secondary">Follow on Instagram</a>
+                </div>
+            </div>
+
+            <!--
+                TO ADD LECTURES: Replace the placeholder above with lecture cards.
+                Example card structure:
+
+                <div class="lecture-grid" style="margin-top:2rem;">
+                    <div class="lecture-card fade-in">
+                        <span class="lecture-card-date">Apr 30, 2025</span>
+                        <h3>Introduction to LiDAR Point Cloud Processing</h3>
+                        <p class="lecture-card-speaker">Speaker: [Name], AVL Research Lead</p>
+                        <p>An overview of how raw LiDAR packets are decoded, filtered, and turned into occupancy grids for autonomous navigation.</p>
+                    </div>
+                </div>
+            -->
+        </div>
+    </section>
+
+    <!-- PAST LECTURES -->
+    <section style="padding: var(--section-padding) 0; background:var(--surface);" id="past-lectures">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Archive</span>
+                <h2>Past Lectures</h2>
+                <p>Recordings and materials from previous sessions</p>
+            </div>
+
+            <div class="lecture-placeholder fade-in" style="border-style:solid; background:var(--white);">
+                <h3>Archive Being Compiled</h3>
+                <p>Past lecture recordings and slide decks will be posted here. Contact us if you're looking for a specific session.</p>
+                <a href="mailto:autovehiclelab@gmail.com" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding: var(--section-padding) 0; background: var(--blue-primary);">
+        <div class="container" style="text-align:center;">
+            <h2 style="color:var(--white); margin-bottom:0.75rem;">Want to give a talk?</h2>
+            <p style="color:rgba(200,225,255,0.85); margin-bottom:2rem; max-width:50ch; margin-left:auto; margin-right:auto;">We welcome student researchers, faculty, and industry professionals. Reach out to propose a topic.</p>
+            <a href="mailto:autovehiclelab@gmail.com" class="btn btn-white">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer"></footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderNavbar('lecture.html');
+            renderFooterHtml();
+        });
+    </script>
+
+    <style>
+        @media (max-width: 768px) {
+            .lecture-about-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</body>
+</html>

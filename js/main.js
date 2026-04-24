@@ -15,11 +15,36 @@ document.addEventListener('DOMContentLoaded', () => {
     renderLearnSection();
     renderSponsorsSection();
     renderMediaSection();
-    renderFooter();
     initScrollAnimations();
     initAnimatedCounters();
-    initParticles();
 });
+
+// ============================================================================
+// DARK MODE
+// ============================================================================
+
+function initDarkMode() {
+    const btn = document.getElementById('dark-mode-toggle');
+    if (!btn) return;
+
+    const moon = btn.querySelector('.icon-moon');
+    const sun = btn.querySelector('.icon-sun');
+
+    function applyDark(isDark) {
+        document.body.classList.toggle('dark-mode', isDark);
+        moon.style.display = isDark ? 'none' : '';
+        sun.style.display = isDark ? '' : 'none';
+    }
+
+    // Restore saved preference
+    applyDark(localStorage.getItem('avl-dark-mode') === 'true');
+
+    btn.addEventListener('click', () => {
+        const isDark = !document.body.classList.contains('dark-mode');
+        localStorage.setItem('avl-dark-mode', isDark);
+        applyDark(isDark);
+    });
+}
 
 // ============================================================================
 // NAVIGATION
