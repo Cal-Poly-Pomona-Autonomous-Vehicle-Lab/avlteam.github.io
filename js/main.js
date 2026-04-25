@@ -70,21 +70,7 @@ function initNavigation() {
         }
     });
 
-    // Mobile menu toggle
-    if (mobileToggle) {
-        mobileToggle.addEventListener('click', () => {
-            mobileToggle.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        // Close menu when clicking a link
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileToggle.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-    }
+    // Mobile menu toggle is handled in components.js after navbar injection
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

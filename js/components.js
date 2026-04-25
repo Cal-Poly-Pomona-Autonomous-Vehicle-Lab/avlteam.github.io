@@ -113,6 +113,22 @@ function renderNavbar(activePage) {
             applyDark(isDark);
         });
     }
+
+    // Wire up mobile hamburger menu now that the navbar is in the DOM
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    }
 }
 
 // ============================================================================
