@@ -66,6 +66,14 @@ body.dark-mode .navbar {
     border-bottom-color: #2e2e2e;
 }
 
+body.dark-mode .nav-links {
+    background: #1a1a1a;
+}
+
+body.dark-mode .nav-links a {
+    border-bottom-color: #2e2e2e;
+}
+
 body.dark-mode .navbar.scrolled {
     background: #111111;
     box-shadow: 0 2px 16px rgba(0,0,0,0.6);
@@ -2790,32 +2798,52 @@ body.dark-mode .tech-strip-tagline {
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%;
-        width: min(80%, 360px);
+        right: -110%;
+        width: min(80%, 320px);
         height: 100vh;
         background: var(--white);
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         gap: 0.25rem;
-        padding: 2rem;
-        transition: right 0.35s ease;
-        z-index: 999;
-        box-shadow: -4px 0 30px rgba(0,0,0,0.12);
+        padding: 5rem 2rem 2rem;
+        transition: right 0.3s ease;
+        z-index: 1002;
+        box-shadow: -4px 0 30px rgba(0,0,0,0.18);
     }
 
     .nav-links.active {
         right: 0;
     }
 
+    /* Dim overlay behind the open menu */
+    .nav-links.active::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        right: min(80%, 320px);
+        background: rgba(0,0,0,0.4);
+        z-index: -1;
+    }
+
     .nav-links a {
         font-size: 1.1rem;
-        padding: 0.6rem 0.75rem;
+        padding: 0.7rem 0.5rem;
+        width: 100%;
+        border-bottom: 1px solid var(--border);
+        color: var(--text-primary);
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
     }
 
     .mobile-toggle {
         display: flex;
-        z-index: 1001;
+        z-index: 1003;
+        cursor: pointer;
+        padding: 0.75rem;
+        touch-action: manipulation;
     }
 
     .mobile-toggle.active span:nth-child(1) {
