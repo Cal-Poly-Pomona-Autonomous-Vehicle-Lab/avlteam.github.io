@@ -1808,6 +1808,18 @@ section {
     border: 1px solid #FECDD3;
 }
 
+.workshop-professor {
+    color: var(--blue-primary);
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    margin-top: 0.25rem;
+}
+
+body.dark-mode .workshop-professor {
+    color: #7799ff;
+}
+
 .workshop-type {
     color: var(--text-muted);
     font-size: 0.72rem;

@@ -456,20 +456,20 @@ const PUBLICATIONS = [
 
 
 // ============================================================================
-// LEARN BY DOING WORKSHOPS & RESOURCES
+// LECTURE SERIES
 // ============================================================================
-// Educational content and workshops offered
+// Faculty-recorded lecture series hosted by Cal Poly Pomona for AVL members.
+// Source: https://www.cpp.edu/engineering/autonomous-systems/activities.shtml
 
 const LEARNING_RESOURCES = [
     {
         title: "Vehicle Dynamics",
-        type: "Lecture Series",
-        description: "Comprehensive vehicle dynamics covering quarter car models, steering behavior, and suspension effects.",
+        professor: "Dr. Farbod Khoshnoud",
+        description: "Comprehensive vehicle dynamics covering quarter car models, cornering behavior, suspension effects, and lateral dynamics.",
         level: "Intermediate",
-        docLink: "https://www.cpp.edu/engineering/autonomous-systems/activities.shtml",
         modules: [
             { title: "Module 1 – Introduction", url: "https://streaming.cpp.edu/media/Module+1+-+Vehicle+Dynamics+-+Ganpat+and+Manju+Center/1_57nl7oyc" },
-            { title: "Module 2 – Quarter Car Model - 1DOF", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_l3dh7qb1" },
+            { title: "Module 2 – Quarter Car Model – 1DOF", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_l3dh7qb1" },
             { title: "Module 3 – Quarter Car Model – 2DOF", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_a1q89p0w" },
             { title: "Module 4 – Half Vehicle Model – Rotational DOF", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_bexa603c" },
             { title: "Module 5 – Low Speed Steady State Turning", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_l6z6f4g8" },
@@ -484,10 +484,9 @@ const LEARNING_RESOURCES = [
     },
     {
         title: "Electric Vehicle & Energy Storage",
-        type: "Lecture Series",
-        description: "Electric vehicle fundamentals including motor types, charging systems, and battery technologies.",
+        professor: "",
+        description: "Electric vehicle fundamentals covering motor types, charging systems, regenerative braking, and battery technologies.",
         level: "Intermediate",
-        docLink: "https://www.cpp.edu/engineering/autonomous-systems/activities.shtml",
         modules: [
             { title: "Module 1 – Basic Concepts of Electric Vehicles", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%201%20Basic%20Concepts%20of%20Electric%20Vehicles%2Emp4" },
             { title: "Module 2 – Induction Motor as EV Drive", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%202%20Induction%20Motor%20as%20EV%20Drive%2Emp4" },
@@ -505,10 +504,9 @@ const LEARNING_RESOURCES = [
     },
     {
         title: "Practical Application of Electric Motors",
-        type: "Lecture Series",
-        description: "Hands-on electrical machine analysis including power measurement, generators, and motor characteristics.",
+        professor: "Dr. Sean Monemi",
+        description: "Hands-on electrical machine analysis including power measurement, 3-phase systems, generators, and motor characteristics.",
         level: "Intermediate",
-        docLink: "https://www.cpp.edu/engineering/autonomous-systems/activities.shtml",
         modules: [
             { title: "Module 1 – Power Measurement", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EXBdSJ-aET5AutbH3qYd6I4BrbN5iViM1MmIIE8xEQL-rA?e=ZmAG4Q" },
             { title: "Module 2 – Balanced and Unbalanced 3 Phase Measurement", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EQwwqTjt6wdBgWvJIl8T8okBX6VSlVkGI4kbcDhDv_XhTw?e=NnoxX2" },
@@ -522,73 +520,101 @@ const LEARNING_RESOURCES = [
     },
     {
         title: "Computer Vision and Image Processing",
-        type: "Lecture Series",
-        description: "Digital image fundamentals, spatial and frequency domain enhancement, restoration, color processing, morphological operations, and image segmentation techniques.",
+        professor: "Dr. Zekeriya Aliyazicioglu",
+        description: "Digital image fundamentals, spatial and frequency domain enhancement, image restoration, color processing, morphological operations, and segmentation.",
         level: "Advanced",
-        docLink: "https://www.cpp.edu/engineering/autonomous-systems/activities.shtml",
         modules: [
-            { title: "Module 1.1 – Introduction 1", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%201%2D1%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec1f68bc8%2D8f87%2D4152%2D827e%2Dee90b9209a5d" },
-            { title: "Module 1.2 – Introduction 2", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_l3dh7qb1" },
-            { title: "Module 1.3 – Introduction 3", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%201%2D3%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7b97fb49%2D57fd%2D4929%2Dac5b%2Dcdcfb6511a77" },
-            { title: "Module 2.1 – Digital Image Fundamentals 1", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%202%2D1%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebee08a0b%2D8e12%2D4eb6%2Dbc17%2D38ffdbd69c73" },
-            { title: "Module 2.2 – Digital Image Fundamentals 2", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%202%2D2%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E3ae65710%2D4723%2D49d6%2D9b89%2Db3f701ac5aff" },
-            { title: "Module 3.1 – Image Enhancement in a Spatial Domain 1", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%203%2D1%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Edcccc06c%2D57e6%2D4de5%2Da9c8%2D26f6cf31a0ee" },
-            { title: "Module 3.2 – Image Enhancement in a Spatial Domain 2", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%203%2D2%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E20024541%2D4f23%2D422e%2Da694%2Da4dff933b10d" },
-            { title: "Module 3.3 – Image Enhancement in a Spatial Domain 3", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%203%2D3%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E44632acb%2Dec55%2D4f2c%2D9b36%2Dda3dbc900295" },
-            { title: "Module 3.4 – Image Enhancement in a Spatial Domain 4", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%203%2D4%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E37c6d998%2D339c%2D4586%2Dac2a%2D14422968d9b1" },
-            { title: "Module 3.5 – Image Enhancement in a Spatial Domain 5", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%203%2D5%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eaf48eadc%2Daa2c%2D4ae8%2Dbc70%2D688403f151d3" },
-            { title: "Module 3.6 – Image Enhancement in a Spatial Domain 6", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%203%2D6%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eea279076%2D6fdb%2D4867%2D98bd%2Df9b8e797625d" },
-            { title: "Module 4.1 – Image Enhancement in a Frequency Domain 1", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%204%2D1%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E93511dd5%2D0330%2D42d0%2Da9a1%2D3bcd16d01b15" },
-            { title: "Module 4.2 – Image Enhancement in a Frequency Domain 2", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%204%2D2%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E3e59c013%2Ddb60%2D4563%2D9074%2D777e73b5aef1" },
-            { title: "Module 4.3 – Image Enhancement in a Frequency Domain 3", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%204%2D3%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E064fa18d%2D027a%2D470c%2D94da%2Dc1bcedda18ea" },
-            { title: "Module 4.4 – Image Enhancement in a Frequency Domain 4", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%204%2D4%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Edda06dc7%2Dd217%2D4811%2D9a16%2Dd6ddd4cf677f" },
-            { title: "Module 4.5 – Image Enhancement in a Frequency Domain 5", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%204%2D5%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eeb0c14de%2D0b4f%2D4884%2D87fd%2Dd05f9126eb2c" },
-            { title: "Module 4.6 – Image Enhancement in a Frequency Domain 6", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%204%2D6%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E20c9cd84%2D0581%2D412a%2D980b%2De767620aefb2" },
-            { title: "Module 5.1 – Image Restoration 1", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%205%2D1%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E4ef104c4%2D9066%2D4665%2D8aa1%2D5f968696372f" },
-            { title: "Module 5.2 – Image Restoration 2", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%205%2D2%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ea472db5b%2D995f%2D49bb%2D8860%2Dc7ff0c76e7c5" },
-            { title: "Module 5.3 – Image Restoration 3", url: "https://livecsupomona-my.sharepoint.com/personal/zaliyazici_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzaliyazici%5Fcpp%5Fedu%2FDocuments%2FResearch%2FD%2EEducation%20Ganpat%20Center%2FLecture%205%2D3%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7f3a9255%2D1f77%2D4bb9%2Dbf6b%2D08e6f32c051f" },
-            { title: "Module 6.1 – Color Image Processing 1", url: "" },
-            { title: "Module 6.2 – Color Image Processing 2", url: "" },
-            { title: "Module 6.3 – Color Image Processing 3", url: "" },
-            { title: "Module 7.1 – Morphological Image Processing 1", url: "" },
-            { title: "Module 7.2 – Morphological Image Processing 2", url: "" },
-            { title: "Module 7.3 – Morphological Image Processing 3", url: "" },
-            { title: "Module 7.4 – Morphological Image Processing 4", url: "" },
-            { title: "Module 8.1 – Image Segmentation 1", url: "" },
-            { title: "Module 8.2 – Image Segmentation 2", url: "" }
+            { title: "Module 1.1 – Introduction 1", url: "https://streaming.cpp.edu/media/Lecture-1-1/1_dhmbxqd0" },
+            { title: "Module 1.2 – Introduction 2", url: "https://streaming.cpp.edu/media/Lecture-1-2/1_g1f4peix" },
+            { title: "Module 1.3 – Introduction 3", url: "https://streaming.cpp.edu/media/Lecture-1-3/1_z39i1gp4" },
+            { title: "Module 2.1 – Digital Image Fundamentals 1", url: "https://streaming.cpp.edu/media/Lecture-2-1/1_xc7ifdnu" },
+            { title: "Module 2.2 – Digital Image Fundamentals 2", url: "https://streaming.cpp.edu/media/Lecture-2-2/1_gvogiav3" },
+            { title: "Module 3.1 – Image Enhancement in a Spatial Domain 1", url: "https://streaming.cpp.edu/media/Lecture-3-1/1_ao6rqadq" },
+            { title: "Module 3.2 – Image Enhancement in a Spatial Domain 2", url: "https://streaming.cpp.edu/media/Lecture-3-2/1_qrk1b1lv" },
+            { title: "Module 3.3 – Image Enhancement in a Spatial Domain 3", url: "https://streaming.cpp.edu/media/Lecture-3-3/1_z083zrnk" },
+            { title: "Module 3.4 – Image Enhancement in a Spatial Domain 4", url: "https://streaming.cpp.edu/media/Lecture-3-4/1_1rbs9mmp" },
+            { title: "Module 3.5 – Image Enhancement in a Spatial Domain 5", url: "https://streaming.cpp.edu/media/Lecture-3-5/1_f84myc6d" },
+            { title: "Module 3.6 – Image Enhancement in a Spatial Domain 6", url: "https://streaming.cpp.edu/media/Lecture-3-6/1_791fw4bz" },
+            { title: "Module 4.1 – Image Enhancement in a Frequency Domain 1", url: "https://streaming.cpp.edu/media/Lecture-4-1/1_k0us68mf" },
+            { title: "Module 4.2 – Image Enhancement in a Frequency Domain 2", url: "https://streaming.cpp.edu/media/Lecture-4-2/1_twvrgdqs" },
+            { title: "Module 4.3 – Image Enhancement in a Frequency Domain 3", url: "https://streaming.cpp.edu/media/Lecture-4-3/1_djobssuk" },
+            { title: "Module 4.4 – Image Enhancement in a Frequency Domain 4", url: "https://streaming.cpp.edu/media/Lecture-4-4/1_bzioc4fi" },
+            { title: "Module 4.5 – Image Enhancement in a Frequency Domain 5", url: "https://streaming.cpp.edu/media/Lecture-4-5/1_a16jhvfy" },
+            { title: "Module 4.6 – Image Enhancement in a Frequency Domain 6", url: "https://streaming.cpp.edu/media/Lecture-4-6/1_xjncosr4" },
+            { title: "Module 5.1 – Image Restoration 1", url: "https://streaming.cpp.edu/media/Lecture-5-1/1_63wj1e8v" },
+            { title: "Module 5.2 – Image Restoration 2", url: "https://streaming.cpp.edu/media/Lecture-5-2/1_9z2za3zd" },
+            { title: "Module 6.1 – Color Image Processing 1", url: "https://streaming.cpp.edu/media/Lecture-6-1/1_goc8oif3" },
+            { title: "Module 6.2 – Color Image Processing 2", url: "https://streaming.cpp.edu/media/Lecture-6-2/1_hr5pjoaq" },
+            { title: "Module 6.3 – Color Image Processing 3", url: "https://streaming.cpp.edu/media/Lecture-6-3/1_zdw7s1px" },
+            { title: "Module 7.1 – Morphological Image Processing 1", url: "https://streaming.cpp.edu/media/Lecture-7-1/1_mvqbmf15" },
+            { title: "Module 7.2 – Morphological Image Processing 2", url: "https://streaming.cpp.edu/media/Lecture-7-2/1_fd688bsr" },
+            { title: "Module 7.3 – Morphological Image Processing 3", url: "https://streaming.cpp.edu/media/Lecture-7-3/1_nmqgkec4" },
+            { title: "Module 7.4 – Morphological Image Processing 4", url: "https://streaming.cpp.edu/media/Lecture-7-4/1_bz9xyof2" },
+            { title: "Module 8.1 – Image Segmentation 1", url: "https://streaming.cpp.edu/media/Lecture-8-1/1_3e6govfu" },
+            { title: "Module 8.2 – Image Segmentation 2", url: "https://streaming.cpp.edu/media/Lecture-8-2/1_u3n8vtgg" }
         ]
     },
     {
-        title: "ROS2 & Software Integration",
-        type: "Hands-on Lab",
-        description: "Learn advanced robotics software development using ROS2 for autonomous vehicle systems.",
+        title: "Fundamentals of Cybersecurity",
+        professor: "Dr. Tamer Omar",
+        description: "22-module series covering core cybersecurity principles relevant to networked and autonomous systems.",
         level: "Intermediate",
-        docLink: "https://docs.ros.org/en/humble/Tutorials.html",
-        modules: []
+        modules: [
+            { title: "Full Playlist – 22 Modules", url: "https://streaming.cpp.edu/playlist/dedicated/1_rhf6tfu4/1_6lv28ieo" }
+        ]
     },
     {
-        title: "Embedded Systems & Arduino",
-        type: "Workshop Series",
-        description: "Hands-on experience with embedded systems, power distribution, and vehicle electronics using Arduino.",
-        level: "Beginner",
-        docLink: "https://docs.arduino.cc/learn/",
-        modules: []
+        title: "Autonomous Vehicles Kinematics",
+        professor: "Dr. Scott Boskovich",
+        description: "Spatial descriptions, rotation transforms, quaternions, and differential drive kinematics for autonomous vehicle systems.",
+        level: "Intermediate",
+        modules: [
+            { title: "Module 1 – Spatial Descriptions", url: "https://www.youtube.com/watch?v=xOTWp0aI7sQ&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=1" },
+            { title: "Module 2 – Transforms", url: "https://www.youtube.com/watch?v=D9J1lvUn8Hk&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=2" },
+            { title: "Module 3 – Compound Rotations", url: "https://www.youtube.com/watch?v=4B5xLo593yM&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=3" },
+            { title: "Module 4 – Introduction to Quaternions", url: "https://www.youtube.com/watch?v=JOgmgPz8u_Y&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=4" },
+            { title: "Module 5 – Quaternions", url: "https://www.youtube.com/watch?v=HrJh1tX8CLc&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=5" },
+            { title: "Module 6 – Differential Drive Robot Kinematics", url: "https://www.youtube.com/watch?v=9fSYZUpsPVo&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=6" },
+            { title: "Module 7 – Differential Drive and Control", url: "https://www.youtube.com/watch?v=8R8VfnCpYgE&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=7" },
+            { title: "Module 8 – Kingpin Kinematics", url: "https://www.youtube.com/watch?v=IWJNubHSSdA&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=8" }
+        ]
     },
     {
-        title: "Control Theory & PID",
-        type: "Technical Deep-Dive",
-        description: "Learn control systems design including PID controllers for autonomous vehicle steering and speed control.",
+        title: "Thermal Management of Electronics and Electric Vehicles",
+        professor: "Dr. Reza Baghaei Lakeh",
+        description: "Heat transfer fundamentals including conduction, convection, radiation, and practical thermal management strategies for electronics and EVs.",
+        level: "Intermediate",
+        modules: [
+            { title: "Module 1.1 – Fundamentals of Conduction Heat Transfer", url: "https://youtu.be/mY-MDAb5Q9Y" },
+            { title: "Module 1.2 – Implementation of Heat Generation", url: "https://youtu.be/3ILAgV2DuyM" },
+            { title: "Module 1.3 – Fins for Cooling and Thermal Management", url: "https://youtu.be/herIUN_Usbg" },
+            { title: "Module 2.1 – Temperature Regulation of a Heat Source", url: "https://youtu.be/DxuE5Vg9buQ" },
+            { title: "Module 2.2 – Temperature Regulation of Internal Flow with Variable Heat Generation", url: "https://youtu.be/KKssDVblvS8" },
+            { title: "Module 2.3 – Thermal Management with Natural Convection", url: "https://youtu.be/H4FdmSf3s9Q" },
+            { title: "Module 2.4 – Example of Natural Convection Cooling", url: "https://youtu.be/MIRk-cXIUMs" },
+            { title: "Module 3.1 – Fundamentals of Radiation", url: "https://youtu.be/QihMAzwcfTs" },
+            { title: "Module 3.2 – Spectral Distribution of Blackbody Radiation", url: "https://youtu.be/piDnhl5GE3E" },
+            { title: "Module 3.3 – Surface Properties for Thermal Management", url: "https://youtu.be/8BT8k6nXbcs" },
+            { title: "Module 4.1 – Fundamentals of Heat Transfer in Enclosures", url: "https://youtu.be/syPJ8_nOnPA" },
+            { title: "Module 4.2 – Radiation Shields and Reradiating Surfaces", url: "https://youtu.be/c0xCYKNzk6c" },
+            { title: "Module 4.3 – Temperature Regulation of Oven", url: "https://youtu.be/8vtBQ6vQk-s" }
+        ]
+    },
+    {
+        title: "Modeling of the Vehicle Routing Problem (VRP)",
+        professor: "Dr. Javad Seif",
+        description: "Mathematical optimization covering linear programming, integer programming, TSP, and fleet routing formulations.",
         level: "Advanced",
-        docLink: "https://learnopencv.com/pid-controller-ros-2-carla/",
-        modules: []
-    },
-    {
-        title: "LiDAR & Point Cloud Processing",
-        type: "Technical Deep-Dive",
-        description: "Work with 3D LiDAR data for mapping, localization, and obstacle detection.",
-        level: "Intermediate",
-        docLink: "https://pointclouds.org/documentation/tutorials/",
-        modules: []
+        modules: [
+            { title: "Module 1 – Introduction to Mathematical Optimization: Prescriptive Analytics", url: "https://www.youtube.com/watch?v=ElRUXGp2mPo&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=1" },
+            { title: "Module 2 – Simplex Method", url: "https://www.youtube.com/watch?v=7WrK6Jk0fvw&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=3" },
+            { title: "Module 3 – Linear Programming: The Graphical Method", url: "https://www.youtube.com/watch?v=bBbFDGT-utw&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=4" },
+            { title: "Module 4 – Integer Programming and the Branch and Bound Algorithm", url: "https://www.youtube.com/watch?v=C-ZRGA5d9PE&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=4" },
+            { title: "Module 5 – Transportation Problem: Mathematical Formulation and Heuristic Algorithms", url: "https://www.youtube.com/watch?v=KXkZ9FQ6Cm4&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=5" },
+            { title: "Module 6 – Set Covering Problem: Mathematical Formulation", url: "https://www.youtube.com/watch?v=EF-fwwfsB8g&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=6" },
+            { title: "Module 7 – TSP (Traveling Salesman Problem): Mathematical Formulation", url: "https://www.youtube.com/watch?v=krqaZvxwp08&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=7" },
+            { title: "Module 8 – Mathematical Model Formulation Basic Examples", url: "https://www.youtube.com/watch?v=YF-ms538UdA&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=8" }
+        ]
     }
 ];
 

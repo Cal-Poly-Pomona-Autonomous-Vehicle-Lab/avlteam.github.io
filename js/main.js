@@ -488,10 +488,8 @@ function renderLearnSection() {
     if (!learnContainer) return;
 
     const workshopsHtml = LEARNING_RESOURCES.map((workshop, index) => {
-        const hasLink = workshop.docLink && workshop.docLink.length > 0;
         const hasModules = workshop.modules && workshop.modules.length > 0;
-        const clickableClass = (hasLink && !hasModules) ? 'clickable' : '';
-        
+
         // Build modules list if they exist
         let modulesHtml = '';
         if (hasModules) {
@@ -502,9 +500,9 @@ function renderLearnSection() {
                     return `<li>${mod}</li>`;
                 }
             }).join('');
-            
+
             modulesHtml = `
-                <div class="modules-toggle" onclick="event.stopPropagation(); toggleModules(${index})">
+                <div class="modules-toggle" onclick="toggleModules(${index})">
                     <span>View ${workshop.modules.length} Modules</span>
                     <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polyline points="6 9 12 15 18 9"></polyline>
@@ -515,17 +513,17 @@ function renderLearnSection() {
                 </ul>
             `;
         }
-        
-        const clickHint = (hasLink && !hasModules) ? '<span class="click-hint">Click to learn more →</span>' : '';
-        
+
+        const levelBadge = workshop.level ? `<span class="workshop-level ${workshop.level.toLowerCase()}">${workshop.level}</span>` : '';
+        const professorLine = workshop.professor ? `<p class="workshop-professor">${workshop.professor}</p>` : '';
+
         return `
-            <div class="workshop-card fade-in ${clickableClass}" ${(hasLink && !hasModules) ? `onclick="window.open('${workshop.docLink}', '_blank')"` : ''}>
-                <span class="workshop-level ${workshop.level.toLowerCase()}">${workshop.level}</span>
-                <p class="workshop-type">${workshop.type}</p>
+            <div class="workshop-card fade-in">
+                ${levelBadge}
+                ${professorLine}
                 <h3>${workshop.title}</h3>
                 <p>${workshop.description}</p>
                 ${modulesHtml}
-                ${clickHint}
             </div>
         `;
     }).join('');
