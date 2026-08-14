@@ -28,7 +28,7 @@
 //   email: Email address (optional - use "" if none)
 
 const TEAM_MEMBERS = {
-    // Leadership / Executive Board
+    // Groups: leadership, researchers, members (current club members), legacy (alumni)
     leadership: [
         {
             name: "Dr. Behnam Bahr",
@@ -39,51 +39,59 @@ const TEAM_MEMBERS = {
             email: "bbahr@cpp.edu"
         },
         {
-            name: "Aspen Knox",
-            role: "Club President - Mechanical Engineering",
-            image: "images/team/AVL_Aspen_Knox.jpg",
-            bio: "Coordinating club activities and fostering collaboration between researchers and members.",
-            linkedin: "https://www.linkedin.com/in/aspenknox/",
-            email: "aknox@cpp.edu"
-        },
-        {
             name: "Parsa Ghasemi",
-            role: "Vice President - Computer Engineering",
+            role: "President - Computer Engineering",
             image: "images/team/AVL_Parsa_Ghasemi.jpg",
-            bio: "Supporting project coordination, member engagement, and technical development initiatives.",
+            bio: "Working on CAN-bus security and multimodal imitation learning for day-night autonomous driving.",
             linkedin: "https://www.linkedin.com/in/paarseus/",
             github: "https://github.com/Paarseus",
             email: "mghasemi@cpp.edu"
         },
         {
-            name: "Tyrese Rogers",
-            role: "Publicity Officer - Mechanical Engineering",
-            image: "images/team/AVL_Tyrese_Rogers.jpg",
-            bio: "Promoting lab activities and achievements through outreach and communication channels.",
-            linkedin: "https://www.linkedin.com/in/tyrese-rogers-0933152a5/",
-            email: "tyreserogers101@gmail.com"
-        },
-        {
-            name: "William Saunders",
-            role: "Treasurer - Mechanical Engineering",
-            image: "placeholder",
-            bio: "Leading the design and construction of ATAV, an all-terrain vehicle for off-road AI testing.",
-            linkedin: "https://www.linkedin.com/in/william-saunders-02324925a",
-            email: "william.r.saunders.2004@gmail.com"
-        },
-        {
             name: "Ryan Simpson",
-            role: "Onboarding Officer - Computer Science",
+            role: "VP External Affairs - Computer Science",
             image: "images/team/AVL_Ryan_Simpson.jpg",
-            bio: "Guiding new members through onboarding, training, and lab procedures.",
+            bio: "Building MARVIN's haptic teleoperation stack: ROS 2, Tailscale, ZED X video, and D-BOX motion feedback.",
             linkedin: "https://www.linkedin.com/in/ryan-m-simpson",
             github: "https://github.com/Ryan-Simpson",
-            email: "rmsimpson@cpp.edu"   
+            email: "rmsimpson@cpp.edu"
+        },
+        {
+            name: "Benjamin Ramirez",
+            role: "VP Internal Affairs - Electromechanical Engineering",
+            image: "images/team/AVL_Benjamin_Ramirez.jpg",
+            bio: "Designing CAD mounts for sensors and electronics, and organizing electrical systems on AVL-002.",
+            linkedin: "https://www.linkedin.com/in/benjamin-ramirez-98958b303",
+            email: "bjmnrmz01@gmail.com"
+        },
+        {
+            name: "Karoline Braga",
+            role: "Scheduler - Mechanical Engineering",
+            image: "images/team/AVL_Karoline_Braga.jpg",
+            bio: "Working on CAD designs and Assembly for IGVC and Thermal Modeling of Battery Active Cooling.",
+            linkedin: "https://www.linkedin.com/in/karolinebraga",
+            email: "braga.karoline@hotmail.com"
+        },
+        {
+            name: "Chris Sierra",
+            role: "Treasurer - Mechanical Engineering",
+            image: "images/team/AVL_Chris_Sierra.jpg",
+            bio: "Developing MATLAB Simulink and Simscape vehicle-dynamics models for MARVIN.",
+            linkedin: "",
+            email: ""
         }
     ],
     
     // Research Staff / Lab Hires
     researchers: [
+        {
+            name: "Aspen Knox",
+            role: "Research Assistant - Mechanical Engineering",
+            image: "images/team/AVL_Aspen_Knox.jpg",
+            bio: "Training day-night imitation-learning models using RGB and thermal cameras on AVL platforms.",
+            linkedin: "https://www.linkedin.com/in/aspenknox/",
+            email: "aknox@cpp.edu"
+        },
         {
             name: "Caleb Hylkema",
             role: "Research Assistant - Electrical Engineering",
@@ -93,12 +101,12 @@ const TEAM_MEMBERS = {
             email: "calebhylkema6@gmail.com"
         },
         {
-            name: "Benjamin Ramirez",
-            role: "Research Assistant - Electromechanical Systems Engineering Technology",
+            name: "Garret Anderson",
+            role: "Research Assistant - Electrical Engineering",
             image: "placeholder",
-            bio: "Designing CAD mounts for sensors and electronics, and organizing electrical systems on AVL-002.",
-            linkedin: "https://www.linkedin.com/in/benjamin-ramirez-98958b303",
-            email: "bjmnrmz01@gmail.com"
+            bio: "Leading drive-by-wire and electrical development for Car 1, including actuator control, power distribution, and low-level electronics integration.",
+            linkedin: "",
+            email: ""
         },
         {
             name: "Alexander Assal",
@@ -109,31 +117,6 @@ const TEAM_MEMBERS = {
             github: "https://github.com/arassal",
             email: "alexander@asaalfamily.com"
         },
-        {
-            name: "Deyung Sun",
-            role: "Research Assistant - Mechanical Engineering M.S.",
-            image: "images/team/AVL_Deyung_Sun.jpg",
-            bio: "Developing Gazebo simulations for autonomous vehicle testing using ROS2 Jazzy.",
-            linkedin: "https://www.linkedin.com/in/deyung-sun-634780318",
-            github: "https://github.com/deyungOAO",
-            email: "deyung000@gmail.com"
-        },
-        {
-            name: "Benjamin S Valladolid",
-            role: "Research Assistant - Mechanical Engineering M.S.",
-            image: "placeholder",
-            bio: "Designing the ATAV chassis and developing vehicle dynamics simulations in MATLAB Simulink.",
-            linkedin: "https://www.linkedin.com/in/benjaminvalladolid/",
-            email: "bsvalladolid@cpp.edu"
-        },
-        {
-            name: "Karoline Braga",
-            role: "Research Assistant - Mechanical Engineering",
-            image: "images/team/AVL_Karoline_Braga.jpg",
-            bio: "Working on CAD designs and Assembly for IGVC and Thermal Modeling of Battery Active Cooling.",
-            linkedin: "www.linkedin.com/in/karolinebraga",
-            email: "braga.karoline@hotmail.com"
-        }, 
         { 
             name: "Changwe Musonda", 
             role: "Club Member - Computer Engineering", 
@@ -157,12 +140,46 @@ const TEAM_MEMBERS = {
             bio: "Contributing to mechanical engineering research and development for autonomous vehicle systems.",
             linkedin: "https://www.linkedin.com/in/samuelandryasian/",
             email: "samuel.81725@gmail.com"
+        },
+        {
+            name: "Tyrese Rogers",
+            role: "Research Assistant - Mechanical Engineering",
+            image: "images/team/AVL_Tyrese_Rogers.jpg",
+            bio: "Designing a holonomic e-corner module with independent drive, steering, and suspension, including 3D-printed airless lattice tires and FEA validation.",
+            linkedin: "https://www.linkedin.com/in/tyrese-rogers-0933152a5/",
+            email: "tyreserogers101@gmail.com"
+        },
+        {
+            name: "William Saunders",
+            role: "Research Assistant - Mechanical Engineering",
+            image: "placeholder",
+            bio: "Designing and fabricating ATAV, an all-terrain platform for off-road autonomy testing, including chassis, suspension, and mechanical integration.",
+            linkedin: "https://www.linkedin.com/in/william-saunders-02324925a",
+            email: "william.r.saunders.2004@gmail.com"
         }
-        
     ],
+
+    members: [],
     
     // Legacy Members (past contributors)
-    members: [
+    legacy: [
+        {
+            name: "Deyung Sun",
+            role: "Former Research Assistant - Mechanical Engineering M.S.",
+            image: "images/team/AVL_Deyung_Sun.jpg",
+            bio: "Developed Gazebo simulations for autonomous vehicle testing using ROS2 Jazzy.",
+            linkedin: "https://www.linkedin.com/in/deyung-sun-634780318",
+            github: "https://github.com/deyungOAO",
+            email: "deyung000@gmail.com"
+        },
+        {
+            name: "Benjamin S Valladolid",
+            role: "Former Research Assistant - Mechanical Engineering M.S.",
+            image: "images/team/AVL_Benjamin_Valladolid.jpg",
+            bio: "Designed the ATAV chassis and developed vehicle dynamics simulations in MATLAB Simulink.",
+            linkedin: "https://www.linkedin.com/in/benjaminvalladolid/",
+            email: "bsvalladolid@cpp.edu"
+        },
         {
             name: "Jaemin Kim",
             role: "Intern at Burbank Water and Power - Electrical Engineering M.S.",
