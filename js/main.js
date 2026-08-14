@@ -5,18 +5,21 @@
 
 // Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', () => {
-    initNavigation();
-    renderEquipmentSection();
-    renderTeamSection();
-    renderResearchSection();
-    renderImpactSection();
-    renderPublicationsSection();
-    renderHiringSection();
-    renderLearnSection();
-    renderSponsorsSection();
-    renderMediaSection();
-    initScrollAnimations();
-    initAnimatedCounters();
+    try {
+        initNavigation();
+        renderEquipmentSection();
+        renderTeamSection();
+        renderResearchSection();
+        renderImpactSection();
+        renderPublicationsSection();
+        renderHiringSection();
+        renderLearnSection();
+        renderSponsorsSection();
+        renderMediaSection();
+    } finally {
+        initScrollAnimations();
+        initAnimatedCounters();
+    }
 });
 
 // ============================================================================
@@ -94,6 +97,7 @@ function initNavigation() {
 function renderTeamSection() {
     const teamContainer = document.getElementById('team-container');
     if (!teamContainer) return;
+    if (typeof TEAM_MEMBERS === 'undefined') return;
 
     let html = '';
 
@@ -121,13 +125,25 @@ function renderTeamSection() {
         `;
     }
 
-    // General members section - renamed to Legacy Members
+    // Current club members
     if (TEAM_MEMBERS.members && TEAM_MEMBERS.members.length > 0) {
+        html += `
+            <div class="team-category">
+                <h3>Members</h3>
+                <div class="team-grid">
+                    ${TEAM_MEMBERS.members.map(member => createTeamCard(member)).join('')}
+                </div>
+            </div>
+        `;
+    }
+
+    // Legacy / alumni
+    if (TEAM_MEMBERS.legacy && TEAM_MEMBERS.legacy.length > 0) {
         html += `
             <div class="team-category">
                 <h3>Legacy Members</h3>
                 <div class="team-grid">
-                    ${TEAM_MEMBERS.members.map(member => createTeamCard(member)).join('')}
+                    ${TEAM_MEMBERS.legacy.map(member => createTeamCard(member)).join('')}
                 </div>
             </div>
         `;
@@ -611,26 +627,7 @@ function renderFooter() {
 // ============================================================================
 
 function initScrollAnimations() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    // Observe all fade-in elements
-    setTimeout(() => {
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-    }, 100);
+    document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
 }
 
 // ============================================================================
@@ -668,14 +665,14 @@ function initSlideshow() {
 }
 
 function changeSlide(direction) {
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
+    const slides = document.querySelectorAll('.slideshow-container .slide');
+    const dots = document.querySelectorAll('.slide-dots .dot');
     
     if (slides.length === 0) return;
     
     // Remove active class from current slide
     slides[currentSlide].classList.remove('active');
-    dots[currentSlide].classList.remove('active');
+    if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
     
     // Calculate new slide index
     currentSlide += direction;
@@ -684,7 +681,7 @@ function changeSlide(direction) {
     
     // Add active class to new slide
     slides[currentSlide].classList.add('active');
-    dots[currentSlide].classList.add('active');
+    if (dots[currentSlide]) dots[currentSlide].classList.add('active');
     
     // Reset interval
     clearInterval(slideInterval);
@@ -692,18 +689,18 @@ function changeSlide(direction) {
 }
 
 function goToSlide(index) {
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
+    const slides = document.querySelectorAll('.slideshow-container .slide');
+    const dots = document.querySelectorAll('.slide-dots .dot');
     
     if (slides.length === 0) return;
     
     slides[currentSlide].classList.remove('active');
-    dots[currentSlide].classList.remove('active');
+    if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
     
     currentSlide = index;
     
     slides[currentSlide].classList.add('active');
-    dots[currentSlide].classList.add('active');
+    if (dots[currentSlide]) dots[currentSlide].classList.add('active');
     
     // Reset interval
     clearInterval(slideInterval);
