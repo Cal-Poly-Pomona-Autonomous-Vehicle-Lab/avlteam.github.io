@@ -130,13 +130,13 @@ const TEAM_MEMBERS = {
             role: "Research Assistant - Computer Engineering", 
             image: "images/team/AVL_Christian_Gomez.jpg", 
             bio: "Focused on computer vision for autonomous vehicles, integrating perception pipelines for environment understanding.", 
-            linkedin: "linkedin.com/in/christian-gomez-7438b52b6", 
+            linkedin: "https://www.linkedin.com/in/christian-gomez-7438b52b6", 
             email: "gomez.christian1579@gmail.com" 
         },
         {
             name: "Samuel Andryasian",
             role: "Former Vice President - Mechanical Engineering",
-            image: "images/team/AVL_Samuel_Andryasian.png",
+            image: "images/team/AVL_Samuel_Andryasian.jpg",
             bio: "Contributing to mechanical engineering research and development for autonomous vehicle systems.",
             linkedin: "https://www.linkedin.com/in/samuelandryasian/",
             email: "samuel.81725@gmail.com"
@@ -749,15 +749,14 @@ const SPONSORS = [
         logo: "images/sponsors/AVL_Sponsor_Robodk.png",
         url: "https://robodk.com/index",
         description: "Simulation and offline programming software for industrial robots"
+    },
+    {
+        name: "SendCutSend",
+        type: "industry",
+        logo: "images/sponsors/AVL_Sponsor_SendCutSend.png",
+        url: "https://sendcutsend.com",
+        description: "STEM sponsor providing custom metal cutting and fabrication for AVL vehicle projects"
     }
-    // Add more partners as needed:
-    // {
-    //     name: "Company Name",
-    //     type: "industry",
-    //     logo: "images/sponsors/company_logo.png",
-    //     url: "https://company.com",
-    //     description: "Partner description"
-    // }
 ];
 
 
