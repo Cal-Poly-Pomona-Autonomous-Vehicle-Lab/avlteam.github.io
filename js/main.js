@@ -363,9 +363,17 @@ function renderPublicationCards(container, filterType) {
         // Build the tags row from the publication's keyword tags
         const tagsHtml = pub.tags.map(tag => `<span class="pub-tag">${tag}</span>`).join('');
 
+        const posterHref = pub.posterLink || pub.image || '';
+        const imageHtml = pub.image
+            ? `<a href="${posterHref}" target="_blank" rel="noopener" class="pub-poster-link">
+                    <img src="${pub.image}" alt="${pub.title} poster" class="pub-poster-thumb" loading="lazy">
+               </a>`
+            : '';
+
         // Assemble the complete publication card
         return `
             <div class="publication-card fade-in">
+                ${imageHtml}
                 <div class="pub-card-header">
                     ${typeBadge}
                     <span class="pub-venue-badge">${pub.venueShort}</span>

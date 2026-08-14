@@ -392,11 +392,68 @@ const ACHIEVEMENTS = [
 //   paperLink:   URL to the full paper or PDF (use "" if unavailable)
 //   posterLink:  URL to the poster image or PDF (use "" if unavailable)
 //   slidesLink:  URL to presentation slides (use "" if unavailable)
+//   image:       Path to a web-sized poster thumbnail (use "" if none)
 //
 // To add a new publication: Copy an existing object and modify the fields.
 // Publications are displayed newest-first by default.
 
 const PUBLICATIONS = [
+    {
+        title: "Haptic Sim-Chair-Based Teleoperation System for Autonomous Vehicle Platforms",
+        authors: ["Ryan Simpson", "Tyler Carrasco", "Yi-Szen Tang", "Kevin Xu", "Justin Dang", "Dr. Behnam Bahr"],
+        venue: "12th Annual Creative Activities and Research Symposium (CPP CARS)",
+        venueShort: "CARS 2026",
+        year: "2026",
+        type: "poster",
+        abstract: "Presents a bidirectional haptic teleoperation system that lets a remote operator drive MARVIN through a D-BOX motion chair, Thrustmaster wheel and pedals, and triple-monitor video over a Tailscale VPN. Control, H.265 video, and IMU-driven haptics run as parallel UDP pipelines, with median glass-to-glass camera delay under 150 ms.",
+        tags: ["Teleoperation", "Haptics", "ROS 2", "MARVIN"],
+        paperLink: "",
+        posterLink: "images/posters/AVL_CARS2026_Haptic_Sim_Chair.pdf",
+        slidesLink: "",
+        image: "images/posters/AVL_CARS2026_Haptic_Sim_Chair.jpg"
+    },
+    {
+        title: "Camera Based Perception for Autonomous Vehicles",
+        authors: ["Alexander Assal", "Adam Castillo", "Adrian Tapia", "Janice Hy", "Joshua Lee", "Luman Jiang", "Dr. Behnam Bahr"],
+        venue: "12th Annual Creative Activities and Research Symposium (CPP CARS)",
+        venueShort: "CARS 2026",
+        year: "2026",
+        type: "poster",
+        abstract: "Describes a camera-only perception and navigation stack for MARVIN at IGVC, running ROS 2 Humble on an NVIDIA Jetson Orin Nano with three ZED X stereo cameras. TwinLiteNet segmentation and YOLOv8 detection are fused into a bird's-eye occupancy costmap for Nav2 MPPI local control.",
+        tags: ["Computer Vision", "Perception", "IGVC", "MARVIN"],
+        paperLink: "",
+        posterLink: "images/posters/AVL_CARS2026_Camera_Perception.pdf",
+        slidesLink: "",
+        image: "images/posters/AVL_CARS2026_Camera_Perception.jpg"
+    },
+    {
+        title: "Simulation-Based Development of an Autonomous Ground Vehicle",
+        authors: ["Alejandro Alcantara", "Kendon Beltran", "Yoliliztli Contreras", "Chris Sierra", "Dr. Behnam Bahr"],
+        venue: "12th Annual Creative Activities and Research Symposium (CPP CARS)",
+        venueShort: "CARS 2026",
+        year: "2026",
+        type: "poster",
+        abstract: "Develops a MATLAB Simulink and Simscape Multibody digital twin of MARVIN that separates vehicle dynamics from navigation. A Pure Pursuit waypoint follower and PID track-speed controllers were validated in simulation as a foundation for later hardware implementation.",
+        tags: ["Simulation", "Vehicle Dynamics", "MATLAB", "MARVIN"],
+        paperLink: "",
+        posterLink: "images/posters/AVL_CARS2026_Vehicle_Dynamics.pdf",
+        slidesLink: "",
+        image: "images/posters/AVL_CARS2026_Vehicle_Dynamics.jpg"
+    },
+    {
+        title: "Holonomic E-Corner Module & Airless Tires",
+        authors: ["Hyacinth Ang", "Cal Smolenski", "Kaleo Kawamura", "Tyrese Rogers"],
+        venue: "12th Annual Creative Activities and Research Symposium (CPP CARS)",
+        venueShort: "CARS 2026",
+        year: "2026",
+        type: "poster",
+        abstract: "Presents a low-cost e-corner prototype that combines independent drive, continuous steering, and suspension in one module, using 3D-printed airless lattice tires. A spider-joint suspension pivot and FEA at a 300 lb load informed a working assembly built from catalog hardware and printed TPU, PETG-CF, and PLA parts.",
+        tags: ["Holonomic Drive", "Mechanical Design", "Airless Tires"],
+        paperLink: "",
+        posterLink: "images/posters/AVL_CARS2026_Holonomic_E_Corner.jpg",
+        slidesLink: "",
+        image: "images/posters/AVL_CARS2026_Holonomic_E_Corner.jpg"
+    },
     {
         title: "Simplified Multimodal Imitation Learning for Day-Night Autonomous Driving Using Thermal Vision",
         authors: ["Aspen Knox", "Mohammedparsa Ghasemi", "Dr. Behnam Bahr"],

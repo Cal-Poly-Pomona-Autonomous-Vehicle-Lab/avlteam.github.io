@@ -101,6 +101,12 @@ body.dark-mode .nav-social a:hover {
     background: rgba(96,184,255,0.1);
 }
 
+body.dark-mode .pub-poster-link,
+body.dark-mode .pub-poster-thumb {
+    background: #111111;
+    border-color: #2e2e2e;
+}
+
 body.dark-mode .card,
 body.dark-mode .publication-card,
 body.dark-mode .position-card,
@@ -1343,6 +1349,23 @@ section {
     box-shadow: var(--shadow-md);
     transform: translateY(-3px);
     border-color: var(--blue-mid);
+}
+
+.pub-poster-link {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.pub-poster-thumb {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    object-position: top center;
+    background: var(--surface);
 }
 
 .pub-card-header {
