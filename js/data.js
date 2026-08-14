@@ -384,9 +384,9 @@ const ACHIEVEMENTS = [
         docLink: ""  // Add link to paper or documentation
     },
     {
-        title: "Project ATAV Launched",
-        description: "Next-generation all-terrain autonomous vehicle combining active suspension, regenerative braking, and fuzzy logic control",
-        year: "2024-2025",
+        title: "2025–2026 IGVC Competition Team Launched",
+        description: "AVL fielded MARVIN as its Intelligent Ground Vehicle Competition platform, with dedicated perception, vehicle-dynamics, and teleoperation workstreams",
+        year: "2025-2026",
         docLink: ""
     },
 ];

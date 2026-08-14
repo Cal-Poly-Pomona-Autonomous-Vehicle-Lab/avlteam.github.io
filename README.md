@@ -56,7 +56,7 @@ avlteam.github.io/
 │
 ├── index.html          # Home page
 ├── research.html       # Research areas & publications
-├── projects.html       # Active vehicle platforms (IGVC, AV2, iHerb)
+├── projects.html       # Active vehicle platforms (MARVIN, AV2, Carl)
 ├── people.html         # Team directory
 ├── lecture.html        # Lecture series & workshops
 ├── join.html           # Open positions & how to apply

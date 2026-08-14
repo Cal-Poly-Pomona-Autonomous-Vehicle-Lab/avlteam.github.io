@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AVL Projects: IGVC competition robot, AVL-002 research go-kart, and iHerb ATAV autonomous vehicle platforms at Cal Poly Pomona.">
-    <meta name="keywords" content="IGVC, AVL-002, iHerb, autonomous vehicles, robotics, Cal Poly Pomona, projects">
+    <meta name="description" content="AVL Projects: MARVIN at IGVC, AVL-002 research go-kart, and Carl (Car 1) drive-by-wire platform at Cal Poly Pomona.">
+    <meta name="keywords" content="IGVC, MARVIN, AVL-002, Carl, autonomous vehicles, robotics, Cal Poly Pomona, projects">
     <meta name="author" content="AVL Team">
     <meta property="og:title" content="Projects | AVL · Cal Poly Pomona">
     <meta property="og:description" content="Active autonomous vehicle platforms at Cal Poly Pomona's AVL.">
@@ -40,32 +40,32 @@
         <div class="container">
             <div class="projects-list">
 
-                <!-- IGVC -->
+                <!-- MARVIN / IGVC -->
                 <div class="project-showcase fade-in" id="project-igvc">
                     <div class="project-visuals">
                         <div class="project-image-card">
-                            <img src="images/gallery/AVL_IGVC_Frame.png" alt="IGVC frame assembly" loading="lazy">
-                            <p>IGVC frame: building piece by piece</p>
+                            <img src="images/gallery/AVL_IGVC_Frame.png" alt="MARVIN frame assembly" loading="lazy">
+                            <p>MARVIN frame: building piece by piece</p>
                         </div>
                         <div class="project-image-card">
-                            <img src="images/gallery/AVL_IGVC_Side.jpg" alt="IGVC tank tread side view" loading="lazy">
+                            <img src="images/gallery/AVL_IGVC_Side.jpg" alt="MARVIN tank tread side view" loading="lazy">
                             <p>Motorized tank tread drive system</p>
                         </div>
                     </div>
 
                     <div class="project-content">
                         <span class="project-badge">Competition Platform</span>
-                        <h3>IGVC Project Track</h3>
-                        <p>This project track prepares AVL members for autonomous competition workflows, including navigation stack integration, test-course tuning, and field validation. Teams run iterative design sprints to improve reliability across hardware and software subteams.</p>
-                        <p>Members contribute to documentation, simulation baselines, and physical testing checkpoints to keep the platform competition-ready throughout each cycle.</p>
+                        <h3>IGVC Competition MARVIN</h3>
+                        <p>MARVIN is AVL's entry for the Intelligent Ground Vehicle Competition. The platform uses a camera-only perception stack on ROS 2 Humble, running on an NVIDIA Jetson Orin Nano with three ZED X stereo cameras. TwinLiteNet segmentation and YOLOv8 detection are fused into a bird's-eye occupancy costmap for Nav2 MPPI local control.</p>
+                        <p>A MATLAB Simulink and Simscape digital twin is used to develop vehicle-dynamics and waypoint-following before hardware tests. MARVIN is also the vehicle behind the lab's haptic teleoperation work, so competition navigation and remote driving share the same platform.</p>
 
                         <div class="project-skills">
                             <h4>Focus Areas</h4>
                             <ul>
-                                <li>Autonomous navigation stack integration</li>
-                                <li>ROS2 deployment and diagnostics</li>
-                                <li>Sensor calibration and field validation</li>
-                                <li>Team-based engineering workflows</li>
+                                <li>Camera-based perception and Nav2 at IGVC</li>
+                                <li>ROS 2 Humble on Jetson Orin Nano</li>
+                                <li>Vehicle-dynamics simulation in MATLAB</li>
+                                <li>Competition course validation</li>
                             </ul>
                         </div>
                     </div>
@@ -102,32 +102,32 @@
                     </div>
                 </div>
 
-                <!-- iHerb ATAV -->
-                <div class="project-showcase fade-in" id="project-iherb">
+                <!-- Carl / Car 1 -->
+                <div class="project-showcase fade-in" id="project-carl">
                     <div class="project-visuals">
                         <div class="project-image-card">
-                            <img src="images/gallery/AVL_IHerb_Frame.jpg" alt="iHerb robot frame" loading="lazy">
-                            <p>iHerb robot: disassembled to core structure</p>
+                            <img src="images/gallery/AVL_IHerb_Frame.jpg" alt="Carl drive-by-wire platform" loading="lazy">
+                            <p>Carl (Car 1) in the lab</p>
                         </div>
                         <div class="project-image-card">
-                            <img src="images/gallery/AVL_IHerb_Stacked.jpg" alt="iHerb platforms in the lab" loading="lazy">
-                            <p>Multiple iHerb units in development</p>
+                            <img src="images/gallery/AVL_IHerb_Stacked.jpg" alt="Carl platform development" loading="lazy">
+                            <p>Carl hardware integration</p>
                         </div>
                     </div>
 
                     <div class="project-content">
-                        <span class="project-badge">Applied Robotics</span>
-                        <h3>iHerb Autonomous Floor Robot</h3>
-                        <p>This project explores autonomous mobile robot operation for structured indoor environments. The team is prototyping navigation behaviors, obstacle handling logic, and fleet-style operation concepts to support repeatable autonomous tasks.</p>
-                        <p>Development is focused on safety-first operation, maintainable software interfaces, and system reliability under day-to-day use conditions.</p>
+                        <span class="project-badge">Drive-by-Wire Platform</span>
+                        <h3>Car 1 / Carl</h3>
+                        <p>Carl is an electric go-kart AVL is converting into a drive-by-wire research platform. A 24 V distributed control network uses an STM32 NUCLEO-F767ZI master and Teensy 4.1 nodes to command four wheel motors over CAN 2.0, with encoder feedback for speed estimation and closed-loop control.</p>
+                        <p>A Jetson Nano sits onboard for wireless access, data logging, and the path to autonomy. High-level commands reach the STM32 over UART; the master then arbitrates throttle and steering onto the CAN bus. Phase 1 is electronic drive-by-wire. Phase 2 adds perception, localization, and planning.</p>
 
                         <div class="project-skills">
                             <h4>Focus Areas</h4>
                             <ul>
-                                <li>AMR navigation and localization</li>
-                                <li>Safety and failover behavior design</li>
-                                <li>Operational testing for repetitive tasks</li>
-                                <li>Human-robot workflow integration</li>
+                                <li>CAN-based drive-by-wire throttle and steering</li>
+                                <li>Distributed embedded control (STM32 + Teensy)</li>
+                                <li>24 V power architecture and motor drive</li>
+                                <li>Onboard Jetson Nano for future autonomy</li>
                             </ul>
                         </div>
                     </div>
