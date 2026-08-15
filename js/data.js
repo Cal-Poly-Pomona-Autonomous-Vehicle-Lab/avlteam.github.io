@@ -416,6 +416,20 @@ const ACHIEVEMENTS = [
 
 const PUBLICATIONS = [
     {
+        title: "1:20 Scale Self Parking Vehicle",
+        authors: ["Ryan Fazio", "Dr. Behnam Bahr"],
+        venue: "12th Annual Creative Activities and Research Symposium (CPP CARS)",
+        venueShort: "CARS 2026",
+        year: "2026",
+        type: "poster",
+        abstract: "Presents a low-cost autonomous perpendicular parking system on a 1:20 scale Tesla Model Y using four ultrasonic sensors and an ESP32S3. The vehicle searches for an open spot, then reverse-parks using 3D-printed Ackermann steering and a PETG spur-gear differential, as a proof of concept for more accessible self-parking.",
+        tags: ["Self-Parking", "Ultrasonic Sensors", "ESP32", "Mechanical Design"],
+        paperLink: "",
+        posterLink: "images/posters/AVL_CARS2026_Self_Parking.pdf",
+        slidesLink: "",
+        image: "images/posters/AVL_CARS2026_Self_Parking.jpg"
+    },
+    {
         title: "Haptic Sim-Chair-Based Teleoperation System for Autonomous Vehicle Platforms",
         authors: ["Ryan Simpson", "Tyler Carrasco", "Yi-Szen Tang", "Kevin Xu", "Justin Dang", "Dr. Behnam Bahr"],
         venue: "12th Annual Creative Activities and Research Symposium (CPP CARS)",
