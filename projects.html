@@ -42,23 +42,23 @@
 
                 <!-- MARVIN / IGVC -->
                 <div class="project-showcase fade-in" id="project-igvc">
-                    <div class="project-visuals">
-                        <div class="project-image-card">
-                            <img src="images/gallery/AVL_IGVC_Frame.png" alt="MARVIN frame assembly" loading="lazy">
-                            <p>MARVIN frame: building piece by piece</p>
-                        </div>
-                        <div class="project-image-card">
-                            <img src="images/gallery/AVL_IGVC_Side.jpg" alt="MARVIN tank tread side view" loading="lazy">
-                            <p>Motorized tank tread drive system</p>
-                        </div>
-                    </div>
-
-                    <div class="project-content">
+                    <div class="project-header">
                         <span class="project-badge">Competition Platform</span>
                         <h3>IGVC Competition MARVIN</h3>
+                    </div>
+                    <div class="project-visuals">
+                        <figure class="project-image-card">
+                            <img src="images/gallery/AVL_IGVC_Frame.png" alt="MARVIN frame assembly" loading="lazy">
+                            <figcaption>MARVIN frame: building piece by piece</figcaption>
+                        </figure>
+                        <figure class="project-image-card">
+                            <img src="images/gallery/AVL_IGVC_Side.jpg" alt="MARVIN tank tread side view" loading="lazy">
+                            <figcaption>Motorized tank tread drive system</figcaption>
+                        </figure>
+                    </div>
+                    <div class="project-content">
                         <p>MARVIN is AVL's entry for the Intelligent Ground Vehicle Competition. The platform uses a camera-only perception stack on ROS 2 Humble, running on an NVIDIA Jetson Orin Nano with three ZED X stereo cameras. TwinLiteNet segmentation and YOLOv8 detection are fused into a bird's-eye occupancy costmap for Nav2 MPPI local control.</p>
                         <p>A MATLAB Simulink and Simscape digital twin is used to develop vehicle-dynamics and waypoint-following before hardware tests. MARVIN is also the vehicle behind the lab's haptic teleoperation work, so competition navigation and remote driving share the same platform.</p>
-
                         <div class="project-skills">
                             <h4>Focus Areas</h4>
                             <ul>
@@ -73,23 +73,23 @@
 
                 <!-- AVL-002 -->
                 <div class="project-showcase reverse fade-in" id="project-av2">
-                    <div class="project-visuals">
-                        <div class="project-image-card">
-                            <img src="images/gallery/AVL_AV2_FrontPanel.jpg" alt="AVL-002 electrical front panel" loading="lazy">
-                            <p>AVL-002 front panel: steering control electronics</p>
-                        </div>
-                        <div class="project-image-card">
-                            <img src="images/gallery/AVL_AV2_LDB.jpg" alt="AVL-002 parked in lab" loading="lazy">
-                            <p>AVL-002, the lab's primary research platform</p>
-                        </div>
-                    </div>
-
-                    <div class="project-content">
+                    <div class="project-header">
                         <span class="project-badge">Core Research Platform</span>
                         <h3>AVL-002 (AV2)</h3>
+                    </div>
+                    <div class="project-visuals">
+                        <figure class="project-image-card">
+                            <img src="images/gallery/AVL_AV2_FrontPanel.jpg" alt="AVL-002 electrical front panel" loading="lazy">
+                            <figcaption>AVL-002 front panel: steering control electronics</figcaption>
+                        </figure>
+                        <figure class="project-image-card">
+                            <img src="images/gallery/AVL_AV2_LDB.jpg" alt="AVL-002 parked in lab" loading="lazy">
+                            <figcaption>AVL-002, the lab's primary research platform</figcaption>
+                        </figure>
+                    </div>
+                    <div class="project-content">
                         <p>AV2 is the lab's main autonomous platform for integrating and validating perception, planning, and low-level control research. The project emphasizes stable software deployment, reproducible experiments, and robust behavior in campus-like environments.</p>
                         <p>Current work includes improving sensor fusion quality, refining control smoothness, and expanding scenario coverage for day/night driving conditions.</p>
-
                         <div class="project-skills">
                             <h4>Focus Areas</h4>
                             <ul>
@@ -104,23 +104,23 @@
 
                 <!-- Carl / Car 1 -->
                 <div class="project-showcase fade-in" id="project-carl">
-                    <div class="project-visuals">
-                        <div class="project-image-card">
-                            <img src="images/gallery/AVL_Carl_CARS2026.jpg" alt="Carl drive-by-wire platform at CPP CARS 2026" loading="lazy">
-                            <p>Carl at CPP CARS 2026</p>
-                        </div>
-                        <div class="project-image-card">
-                            <img src="images/gallery/AVL_iCARE_Team.jpg" alt="AVL team with Carl at CPP CARS 2026" loading="lazy">
-                            <p>AVL team with Carl</p>
-                        </div>
-                    </div>
-
-                    <div class="project-content">
+                    <div class="project-header">
                         <span class="project-badge">Drive-by-Wire Platform</span>
                         <h3>Car 1 / Carl</h3>
+                    </div>
+                    <div class="project-visuals">
+                        <figure class="project-image-card">
+                            <img src="images/gallery/AVL_Carl_CARS2026.jpg" alt="Carl drive-by-wire platform at CPP CARS 2026" loading="lazy">
+                            <figcaption>Carl at CPP CARS 2026</figcaption>
+                        </figure>
+                        <figure class="project-image-card">
+                            <img src="images/gallery/AVL_iCARE_Team.jpg" alt="AVL team with Carl at CPP CARS 2026" loading="lazy">
+                            <figcaption>AVL team with Carl</figcaption>
+                        </figure>
+                    </div>
+                    <div class="project-content">
                         <p>Carl is an electric go-kart AVL is converting into a drive-by-wire research platform. A 24 V distributed control network uses an STM32 NUCLEO-F767ZI master and Teensy 4.1 nodes to command four wheel motors over CAN 2.0, with encoder feedback for speed estimation and closed-loop control.</p>
                         <p>A Jetson Nano sits onboard for wireless access, data logging, and the path to autonomy. High-level commands reach the STM32 over UART; the master then arbitrates throttle and steering onto the CAN bus. Phase 1 is electronic drive-by-wire. Phase 2 adds perception, localization, and planning.</p>
-
                         <div class="project-skills">
                             <h4>Focus Areas</h4>
                             <ul>
