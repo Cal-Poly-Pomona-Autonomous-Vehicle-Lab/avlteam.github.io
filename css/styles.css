@@ -674,6 +674,10 @@ section {
     font-weight: 600;
 }
 
+.nav-panel {
+    display: contents;
+}
+
 .nav-social {
     display: flex;
     align-items: center;
@@ -3067,7 +3071,11 @@ body.dark-mode .sponsor-logo-invert img {
         opacity: 0.12;
     }
 
-    .nav-links {
+    .nav-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
         position: fixed;
         top: 0;
         right: -110%;
@@ -3075,26 +3083,23 @@ body.dark-mode .sponsor-logo-invert img {
         height: 100vh;
         height: 100dvh;
         background: var(--white);
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        padding: 5rem 1.5rem 1rem;
         gap: 0.25rem;
-        padding: 5rem 2rem 5.5rem;
         transition: right 0.3s ease;
         z-index: 1002;
         box-shadow: -4px 0 30px rgba(0,0,0,0.18);
+        box-sizing: border-box;
     }
 
-    body.dark-mode .nav-links {
+    body.dark-mode .nav-panel {
         background: #1a1a1a;
     }
 
-    .nav-links.active {
+    .nav-panel.active {
         right: 0;
     }
 
-    /* Dim overlay behind the open menu */
-    .nav-links.active::before {
+    .nav-panel.active::before {
         content: '';
         position: fixed;
         inset: 0;
@@ -3103,64 +3108,41 @@ body.dark-mode .sponsor-logo-invert img {
         z-index: -1;
     }
 
+    .nav-links {
+        position: static;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
     .nav-links a {
         font-size: 1.1rem;
         padding: 0.7rem 0.5rem;
         width: 100%;
         border-bottom: 1px solid var(--border);
         color: var(--text-primary);
-    }
-
-    .nav-links a:last-child {
-        border-bottom: none;
-    }
-
-    .mobile-toggle {
-        display: flex;
-        z-index: 1003;
-        cursor: pointer;
-        padding: 0.75rem;
-        touch-action: manipulation;
-    }
-
-    .mobile-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .mobile-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .mobile-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
+        border-radius: 0;
     }
 
     .nav-social {
-        display: flex;
-        position: fixed;
-        z-index: 1002;
-        top: auto;
-        bottom: 0;
-        right: -110%;
-        width: min(80%, 320px);
-        padding: 0.85rem 1.75rem calc(0.6rem + env(safe-area-inset-bottom, 0px));
-        gap: 0.65rem;
-        background: var(--white);
-        border-top: 1px solid var(--border);
-        box-sizing: border-box;
-        transition: right 0.3s ease;
+        margin-top: auto;
+        width: 100%;
         justify-content: flex-start;
-        align-items: center;
-    }
-
-    .navbar.menu-open .nav-social {
-        right: 0;
+        gap: 0.65rem;
+        padding-top: 1rem;
+        padding-bottom: calc(0.85rem + env(safe-area-inset-bottom, 0px));
+        border-top: 1px solid var(--border);
     }
 
     .nav-social a,
     .nav-social .dark-mode-toggle {
         width: 42px;
         height: 42px;
+        border-bottom: none;
     }
 
     .nav-social .dark-mode-toggle {
@@ -3183,8 +3165,27 @@ body.dark-mode .sponsor-logo-invert img {
     }
 
     body.dark-mode .nav-social {
-        background: #1a1a1a;
         border-top-color: #2e2e2e;
+    }
+
+    .mobile-toggle {
+        display: flex;
+        z-index: 1003;
+        cursor: pointer;
+        padding: 0.75rem;
+        touch-action: manipulation;
+    }
+
+    .mobile-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .mobile-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
     }
 
     .hero-cta {
