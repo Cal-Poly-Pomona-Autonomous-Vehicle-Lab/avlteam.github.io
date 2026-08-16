@@ -416,6 +416,20 @@ const ACHIEVEMENTS = [
 
 const PUBLICATIONS = [
     {
+        title: "Rear Suspension Redesign",
+        authors: ["Anthony Carreño", "Martina Roufaeil", "Dr. Behnam Bahr"],
+        venue: "12th Annual Creative Activities and Research Symposium (CPP CARS)",
+        venueShort: "CARS 2026",
+        year: "2026",
+        type: "poster",
+        abstract: "Redesigns Carl's rigid rear suspension as an independent trailing-arm system with a structural crossmember, double-shear pivots, coil springs, and hydraulic dampers. The layout keeps the existing four-wheel-drive hub motors while adding wheel travel and more consistent tire contact on uneven terrain, as a foundation for later fabrication and IMU-based ride testing.",
+        tags: ["Suspension", "Mechanical Design", "Carl", "Vehicle Dynamics"],
+        paperLink: "",
+        posterLink: "images/posters/AVL_CARS2026_Rear_Suspension.pdf",
+        slidesLink: "",
+        image: "images/posters/AVL_CARS2026_Rear_Suspension.jpg"
+    },
+    {
         title: "1:20 Scale Self Parking Vehicle",
         authors: ["Ryan Fazio", "Dr. Behnam Bahr"],
         venue: "12th Annual Creative Activities and Research Symposium (CPP CARS)",
@@ -758,6 +772,8 @@ const MINI_PROJECTS = [
         badge: "Master's Project",
         title: "Autonomous Parallel Parking in Gazebo",
         people: "Calvin Chu",
+        image: "images/projects/AVL_Project_Calvin_Chu_ParallelParking.jpg",
+        imageAlt: "Gazebo simulation of parallel-parking spot detection",
         description: "A Gazebo and ROS 2 simulation for autonomous parallel parking, developed as a Mechanical Engineering master's project. The work focuses on parking-maneuver planning and control in simulation as a path toward hardware tests on AVL platforms.",
         tags: ["ROS 2", "Gazebo", "Nav2", "Parking"],
         link: "images/projects/AVL_Project_Calvin_Chu_ParallelParking.pdf",
@@ -767,6 +783,8 @@ const MINI_PROJECTS = [
         badge: "Master's Project",
         title: "Perception-Driven Path Planning",
         people: "Abhishek Vishwakarma",
+        image: "images/projects/AVL_Project_Abhishek_PerceptionNav2.jpg",
+        imageAlt: "Camera perception with drivable-area segmentation and vehicle detection",
         description: "Integrates image segmentation with Nav2 so an autonomous vehicle can plan paths from camera perception. The project covers system design, real-time perception, and navigation on AVL software stacks.",
         tags: ["YOLOv8", "Nav2", "ROS 2", "Perception"],
         link: "images/projects/AVL_Project_Abhishek_Vishwakarma_PerceptionNav2.pdf",
