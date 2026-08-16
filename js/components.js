@@ -120,15 +120,17 @@ function renderNavbar(activePage) {
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navLinks = document.querySelector('.nav-links');
     if (mobileToggle && navLinks) {
+        const setMenuOpen = (open) => {
+            mobileToggle.classList.toggle('active', open);
+            navLinks.classList.toggle('active', open);
+            navEl.classList.toggle('menu-open', open);
+        };
+
         mobileToggle.addEventListener('click', () => {
-            mobileToggle.classList.toggle('active');
-            navLinks.classList.toggle('active');
+            setMenuOpen(!navLinks.classList.contains('active'));
         });
         navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileToggle.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
+            link.addEventListener('click', () => setMenuOpen(false));
         });
     }
 }

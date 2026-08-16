@@ -3153,7 +3153,7 @@ body.dark-mode .sponsor-logo-invert img {
         align-items: center;
     }
 
-    .navbar:has(.nav-links.active) .nav-social {
+    .navbar.menu-open .nav-social {
         right: 0;
     }
 
