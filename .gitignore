@@ -2,16 +2,5 @@ WEBSITE_UPDATE_PLAN.md
 carl file.md
 carl file 2.md
 
-# Drop-in originals. Site uses renamed copies under images/gallery, posters, projects, papers.
-images/Marvin_TestPic*.jpg
-images/Screenshot_*.jpg
-images/Ryan Fazio Research Poster.*
-images/Master's Project Paper_AVL Calvin Chu.pdf
-images/Masters_Project_Abishek.pdf
-images/Simplified-Multimodal-Imitation-Learning*.pdf
-images/AVL_LogoBgRemoved.png
-images/AVL Logo Black.PNG
-images/AVL_WithGanpat.jpg
-images/AVL_atSCAIR.jpg
-images/AVL_SimChair_Project.jpg
-
+# Drop-in originals and unused leftovers. Live site uses the folders below.
+images/_dropins/

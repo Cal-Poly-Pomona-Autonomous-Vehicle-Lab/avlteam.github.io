@@ -45,11 +45,11 @@ function renderNavbar(activePage) {
         <div class="container">
             <div class="nav-logo-group">
                 <a href="https://www.cpp.edu/" target="_blank" rel="noopener noreferrer" class="nav-cpp-link" title="Cal Poly Pomona">
-                    <img src="images/AVL_CPPENG_Logo.png" alt="Cal Poly Pomona" class="nav-cpp-logo">
+                    <img src="images/brand/AVL_CPP_Engineering.png" alt="Cal Poly Pomona" class="nav-cpp-logo">
                 </a>
                 <div class="nav-logo-divider"></div>
                 <a href="index.html" class="nav-logo">
-                    <img src="images/AVL_Blue_Logo.png" alt="AVL Logo">
+                    <img src="images/brand/AVL_Logo_Blue.png" alt="AVL Logo">
                 </a>
             </div>
 
@@ -173,7 +173,7 @@ function renderFooterHtml() {
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="images/AVL_Text_No_Background_400px-115px.png" alt="AVL Logo">
+                    <img src="images/brand/AVL_Wordmark.png" alt="AVL Logo">
                     <p>Autonomous Vehicle Laboratory at Cal Poly Pomona, advancing autonomous systems research through hands-on innovation.</p>
                     <div class="footer-social">
                         <a href="https://discord.gg/2D5fEg94eM" target="_blank" aria-label="Discord">${discordSvg}</a>

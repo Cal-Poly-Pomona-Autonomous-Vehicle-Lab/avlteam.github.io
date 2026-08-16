@@ -754,7 +754,7 @@ section {
 .hero-image {
     position: absolute;
     inset: 0;
-    background-image: url('../images/gallery/AVL_AV2_LDB.jpg');
+    background-image: url('../images/projects/AVL_Project_AVL002_Lab.jpg');
     background-size: cover;
     background-position: center 30%;
     opacity: 1;
@@ -941,7 +941,7 @@ section {
     bottom: 0;
     width: min(300px, 38vw);
     height: auto;
-    background: url('../images/AVL_Logo_Blue_Dots.png') center / 100% 100% no-repeat;
+    background: url('../images/brand/AVL_Logo_Dots.png') center / 100% 100% no-repeat;
     filter: brightness(0) invert(1);
     opacity: 0.09;
     transform: skewX(16deg);
@@ -957,7 +957,7 @@ section {
     height: min(280px, 34vw);
     transform: translateY(-38%);
     background-image:
-        url('../images/AVL_Logo_White.png'),
+        url('../images/brand/AVL_Logo_White.png'),
         radial-gradient(rgba(255,255,255,0.28) 0.7px, transparent 0.7px),
         radial-gradient(rgba(255,255,255,0.16) 0.4px, transparent 0.4px);
     background-size: contain, 10px 10px, 6px 6px;

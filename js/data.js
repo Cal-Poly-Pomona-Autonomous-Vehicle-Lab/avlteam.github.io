@@ -20,7 +20,7 @@
 // Fields:
 //   name: Full name
 //   role: Position title (e.g., "Research Lead", "Software Engineer", "Lab Director")
-//   image: Path to headshot image (place images in /images/team/ folder)
+//   image: Path to headshot (images/team/AVL_First_Last.jpg)
 //          Use "placeholder" for a generated avatar
 //   bio: Short description (1-2 sentences)
 //   linkedin: LinkedIn URL (optional - use "" if none)
@@ -792,7 +792,7 @@ const EQUIPMENT = [
 // ============================================================================
 // SPONSORS & PARTNERS
 // ============================================================================
-// Add logos to /images/sponsors/ folder
+// Add logos to images/sponsors/
 // Types: "university", "industry", "organization", "faculty"
 
 const SPONSORS = [
