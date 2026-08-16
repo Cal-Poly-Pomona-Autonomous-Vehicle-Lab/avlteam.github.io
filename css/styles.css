@@ -113,7 +113,8 @@ body.dark-mode .position-card,
 body.dark-mode .equipment-card,
 body.dark-mode .research-card,
 body.dark-mode .person-card,
-body.dark-mode .lecture-card {
+body.dark-mode .lecture-card,
+body.dark-mode .mini-project-card {
     background: #1a1a1a;
     border-color: #2e2e2e;
 }
@@ -205,7 +206,8 @@ body.dark-mode .pub-filter-btn.active {
 
 /* Focus area labels */
 body.dark-mode .project-skills h4,
-body.dark-mode .project-skills li {
+body.dark-mode .project-skills li,
+body.dark-mode .mini-project-tags li {
     color: #e0e0e0;
 }
 
@@ -888,9 +890,9 @@ section {
    ============================================================================ */
 
 .page-hero {
-    min-height: 36vh;
-    padding-top: calc(var(--nav-height) + 3rem);
-    padding-bottom: 3.5rem;
+    min-height: 0;
+    padding-top: calc(var(--nav-height) + 2.75rem);
+    padding-bottom: 2.75rem;
     display: flex;
     align-items: flex-end;
     background: var(--blue-primary);
@@ -901,13 +903,66 @@ section {
 .page-hero-bg {
     position: absolute;
     inset: 0;
-    opacity: 0.12;
-    background-image: radial-gradient(circle at 70% 50%, rgba(255,255,255,0.15) 0%, transparent 60%);
+    z-index: 1;
+    pointer-events: none;
+    background-image:
+        radial-gradient(ellipse 48% 75% at 6% 85%, rgba(255,255,255,0.14) 0%, transparent 58%),
+        linear-gradient(118deg, transparent 46%, rgba(255,255,255,0.07) 54%, transparent 64%),
+        radial-gradient(rgba(255,255,255,0.14) 1.1px, transparent 1.1px);
+    background-size: auto, auto, 22px 22px;
+}
+
+.page-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+        radial-gradient(rgba(255,255,255,0.22) 0.65px, transparent 0.65px),
+        radial-gradient(rgba(255,255,255,0.14) 0.4px, transparent 0.4px);
+    background-size: 12px 12px, 7px 7px;
+    background-position: 0 0, 4px 4px;
+    -webkit-mask-image: radial-gradient(ellipse 58% 95% at 88% 40%, #000 0%, #000 32%, transparent 74%);
+    mask-image: radial-gradient(ellipse 58% 95% at 88% 40%, #000 0%, #000 32%, transparent 74%);
+}
+
+.page-hero-bg::before {
+    content: '';
+    position: absolute;
+    left: clamp(-90px, -6vw, -24px);
+    top: auto;
+    bottom: -48px;
+    width: min(280px, 38vw);
+    height: min(280px, 38vw);
+    background: url('../images/AVL_Logo_Blue_Dots.png') center / contain no-repeat;
+    filter: brightness(0) invert(1);
+    opacity: 0.09;
+    transform: rotate(-18deg);
+}
+
+.page-hero-bg::after {
+    content: '';
+    position: absolute;
+    right: clamp(0.5rem, 3vw, 2.5rem);
+    top: 50%;
+    width: min(280px, 34vw);
+    height: min(280px, 34vw);
+    transform: translateY(-38%);
+    background-image:
+        url('../images/AVL_Logo_White.png'),
+        radial-gradient(rgba(255,255,255,0.28) 0.7px, transparent 0.7px),
+        radial-gradient(rgba(255,255,255,0.16) 0.4px, transparent 0.4px);
+    background-size: contain, 10px 10px, 6px 6px;
+    background-repeat: no-repeat, repeat, repeat;
+    background-position: center, 0 0, 3px 3px;
+    opacity: 0.16;
 }
 
 .page-hero-content {
     position: relative;
     z-index: 2;
+    max-width: min(640px, 72%);
 }
 
 .page-hero h1 {
@@ -1286,6 +1341,75 @@ section {
     margin: 0 auto 1.5rem;
     max-width: 50ch;
     color: var(--text-secondary);
+}
+
+/* ============================================================================
+   MINI / INDEPENDENT PROJECTS
+   ============================================================================ */
+
+.mini-projects {
+    background: var(--white);
+}
+
+.mini-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.mini-project-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.6rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.mini-project-card h3 {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.mini-project-people {
+    margin: 0;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--blue-primary);
+}
+
+.mini-project-card > p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+}
+
+.mini-project-tags {
+    list-style: none;
+    padding: 0;
+    margin: 0.35rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.mini-project-tags li {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: var(--radius-pill);
+}
+
+.mini-project-link {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
 }
 
 /* ============================================================================
@@ -2885,6 +3009,10 @@ body.dark-mode .sponsor-logo-invert img {
         height: auto;
         grid-template-columns: 1fr 1fr;
     }
+
+    .mini-projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 960px) {
@@ -2896,6 +3024,26 @@ body.dark-mode .sponsor-logo-invert img {
 @media (max-width: 768px) {
     :root {
         --section-padding: 3.5rem;
+    }
+
+    .page-hero-content {
+        max-width: 100%;
+    }
+
+    .page-hero-bg::before {
+        opacity: 0.05;
+        width: 180px;
+        height: 180px;
+        left: -64px;
+        top: auto;
+        bottom: -48px;
+    }
+
+    .page-hero-bg::after {
+        width: 140px;
+        height: 140px;
+        right: 0.75rem;
+        opacity: 0.12;
     }
 
     .nav-links {

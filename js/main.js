@@ -7,6 +7,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     try {
         initNavigation();
+        renderMiniProjectsSection();
         renderEquipmentSection();
         renderTeamSection();
         renderResearchSection();
@@ -441,6 +442,37 @@ function filterPublications(type) {
     if (container) {
         renderPublicationCards(container, type);
     }
+}
+
+
+// ============================================================================
+// INDEPENDENT / MINI PROJECTS
+// ============================================================================
+
+function renderMiniProjectsSection() {
+    const container = document.getElementById('mini-projects-container');
+    if (!container || typeof MINI_PROJECTS === 'undefined') return;
+
+    container.innerHTML = MINI_PROJECTS.map(project => {
+        const people = project.people
+            ? `<p class="mini-project-people">${project.people}</p>`
+            : '';
+        const link = project.link
+            ? `<a href="${project.link}" target="_blank" rel="noopener" class="mini-project-link">${project.linkLabel || 'Read more'}</a>`
+            : '';
+        const tags = (project.tags || []).map(tag => `<li>${tag}</li>`).join('');
+
+        return `
+            <article class="mini-project-card fade-in">
+                <span class="project-badge">${project.badge}</span>
+                <h3>${project.title}</h3>
+                ${people}
+                <p>${project.description}</p>
+                <ul class="mini-project-tags">${tags}</ul>
+                ${link}
+            </article>
+        `;
+    }).join('');
 }
 
 

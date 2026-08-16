@@ -494,7 +494,7 @@ const PUBLICATIONS = [
         type: "poster",
         abstract: "Investigates a simplified, conditioned Imitation Learning model for day-night autonomous driving on a university campus using RGB cameras for daytime and a thermal camera for nighttime operation.",
         tags: ["Imitation Learning", "Thermal Vision", "Autonomous Driving"],
-        paperLink: "",
+        paperLink: "images/papers/AVL_Paper_Knox_Ghasemi_ImitationLearning.pdf",
         posterLink: "",
         slidesLink: ""
     },
@@ -734,6 +734,43 @@ const SITE_INFO = {
         github: "https://github.com/Cal-Poly-Pomona-Autonomous-Vehicle-Lab" // Add GitHub organization URL
     }
 };
+
+
+// ============================================================================
+// INDEPENDENT & SENIOR PROJECTS
+// ============================================================================
+// Smaller student-led and lab-station work shown on the Projects page.
+// Fields: badge, title, people, description, tags, link, linkLabel
+
+const MINI_PROJECTS = [
+    {
+        badge: "Lab Station",
+        title: "Haptic Sim Chair",
+        people: "Lab Use",
+        description: "AVL's teleoperation station is a Sparco seat on a D-BOX four-actuator motion platform, with a Thrustmaster wheel and pedals and a triple-monitor driver view. Operators drive lab vehicles remotely over a Tailscale VPN while camera video and IMU motion come back to the chair. It can fit any autonomous vehicle in the lab.",
+        tags: ["D-BOX", "Thrustmaster", "ZED X", "Xsens IMU", "ROS 2", "Tailscale"],
+        link: "",
+        linkLabel: ""
+    },
+    {
+        badge: "Master's Project",
+        title: "Autonomous Parallel Parking in Gazebo",
+        people: "Calvin Chu",
+        description: "A Gazebo and ROS 2 simulation for autonomous parallel parking, developed as a Mechanical Engineering master's project. The work focuses on parking-maneuver planning and control in simulation as a path toward hardware tests on AVL platforms.",
+        tags: ["ROS 2", "Gazebo", "Nav2", "Parking"],
+        link: "images/projects/AVL_Project_Calvin_Chu_ParallelParking.pdf",
+        linkLabel: "Project paper"
+    },
+    {
+        badge: "Master's Project",
+        title: "Perception-Driven Path Planning",
+        people: "Abhishek Vishwakarma",
+        description: "Integrates image segmentation with Nav2 so an autonomous vehicle can plan paths from camera perception. The project covers system design, real-time perception, and navigation on AVL software stacks.",
+        tags: ["YOLOv8", "Nav2", "ROS 2", "Perception"],
+        link: "images/projects/AVL_Project_Abhishek_Vishwakarma_PerceptionNav2.pdf",
+        linkLabel: "Project slides"
+    }
+];
 
 
 // ============================================================================
