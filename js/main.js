@@ -457,6 +457,9 @@ function renderMiniProjectsSection() {
         const people = project.people
             ? `<p class="mini-project-people">${project.people}</p>`
             : '';
+        const photo = project.image
+            ? `<figure class="mini-project-photo"><img src="${project.image}" alt="${project.imageAlt || project.title}" loading="lazy"></figure>`
+            : '';
         const link = project.link
             ? `<a href="${project.link}" target="_blank" rel="noopener" class="mini-project-link">${project.linkLabel || 'Read more'}</a>`
             : '';
@@ -467,6 +470,7 @@ function renderMiniProjectsSection() {
                 <span class="project-badge">${project.badge}</span>
                 <h3>${project.title}</h3>
                 ${people}
+                ${photo}
                 <p>${project.description}</p>
                 <ul class="mini-project-tags">${tags}</ul>
                 ${link}

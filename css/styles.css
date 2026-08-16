@@ -62,12 +62,8 @@ body.dark-mode {
 }
 
 body.dark-mode .navbar {
-    background: #111111;
-    border-bottom-color: #2e2e2e;
-}
-
-body.dark-mode .nav-links {
     background: #1a1a1a;
+    border-bottom-color: #2e2e2e;
 }
 
 body.dark-mode .nav-links a {
@@ -75,7 +71,7 @@ body.dark-mode .nav-links a {
 }
 
 body.dark-mode .navbar.scrolled {
-    background: #111111;
+    background: #1a1a1a;
     box-shadow: 0 2px 16px rgba(0,0,0,0.6);
 }
 
@@ -99,6 +95,10 @@ body.dark-mode .nav-social a {
 body.dark-mode .nav-social a:hover {
     color: #60B8FF;
     background: rgba(96,184,255,0.1);
+}
+
+body.dark-mode .nav-logo img {
+    filter: brightness(0) invert(1);
 }
 
 body.dark-mode .pub-poster-link,
@@ -622,6 +622,12 @@ section {
     flex-shrink: 0;
 }
 
+.nav-cpp-link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .nav-cpp-logo {
     height: 44px;
     width: auto;
@@ -930,15 +936,16 @@ section {
 .page-hero-bg::before {
     content: '';
     position: absolute;
-    left: clamp(-90px, -6vw, -24px);
-    top: auto;
-    bottom: -48px;
-    width: min(280px, 38vw);
-    height: min(280px, 38vw);
-    background: url('../images/AVL_Logo_Blue_Dots.png') center / contain no-repeat;
+    left: -72px;
+    top: 0;
+    bottom: 0;
+    width: min(300px, 38vw);
+    height: auto;
+    background: url('../images/AVL_Logo_Blue_Dots.png') center / 100% 100% no-repeat;
     filter: brightness(0) invert(1);
     opacity: 0.09;
-    transform: rotate(-18deg);
+    transform: skewX(16deg);
+    transform-origin: top left;
 }
 
 .page-hero-bg::after {
@@ -1378,6 +1385,20 @@ section {
     font-size: 0.82rem;
     font-weight: 600;
     color: var(--blue-primary);
+}
+
+.mini-project-photo {
+    margin: 0.15rem 0 0.2rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.mini-project-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .mini-project-card > p {
@@ -3031,12 +3052,12 @@ body.dark-mode .sponsor-logo-invert img {
     }
 
     .page-hero-bg::before {
-        opacity: 0.05;
-        width: 180px;
-        height: 180px;
-        left: -64px;
-        top: auto;
-        bottom: -48px;
+        opacity: 0.07;
+        width: min(220px, 58vw);
+        left: -48px;
+        top: 0;
+        bottom: 0;
+        height: auto;
     }
 
     .page-hero-bg::after {
@@ -3054,13 +3075,17 @@ body.dark-mode .sponsor-logo-invert img {
         height: 100vh;
         background: var(--white);
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         gap: 0.25rem;
-        padding: 5rem 2rem 2rem;
+        padding: 5rem 2rem 7.5rem;
         transition: right 0.3s ease;
         z-index: 1002;
         box-shadow: -4px 0 30px rgba(0,0,0,0.18);
+    }
+
+    body.dark-mode .nav-links {
+        background: #1a1a1a;
     }
 
     .nav-links.active {
@@ -3110,7 +3135,54 @@ body.dark-mode .sponsor-logo-invert img {
     }
 
     .nav-social {
-        display: none;
+        display: flex;
+        position: fixed;
+        z-index: 1002;
+        top: auto;
+        bottom: 0;
+        right: -110%;
+        width: min(80%, 320px);
+        padding: 1.1rem 1.75rem 2.1rem;
+        gap: 0.65rem;
+        background: var(--white);
+        border-top: 1px solid var(--border);
+        box-sizing: border-box;
+        transition: right 0.3s ease;
+        justify-content: flex-start;
+    }
+
+    .navbar:has(.nav-links.active) .nav-social {
+        right: 0;
+    }
+
+    .nav-social a,
+    .nav-social .dark-mode-toggle {
+        width: 42px;
+        height: 42px;
+    }
+
+    .nav-social .dark-mode-toggle {
+        width: auto;
+        padding: 0 0.85rem;
+        gap: 0.4rem;
+        color: var(--text-primary);
+    }
+
+    .nav-social .dark-mode-toggle::after {
+        content: 'Dark mode';
+        font-size: 0.88rem;
+        font-family: var(--font-body);
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    body.dark-mode .nav-social .dark-mode-toggle::after {
+        content: 'Light mode';
+    }
+
+    body.dark-mode .nav-social {
+        background: #1a1a1a;
+        border-top-color: #2e2e2e;
     }
 
     .hero-cta {

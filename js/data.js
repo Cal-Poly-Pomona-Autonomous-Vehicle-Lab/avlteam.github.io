@@ -747,6 +747,8 @@ const MINI_PROJECTS = [
         badge: "Lab Station",
         title: "Haptic Sim Chair",
         people: "Lab Use",
+        image: "images/projects/AVL_Project_SimChair.jpg",
+        imageAlt: "Haptic sim chair with Sparco seat, Thrustmaster wheel, and D-BOX motion base",
         description: "AVL's teleoperation station is a Sparco seat on a D-BOX four-actuator motion platform, with a Thrustmaster wheel and pedals and a triple-monitor driver view. Operators drive lab vehicles remotely over a Tailscale VPN while camera video and IMU motion come back to the chair. It can fit any autonomous vehicle in the lab.",
         tags: ["D-BOX", "Thrustmaster", "ZED X", "Xsens IMU", "ROS 2", "Tailscale"],
         link: "",

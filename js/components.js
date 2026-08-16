@@ -44,7 +44,9 @@ function renderNavbar(activePage) {
     navEl.innerHTML = `
         <div class="container">
             <div class="nav-logo-group">
-                <img src="images/AVL_CPPENG_Logo.png" alt="Cal Poly Pomona College of Engineering" class="nav-cpp-logo">
+                <a href="https://www.cpp.edu/" target="_blank" rel="noopener noreferrer" class="nav-cpp-link" title="Cal Poly Pomona">
+                    <img src="images/AVL_CPPENG_Logo.png" alt="Cal Poly Pomona" class="nav-cpp-logo">
+                </a>
                 <div class="nav-logo-divider"></div>
                 <a href="index.html" class="nav-logo">
                     <img src="images/AVL_Blue_Logo.png" alt="AVL Logo">
