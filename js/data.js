@@ -761,7 +761,7 @@ const MINI_PROJECTS = [
         badge: "Lab Station",
         title: "Haptic Sim Chair",
         people: "Lab Use",
-        image: "images/projects/AVL_Project_SimChair.jpg",
+        image: "images/projects/AVL_Project_Sim_Chair.jpg",
         imageAlt: "Haptic sim chair with Sparco seat, Thrustmaster wheel, and D-BOX motion base",
         description: "AVL's teleoperation station is a Sparco seat on a D-BOX four-actuator motion platform, with a Thrustmaster wheel and pedals and a triple-monitor driver view. Operators drive lab vehicles remotely over a Tailscale VPN while camera video and IMU motion come back to the chair. It can fit any autonomous vehicle in the lab.",
         tags: ["D-BOX", "Thrustmaster", "ZED X", "Xsens IMU", "ROS 2", "Tailscale"],
@@ -783,7 +783,7 @@ const MINI_PROJECTS = [
         badge: "Master's Project",
         title: "Perception-Driven Path Planning",
         people: "Abhishek Vishwakarma",
-        image: "images/projects/AVL_Project_Abhishek_PerceptionNav2.jpg",
+        image: "images/projects/AVL_Project_Abhishek_Vishwakarma_PerceptionNav2.jpg",
         imageAlt: "Camera perception with drivable-area segmentation and vehicle detection",
         description: "Integrates image segmentation with Nav2 so an autonomous vehicle can plan paths from camera perception. The project covers system design, real-time perception, and navigation on AVL software stacks.",
         tags: ["YOLOv8", "Nav2", "ROS 2", "Perception"],
@@ -817,7 +817,7 @@ const SPONSORS = [
     {
         name: "RoboDK",
         type: "industry",
-        logo: "images/sponsors/AVL_Sponsor_Robodk.png",
+        logo: "images/sponsors/AVL_Sponsor_RoboDK.png",
         url: "https://robodk.com/index",
         description: "Simulation and offline programming software for industrial robots"
     },
