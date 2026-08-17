@@ -528,13 +528,13 @@ const PUBLICATIONS = [
     {
         title: "Simulation And Testing Of Autonomous Vehicle With Simultaneous Localization And Mapping (SLAM)",
         authors: ["Jaemin Kim", "Dr. Behnam Bahr", "Dr. Tamer Omar"],
-        venue: "Master's Degree Thesis, CPP",
-        venueShort: "Thesis",
+        venue: "Master of Science in Electrical Engineering Project, CPP",
+        venueShort: "MSEE 2025",
         year: "2025",
-        type: "poster",
-        abstract: "Presents the simulation and experimental validation of an autonomous vehicle platform implementing Simultaneous Localization and Mapping (SLAM) for real-time navigation in unknown environments.",
-        tags: ["SLAM", "Autonomous Vehicles", "LiDAR", "Sensor Fusion", "ROS", "Robotics"],
-        paperLink: "",
+        type: "paper",
+        abstract: "Designs, implements, and evaluates real-time SLAM on a ground vehicle using ROS 2 Jazzy and EKF sensor fusion. A differential-drive prototype (RPLidar A1, OAK-D Lite, slam_toolbox) was used to bring up the stack, then ported to AVL's Ackermann vehicle with a Velodyne VLP-16 and KISS-ICP for outdoor 3-D mapping.",
+        tags: ["SLAM", "ROS 2", "LiDAR", "KISS-ICP", "Sensor Fusion", "AVL-002"],
+        paperLink: "images/papers/AVL_Paper_Jaemin_Kim_SLAM.pdf",
         posterLink: "",
         slidesLink: ""
     }
