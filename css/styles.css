@@ -3071,6 +3071,21 @@ body.dark-mode .sponsor-logo-invert img {
         opacity: 0.12;
     }
 
+    .slide-caption {
+        padding: 1.5rem 1rem 2.4rem;
+        font-size: 0.82rem;
+        line-height: 1.35;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .slide-dots {
+        bottom: 0.7rem;
+    }
+
     .nav-panel {
         display: flex;
         flex-direction: column;
@@ -3274,10 +3289,6 @@ body.dark-mode .sponsor-logo-invert img {
 
     .gallery {
         padding: 1rem 0.75rem;
-    }
-
-    .slide-dots {
-        bottom: 44px;
     }
 
     .footer-content {
