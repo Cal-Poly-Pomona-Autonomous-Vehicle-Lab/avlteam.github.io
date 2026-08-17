@@ -579,8 +579,10 @@ function renderLearnSection() {
 
         return `
             <div class="workshop-card fade-in">
-                ${levelBadge}
-                ${professorLine}
+                <div class="workshop-card-header">
+                    ${professorLine}
+                    ${levelBadge}
+                </div>
                 <h3>${workshop.title}</h3>
                 <p>${workshop.description}</p>
                 ${modulesHtml}

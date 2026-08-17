@@ -1952,16 +1952,24 @@ section {
     cursor: pointer;
 }
 
+.workshop-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.45rem;
+}
+
 .workshop-level {
-    position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
+    flex-shrink: 0;
+    margin-left: auto;
     padding: 0.2rem 0.65rem;
     border-radius: var(--radius-pill);
     font-size: 0.68rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    line-height: 1.3;
 }
 
 .workshop-level.beginner {
@@ -1982,12 +1990,15 @@ section {
     border: 1px solid #FECDD3;
 }
 
-.workshop-professor {
+.workshop-card .workshop-professor {
     color: var(--blue-primary);
     font-size: 0.82rem;
     font-weight: 600;
-    margin-bottom: 0.4rem;
-    margin-top: 0.25rem;
+    margin: 0;
+    line-height: 1.35;
+    min-width: 0;
+    flex: 1;
+    overflow-wrap: break-word;
 }
 
 body.dark-mode .workshop-professor {
