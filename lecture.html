@@ -43,8 +43,11 @@
                     <span class="section-label">About</span>
                     <h2 style="margin-bottom:1rem;">What Is the AVL Lecture Series?</h2>
                     <p style="margin-bottom:1rem;">The AVL Lecture Series brings together students, researchers, and industry professionals to discuss topics at the frontier of autonomous systems, from low-level embedded control to high-level AI planning.</p>
-                    <p style="margin-bottom:1.5rem;">Lectures are held periodically throughout the academic year and are open to all Cal Poly Pomona students. Some sessions are recorded and shared with the community.</p>
-                    <a href="mailto:autovehiclelab@gmail.com" class="btn btn-primary">Request a Talk or Topic</a>
+                    <p style="margin-bottom:1.5rem;">Lectures are held periodically throughout the academic year and are open to all Cal Poly Pomona students. New talks are announced on Discord and Instagram.</p>
+                    <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+                        <a href="mailto:autovehiclelab@gmail.com" class="btn btn-primary">Request a Talk or Topic</a>
+                        <a href="https://discord.gg/2D5fEg94eM" target="_blank" class="btn btn-secondary">Join Discord</a>
+                    </div>
                 </div>
                 <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:2rem;">
                     <h3 style="margin-bottom:1.25rem; font-size:1.1rem;">Series Highlights</h3>
@@ -89,56 +92,10 @@
         </div>
     </section>
 
-    <!-- UPCOMING LECTURES -->
-    <section style="padding: var(--section-padding) 0;" id="lectures">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">Schedule</span>
-                <h2>Upcoming Lectures</h2>
-                <p>Check back for announcements, or follow us on Discord and Instagram for real-time updates</p>
-            </div>
-
-            <div class="lecture-placeholder fade-in">
-                <h3>Lecture Schedule Coming Soon</h3>
-                <p>We're scheduling our next series of talks. Follow us on Discord or Instagram to be notified when new sessions are announced.</p>
-                <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-                    <a href="https://discord.gg/2D5fEg94eM" target="_blank" class="btn btn-primary">Join Discord for Updates</a>
-                    <a href="https://www.instagram.com/autovehiclelab/" target="_blank" class="btn btn-secondary">Follow on Instagram</a>
-                </div>
-            </div>
-
-            <!--
-                TO ADD LECTURES: Replace the placeholder above with lecture cards.
-                Example card structure:
-
-                <div class="lecture-grid" style="margin-top:2rem;">
-                    <div class="lecture-card fade-in">
-                        <span class="lecture-card-date">Apr 30, 2025</span>
-                        <h3>Introduction to LiDAR Point Cloud Processing</h3>
-                        <p class="lecture-card-speaker">Speaker: [Name], AVL Research Lead</p>
-                        <p>An overview of how raw LiDAR packets are decoded, filtered, and turned into occupancy grids for autonomous navigation.</p>
-                    </div>
-                </div>
-            -->
-        </div>
-    </section>
-
-    <!-- PAST LECTURES -->
-    <section style="padding: var(--section-padding) 0; background:var(--surface);" id="past-lectures">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-label">Archive</span>
-                <h2>Past Lectures</h2>
-                <p>Recordings and materials from previous sessions</p>
-            </div>
-
-            <div class="lecture-placeholder fade-in" style="border-style:solid; background:var(--white);">
-                <h3>Archive Being Compiled</h3>
-                <p>Past lecture recordings and slide decks will be posted here. Contact us if you're looking for a specific session.</p>
-                <a href="mailto:autovehiclelab@gmail.com" class="btn btn-primary">Contact Us</a>
-            </div>
-        </div>
-    </section>
+    <!--
+        To add a public schedule later, insert a section with .lecture-grid / .lecture-card
+        between the workshops and the CTA. Keep it off the page until there are real dates.
+    -->
 
     <!-- CTA -->
     <section style="padding: var(--section-padding) 0; background: var(--blue-primary);">

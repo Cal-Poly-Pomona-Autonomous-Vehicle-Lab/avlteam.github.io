@@ -1,8 +1,8 @@
 # AVL Website - Robots.txt
-# https://www.avlteam.com
+# https://autovehiclelab.com
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.avlteam.com/sitemap.xml
+Sitemap: https://autovehiclelab.com/sitemap.xml
