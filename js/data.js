@@ -384,7 +384,7 @@ const ACHIEVEMENTS = [
         docLink: ""  // Add link to paper or documentation
     },
     {
-        title: "2025–2026 IGVC Competition Team Launched",
+        title: "2025-2026 IGVC Competition Team Launched",
         description: "AVL fielded MARVIN as its Intelligent Ground Vehicle Competition platform, with dedicated perception, vehicle-dynamics, and teleoperation workstreams",
         year: "2025-2026",
         docLink: ""
@@ -570,18 +570,18 @@ const LEARNING_RESOURCES = [
         description: "Comprehensive vehicle dynamics covering quarter car models, cornering behavior, suspension effects, and lateral dynamics.",
         level: "Intermediate",
         modules: [
-            { title: "Module 1 – Introduction", url: "https://streaming.cpp.edu/media/Module+1+-+Vehicle+Dynamics+-+Ganpat+and+Manju+Center/1_57nl7oyc" },
-            { title: "Module 2 – Quarter Car Model – 1DOF", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_l3dh7qb1" },
-            { title: "Module 3 – Quarter Car Model – 2DOF", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_a1q89p0w" },
-            { title: "Module 4 – Half Vehicle Model – Rotational DOF", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_bexa603c" },
-            { title: "Module 5 – Low Speed Steady State Turning", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_l6z6f4g8" },
-            { title: "Module 6 – High Speed Cornering", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_cg0c7o9a" },
-            { title: "Module 7 – Characteristic Speed and Critical Speed", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_s13n9mk7" },
-            { title: "Module 8 – Lateral Acceleration Gain", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_8o4cbw32" },
-            { title: "Module 9 – Yaw Velocity and Yaw Rate Gain", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_69mnpzvz" },
-            { title: "Module 10 – Side Slip Angle", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_92ty3g1d" },
-            { title: "Module 11 – Neutral Steer Point", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_vwdwwwbl" },
-            { title: "Module 12 – Suspension Effects on Cornering", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_0vwij9xm" }
+            { title: "Module 1: Introduction", url: "https://streaming.cpp.edu/media/Module+1+-+Vehicle+Dynamics+-+Ganpat+and+Manju+Center/1_57nl7oyc" },
+            { title: "Module 2: Quarter Car Model: 1DOF", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_l3dh7qb1" },
+            { title: "Module 3: Quarter Car Model: 2DOF", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_a1q89p0w" },
+            { title: "Module 4: Half Vehicle Model: Rotational DOF", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_bexa603c" },
+            { title: "Module 5: Low Speed Steady State Turning", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_l6z6f4g8" },
+            { title: "Module 6: High Speed Cornering", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_cg0c7o9a" },
+            { title: "Module 7: Characteristic Speed and Critical Speed", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_s13n9mk7" },
+            { title: "Module 8: Lateral Acceleration Gain", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_8o4cbw32" },
+            { title: "Module 9: Yaw Velocity and Yaw Rate Gain", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_69mnpzvz" },
+            { title: "Module 10: Side Slip Angle", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_92ty3g1d" },
+            { title: "Module 11: Neutral Steer Point", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_vwdwwwbl" },
+            { title: "Module 12: Suspension Effects on Cornering", url: "https://streaming.cpp.edu/media/Farbod+Khoshnoud%27s+Personal+Meeting+Room/1_0vwij9xm" }
         ]
     },
     {
@@ -590,18 +590,18 @@ const LEARNING_RESOURCES = [
         description: "Electric vehicle fundamentals covering motor types, charging systems, regenerative braking, and battery technologies.",
         level: "Intermediate",
         modules: [
-            { title: "Module 1 – Basic Concepts of Electric Vehicles", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%201%20Basic%20Concepts%20of%20Electric%20Vehicles%2Emp4" },
-            { title: "Module 2 – Induction Motor as EV Drive", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%202%20Induction%20Motor%20as%20EV%20Drive%2Emp4" },
-            { title: "Module 3 – Fundamentals of Induction Motor Speed Control in EV", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%203%20Fundamentals%20of%20Induction%20Motor%20Speed%20Control%20in%20EV%2Emp4" },
-            { title: "Module 4 – Basic Concepts of Permanent Magnet Synchronous Motors", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%204%20Basic%20Concepts%20of%20Permanent%20Magnet%20Synchronous%20Motors%2Emp4" },
-            { title: "Module 5 – Permanent Magnet Brushless AC Motor as EV Drive", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%205%20Permanent%20Magnet%20Brushless%20AC%20Motor%20as%20EV%20Drive%2Emp4" },
-            { title: "Module 6 – Permanent Magnet Brushless DC Motor as EV Drive", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%206%20Permanent%20Magnet%20Brushless%20DC%20Motor%20as%20EV%20Drive%2Emp4" },
-            { title: "Module 7 – EV Charging Standards and Equipment", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%207%20EV%20Charging%20Standards%20and%20Equipment%2Emp4" },
-            { title: "Module 8 – Converters for EV Wired Charging", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%208%20Converters%20for%20EV%20Wired%20Charging%2Emp4" },
-            { title: "Module 9 – EV Bi-directional Charging", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%209%20EV%20Bi%2Ddirectional%20Charging%2Emp4" },
-            { title: "Module 10 – Regenerative Braking in EV", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%2010%20Regenerative%20Braking%20in%20EV%2Emp4" },
-            { title: "Module 11 – Fundamentals of Energy Storage Technologies", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%2011%20Fundamentals%20of%20Energy%20Storage%20Technologies%2Emp4" },
-            { title: "Module 12 – Li-ion Batteries in EV", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%2012%20Li%2Dion%20Batteries%20in%20EV%2Emp4" }
+            { title: "Module 1: Basic Concepts of Electric Vehicles", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%201%20Basic%20Concepts%20of%20Electric%20Vehicles%2Emp4" },
+            { title: "Module 2: Induction Motor as EV Drive", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%202%20Induction%20Motor%20as%20EV%20Drive%2Emp4" },
+            { title: "Module 3: Fundamentals of Induction Motor Speed Control in EV", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%203%20Fundamentals%20of%20Induction%20Motor%20Speed%20Control%20in%20EV%2Emp4" },
+            { title: "Module 4: Basic Concepts of Permanent Magnet Synchronous Motors", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%204%20Basic%20Concepts%20of%20Permanent%20Magnet%20Synchronous%20Motors%2Emp4" },
+            { title: "Module 5: Permanent Magnet Brushless AC Motor as EV Drive", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%205%20Permanent%20Magnet%20Brushless%20AC%20Motor%20as%20EV%20Drive%2Emp4" },
+            { title: "Module 6: Permanent Magnet Brushless DC Motor as EV Drive", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%206%20Permanent%20Magnet%20Brushless%20DC%20Motor%20as%20EV%20Drive%2Emp4" },
+            { title: "Module 7: EV Charging Standards and Equipment", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%207%20EV%20Charging%20Standards%20and%20Equipment%2Emp4" },
+            { title: "Module 8: Converters for EV Wired Charging", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%208%20Converters%20for%20EV%20Wired%20Charging%2Emp4" },
+            { title: "Module 9: EV Bi-directional Charging", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%209%20EV%20Bi%2Ddirectional%20Charging%2Emp4" },
+            { title: "Module 10: Regenerative Braking in EV", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%2010%20Regenerative%20Braking%20in%20EV%2Emp4" },
+            { title: "Module 11: Fundamentals of Energy Storage Technologies", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%2011%20Fundamentals%20of%20Energy%20Storage%20Technologies%2Emp4" },
+            { title: "Module 12: Li-ion Batteries in EV", url: "https://livecsupomona-my.sharepoint.com/personal/hatle_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhatle%5Fcpp%5Fedu%2FDocuments%2F1%5FBen%5FiCare%5FVideos%5FHaLe%5F5990%5FEV%2FModule%2012%20Li%2Dion%20Batteries%20in%20EV%2Emp4" }
         ]
     },
     {
@@ -610,14 +610,14 @@ const LEARNING_RESOURCES = [
         description: "Hands-on electrical machine analysis including power measurement, 3-phase systems, generators, and motor characteristics.",
         level: "Intermediate",
         modules: [
-            { title: "Module 1 – Power Measurement", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EXBdSJ-aET5AutbH3qYd6I4BrbN5iViM1MmIIE8xEQL-rA?e=ZmAG4Q" },
-            { title: "Module 2 – Balanced and Unbalanced 3 Phase Measurement", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EQwwqTjt6wdBgWvJIl8T8okBX6VSlVkGI4kbcDhDv_XhTw?e=NnoxX2" },
-            { title: "Module 3 – Power Factor", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EZmU2ffk0Z5FshlrWpGbayABI7j9_WewZCgJH_bit9QE2Q?e=dzJlWi" },
-            { title: "Module 4 – DC Generator Characteristics", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EdoXk4PKYPpKq-0IIGsdu38BOYgGnDpoUCOH0CV0o2Wc3g?e=drLCeX" },
-            { title: "Module 5 – Synchronous Generator Characteristics", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EZP-e1J0v7FLt5tPnBXL4isBvmRRLqv5kmOtC5px5QR6aw?e=nhGYQ9" },
-            { title: "Module 6 – Synchronous Motor", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/ESjO4b6pnydHkrdWj-nTUvUBjlwVbRyZlPYaG2IvXCVAWA?e=Ufo9K7" },
-            { title: "Module 7 – Induction Motor", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EQOQBajex_FKmHq-40uCjusBRwq0-5Fck7DCjJDz--4g-Q?e=UX6JI1" },
-            { title: "Module 8 – Analysis of a Power System with Electric Machines", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EWocFLp_cp9Ki71jLm8ldskBufUd9BuG56denoDTJydraQ?e=lxsa5Q" }
+            { title: "Module 1: Power Measurement", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EXBdSJ-aET5AutbH3qYd6I4BrbN5iViM1MmIIE8xEQL-rA?e=ZmAG4Q" },
+            { title: "Module 2: Balanced and Unbalanced 3 Phase Measurement", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EQwwqTjt6wdBgWvJIl8T8okBX6VSlVkGI4kbcDhDv_XhTw?e=NnoxX2" },
+            { title: "Module 3: Power Factor", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EZmU2ffk0Z5FshlrWpGbayABI7j9_WewZCgJH_bit9QE2Q?e=dzJlWi" },
+            { title: "Module 4: DC Generator Characteristics", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EdoXk4PKYPpKq-0IIGsdu38BOYgGnDpoUCOH0CV0o2Wc3g?e=drLCeX" },
+            { title: "Module 5: Synchronous Generator Characteristics", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EZP-e1J0v7FLt5tPnBXL4isBvmRRLqv5kmOtC5px5QR6aw?e=nhGYQ9" },
+            { title: "Module 6: Synchronous Motor", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/ESjO4b6pnydHkrdWj-nTUvUBjlwVbRyZlPYaG2IvXCVAWA?e=Ufo9K7" },
+            { title: "Module 7: Induction Motor", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EQOQBajex_FKmHq-40uCjusBRwq0-5Fck7DCjJDz--4g-Q?e=UX6JI1" },
+            { title: "Module 8: Analysis of a Power System with Electric Machines", url: "https://livecsupomona-my.sharepoint.com/:v:/g/personal/purvav_cpp_edu/EWocFLp_cp9Ki71jLm8ldskBufUd9BuG56denoDTJydraQ?e=lxsa5Q" }
         ]
     },
     {
@@ -626,34 +626,34 @@ const LEARNING_RESOURCES = [
         description: "Digital image fundamentals, spatial and frequency domain enhancement, image restoration, color processing, morphological operations, and segmentation.",
         level: "Advanced",
         modules: [
-            { title: "Module 1.1 – Introduction 1", url: "https://streaming.cpp.edu/media/Lecture-1-1/1_dhmbxqd0" },
-            { title: "Module 1.2 – Introduction 2", url: "https://streaming.cpp.edu/media/Lecture-1-2/1_g1f4peix" },
-            { title: "Module 1.3 – Introduction 3", url: "https://streaming.cpp.edu/media/Lecture-1-3/1_z39i1gp4" },
-            { title: "Module 2.1 – Digital Image Fundamentals 1", url: "https://streaming.cpp.edu/media/Lecture-2-1/1_xc7ifdnu" },
-            { title: "Module 2.2 – Digital Image Fundamentals 2", url: "https://streaming.cpp.edu/media/Lecture-2-2/1_gvogiav3" },
-            { title: "Module 3.1 – Image Enhancement in a Spatial Domain 1", url: "https://streaming.cpp.edu/media/Lecture-3-1/1_ao6rqadq" },
-            { title: "Module 3.2 – Image Enhancement in a Spatial Domain 2", url: "https://streaming.cpp.edu/media/Lecture-3-2/1_qrk1b1lv" },
-            { title: "Module 3.3 – Image Enhancement in a Spatial Domain 3", url: "https://streaming.cpp.edu/media/Lecture-3-3/1_z083zrnk" },
-            { title: "Module 3.4 – Image Enhancement in a Spatial Domain 4", url: "https://streaming.cpp.edu/media/Lecture-3-4/1_1rbs9mmp" },
-            { title: "Module 3.5 – Image Enhancement in a Spatial Domain 5", url: "https://streaming.cpp.edu/media/Lecture-3-5/1_f84myc6d" },
-            { title: "Module 3.6 – Image Enhancement in a Spatial Domain 6", url: "https://streaming.cpp.edu/media/Lecture-3-6/1_791fw4bz" },
-            { title: "Module 4.1 – Image Enhancement in a Frequency Domain 1", url: "https://streaming.cpp.edu/media/Lecture-4-1/1_k0us68mf" },
-            { title: "Module 4.2 – Image Enhancement in a Frequency Domain 2", url: "https://streaming.cpp.edu/media/Lecture-4-2/1_twvrgdqs" },
-            { title: "Module 4.3 – Image Enhancement in a Frequency Domain 3", url: "https://streaming.cpp.edu/media/Lecture-4-3/1_djobssuk" },
-            { title: "Module 4.4 – Image Enhancement in a Frequency Domain 4", url: "https://streaming.cpp.edu/media/Lecture-4-4/1_bzioc4fi" },
-            { title: "Module 4.5 – Image Enhancement in a Frequency Domain 5", url: "https://streaming.cpp.edu/media/Lecture-4-5/1_a16jhvfy" },
-            { title: "Module 4.6 – Image Enhancement in a Frequency Domain 6", url: "https://streaming.cpp.edu/media/Lecture-4-6/1_xjncosr4" },
-            { title: "Module 5.1 – Image Restoration 1", url: "https://streaming.cpp.edu/media/Lecture-5-1/1_63wj1e8v" },
-            { title: "Module 5.2 – Image Restoration 2", url: "https://streaming.cpp.edu/media/Lecture-5-2/1_9z2za3zd" },
-            { title: "Module 6.1 – Color Image Processing 1", url: "https://streaming.cpp.edu/media/Lecture-6-1/1_goc8oif3" },
-            { title: "Module 6.2 – Color Image Processing 2", url: "https://streaming.cpp.edu/media/Lecture-6-2/1_hr5pjoaq" },
-            { title: "Module 6.3 – Color Image Processing 3", url: "https://streaming.cpp.edu/media/Lecture-6-3/1_zdw7s1px" },
-            { title: "Module 7.1 – Morphological Image Processing 1", url: "https://streaming.cpp.edu/media/Lecture-7-1/1_mvqbmf15" },
-            { title: "Module 7.2 – Morphological Image Processing 2", url: "https://streaming.cpp.edu/media/Lecture-7-2/1_fd688bsr" },
-            { title: "Module 7.3 – Morphological Image Processing 3", url: "https://streaming.cpp.edu/media/Lecture-7-3/1_nmqgkec4" },
-            { title: "Module 7.4 – Morphological Image Processing 4", url: "https://streaming.cpp.edu/media/Lecture-7-4/1_bz9xyof2" },
-            { title: "Module 8.1 – Image Segmentation 1", url: "https://streaming.cpp.edu/media/Lecture-8-1/1_3e6govfu" },
-            { title: "Module 8.2 – Image Segmentation 2", url: "https://streaming.cpp.edu/media/Lecture-8-2/1_u3n8vtgg" }
+            { title: "Module 1.1: Introduction 1", url: "https://streaming.cpp.edu/media/Lecture-1-1/1_dhmbxqd0" },
+            { title: "Module 1.2: Introduction 2", url: "https://streaming.cpp.edu/media/Lecture-1-2/1_g1f4peix" },
+            { title: "Module 1.3: Introduction 3", url: "https://streaming.cpp.edu/media/Lecture-1-3/1_z39i1gp4" },
+            { title: "Module 2.1: Digital Image Fundamentals 1", url: "https://streaming.cpp.edu/media/Lecture-2-1/1_xc7ifdnu" },
+            { title: "Module 2.2: Digital Image Fundamentals 2", url: "https://streaming.cpp.edu/media/Lecture-2-2/1_gvogiav3" },
+            { title: "Module 3.1: Image Enhancement in a Spatial Domain 1", url: "https://streaming.cpp.edu/media/Lecture-3-1/1_ao6rqadq" },
+            { title: "Module 3.2: Image Enhancement in a Spatial Domain 2", url: "https://streaming.cpp.edu/media/Lecture-3-2/1_qrk1b1lv" },
+            { title: "Module 3.3: Image Enhancement in a Spatial Domain 3", url: "https://streaming.cpp.edu/media/Lecture-3-3/1_z083zrnk" },
+            { title: "Module 3.4: Image Enhancement in a Spatial Domain 4", url: "https://streaming.cpp.edu/media/Lecture-3-4/1_1rbs9mmp" },
+            { title: "Module 3.5: Image Enhancement in a Spatial Domain 5", url: "https://streaming.cpp.edu/media/Lecture-3-5/1_f84myc6d" },
+            { title: "Module 3.6: Image Enhancement in a Spatial Domain 6", url: "https://streaming.cpp.edu/media/Lecture-3-6/1_791fw4bz" },
+            { title: "Module 4.1: Image Enhancement in a Frequency Domain 1", url: "https://streaming.cpp.edu/media/Lecture-4-1/1_k0us68mf" },
+            { title: "Module 4.2: Image Enhancement in a Frequency Domain 2", url: "https://streaming.cpp.edu/media/Lecture-4-2/1_twvrgdqs" },
+            { title: "Module 4.3: Image Enhancement in a Frequency Domain 3", url: "https://streaming.cpp.edu/media/Lecture-4-3/1_djobssuk" },
+            { title: "Module 4.4: Image Enhancement in a Frequency Domain 4", url: "https://streaming.cpp.edu/media/Lecture-4-4/1_bzioc4fi" },
+            { title: "Module 4.5: Image Enhancement in a Frequency Domain 5", url: "https://streaming.cpp.edu/media/Lecture-4-5/1_a16jhvfy" },
+            { title: "Module 4.6: Image Enhancement in a Frequency Domain 6", url: "https://streaming.cpp.edu/media/Lecture-4-6/1_xjncosr4" },
+            { title: "Module 5.1: Image Restoration 1", url: "https://streaming.cpp.edu/media/Lecture-5-1/1_63wj1e8v" },
+            { title: "Module 5.2: Image Restoration 2", url: "https://streaming.cpp.edu/media/Lecture-5-2/1_9z2za3zd" },
+            { title: "Module 6.1: Color Image Processing 1", url: "https://streaming.cpp.edu/media/Lecture-6-1/1_goc8oif3" },
+            { title: "Module 6.2: Color Image Processing 2", url: "https://streaming.cpp.edu/media/Lecture-6-2/1_hr5pjoaq" },
+            { title: "Module 6.3: Color Image Processing 3", url: "https://streaming.cpp.edu/media/Lecture-6-3/1_zdw7s1px" },
+            { title: "Module 7.1: Morphological Image Processing 1", url: "https://streaming.cpp.edu/media/Lecture-7-1/1_mvqbmf15" },
+            { title: "Module 7.2: Morphological Image Processing 2", url: "https://streaming.cpp.edu/media/Lecture-7-2/1_fd688bsr" },
+            { title: "Module 7.3: Morphological Image Processing 3", url: "https://streaming.cpp.edu/media/Lecture-7-3/1_nmqgkec4" },
+            { title: "Module 7.4: Morphological Image Processing 4", url: "https://streaming.cpp.edu/media/Lecture-7-4/1_bz9xyof2" },
+            { title: "Module 8.1: Image Segmentation 1", url: "https://streaming.cpp.edu/media/Lecture-8-1/1_3e6govfu" },
+            { title: "Module 8.2: Image Segmentation 2", url: "https://streaming.cpp.edu/media/Lecture-8-2/1_u3n8vtgg" }
         ]
     },
     {
@@ -662,7 +662,7 @@ const LEARNING_RESOURCES = [
         description: "22-module series covering core cybersecurity principles relevant to networked and autonomous systems.",
         level: "Intermediate",
         modules: [
-            { title: "Full Playlist – 22 Modules", url: "https://streaming.cpp.edu/playlist/dedicated/1_rhf6tfu4/1_6lv28ieo" }
+            { title: "Full Playlist: 22 Modules", url: "https://streaming.cpp.edu/playlist/dedicated/1_rhf6tfu4/1_6lv28ieo" }
         ]
     },
     {
@@ -671,14 +671,14 @@ const LEARNING_RESOURCES = [
         description: "Spatial descriptions, rotation transforms, quaternions, and differential drive kinematics for autonomous vehicle systems.",
         level: "Intermediate",
         modules: [
-            { title: "Module 1 – Spatial Descriptions", url: "https://www.youtube.com/watch?v=xOTWp0aI7sQ&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=1" },
-            { title: "Module 2 – Transforms", url: "https://www.youtube.com/watch?v=D9J1lvUn8Hk&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=2" },
-            { title: "Module 3 – Compound Rotations", url: "https://www.youtube.com/watch?v=4B5xLo593yM&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=3" },
-            { title: "Module 4 – Introduction to Quaternions", url: "https://www.youtube.com/watch?v=JOgmgPz8u_Y&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=4" },
-            { title: "Module 5 – Quaternions", url: "https://www.youtube.com/watch?v=HrJh1tX8CLc&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=5" },
-            { title: "Module 6 – Differential Drive Robot Kinematics", url: "https://www.youtube.com/watch?v=9fSYZUpsPVo&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=6" },
-            { title: "Module 7 – Differential Drive and Control", url: "https://www.youtube.com/watch?v=8R8VfnCpYgE&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=7" },
-            { title: "Module 8 – Kingpin Kinematics", url: "https://www.youtube.com/watch?v=IWJNubHSSdA&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=8" }
+            { title: "Module 1: Spatial Descriptions", url: "https://www.youtube.com/watch?v=xOTWp0aI7sQ&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=1" },
+            { title: "Module 2: Transforms", url: "https://www.youtube.com/watch?v=D9J1lvUn8Hk&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=2" },
+            { title: "Module 3: Compound Rotations", url: "https://www.youtube.com/watch?v=4B5xLo593yM&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=3" },
+            { title: "Module 4: Introduction to Quaternions", url: "https://www.youtube.com/watch?v=JOgmgPz8u_Y&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=4" },
+            { title: "Module 5: Quaternions", url: "https://www.youtube.com/watch?v=HrJh1tX8CLc&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=5" },
+            { title: "Module 6: Differential Drive Robot Kinematics", url: "https://www.youtube.com/watch?v=9fSYZUpsPVo&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=6" },
+            { title: "Module 7: Differential Drive and Control", url: "https://www.youtube.com/watch?v=8R8VfnCpYgE&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=7" },
+            { title: "Module 8: Kingpin Kinematics", url: "https://www.youtube.com/watch?v=IWJNubHSSdA&list=PLjY8PCfTtFsNChs3gFxqYxoEsB0EdmFHL&index=8" }
         ]
     },
     {
@@ -687,19 +687,19 @@ const LEARNING_RESOURCES = [
         description: "Heat transfer fundamentals including conduction, convection, radiation, and practical thermal management strategies for electronics and EVs.",
         level: "Intermediate",
         modules: [
-            { title: "Module 1.1 – Fundamentals of Conduction Heat Transfer", url: "https://youtu.be/mY-MDAb5Q9Y" },
-            { title: "Module 1.2 – Implementation of Heat Generation", url: "https://youtu.be/3ILAgV2DuyM" },
-            { title: "Module 1.3 – Fins for Cooling and Thermal Management", url: "https://youtu.be/herIUN_Usbg" },
-            { title: "Module 2.1 – Temperature Regulation of a Heat Source", url: "https://youtu.be/DxuE5Vg9buQ" },
-            { title: "Module 2.2 – Temperature Regulation of Internal Flow with Variable Heat Generation", url: "https://youtu.be/KKssDVblvS8" },
-            { title: "Module 2.3 – Thermal Management with Natural Convection", url: "https://youtu.be/H4FdmSf3s9Q" },
-            { title: "Module 2.4 – Example of Natural Convection Cooling", url: "https://youtu.be/MIRk-cXIUMs" },
-            { title: "Module 3.1 – Fundamentals of Radiation", url: "https://youtu.be/QihMAzwcfTs" },
-            { title: "Module 3.2 – Spectral Distribution of Blackbody Radiation", url: "https://youtu.be/piDnhl5GE3E" },
-            { title: "Module 3.3 – Surface Properties for Thermal Management", url: "https://youtu.be/8BT8k6nXbcs" },
-            { title: "Module 4.1 – Fundamentals of Heat Transfer in Enclosures", url: "https://youtu.be/syPJ8_nOnPA" },
-            { title: "Module 4.2 – Radiation Shields and Reradiating Surfaces", url: "https://youtu.be/c0xCYKNzk6c" },
-            { title: "Module 4.3 – Temperature Regulation of Oven", url: "https://youtu.be/8vtBQ6vQk-s" }
+            { title: "Module 1.1: Fundamentals of Conduction Heat Transfer", url: "https://youtu.be/mY-MDAb5Q9Y" },
+            { title: "Module 1.2: Implementation of Heat Generation", url: "https://youtu.be/3ILAgV2DuyM" },
+            { title: "Module 1.3: Fins for Cooling and Thermal Management", url: "https://youtu.be/herIUN_Usbg" },
+            { title: "Module 2.1: Temperature Regulation of a Heat Source", url: "https://youtu.be/DxuE5Vg9buQ" },
+            { title: "Module 2.2: Temperature Regulation of Internal Flow with Variable Heat Generation", url: "https://youtu.be/KKssDVblvS8" },
+            { title: "Module 2.3: Thermal Management with Natural Convection", url: "https://youtu.be/H4FdmSf3s9Q" },
+            { title: "Module 2.4: Example of Natural Convection Cooling", url: "https://youtu.be/MIRk-cXIUMs" },
+            { title: "Module 3.1: Fundamentals of Radiation", url: "https://youtu.be/QihMAzwcfTs" },
+            { title: "Module 3.2: Spectral Distribution of Blackbody Radiation", url: "https://youtu.be/piDnhl5GE3E" },
+            { title: "Module 3.3: Surface Properties for Thermal Management", url: "https://youtu.be/8BT8k6nXbcs" },
+            { title: "Module 4.1: Fundamentals of Heat Transfer in Enclosures", url: "https://youtu.be/syPJ8_nOnPA" },
+            { title: "Module 4.2: Radiation Shields and Reradiating Surfaces", url: "https://youtu.be/c0xCYKNzk6c" },
+            { title: "Module 4.3: Temperature Regulation of Oven", url: "https://youtu.be/8vtBQ6vQk-s" }
         ]
     },
     {
@@ -708,14 +708,14 @@ const LEARNING_RESOURCES = [
         description: "Mathematical optimization covering linear programming, integer programming, TSP, and fleet routing formulations.",
         level: "Advanced",
         modules: [
-            { title: "Module 1 – Introduction to Mathematical Optimization: Prescriptive Analytics", url: "https://www.youtube.com/watch?v=ElRUXGp2mPo&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=1" },
-            { title: "Module 2 – Simplex Method", url: "https://www.youtube.com/watch?v=7WrK6Jk0fvw&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=3" },
-            { title: "Module 3 – Linear Programming: The Graphical Method", url: "https://www.youtube.com/watch?v=bBbFDGT-utw&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=4" },
-            { title: "Module 4 – Integer Programming and the Branch and Bound Algorithm", url: "https://www.youtube.com/watch?v=C-ZRGA5d9PE&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=4" },
-            { title: "Module 5 – Transportation Problem: Mathematical Formulation and Heuristic Algorithms", url: "https://www.youtube.com/watch?v=KXkZ9FQ6Cm4&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=5" },
-            { title: "Module 6 – Set Covering Problem: Mathematical Formulation", url: "https://www.youtube.com/watch?v=EF-fwwfsB8g&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=6" },
-            { title: "Module 7 – TSP (Traveling Salesman Problem): Mathematical Formulation", url: "https://www.youtube.com/watch?v=krqaZvxwp08&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=7" },
-            { title: "Module 8 – Mathematical Model Formulation Basic Examples", url: "https://www.youtube.com/watch?v=YF-ms538UdA&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=8" }
+            { title: "Module 1: Introduction to Mathematical Optimization: Prescriptive Analytics", url: "https://www.youtube.com/watch?v=ElRUXGp2mPo&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=1" },
+            { title: "Module 2: Simplex Method", url: "https://www.youtube.com/watch?v=7WrK6Jk0fvw&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=3" },
+            { title: "Module 3: Linear Programming: The Graphical Method", url: "https://www.youtube.com/watch?v=bBbFDGT-utw&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=4" },
+            { title: "Module 4: Integer Programming and the Branch and Bound Algorithm", url: "https://www.youtube.com/watch?v=C-ZRGA5d9PE&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=4" },
+            { title: "Module 5: Transportation Problem: Mathematical Formulation and Heuristic Algorithms", url: "https://www.youtube.com/watch?v=KXkZ9FQ6Cm4&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=5" },
+            { title: "Module 6: Set Covering Problem: Mathematical Formulation", url: "https://www.youtube.com/watch?v=EF-fwwfsB8g&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=6" },
+            { title: "Module 7: TSP (Traveling Salesman Problem): Mathematical Formulation", url: "https://www.youtube.com/watch?v=krqaZvxwp08&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=7" },
+            { title: "Module 8: Mathematical Model Formulation Basic Examples", url: "https://www.youtube.com/watch?v=YF-ms538UdA&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=8" }
         ]
     }
 ];
@@ -732,7 +732,7 @@ const SITE_INFO = {
     
     // About section content
     about: {
-        mission: "The Autonomous Vehicle Laboratory (AVL) at Cal Poly Pomona is dedicated to advancing autonomous vehicle technology through cutting-edge research and hands-on education. As both a research lab and student organization, we bridge the gap between academic theory and real-world application.",
+        mission: "The Autonomous Vehicle Laboratory (AVL) is the student team of Cal Poly Pomona's Autonomous Systems Lab. AVL is dedicated to advancing autonomous vehicle technology through research and hands-on education, bridging academic theory and real-world application.",
         
         vision: "We envision a future where autonomous vehicles are safe, accessible, and integrated into everyday life. Our work contributes to this vision by developing novel perception systems, path planning algorithms, and digital twin technologies.",
         

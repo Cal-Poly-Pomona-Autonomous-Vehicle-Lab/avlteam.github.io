@@ -1,5 +1,5 @@
 /**
- * AVL Website — Shared Components
+ * AVL Website: Shared Components
  * Injects navbar and footer into every page to eliminate copy-paste.
  * Usage: include this script, then call renderNavbar() and renderFooter()
  * from main.js or directly in each page's DOMContentLoaded handler.
@@ -177,7 +177,7 @@ function renderFooterHtml() {
             <div class="footer-content">
                 <div class="footer-brand">
                     <img src="images/brand/AVL_Wordmark.png" alt="AVL Logo">
-                    <p>Autonomous Vehicle Laboratory at Cal Poly Pomona, advancing autonomous systems research through hands-on innovation.</p>
+                    <p>AVL is the student team of Cal Poly Pomona's Autonomous Systems Lab, advancing autonomous vehicle research through hands-on innovation.</p>
                     <div class="footer-social">
                         <a href="https://discord.gg/2D5fEg94eM" target="_blank" aria-label="Discord">${discordSvg}</a>
                         <a href="https://www.instagram.com/autovehiclelab/" target="_blank" aria-label="Instagram">${instagramSvg}</a>
@@ -214,6 +214,7 @@ function renderFooterHtml() {
                     <p>${emailSvg}<span><a href="mailto:autovehiclelab@gmail.com">autovehiclelab@gmail.com</a></span></p>
                     <p>${locationSvg}<span>Building 9, Room 101, Cal Poly Pomona</span></p>
                     <p>${linkSvg}<a href="https://www.cpp.edu/engineering/autonomous-systems/avl-team.shtml" target="_blank">CPP Official Page</a></p>
+                    <p>AVL is the student team of Cal Poly Pomona's Autonomous Systems Lab.</p>
                 </div>
             </div>
 
