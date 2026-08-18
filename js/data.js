@@ -751,6 +751,50 @@ const SITE_INFO = {
 
 
 // ============================================================================
+// OUTREACH
+// ============================================================================
+// Community, campus, and visiting-group stories. Not research papers or vehicle
+// builds. Add a photo path when you have one (images/gallery or images/outreach).
+
+const OUTREACH_EVENTS = [
+    {
+        badge: "Sustainability",
+        title: "Battery Take Back",
+        date: "March 18, 2026",
+        image: "",
+        imageAlt: "",
+        description: "AVL hosted a campus battery take-back in Building 9, Room 101. Students and visitors dropped off household and lab batteries for responsible recycling, about 500 pounds in a single event."
+    },
+    {
+        badge: "Campus Visit",
+        title: "Visiting School from Korea",
+        date: "2026",
+        image: "",
+        imageAlt: "",
+        description: "Students and faculty from a visiting school in Korea toured the Autonomous Systems Lab. They met AVL members, saw our vehicles and stations, and talked through how we learn by building."
+    }
+];
+
+const OUTREACH_PHOTOS = [
+    {
+        image: "images/gallery/AVL_Gallery_Ceja_Williams_Bahr.jpg?v=2",
+        alt: "Beatriz Ceja-Williams of the U.S. Department of Education with Dr. Behnam Bahr and AVL students in the lab",
+        caption: "U.S. Department of Education visit"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_DTS.jpg",
+        alt: "Lab collaboration session with DTS",
+        caption: "Hosting DTS in the lab"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_Ganpat.jpg",
+        alt: "Dinner with Dr. Ganpat Patel",
+        caption: "Dinner with Ganpat"
+    }
+];
+
+
+// ============================================================================
 // INDEPENDENT & SENIOR PROJECTS
 // ============================================================================
 // Smaller student-led and lab-station work shown on the Projects page.

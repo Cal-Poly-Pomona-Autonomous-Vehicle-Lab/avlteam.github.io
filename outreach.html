@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AVL outreach at Cal Poly Pomona: campus events, visiting groups, and community programs from the Autonomous Vehicle Laboratory.">
+    <meta name="keywords" content="AVL outreach, Cal Poly Pomona, battery take back, lab tour, community, autonomous vehicles">
+    <meta name="author" content="AVL Team">
+    <meta property="og:title" content="Outreach | AVL · Cal Poly Pomona">
+    <meta property="og:description" content="Campus events, visiting groups, and community programs from AVL.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/brand/AVL_Share.jpg">
+
+    <title>Outreach | AVL · Cal Poly Pomona</title>
+
+    <link rel="icon" type="image/png" href="images/brand/AVL_Logo_Dots.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=20260818f">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar"></nav>
+
+    <section class="page-hero" id="top">
+        <div class="page-hero-bg"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="section-label" style="color:rgba(160,210,255,0.85);">Campus and Community</span>
+                <h1>Outreach</h1>
+                <p>Lab tours, campus events, and community programs. This is AVL out in the world, not papers or vehicle builds.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: var(--section-padding) 0;">
+        <div class="container">
+            <p class="outreach-intro">Research lives on the Research page. Hardware lives on Projects. Outreach is everything else that still shows who we are: hosting visitors, serving campus, and opening the lab.</p>
+
+            <div class="section-header fade-in">
+                <span class="section-label">From the Lab</span>
+                <h2>In Photos</h2>
+                <p>Showcases, visitors, and time on campus</p>
+            </div>
+
+            <div class="outreach-gallery" id="outreach-gallery"></div>
+        </div>
+    </section>
+
+    <section class="section-alt" style="padding: var(--section-padding) 0;">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Recent</span>
+                <h2>Stories</h2>
+                <p>Events and visits from around the lab</p>
+            </div>
+
+            <div class="outreach-events" id="outreach-events"></div>
+        </div>
+    </section>
+
+    <section style="padding: var(--section-padding) 0; background: var(--blue-primary);">
+        <div class="container" style="text-align:center;">
+            <h2 style="color:var(--white); margin-bottom:0.75rem;">Want to visit the lab?</h2>
+            <p style="color:rgba(200,225,255,0.85); margin-bottom:2rem; max-width:50ch; margin-left:auto; margin-right:auto;">School groups, campus partners, and community programs are welcome. Reach out and we will find a time.</p>
+            <a href="mailto:autovehiclelab@gmail.com" class="btn btn-white">Request a Visit</a>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="js/data.js?v=20260817f"></script>
+    <script src="js/components.js?v=20260818b"></script>
+    <script src="js/main.js?v=20260817a"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderNavbar('outreach.html');
+            renderFooterHtml();
+        });
+    </script>
+</body>
+</html>

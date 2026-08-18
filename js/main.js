@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderLearnSection();
         renderSponsorsSection();
         renderMediaSection();
+        renderOutreachSection();
     } finally {
         initScrollAnimations();
         initAnimatedCounters();
@@ -591,6 +592,42 @@ function renderLearnSection() {
     }).join('');
 
     learnContainer.innerHTML = workshopsHtml;
+}
+
+function renderOutreachSection() {
+    const eventsEl = document.getElementById('outreach-events');
+    const photosEl = document.getElementById('outreach-gallery');
+    if (!eventsEl && !photosEl) return;
+
+    if (eventsEl && typeof OUTREACH_EVENTS !== 'undefined') {
+        eventsEl.innerHTML = OUTREACH_EVENTS.map(event => {
+            const photo = event.image
+                ? `<div class="outreach-event-photo"><img src="${event.image}" alt="${event.imageAlt || event.title}"></div>`
+                : '';
+            return `
+                <article class="outreach-event-card fade-in">
+                    ${photo}
+                    <div class="outreach-event-body">
+                        <div class="outreach-event-meta">
+                            <span class="outreach-event-badge">${event.badge}</span>
+                            <span class="outreach-event-date">${event.date}</span>
+                        </div>
+                        <h3>${event.title}</h3>
+                        <p>${event.description}</p>
+                    </div>
+                </article>
+            `;
+        }).join('');
+    }
+
+    if (photosEl && typeof OUTREACH_PHOTOS !== 'undefined') {
+        photosEl.innerHTML = OUTREACH_PHOTOS.map(photo => `
+            <figure class="outreach-photo fade-in">
+                <img src="${photo.image}" alt="${photo.alt}" loading="lazy">
+                <figcaption>${photo.caption}</figcaption>
+            </figure>
+        `).join('');
+    }
 }
 
 // Toggle modules visibility

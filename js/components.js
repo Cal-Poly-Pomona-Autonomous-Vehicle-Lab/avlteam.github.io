@@ -15,6 +15,7 @@ function renderNavbar(activePage) {
 
     const pages = [
         { href: 'index.html',    label: 'Home' },
+        { href: 'outreach.html', label: 'Outreach' },
         { href: 'research.html', label: 'Research' },
         { href: 'projects.html', label: 'Projects' },
         { href: 'people.html',   label: 'People' },
@@ -134,6 +135,8 @@ function renderNavbar(activePage) {
             link.addEventListener('click', () => setMenuOpen(false));
         });
     }
+
+    renderGrantNotice(activePage);
 }
 
 // ============================================================================
@@ -189,6 +192,7 @@ function renderFooterHtml() {
                     <h4>Pages</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
+                        <li><a href="outreach.html">Outreach</a></li>
                         <li><a href="research.html">Research</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="people.html">People</a></li>
@@ -225,3 +229,65 @@ function renderFooterHtml() {
         </div>
     `;
 }
+
+// ============================================================================
+// DOE GRANT NOTICE
+// ============================================================================
+// Shows on Home every time that page loads. Other pages show it once per
+// browser tab. Skipped on Outreach so the thank-you button is not covered.
+
+function renderGrantNotice(activePage) {
+    if (activePage === 'outreach.html') return;
+    if (activePage !== 'index.html' && sessionStorage.getItem('avl-doe-notice') === 'shown') return;
+    if (document.getElementById('grant-notice')) return;
+
+    const overlay = document.createElement('div');
+    overlay.id = 'grant-notice';
+    overlay.className = 'grant-notice-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-labelledby', 'grant-notice-title');
+    overlay.innerHTML = `
+        <div class="grant-notice-card">
+            <button type="button" class="grant-notice-close" aria-label="Close thank you message">&times;</button>
+            <div class="grant-notice-photo">
+                <img src="images/gallery/AVL_Gallery_Ceja_Williams_Bahr.jpg?v=2" alt="Beatriz Ceja-Williams of the U.S. Department of Education with Dr. Behnam Bahr and AVL students in the lab">
+            </div>
+            <div class="grant-notice-body">
+                <span class="grant-notice-kicker">iCARE-M&amp;S</span>
+                <h2 id="grant-notice-title">Thank you Department of Education</h2>
+                <p>AVL's education, research, and community work is supported by the U.S. Department of Education iCARE-M&amp;S grant, by Dr. Ganpat and Manju Patel, and through Cal Poly Pomona's Autonomous Systems Lab. We were glad to welcome Beatriz Ceja-Williams to the lab, and we are deeply grateful for this partnership as we train students and open the lab to the campus community.</p>
+                <div class="grant-notice-actions">
+                    <a href="outreach.html" class="btn btn-primary grant-notice-cta">See our Outreach</a>
+                    <button type="button" class="btn btn-secondary grant-notice-home">Continue to Home</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    const closeNotice = () => {
+        sessionStorage.setItem('avl-doe-notice', 'shown');
+        overlay.remove();
+        document.body.classList.remove('grant-notice-open');
+        document.removeEventListener('keydown', onKey);
+    };
+
+    const onKey = (event) => {
+        if (event.key === 'Escape') closeNotice();
+    };
+
+    overlay.addEventListener('click', (event) => {
+        if (event.target === overlay) closeNotice();
+    });
+    overlay.querySelector('.grant-notice-close').addEventListener('click', closeNotice);
+    overlay.querySelector('.grant-notice-home').addEventListener('click', closeNotice);
+    overlay.querySelector('.grant-notice-cta').addEventListener('click', () => {
+        sessionStorage.setItem('avl-doe-notice', 'shown');
+    });
+
+    document.body.appendChild(overlay);
+    document.body.classList.add('grant-notice-open');
+    document.addEventListener('keydown', onKey);
+    overlay.querySelector('.grant-notice-close').focus();
+}
+

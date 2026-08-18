@@ -114,7 +114,9 @@ body.dark-mode .equipment-card,
 body.dark-mode .research-card,
 body.dark-mode .person-card,
 body.dark-mode .lecture-card,
-body.dark-mode .mini-project-card {
+body.dark-mode .mini-project-card,
+body.dark-mode .outreach-event-card,
+body.dark-mode .grant-notice-card {
     background: #1a1a1a;
     border-color: #2e2e2e;
 }
@@ -2996,8 +2998,249 @@ body.dark-mode .sponsor-logo-invert img {
 }
 
 /* ============================================================================
+   GRANT NOTICE
+   ============================================================================ */
+
+body.grant-notice-open {
+    overflow: hidden;
+}
+
+.grant-notice-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 4000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: max(1rem, env(safe-area-inset-top)) 1rem max(1rem, env(safe-area-inset-bottom));
+    background: rgba(25, 0, 173, 0.08);
+}
+
+.grant-notice-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    align-items: stretch;
+    width: min(64rem, 92vw);
+    max-height: min(80dvh, 36rem);
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.grant-notice-photo {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    min-height: 0;
+    background: #111111;
+    overflow: hidden;
+}
+
+.grant-notice-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+}
+
+.grant-notice-body {
+    padding: 1.75rem 1.6rem 1.4rem;
+    overflow-y: auto;
+}
+
+.grant-notice-close {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    z-index: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 50%;
+    background: var(--white);
+    color: var(--text-primary);
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+}
+
+.grant-notice-close:hover,
+.grant-notice-close:focus-visible {
+    background: var(--blue-light);
+    color: var(--blue-primary);
+}
+
+.grant-notice-kicker {
+    display: block;
+    color: var(--blue-primary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.55rem;
+    padding-right: 2.4rem;
+}
+
+.grant-notice-card h2 {
+    font-size: 1.65rem;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+    color: var(--text-primary);
+    padding-right: 2.4rem;
+}
+
+.grant-notice-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    max-width: none;
+}
+
+.grant-notice-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.grant-notice-actions .btn {
+    flex: 1 1 10rem;
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+body.dark-mode .grant-notice-overlay {
+    background: rgba(25, 0, 173, 0.12);
+}
+
+body.dark-mode .grant-notice-close {
+    background: #2a2a2a;
+    color: #ffffff;
+}
+
+/* ============================================================================
+   OUTREACH
+   ============================================================================ */
+
+.outreach-intro {
+    max-width: 62ch;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.outreach-events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.outreach-event-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.outreach-event-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.outreach-event-body {
+    padding: 1.35rem 1.4rem 1.5rem;
+}
+
+.outreach-event-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.55rem;
+}
+
+.outreach-event-badge {
+    background: var(--blue-light);
+    color: var(--blue-primary);
+    border-radius: var(--radius-pill);
+    padding: 0.2rem 0.65rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.outreach-event-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.outreach-event-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.outreach-event-card p {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    max-width: none;
+}
+
+.outreach-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: start;
+}
+
+.outreach-photo {
+    margin: 0;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.outreach-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.outreach-photo figcaption {
+    padding: 0.75rem 1rem 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+body.dark-mode .outreach-photo {
+    background: #1a1a1a;
+    border-color: #2e2e2e;
+}
+
+/* ============================================================================
    RESPONSIVE
    ============================================================================ */
+
+@media (max-width: 1200px) {
+    .nav-links a {
+        padding: 0.4rem 0.55rem;
+        font-size: 0.82rem;
+    }
+}
 
 @media (max-width: 1100px) {
     .footer-content {
@@ -3060,6 +3303,44 @@ body.dark-mode .sponsor-logo-invert img {
 @media (max-width: 768px) {
     :root {
         --section-padding: 3.5rem;
+    }
+
+    .grant-notice-card {
+        grid-template-columns: 1fr;
+        max-height: min(90dvh, 40rem);
+        overflow-y: auto;
+    }
+
+    .grant-notice-photo {
+        min-height: 0;
+        height: auto;
+    }
+
+    .grant-notice-photo img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+
+    .grant-notice-body {
+        padding: 1.4rem 1.15rem 1.25rem;
+    }
+
+    .grant-notice-card h2 {
+        font-size: 1.35rem;
+    }
+
+    .grant-notice-actions {
+        flex-direction: column;
+    }
+
+    .grant-notice-actions .btn {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .outreach-gallery {
+        grid-template-columns: 1fr;
     }
 
     .page-hero-content {
@@ -3323,7 +3604,7 @@ body.dark-mode .sponsor-logo-invert img {
    ============================================================================ */
 
 @media print {
-    .navbar, .hero, .scroll-indicator, .gallery-slideshow { display: none; }
+    .navbar, .hero, .scroll-indicator, .gallery-slideshow, .grant-notice-overlay { display: none; }
     body { background: white; color: black; }
     section { padding: 2rem 0; }
 }
