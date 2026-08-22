@@ -62,7 +62,7 @@ const TEAM_MEMBERS = {
             image: "images/team/AVL_Benjamin_Ramirez.jpg",
             bio: "Designing CAD mounts for sensors and electronics, and organizing electrical systems on AVL-002.",
             linkedin: "https://www.linkedin.com/in/benjamin-ramirez-98958b303",
-            email: "bjmnrmz01@gmail.com"
+            email: "benjaminr2@cpp.edu"
         },
         {
             name: "Karoline Braga",
@@ -70,15 +70,15 @@ const TEAM_MEMBERS = {
             image: "images/team/AVL_Karoline_Braga.jpg",
             bio: "Working on CAD designs and Assembly for IGVC and Thermal Modeling of Battery Active Cooling.",
             linkedin: "https://www.linkedin.com/in/karolinebraga",
-            email: "braga.karoline@hotmail.com"
+            email: "kbraga@cpp.edu"
         },
         {
-            name: "Chris Sierra",
+            name: "Christopher Sierra",
             role: "Treasurer - Mechanical Engineering",
             image: "images/team/AVL_Chris_Sierra.jpg",
             bio: "Developing MATLAB Simulink and Simscape vehicle-dynamics models for MARVIN.",
-            linkedin: "",
-            email: ""
+            linkedin: "https://www.linkedin.com/in/christopher-sierra-0b7766384/",
+            email: "rodriguez10@cpp.edu"
         }
     ],
     
@@ -98,15 +98,16 @@ const TEAM_MEMBERS = {
             image: "images/team/AVL_Caleb_Hylkema.jpg",
             bio: "Developing control systems for autonomous driving, including steering and speed regulation.",
             linkedin: "https://www.linkedin.com/in/calebhylkema",
-            email: "calebhylkema6@gmail.com"
+            email: "chylkema@cpp.edu"
         },
         {
-            name: "Garret Anderson",
+            name: "Garrett Anderson",
             role: "Research Assistant - Electrical Engineering",
-            image: "placeholder",
+            image: "images/team/AVL_Garrett_Anderson.jpg",
             bio: "Leading drive-by-wire and electrical development for Car 1, including actuator control, power distribution, and low-level electronics integration.",
-            linkedin: "",
-            email: ""
+            linkedin: "https://www.linkedin.com/in/garrett-anderson-a6a4a1400/",
+            github: "https://github.com/GarrettAndersonn",
+            email: "gtanderson@cpp.edu"
         },
         {
             name: "Alexander Assal",
@@ -115,7 +116,7 @@ const TEAM_MEMBERS = {
             bio: "Implementing YOLOPv2 for computer vision and machine learning in autonomous perception.",
             linkedin: "https://www.linkedin.com/in/alexanderassal",
             github: "https://github.com/arassal",
-            email: "alexander@asaalfamily.com"
+            email: "arassal@cpp.edu"
         },
         { 
             name: "Changwe Musonda", 
@@ -123,7 +124,7 @@ const TEAM_MEMBERS = {
             image: "images/team/AVL_Changwe_Musonda.jpg", 
             bio: "Working on ROS2, integrating perception, and planning pipelines for autonomous vehicle operation.", 
             linkedin: "https://www.linkedin.com/in/changwe-musonda-32642a1a8/", 
-            email: "bradley.musonda@gmail.com" 
+            email: "cbmusonda@cpp.edu" 
         },
         { 
             name: "Christian Gomez", 
@@ -139,7 +140,7 @@ const TEAM_MEMBERS = {
             image: "images/team/AVL_Samuel_Andryasian.jpg",
             bio: "Contributing to mechanical engineering research and development for autonomous vehicle systems.",
             linkedin: "https://www.linkedin.com/in/samuelandryasian/",
-            email: "samuel.81725@gmail.com"
+            email: "sandryasian@cpp.edu"
         },
         {
             name: "Tyrese Rogers",
@@ -155,7 +156,7 @@ const TEAM_MEMBERS = {
             image: "placeholder",
             bio: "Designing and fabricating ATAV, an all-terrain platform for off-road autonomy testing, including chassis, suspension, and mechanical integration.",
             linkedin: "https://www.linkedin.com/in/william-saunders-02324925a",
-            email: "william.r.saunders.2004@gmail.com"
+            email: "rsaunders@cpp.edu"
         }
     ],
 
