@@ -254,9 +254,9 @@ function renderGrantNotice(activePage) {
                 <img src="images/gallery/AVL_Gallery_Ceja_Williams_Bahr.jpg?v=2" alt="Beatriz Ceja-Williams of the U.S. Department of Education with Dr. Behnam Bahr and AVL students in the lab">
             </div>
             <div class="grant-notice-body">
-                <span class="grant-notice-kicker">iCARE-M&amp;S</span>
+                <span class="grant-notice-kicker">Department of Education</span>
                 <h2 id="grant-notice-title">Thank you Department of Education</h2>
-                <p>AVL's education, research, and community work is supported by the U.S. Department of Education iCARE-M&amp;S grant, by Dr. Ganpat and Manju Patel, and through Cal Poly Pomona's Autonomous Systems Lab. We were glad to welcome Beatriz Ceja-Williams to the lab, and we are deeply grateful for this partnership as we train students and open the lab to the campus community.</p>
+                <p>Research reported in this website was supported by Industry 4.0: Career Advancement through Research and Education in Modeling and Simulation (iCARE-M&amp;S), funded by the Modeling and Simulation Program (MSP), U.S. Department of Education, Washington, D.C. PR/Award# P116S230024 - CAL POLY POMONA FOUNDATION INC. The content is solely the responsibility of the authors and does not necessarily represent the official views of the Department of Education.</p>
                 <div class="grant-notice-actions">
                     <a href="outreach.html" class="btn btn-primary grant-notice-cta">See our Outreach</a>
                     <button type="button" class="btn btn-secondary grant-notice-home">Continue to Home</button>

@@ -759,38 +759,109 @@ const SITE_INFO = {
 
 const OUTREACH_EVENTS = [
     {
+        badge: "Campus Visit",
+        title: "University of Ulsan Visit",
+        date: "2026",
+        image: "images/gallery/AVL_Gallery_University_of_Ulsan.jpg",
+        imageAlt: "AVL hosting 60 students from the University of Ulsan in the Autonomous Systems Lab",
+        description: "AVL hosted 60 students from the University of Ulsan in South Korea, representing Electrical, Chemical, Mechanical, and Civil Engineering. Guests saw a live go-kart demo and learned about path planning, LiDAR, computer vision, hardware integration, and mechanical design. Thank you to Parsa Ghasemi, Aspen Knox, Christian Gomez, Samuel Andryasian, Deyung Sun, and Dr. Behnam Bahr for preparing demos and explanations across perception, planning, and mechanical systems."
+    },
+    {
+        badge: "Industry Visit",
+        title: "Caltrans Visit",
+        date: "2026",
+        image: "images/gallery/AVL_Gallery_Caltrans_Visit.jpg",
+        imageAlt: "Caltrans Director Dina El-Tawansy visiting Cal Poly Pomona College of Engineering",
+        description: "During the College of Engineering Project Symposium and Showcase, Civil Engineering hosted Caltrans Director Dina El-Tawansy, who spoke about the need for the next generation of engineers to advance safety and efficiency through technology. Teams from across the college presented their work, and the day closed with a meeting of the Dean's Leadership Board."
+    },
+    {
+        badge: "Symposium",
+        title: "SCAIR 2025 Poster Presentation",
+        date: "2025",
+        image: "images/gallery/AVL_Gallery_SCAIR_2025_Poster.jpg",
+        imageAlt: "Aspen Knox and AVL presenting a poster at the 2025 Southern California AI and Robotics Symposium",
+        description: "Aspen Knox presented AVL's poster at the 2025 Southern California AI and Robotics Symposium (SCAIR) on simplified multimodal imitation learning for day-night autonomous driving. Thank you to Dr. Sedat Ozer for organizing the event, and to Dr. Behnam Bahr and the Autonomous Vehicle Laboratory team for their support."
+    },
+    {
+        badge: "Campus Event",
+        title: "Cybersecurity and Awareness Fair 2025",
+        date: "2025",
+        image: "images/gallery/AVL_Gallery_Cybersecurity_Fair_2025.jpg",
+        imageAlt: "AVL presenting at the 2025 Cal Poly Pomona Cybersecurity and Awareness Fair",
+        description: "AVL presented lab work at the 2025 Cal Poly Pomona Cybersecurity and Awareness Fair, sharing autonomous systems research with students and campus visitors."
+    },
+    {
+        badge: "Campus Event",
+        title: "Jubilee",
+        date: "2026",
+        image: "images/gallery/AVL_Gallery_Jubilee.jpg",
+        imageAlt: "AVL team showcasing lab projects at Jubilee",
+        description: "The AVL team showcased lab projects and connected with industry professionals and students at Jubilee. Thank you to ESC for organizing the event, and to Aspen Knox, Parsa Ghasemi, Benjamin Ramirez, Ryan Simpson, Christian Gomez, Karoline Braga, William Saunders, Tyrese Rogers, and Johnny Qiu for representing AVL."
+    },
+    {
         badge: "Sustainability",
         title: "Battery Take Back",
         date: "March 18, 2026",
-        image: "",
-        imageAlt: "",
+        image: "images/gallery/AVL_Gallery_Battery_Take_Back.jpg",
+        imageAlt: "AVL Battery Take Back event with collected batteries and students",
         description: "AVL hosted a campus battery take-back in Building 9, Room 101. Students and visitors dropped off household and lab batteries for responsible recycling, about 500 pounds in a single event."
-    },
-    {
-        badge: "Campus Visit",
-        title: "Visiting School from Korea",
-        date: "2026",
-        image: "",
-        imageAlt: "",
-        description: "Students and faculty from a visiting school in Korea toured the Autonomous Systems Lab. They met AVL members, saw our vehicles and stations, and talked through how we learn by building."
     }
 ];
 
 const OUTREACH_PHOTOS = [
+    // 1) Department of Education
     {
         image: "images/gallery/AVL_Gallery_Ceja_Williams_Bahr.jpg?v=2",
         alt: "Beatriz Ceja-Williams of the U.S. Department of Education with Dr. Behnam Bahr and AVL students in the lab",
-        caption: "U.S. Department of Education visit"
+        caption: "U.S. Department of Education visit with Beatriz Ceja-Williams"
     },
+    // 2) Companies
     {
         image: "images/gallery/AVL_Gallery_DTS.jpg",
         alt: "Lab collaboration session with DTS",
-        caption: "Hosting DTS in the lab"
+        caption: "Hosting Mike Beckage, Co-Founder of DTS, for a lab workshop"
+    },
+    // 3) Caltrans, Ganpat, Battery Take Back
+    {
+        image: "images/gallery/AVL_Gallery_Caltrans_Visit.jpg",
+        alt: "Caltrans Director Dina El-Tawansy visiting Cal Poly Pomona College of Engineering",
+        caption: "Caltrans Director Dina El-Tawansy visits for the Project Symposium and Showcase"
     },
     {
         image: "images/gallery/AVL_Gallery_Ganpat.jpg",
         alt: "Dinner with Dr. Ganpat Patel",
-        caption: "Dinner with Ganpat"
+        caption: "Dinner with Ganpat and the research assistants supported by him"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_Battery_Take_Back.jpg",
+        alt: "AVL Battery Take Back event with collected batteries and students",
+        caption: "Battery Take Back event"
+    },
+    // 4) Big events
+    {
+        image: "images/gallery/AVL_Gallery_SCAIR_2025_Poster.jpg",
+        alt: "Aspen Knox and AVL presenting a poster at the 2025 Southern California AI and Robotics Symposium",
+        caption: "Presenting with Aspen Knox at SCAIR 2025 on multimodal imitation learning"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_Cybersecurity_Fair_2025.jpg",
+        alt: "AVL presenting at the 2025 Cal Poly Pomona Cybersecurity and Awareness Fair",
+        caption: "Presenting at the 2025 Cal Poly Pomona Cybersecurity and Awareness Fair"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_Jubilee.jpg",
+        alt: "AVL team showcasing lab projects at Jubilee",
+        caption: "Showcasing AVL projects at Jubilee with industry and students"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_University_of_Ulsan.jpg",
+        alt: "AVL hosting 60 students from the University of Ulsan in the Autonomous Systems Lab",
+        caption: "Hosting 60 University of Ulsan students for a live go-kart and autonomy demo"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_Club_Fair_2026.jpeg",
+        alt: "AVL table and members at Club Fair 2026",
+        caption: "AVL Club Fair, 2026"
     }
 ];
 
@@ -864,7 +935,7 @@ const SPONSORS = [
         type: "industry",
         logo: "images/sponsors/AVL_Sponsor_Robodk.png",
         url: "https://robodk.com/index",
-        description: "Simulation and offline programming software for industrial robots"
+        description: "Industry partner providing robot simulation tools that aid students in learning robotic kinematics and arm robotics"
     },
     {
         name: "SendCutSend",

@@ -3019,10 +3019,10 @@ body.grant-notice-open {
 .grant-notice-card {
     position: relative;
     display: grid;
-    grid-template-columns: 1.05fr 1fr;
+    grid-template-columns: 1.35fr 1fr;
     align-items: stretch;
-    width: min(64rem, 92vw);
-    max-height: min(80dvh, 36rem);
+    width: min(70rem, 94vw);
+    max-height: min(85dvh, 38rem);
     overflow: hidden;
     background: var(--white);
     border: 1px solid var(--border);
@@ -3031,26 +3031,30 @@ body.grant-notice-open {
 }
 
 .grant-notice-photo {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
     min-height: 0;
-    background: #111111;
+    background: transparent;
     overflow: hidden;
 }
 
 .grant-notice-photo img {
     display: block;
     width: 100%;
-    height: 100%;
-    max-height: none;
-    object-fit: cover;
-    object-position: center;
+    height: auto;
+    border-radius: 0;
 }
 
 .grant-notice-body {
-    padding: 1.75rem 1.6rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1.35rem 1.5rem 1.2rem;
     overflow-y: auto;
+    height: 0;
+    min-height: 100%;
+    min-width: 0;
 }
 
 .grant-notice-close {
@@ -3312,8 +3316,7 @@ body.dark-mode .outreach-photo {
     }
 
     .grant-notice-photo {
-        min-height: 0;
-        height: auto;
+        padding: 0;
     }
 
     .grant-notice-photo img {
@@ -3323,7 +3326,10 @@ body.dark-mode .outreach-photo {
     }
 
     .grant-notice-body {
-        padding: 1.4rem 1.15rem 1.25rem;
+        height: auto;
+        min-height: 0;
+        justify-content: flex-start;
+        padding: 1.25rem 1.15rem 1.15rem;
     }
 
     .grant-notice-card h2 {
