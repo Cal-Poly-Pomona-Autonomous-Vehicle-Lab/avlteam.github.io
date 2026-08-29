@@ -815,13 +815,7 @@ const OUTREACH_PHOTOS = [
         alt: "Beatriz Ceja-Williams of the U.S. Department of Education with Dr. Behnam Bahr and AVL students in the lab",
         caption: "U.S. Department of Education visit with Beatriz Ceja-Williams"
     },
-    // 2) Companies
-    {
-        image: "images/gallery/AVL_Gallery_DTS.jpg",
-        alt: "Lab collaboration session with DTS",
-        caption: "Hosting Mike Beckage, Co-Founder of DTS, for a lab workshop"
-    },
-    // 3) Caltrans, Ganpat, Battery Take Back
+    // 2) Caltrans, Ganpat, companies, Battery Take Back
     {
         image: "images/gallery/AVL_Gallery_Caltrans_Visit.jpg",
         alt: "Caltrans Director Dina El-Tawansy visiting Cal Poly Pomona College of Engineering",
@@ -831,6 +825,11 @@ const OUTREACH_PHOTOS = [
         image: "images/gallery/AVL_Gallery_Ganpat.jpg",
         alt: "Dinner with Dr. Ganpat Patel",
         caption: "Dinner with Ganpat and the research assistants supported by him"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_DTS.jpg",
+        alt: "Lab collaboration session with DTS",
+        caption: "Hosting Mike Beckage, Co-Founder of DTS, for a lab workshop"
     },
     {
         image: "images/gallery/AVL_Gallery_Battery_Take_Back.jpg",
@@ -862,6 +861,11 @@ const OUTREACH_PHOTOS = [
         image: "images/gallery/AVL_Gallery_Club_Fair_2026.jpeg",
         alt: "AVL table and members at Club Fair 2026",
         caption: "AVL Club Fair, 2026"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_Full_Old_Team.jpg",
+        alt: "AVL members with autonomous vehicles during a lab tour",
+        caption: "Showing our vehicles on a lab tour"
     }
 ];
 

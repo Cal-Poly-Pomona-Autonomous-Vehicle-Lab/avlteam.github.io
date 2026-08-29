@@ -255,10 +255,10 @@ function renderGrantNotice(activePage) {
             </div>
             <div class="grant-notice-body">
                 <span class="grant-notice-kicker">Department of Education</span>
-                <h2 id="grant-notice-title">Thank you Department of Education</h2>
+                <h2 id="grant-notice-title">Acknowledgments</h2>
                 <p>Research reported in this website was supported by Industry 4.0: Career Advancement through Research and Education in Modeling and Simulation (iCARE-M&amp;S), funded by the Modeling and Simulation Program (MSP), U.S. Department of Education, Washington, D.C. PR/Award# P116S230024 - CAL POLY POMONA FOUNDATION INC. The content is solely the responsibility of the authors and does not necessarily represent the official views of the Department of Education.</p>
                 <div class="grant-notice-actions">
-                    <a href="outreach.html" class="btn btn-primary grant-notice-cta">See our Outreach</a>
+                    <a href="outreach.html" class="btn btn-primary grant-notice-cta">See More</a>
                     <button type="button" class="btn btn-secondary grant-notice-home">Continue to Home</button>
                 </div>
             </div>
