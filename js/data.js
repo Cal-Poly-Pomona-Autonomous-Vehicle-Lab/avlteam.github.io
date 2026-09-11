@@ -86,7 +86,7 @@ const TEAM_MEMBERS = {
     researchers: [
         {
             name: "Aspen Knox",
-            role: "Research Assistant - Mechanical Engineering",
+            role: "Former President 2025-2026 - Mechanical Engineering",
             image: "images/team/AVL_Aspen_Knox.jpg",
             bio: "Training day-night imitation-learning models using RGB and thermal cameras on AVL platforms.",
             linkedin: "https://www.linkedin.com/in/aspenknox/",
@@ -120,7 +120,7 @@ const TEAM_MEMBERS = {
         },
         { 
             name: "Changwe Musonda", 
-            role: "Club Member - Computer Engineering", 
+            role: "Research Assistant - Computer Engineering", 
             image: "images/team/AVL_Changwe_Musonda.jpg", 
             bio: "Working on ROS2, integrating perception, and planning pipelines for autonomous vehicle operation.", 
             linkedin: "https://www.linkedin.com/in/changwe-musonda-32642a1a8/", 
