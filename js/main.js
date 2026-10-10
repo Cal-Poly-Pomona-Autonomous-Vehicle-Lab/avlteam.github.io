@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderOutreachSection();
     } finally {
         initScrollAnimations();
-        initAnimatedCounters();
     }
 });
 
@@ -236,18 +235,6 @@ function renderResearchSection() {
 // ============================================================================
 
 function renderImpactSection() {
-    // Render stats
-    const statsContainer = document.getElementById('stats-container');
-    if (statsContainer) {
-        const statsHtml = IMPACT_STATS.map(stat => `
-            <div class="stat-card fade-in">
-                <div class="stat-number">${stat.number}</div>
-                <div class="stat-label">${stat.label}</div>
-            </div>
-        `).join('');
-        statsContainer.innerHTML = statsHtml;
-    }
-
     // Render achievements with clickable links
     const achievementsContainer = document.getElementById('achievements-container');
     if (achievementsContainer) {
@@ -861,64 +848,6 @@ function renderMediaSection() {
         `;
     }
     // Otherwise keep the placeholder (already in HTML)
-}
-
-// ============================================================================
-// ANIMATED STAT COUNTERS
-// ============================================================================
-
-function initAnimatedCounters() {
-    const statNumbers = document.querySelectorAll('.stat-number');
-    if (statNumbers.length === 0) return;
-    
-    const observerOptions = {
-        threshold: 0.5,
-        rootMargin: '0px'
-    };
-    
-    const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounter(entry.target);
-                counterObserver.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-    
-    // Observe all stat numbers after a small delay to ensure they're rendered
-    setTimeout(() => {
-        document.querySelectorAll('.stat-number').forEach(el => {
-            counterObserver.observe(el);
-        });
-    }, 200);
-}
-
-function animateCounter(element) {
-    const text = element.textContent;
-    const hasPlus = text.includes('+');
-    const numericPart = parseInt(text.replace(/[^0-9]/g, ''));
-    
-    if (isNaN(numericPart)) return;
-    
-    const duration = 2000; // 2 seconds
-    const steps = 60;
-    const stepDuration = duration / steps;
-    let currentStep = 0;
-    
-    const interval = setInterval(() => {
-        currentStep++;
-        const progress = currentStep / steps;
-        // Ease out cubic for smooth deceleration
-        const easedProgress = 1 - Math.pow(1 - progress, 3);
-        const currentValue = Math.floor(easedProgress * numericPart);
-        
-        element.textContent = currentValue + (hasPlus ? '+' : '');
-        
-        if (currentStep >= steps) {
-            clearInterval(interval);
-            element.textContent = text; // Restore original text
-        }
-    }, stepDuration);
 }
 
 // ============================================================================

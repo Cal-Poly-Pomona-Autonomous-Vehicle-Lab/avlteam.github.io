@@ -355,13 +355,6 @@ const HIRING_INFO = {
 // ============================================================================
 // Showcase lab accomplishments
 
-const IMPACT_STATS = [
-    { number: "5+", label: "Active Research Papers" },
-    { number: "4", label: "Autonomous Vehicle Platforms" },
-    { number: "5+", label: "Active Projects" },
-    { number: "15+", label: "Lab Members" }
-];
-
 const ACHIEVEMENTS = [
     {
         title: "AVL-001 Deployed",
@@ -790,6 +783,14 @@ const OUTREACH_EVENTS = [
         description: "The AVL team showcased lab projects and connected with industry professionals and students at Jubilee. Thank you to ESC for organizing the event, and to Aspen Knox, Parsa Ghasemi, Benjamin Ramirez, Ryan Simpson, Christian Gomez, Karoline Braga, William Saunders, Tyrese Rogers, and Johnny Qiu for representing AVL."
     },
     {
+        badge: "Campus Visit",
+        title: "Civil Engineering Traffic Simulation Class Visit",
+        date: "2026",
+        image: "images/gallery/AVL_Gallery_Civil_Traffic_Sim_1.jpg",
+        imageAlt: "Civil Engineering Traffic Simulation class touring the Autonomous Vehicle Lab",
+        description: "AVL hosted students from Cal Poly Pomona's Civil Engineering Traffic Simulation class for a lab tour. Guests saw our autonomous vehicle platforms and driving simulator, and learned how AVL members design, build, test, and improve autonomous systems across electrical and mechanical engineering. The visit connected classroom topics like sensing, automation, control, and systems integration to real vehicles and hands-on student work."
+    },
+    {
         badge: "Sustainability",
         title: "Battery Take Back",
         date: "March 18, 2026",
@@ -847,6 +848,16 @@ const OUTREACH_PHOTOS = [
         image: "images/gallery/AVL_Gallery_University_of_Ulsan.jpg",
         alt: "AVL hosting 60 students from the University of Ulsan in the Autonomous Systems Lab",
         caption: "Hosting 60 University of Ulsan students for a live go-kart and autonomy demo"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_Civil_Traffic_Sim_1.jpg",
+        alt: "Civil Engineering Traffic Simulation class touring the Autonomous Vehicle Lab",
+        caption: "Civil Engineering Traffic Simulation class lab tour"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_Civil_Traffic_Sim_2.jpg",
+        alt: "Civil Engineering Traffic Simulation students visiting AVL vehicles and driving simulator",
+        caption: "Civil Engineering Traffic Simulation class visit"
     },
     {
         image: "images/gallery/AVL_Gallery_Club_Fair_2026.jpeg",
