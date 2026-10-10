@@ -30,19 +30,21 @@
     --shadow-blue: 0 4px 20px rgba(25, 0, 173, 0.18);
 
     /* Typography */
-    --font-display: 'Space Grotesk', 'Inter', sans-serif;
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
     /* Layout */
     --section-padding: clamp(4rem, 7vw, 6rem);
     --container-width: 1280px;
     --nav-height: 68px;
 
-    /* Radius */
-    --radius-sm: 6px;
-    --radius-md: 10px;
-    --radius-lg: 14px;
-    --radius-pill: 999px;
+    /* Default sharp; use --radius-card / --radius-control only where listed */
+    --radius-sm: 2px;
+    --radius-md: 2px;
+    --radius-lg: 2px;
+    --radius-pill: 9999px;
+    --radius-card: 10px;
+    --radius-control: 6px;
 }
 
 /* ============================================================================
@@ -365,7 +367,7 @@ body.dark-mode [style*="color: var(--blue-accent)"] {
     width: 34px;
     height: 34px;
     border: none;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-control);
     background: transparent;
     color: var(--text-muted);
     cursor: pointer;
@@ -512,7 +514,7 @@ section {
     font-family: var(--font-display);
     font-size: 0.9rem;
     font-weight: 600;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-control);
     cursor: pointer;
     transition: all 0.2s ease;
     border: 2px solid transparent;
@@ -995,7 +997,7 @@ section {
 .about-card {
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 2rem;
     transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
@@ -1046,7 +1048,7 @@ section {
 .research-card {
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 1.75rem;
     transition: all 0.25s ease;
     cursor: default;
@@ -1065,7 +1067,7 @@ section {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    border-radius: var(--radius-card) var(--radius-card) 0 0;
 }
 
 .research-card:hover {
@@ -1146,7 +1148,7 @@ section {
     align-items: start;
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 1.5rem 1.75rem 1.75rem;
 }
 
@@ -1265,7 +1267,7 @@ section {
 .projects-link-card {
     background: var(--blue-light);
     border: 1px solid var(--blue-mid);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 2.5rem;
     text-align: center;
     max-width: 700px;
@@ -1308,7 +1310,7 @@ section {
 .mini-project-card {
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 1.5rem 1.6rem 1.6rem;
     display: flex;
     flex-direction: column;
@@ -1425,7 +1427,7 @@ section {
 .publication-card {
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 1.75rem;
     transition: all 0.25s ease;
     display: flex;
@@ -1616,7 +1618,7 @@ section {
 .team-card {
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     overflow: hidden;
     transition: all 0.25s ease;
 }
@@ -1720,7 +1722,7 @@ section {
 
 .hiring-banner {
     background: var(--blue-primary);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 2.75rem;
     text-align: center;
     margin-bottom: 2.5rem;
@@ -1767,7 +1769,7 @@ section {
 .position-card {
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 1.75rem;
     transition: all 0.25s ease;
 }
@@ -1873,7 +1875,7 @@ section {
 .workshop-card {
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 1.75rem;
     transition: all 0.25s ease;
     position: relative;
@@ -2123,7 +2125,7 @@ body.dark-mode .tech-strip-tagline {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     overflow: hidden;
     border: 1px solid var(--border);
     box-shadow: var(--shadow-md);
@@ -2240,7 +2242,7 @@ body.dark-mode .tech-strip-tagline {
     background: var(--white);
     border: 1px solid var(--border);
     border-left: 4px solid var(--blue-primary);
-    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    border-radius: 0 var(--radius-card) var(--radius-card) 0;
     padding: 1.5rem 1.75rem;
     transition: all 0.25s ease;
 }
@@ -2367,7 +2369,7 @@ body.dark-mode .tech-strip-tagline {
 .media-social {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 1.5rem;
     transition: box-shadow 0.25s ease;
 }
@@ -2491,7 +2493,7 @@ body.dark-mode .tech-strip-tagline {
     gap: 1.5rem;
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 1.75rem 2rem;
     text-decoration: none;
     transition: all 0.25s ease;
@@ -2574,7 +2576,7 @@ body.dark-mode .sponsor-logo-invert img {
     color: var(--text-muted);
     background: var(--white);
     border: 1px dashed var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
 }
 
 .sponsors-cta {
@@ -2607,7 +2609,7 @@ body.dark-mode .sponsor-logo-invert img {
     flex-direction: column;
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 2rem 1.75rem;
     text-align: left;
     border-top: 4px solid var(--blue-accent);
@@ -2804,27 +2806,13 @@ body.dark-mode .sponsor-logo-invert img {
 }
 
 /* ============================================================================
-   ANIMATIONS
-   ============================================================================ */
-
-.fade-in {
-    opacity: 1;
-    transform: none;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: none;
-}
-
-/* ============================================================================
    LECTURE PAGE
    ============================================================================ */
 
 .lecture-placeholder {
     background: var(--blue-light);
     border: 2px dashed var(--blue-mid);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 3rem;
     text-align: center;
     max-width: 600px;
@@ -2850,7 +2838,7 @@ body.dark-mode .sponsor-logo-invert img {
 .lecture-card {
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     padding: 1.75rem;
     transition: all 0.25s ease;
 }
@@ -2922,7 +2910,7 @@ body.grant-notice-open {
     overflow: hidden;
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     box-shadow: var(--shadow-md);
 }
 
@@ -3048,7 +3036,7 @@ body.dark-mode .grant-notice-close {
 .outreach-event-card {
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     overflow: hidden;
 }
 
@@ -3110,7 +3098,7 @@ body.dark-mode .grant-notice-close {
     margin: 0;
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-card);
     overflow: hidden;
 }
 

@@ -1,26 +1,22 @@
 /**
  * AVL Website - Main JavaScript
- * Handles dynamic content rendering, navigation, and animations
+ * Handles dynamic content rendering and navigation
  */
 
 // Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', () => {
-    try {
-        initNavigation();
-        renderMiniProjectsSection();
-        renderEquipmentSection();
-        renderTeamSection();
-        renderResearchSection();
-        renderImpactSection();
-        renderPublicationsSection();
-        renderHiringSection();
-        renderLearnSection();
-        renderSponsorsSection();
-        renderMediaSection();
-        renderOutreachSection();
-    } finally {
-        initScrollAnimations();
-    }
+    initNavigation();
+    renderMiniProjectsSection();
+    renderEquipmentSection();
+    renderTeamSection();
+    renderResearchSection();
+    renderImpactSection();
+    renderPublicationsSection();
+    renderHiringSection();
+    renderLearnSection();
+    renderSponsorsSection();
+    renderMediaSection();
+    renderOutreachSection();
 });
 
 // ============================================================================
@@ -187,7 +183,7 @@ function createTeamCard(member) {
     }
 
     return `
-        <div class="team-card fade-in">
+        <div class="team-card">
             <div class="team-card-image">
                 ${imageHtml}
             </div>
@@ -215,7 +211,7 @@ function renderResearchSection() {
         const clickHandler = hasLink ? `onclick="window.open('${area.docLink}', '_blank')"` : '';
         
         return `
-            <div class="research-card fade-in ${clickableClass}" ${clickHandler}>
+            <div class="research-card ${clickableClass}" ${clickHandler}>
                 <div class="research-card-icon">${area.icon || '🔬'}</div>
                 <h3>${area.title}</h3>
                 <p>${area.description}</p>
@@ -244,7 +240,7 @@ function renderImpactSection() {
             const clickHandler = hasLink ? `onclick="window.open('${achievement.docLink}', '_blank')"` : '';
             
             return `
-                <div class="achievement-card fade-in ${clickableClass}" ${clickHandler}>
+                <div class="achievement-card ${clickableClass}" ${clickHandler}>
                     <div class="achievement-year">${achievement.year}</div>
                     <h3>${achievement.title}</h3>
                     <p>${achievement.description}</p>
@@ -377,7 +373,7 @@ function renderPublicationCards(container, filterType) {
 
         // Assemble the complete publication card
         return `
-            <div class="publication-card fade-in">
+            <div class="publication-card">
                 ${imageHtml}
                 <div class="pub-card-header">
                     ${typeBadge}
@@ -394,21 +390,6 @@ function renderPublicationCards(container, filterType) {
     }).join('');
 
     container.innerHTML = html;
-
-    // Re-trigger scroll animations for newly rendered cards
-    setTimeout(() => {
-        container.querySelectorAll('.fade-in').forEach(el => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
-            observer.observe(el);
-        });
-    }, 50);
 }
 
 /**
@@ -454,7 +435,7 @@ function renderMiniProjectsSection() {
         const tags = (project.tags || []).map(tag => `<li>${tag}</li>`).join('');
 
         return `
-            <article class="mini-project-card fade-in">
+            <article class="mini-project-card">
                 <span class="project-badge">${project.badge}</span>
                 <h3>${project.title}</h3>
                 ${people}
@@ -482,7 +463,7 @@ function renderEquipmentSection() {
         const clickHandler = hasLink ? `onclick="window.open('${item.docLink}', '_blank')"` : '';
         
         return `
-            <div class="equipment-item fade-in ${clickableClass}" ${clickHandler}>
+            <div class="equipment-item ${clickableClass}" ${clickHandler}>
                 <h4>${item.name}</h4>
                 <p>${item.description}</p>
                 ${hasLink ? '<div class="click-hint">Click to learn more →</div>' : ''}
@@ -509,7 +490,7 @@ function renderHiringSection() {
     }
 
     const positionsHtml = HIRING_INFO.positions.map(position => `
-        <div class="position-card fade-in">
+        <div class="position-card">
             <span class="position-type">${position.type}</span>
             <h3>${position.title}</h3>
             <p>${position.description}</p>
@@ -566,7 +547,7 @@ function renderLearnSection() {
         const professorLine = workshop.professor ? `<p class="workshop-professor">${workshop.professor}</p>` : '';
 
         return `
-            <div class="workshop-card fade-in">
+            <div class="workshop-card">
                 <div class="workshop-card-header">
                     ${professorLine}
                     ${levelBadge}
@@ -592,7 +573,7 @@ function renderOutreachSection() {
                 ? `<div class="outreach-event-photo"><img src="${event.image}" alt="${event.imageAlt || event.title}"></div>`
                 : '';
             return `
-                <article class="outreach-event-card fade-in">
+                <article class="outreach-event-card">
                     ${photo}
                     <div class="outreach-event-body">
                         <div class="outreach-event-meta">
@@ -609,7 +590,7 @@ function renderOutreachSection() {
 
     if (photosEl && typeof OUTREACH_PHOTOS !== 'undefined') {
         photosEl.innerHTML = OUTREACH_PHOTOS.map(photo => `
-            <figure class="outreach-photo fade-in">
+            <figure class="outreach-photo">
                 <img src="${photo.image}" alt="${photo.alt}" loading="lazy">
                 <figcaption>${photo.caption}</figcaption>
             </figure>
@@ -682,14 +663,6 @@ function renderFooter() {
     if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
     }
-}
-
-// ============================================================================
-// SCROLL ANIMATIONS
-// ============================================================================
-
-function initScrollAnimations() {
-    document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
 }
 
 // ============================================================================
@@ -800,7 +773,7 @@ function renderSponsorsSection() {
             : `<div class="sponsor-fallback">${sponsor.name.charAt(0)}</div>`;
         
         return `
-            <a href="${sponsor.url}" target="_blank" class="sponsor-card fade-in" title="${sponsor.description}">
+            <a href="${sponsor.url}" target="_blank" class="sponsor-card" title="${sponsor.description}">
                 <div class="sponsor-logo">
                     ${logoHtml}
                 </div>
