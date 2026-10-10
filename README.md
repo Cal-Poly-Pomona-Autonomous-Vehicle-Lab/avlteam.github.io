@@ -1,6 +1,6 @@
-# AVL Website — autovehiclelab.com
+# AVL Website - autovehiclelab.com
 
-Official website for the **Autonomous Vehicle Laboratory (AVL)** at Cal Poly Pomona. Built as a static site hosted on GitHub Pages — no build tools, no frameworks, no server required. Everything runs in plain HTML, CSS, and JavaScript.
+Official website for the **Autonomous Vehicle Laboratory (AVL)** at Cal Poly Pomona. Built as a static site hosted on GitHub Pages - no build tools, no frameworks, no server required. Everything runs in plain HTML, CSS, and JavaScript.
 
 **Live Site:** [autovehiclelab.com](https://autovehiclelab.com)  
 **Repository:** [Cal-Poly-Pomona-Autonomous-Vehicle-Lab/avlteam.github.io](https://github.com/Cal-Poly-Pomona-Autonomous-Vehicle-Lab/avlteam.github.io)
@@ -14,10 +14,10 @@ Official website for the **Autonomous Vehicle Laboratory (AVL)** at Cal Poly Pom
 3. [How It Works](#how-it-works)
 4. [File Reference](#file-reference)
    - [HTML Pages](#html-pages)
-   - [js/data.js — Content Layer](#jsdatajs--content-layer)
-   - [js/components.js — Shared UI](#jscomponentsjs--shared-ui)
-   - [js/main.js — Rendering Engine](#jsmainjs--rendering-engine)
-   - [css/styles.css — Design System](#cssstylescss--design-system)
+   - [js/data.js - Content Layer](#jsdatajs---content-layer)
+   - [js/components.js - Shared UI](#jscomponentsjs---shared-ui)
+   - [js/main.js - Rendering Engine](#jsmainjs---rendering-engine)
+   - [css/styles.css - Design System](#cssstylescss---design-system)
    - [images/](#images)
 5. [How to Make Common Changes](#how-to-make-common-changes)
    - [Add or Update a Team Member](#add-or-update-a-team-member)
@@ -37,7 +37,7 @@ Official website for the **Autonomous Vehicle Laboratory (AVL)** at Cal Poly Pom
 
 The AVL website is a **6-page static site** that presents the lab's research, projects, people, and lecture series to prospective students, faculty, and industry partners.
 
-**Design philosophy:** White and blue minimalist academic aesthetic. No JavaScript frameworks. Content is data-driven — most updates are made by editing a single file (`js/data.js`) rather than touching HTML.
+**Design philosophy:** White and blue minimalist academic aesthetic. No JavaScript frameworks. Content is data-driven - most updates are made by editing a single file (`js/data.js`) rather than touching HTML.
 
 **Key features:**
 - Data-driven team, publications, equipment, and positions via `js/data.js`
@@ -45,7 +45,7 @@ The AVL website is a **6-page static site** that presents the lab's research, pr
 - Dark mode with `localStorage` persistence
 - Fully responsive with a slide-in mobile hamburger menu
 - Smooth scroll-reveal animations via IntersectionObserver
-- No npm, no build step, no dependencies — works by opening any `.html` file in a browser
+- No npm, no build step, no dependencies - works by opening any `.html` file in a browser
 
 ---
 
@@ -62,7 +62,7 @@ avlteam.github.io/
 ├── join.html           # Open positions & how to apply
 │
 ├── css/
-│   └── styles.css      # All styles — design tokens, components, dark mode, responsive
+│   └── styles.css      # All styles - design tokens, components, dark mode, responsive
 │
 ├── js/
 │   ├── data.js         # ← EDIT THIS to update content (team, pubs, equipment, etc.)
@@ -97,7 +97,7 @@ components.js  →  navbar + footer HTML (same on every page)
 
 1. **`data.js`** defines JavaScript arrays/objects for all dynamic content: team members, research areas, publications, equipment, open positions, lab stats, etc.
 2. **`main.js`** reads those arrays and builds the HTML (cards, grids, lists) and inserts it into placeholder `<div id="...">` elements in each HTML page.
-3. **`components.js`** generates the navbar and footer HTML and injects it into `<nav id="navbar">` and `<footer id="footer">` on every page — so editing the nav or footer in one place updates all 6 pages.
+3. **`components.js`** generates the navbar and footer HTML and injects it into `<nav id="navbar">` and `<footer id="footer">` on every page - so editing the nav or footer in one place updates all 6 pages.
 
 Each HTML page loads all three scripts at the bottom, then calls the renderers:
 
@@ -145,7 +145,7 @@ Dynamic sections use empty containers that `main.js` populates:
 
 ---
 
-### js/data.js — Content Layer
+### js/data.js - Content Layer
 
 > **This is the file you'll edit most.** It contains all site content in structured JavaScript objects. The website automatically reflects any changes here after a page refresh.
 
@@ -172,13 +172,13 @@ const TEAM_MEMBERS = {
 ```
 
 **To add a member:**
-1. Upload their headshot to `images/team/` — name it `AVL_Firstname_Lastname.jpg`
+1. Upload their headshot to `images/team/` - name it `AVL_Firstname_Lastname.jpg`
 2. Copy any existing member object and fill in the fields
 3. Paste it into the correct group (`leadership`, `researchers`, or `members`)
 
 **To remove a member:** Delete their entire `{ ... }` object. Make sure to also remove the trailing comma on the object before it.
 
-**Using `"placeholder"`** for `image` generates a grey avatar with their initials automatically — useful before a headshot is available.
+**Using `"placeholder"`** for `image` generates a grey avatar with their initials automatically - useful before a headshot is available.
 
 ---
 
@@ -212,7 +212,7 @@ const PUBLICATIONS = [
         authors: "Last, F., Last, F., and Last, F.",
         venue: "Conference or Journal Name, Year",
         type: "poster",         // "poster", "presentation", or "paper"
-        link: "https://..."     // URL to PDF or abstract — use "" if none
+        link: "https://..."     // URL to PDF or abstract - use "" if none
     }
 ];
 ```
@@ -288,7 +288,7 @@ const WORKSHOPS = [
 
 ---
 
-### js/components.js — Shared UI
+### js/components.js - Shared UI
 
 Contains two functions called on every page load:
 
@@ -311,7 +311,7 @@ Injects the footer HTML into `<footer id="footer">`. Edit the template literal t
 
 ---
 
-### js/main.js — Rendering Engine
+### js/main.js - Rendering Engine
 
 Reads from `data.js` and writes HTML into the DOM. You generally don't need to edit this unless you're changing how a section is laid out (not just its content).
 
@@ -330,11 +330,11 @@ Reads from `data.js` and writes HTML into the DOM. You generally don't need to e
 | `initSlideshow()` | Auto-advancing gallery slideshow on index.html |
 | `initFadeIn()` | IntersectionObserver scroll-reveal for `.fade-in` elements |
 
-**To change a card layout** — for example, to add a new field to team cards — find the corresponding render function and edit the HTML template literal it returns. The class names used there map directly to CSS classes in `styles.css`.
+**To change a card layout** - for example, to add a new field to team cards - find the corresponding render function and edit the HTML template literal it returns. The class names used there map directly to CSS classes in `styles.css`.
 
 ---
 
-### css/styles.css — Design System
+### css/styles.css - Design System
 
 All styling lives in this one file, organized in labeled sections:
 
@@ -360,7 +360,7 @@ The top of the file defines CSS custom properties used throughout:
 
 ```css
 :root {
-    --blue-primary:   #1900ad;  /* Main brand blue — buttons, active states */
+    --blue-primary:   #1900ad;  /* Main brand blue - buttons, active states */
     --blue-accent:    #4422cc;  /* Hover states */
     --blue-light:     #EDEAFF;  /* Badge backgrounds, tinted surfaces */
     --blue-mid:       #C5BDFF;  /* Card borders on hover */
@@ -398,9 +398,9 @@ Additional targeted overrides follow for elements that use hardcoded colors (e.g
 
 | Breakpoint | Behavior |
 |---|---|
-| `max-width: 1024px` | Tablets — tighter grids, smaller type |
-| `max-width: 768px` | Mobile — hamburger menu, stacked layouts |
-| `max-width: 480px` | Small phones — further font and spacing reduction |
+| `max-width: 1024px` | Tablets - tighter grids, smaller type |
+| `max-width: 768px` | Mobile - hamburger menu, stacked layouts |
+| `max-width: 480px` | Small phones - further font and spacing reduction |
 
 ---
 
@@ -416,7 +416,7 @@ Additional targeted overrides follow for elements that use hardcoded colors (e.g
 
 **Headshot requirements:** Square crop recommended, minimum 400×400px. Cards display at a 1:1 aspect ratio with `object-fit: cover`.
 
-**Image compression:** Keep images under 500KB. Use [squoosh.app](https://squoosh.app) to compress before committing — large images slow the site and inflate the repo.
+**Image compression:** Keep images under 500KB. Use [squoosh.app](https://squoosh.app) to compress before committing - large images slow the site and inflate the repo.
 
 ---
 
@@ -528,10 +528,10 @@ All dark mode CSS overrides are at the top of `css/styles.css` in the `/* DARK M
 
 No build tools needed. Two options:
 
-**Option 1 — Open directly in browser:**
+**Option 1 - Open directly in browser:**
 Double-click any `.html` file. Works for most editing but some paths may behave differently than on a server.
 
-**Option 2 — Local server (recommended):**
+**Option 2 - Local server (recommended):**
 
 Using Python (available on most systems):
 ```bash
@@ -556,13 +556,13 @@ The site deploys automatically on every push to `main`. GitHub Pages serves the 
 **Standard deploy workflow:**
 
 ```bash
-# Stage your changed files (be specific — avoid git add -A)
+# Stage your changed files (be specific - avoid git add -A)
 git add js/data.js images/team/AVL_Jane_Doe.jpg
 
 # Write a clear commit message
 git commit -m "Add Jane Doe to research team"
 
-# Push — GitHub Pages rebuilds automatically (takes ~1-2 minutes)
+# Push - GitHub Pages rebuilds automatically (takes ~1-2 minutes)
 git push origin main
 ```
 
@@ -580,7 +580,7 @@ After pushing, you can verify the deployment finished at:
 - The only file you need to edit for team/publication/position updates is `js/data.js`
 - Always preview locally before pushing
 - Use specific, descriptive commit messages: `"Add Jane Doe to team"` not `"update stuff"`
-- Keep headshot images under 500KB — compress at [squoosh.app](https://squoosh.app)
+- Keep headshot images under 500KB - compress at [squoosh.app](https://squoosh.app)
 - Do not commit `.claude/`, `.DS_Store`, `Thumbs.db`, or other system/editor files
 
 **For structural changes (new pages, CSS changes, JS refactoring):**
@@ -596,4 +596,4 @@ git push origin feature/your-feature-name
 
 **File size limits:**
 
-GitHub Pages has a 1GB soft limit per repository. Keep images compressed and avoid committing large video files — host videos on YouTube or Google Drive and embed them instead.
+GitHub Pages has a 1GB soft limit per repository. Keep images compressed and avoid committing large video files - host videos on YouTube or Google Drive and embed them instead.
