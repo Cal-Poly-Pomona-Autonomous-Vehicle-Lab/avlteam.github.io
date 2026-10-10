@@ -101,15 +101,6 @@ const TEAM_MEMBERS = {
             email: "chylkema@cpp.edu"
         },
         {
-            name: "Garrett Anderson",
-            role: "Research Assistant - Electrical Engineering",
-            image: "images/team/AVL_Garrett_Anderson.jpg",
-            bio: "Leading drive-by-wire and electrical development for Car 1, including actuator control, power distribution, and low-level electronics integration.",
-            linkedin: "https://www.linkedin.com/in/garrett-anderson-a6a4a1400/",
-            github: "https://github.com/GarrettAndersonn",
-            email: "gtanderson@cpp.edu"
-        },
-        {
             name: "Alexander Assal",
             role: "Research Assistant - Computer Engineering",
             image: "images/team/AVL_Alexander_Assal.jpg",
