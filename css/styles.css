@@ -38,13 +38,14 @@
     --container-width: 1280px;
     --nav-height: 68px;
 
-    /* Default sharp; use --radius-card / --radius-control only where listed */
+    /* Default sharp; most boxes square; soft only on a few surfaces */
     --radius-sm: 2px;
     --radius-md: 2px;
     --radius-lg: 2px;
     --radius-pill: 9999px;
-    --radius-card: 10px;
-    --radius-control: 6px;
+    --radius-card: 2px;
+    --radius-control: 8px;
+    --radius-soft: 8px;
 }
 
 /* ============================================================================
@@ -1148,7 +1149,8 @@ section {
     align-items: start;
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-card);
+    border-radius: 12px;
+    overflow: hidden;
     padding: 1.5rem 1.75rem 1.75rem;
 }
 
@@ -1618,7 +1620,7 @@ section {
 .team-card {
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-card);
+    border-radius: 0 0 var(--radius-soft) var(--radius-soft);
     overflow: hidden;
     transition: all 0.25s ease;
 }
@@ -2125,7 +2127,7 @@ body.dark-mode .tech-strip-tagline {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    border-radius: var(--radius-card);
+    border-radius: var(--radius-soft);
     overflow: hidden;
     border: 1px solid var(--border);
     box-shadow: var(--shadow-md);
@@ -2493,7 +2495,7 @@ body.dark-mode .tech-strip-tagline {
     gap: 1.5rem;
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-card);
+    border-radius: var(--radius-soft);
     padding: 1.75rem 2rem;
     text-decoration: none;
     transition: all 0.25s ease;
@@ -2609,7 +2611,7 @@ body.dark-mode .sponsor-logo-invert img {
     flex-direction: column;
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius-card);
+    border-radius: var(--radius-soft);
     padding: 2rem 1.75rem;
     text-align: left;
     border-top: 4px solid var(--blue-accent);
@@ -2910,7 +2912,7 @@ body.grant-notice-open {
     overflow: hidden;
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-card);
+    border-radius: var(--radius-soft);
     box-shadow: var(--shadow-md);
 }
 
@@ -3036,7 +3038,7 @@ body.dark-mode .grant-notice-close {
 .outreach-event-card {
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-card);
+    border-radius: 0;
     overflow: hidden;
 }
 
@@ -3098,7 +3100,7 @@ body.dark-mode .grant-notice-close {
     margin: 0;
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: var(--radius-card);
+    border-radius: var(--radius-soft);
     overflow: hidden;
 }
 
