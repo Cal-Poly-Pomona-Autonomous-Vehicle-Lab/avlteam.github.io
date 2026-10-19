@@ -157,9 +157,9 @@ const TEAM_MEMBERS = {
     legacy: [
         {
             name: "Deyung Sun",
-            role: "Former Research Assistant - Mechanical Engineering M.S.",
+            role: "Product Installations Engineer (eBeam) at KLA Taiwan - Mechanical Engineering M.S.",
             image: "images/team/AVL_Deyung_Sun.jpg",
-            bio: "Developed Gazebo simulations for autonomous vehicle testing using ROS2 Jazzy.",
+            bio: "Based in Taiwan with KLA. At AVL, developed Gazebo simulations for autonomous vehicle testing using ROS2 Jazzy.",
             linkedin: "https://www.linkedin.com/in/deyung-sun-634780318",
             github: "https://github.com/deyungOAO",
             email: "deyung000@gmail.com"
