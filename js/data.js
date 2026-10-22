@@ -743,6 +743,22 @@ const SITE_INFO = {
 
 const OUTREACH_EVENTS = [
     {
+        badge: "Advisory Board",
+        title: "Mechanical Engineering Advisory Board Visit",
+        date: "2026",
+        image: "images/gallery/AVL_Gallery_ME_Advisory_Board.jpg",
+        imageAlt: "Mechanical Engineering Advisory Board members with AVL students and autonomous vehicles on the Cal Poly Pomona lawn",
+        description: "The Mechanical Engineering Advisory Board visited the Autonomous Vehicle Laboratory and met with AVL students. Board members saw the lab's autonomous go-kart and mobile robot platforms and talked with the students who design, build, and test them."
+    },
+    {
+        badge: "Guest Lecture",
+        title: "Guest Seminar: Prof. Leena Vachhani, IIT Bombay",
+        date: "September 22, 2026",
+        image: "images/gallery/AVL_Gallery_Vachhani_Seminar_1.jpg",
+        imageAlt: "Prof. Leena Vachhani with a full room of Cal Poly Pomona engineering students after her seminar",
+        description: "Prof. Leena Vachhani, Associate Dean of R&D at IIT Bombay's Centre for Systems and Control, visited Cal Poly Pomona and gave the College of Engineering seminar \"From Embedded Control to Quantum-Inspired Robotics.\" The talk traced robotics from embedded feedback control to modern autonomy, including SLAM, sensor fusion, motion planning, and multi-robot coordination, and introduced a quantum-inspired approach to belief representation and RRT motion planning. Thank you to Dr. Farbod Khoshnoud for hosting, to Dr. Simeng Li and Dr. Victor Okhuysen for organizing the event, and to the students who filled the room."
+    },
+    {
         badge: "Campus Visit",
         title: "University of Ulsan Visit",
         date: "2026",
@@ -807,6 +823,17 @@ const OUTREACH_PHOTOS = [
         alt: "Beatriz Ceja-Williams of the U.S. Department of Education with Dr. Behnam Bahr and AVL students in the lab",
         caption: "U.S. Department of Education visit with Beatriz Ceja-Williams"
     },
+    // Fall 2026: ME Advisory Board, Vachhani seminar
+    {
+        image: "images/gallery/AVL_Gallery_ME_Advisory_Board.jpg",
+        alt: "Mechanical Engineering Advisory Board members with AVL students and autonomous vehicles on the Cal Poly Pomona lawn",
+        caption: "Mechanical Engineering Advisory Board visiting the lab and students"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_Vachhani_Seminar_1.jpg",
+        alt: "Prof. Leena Vachhani with a full room of Cal Poly Pomona engineering students after her seminar",
+        caption: "A full room for Prof. Leena Vachhani's guest seminar"
+    },
     // 2) Caltrans, Ganpat, companies, Battery Take Back
     {
         image: "images/gallery/AVL_Gallery_Caltrans_Visit.jpg",
@@ -822,6 +849,16 @@ const OUTREACH_PHOTOS = [
         image: "images/gallery/AVL_Gallery_DTS.jpg",
         alt: "Lab collaboration session with DTS",
         caption: "Hosting Mike Beckage, Co-Founder of DTS, for a lab workshop"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_Vachhani_Seminar_3.jpg",
+        alt: "Prof. Leena Vachhani of IIT Bombay with Cal Poly Pomona faculty after her seminar",
+        caption: "Prof. Leena Vachhani of IIT Bombay with Cal Poly Pomona faculty"
+    },
+    {
+        image: "images/gallery/AVL_Gallery_Vachhani_Seminar_2.jpg",
+        alt: "Prof. Leena Vachhani presenting her seminar on quantum-inspired robotics to Cal Poly Pomona students",
+        caption: "Prof. Leena Vachhani on embedded control and quantum-inspired robotics"
     },
     {
         image: "images/gallery/AVL_Gallery_Battery_Take_Back.jpg",
