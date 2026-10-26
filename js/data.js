@@ -1,5 +1,5 @@
 /**
- * AVL WEBSITE DATA FILE
+ * ASL WEBSITE DATA FILE
  * =====================
  * 
  * Edit this file to update team members, research areas, and other content.
@@ -88,7 +88,7 @@ const TEAM_MEMBERS = {
             name: "Aspen Knox",
             role: "Former President 2025-2026 - Mechanical Engineering",
             image: "images/team/AVL_Aspen_Knox.jpg",
-            bio: "Training day-night imitation-learning models using RGB and thermal cameras on AVL platforms.",
+            bio: "Training day-night imitation-learning models using RGB and thermal cameras on ASL platforms.",
             linkedin: "https://www.linkedin.com/in/aspenknox/",
             email: "aknox@cpp.edu"
         },
@@ -159,7 +159,7 @@ const TEAM_MEMBERS = {
             name: "Deyung Sun",
             role: "Product Installations Engineer (eBeam) at KLA Taiwan - Mechanical Engineering M.S.",
             image: "images/team/AVL_Deyung_Sun.jpg",
-            bio: "Based in Taiwan with KLA. At AVL, developed Gazebo simulations for autonomous vehicle testing using ROS2 Jazzy.",
+            bio: "Based in Taiwan with KLA. At ASL, developed Gazebo simulations for autonomous vehicle testing using ROS2 Jazzy.",
             linkedin: "https://www.linkedin.com/in/deyung-sun-634780318",
             github: "https://github.com/deyungOAO",
             email: "deyung000@gmail.com"
@@ -370,7 +370,7 @@ const ACHIEVEMENTS = [
     },
     {
         title: "2025-2026 IGVC Competition Team Launched",
-        description: "AVL fielded MARVIN as its Intelligent Ground Vehicle Competition platform, with dedicated perception, vehicle-dynamics, and teleoperation workstreams",
+        description: "ASL fielded MARVIN as its Intelligent Ground Vehicle Competition platform, with dedicated perception, vehicle-dynamics, and teleoperation workstreams",
         year: "2025-2026",
         docLink: ""
     },
@@ -710,14 +710,14 @@ const LEARNING_RESOURCES = [
 // ============================================================================
 
 const SITE_INFO = {
-    labName: "Autonomous Vehicle Laboratory",
-    shortName: "AVL",
+    labName: "Autonomous Systems Lab",
+    shortName: "ASL",
     university: "Cal Poly Pomona",
     tagline: "Advancing autonomous vehicle research through hands-on innovation",
     
     // About section content
     about: {
-        mission: "The Autonomous Vehicle Laboratory (AVL) is the student team of Cal Poly Pomona's Autonomous Systems Lab. AVL is dedicated to advancing autonomous vehicle technology through research and hands-on education, bridging academic theory and real-world application.",
+        mission: "The Autonomous Systems Lab (ASL) is both a research lab and a student club at Cal Poly Pomona. Faculty-advised research and hands-on club projects happen side by side, bridging academic theory and real-world autonomous vehicles.",
         
         vision: "We envision a future where autonomous vehicles are safe, accessible, and integrated into everyday life. Our work contributes to this vision by developing novel perception systems, path planning algorithms, and digital twin technologies.",
         
@@ -729,7 +729,7 @@ const SITE_INFO = {
         email: "autovehiclelab@gmail.com", // Update with real email
         location: "Building 9, Room 101, Cal Poly Pomona",
         discord: "https://discord.gg/2D5fEg94eM", // Add Discord invite link
-        instagram: "https://www.instagram.com/autovehiclelab/", // Add Instagram handle
+        instagram: "https://www.instagram.com/cppasl/", // @cppasl, "Autonomous Systems Lab"
         github: "https://github.com/Cal-Poly-Pomona-Autonomous-Vehicle-Lab" // Add GitHub organization URL
     }
 };
@@ -747,8 +747,8 @@ const OUTREACH_EVENTS = [
         title: "Mechanical Engineering Advisory Board Visit",
         date: "2026",
         image: "images/gallery/AVL_Gallery_ME_Advisory_Board.jpg",
-        imageAlt: "Mechanical Engineering Advisory Board members with AVL students and autonomous vehicles on the Cal Poly Pomona lawn",
-        description: "The Mechanical Engineering Advisory Board visited the Autonomous Vehicle Laboratory and met with AVL students. Board members saw the lab's autonomous go-kart and mobile robot platforms and talked with the students who design, build, and test them."
+        imageAlt: "Mechanical Engineering Advisory Board members with ASL students and autonomous vehicles on the Cal Poly Pomona lawn",
+        description: "The Mechanical Engineering Advisory Board visited the Autonomous Systems Lab and met with ASL students. Board members saw the lab's autonomous go-kart and mobile robot platforms and talked with the students who design, build, and test them."
     },
     {
         badge: "Guest Lecture",
@@ -763,8 +763,8 @@ const OUTREACH_EVENTS = [
         title: "University of Ulsan Visit",
         date: "2026",
         image: "images/gallery/AVL_Gallery_University_of_Ulsan.jpg",
-        imageAlt: "AVL hosting 60 students from the University of Ulsan in the Autonomous Systems Lab",
-        description: "AVL hosted 60 students from the University of Ulsan in South Korea, representing Electrical, Chemical, Mechanical, and Civil Engineering. Guests saw a live go-kart demo and learned about path planning, LiDAR, computer vision, hardware integration, and mechanical design. Thank you to Parsa Ghasemi, Aspen Knox, Christian Gomez, Samuel Andryasian, Deyung Sun, and Dr. Behnam Bahr for preparing demos and explanations across perception, planning, and mechanical systems."
+        imageAlt: "ASL hosting 60 students from the University of Ulsan in the lab",
+        description: "ASL hosted 60 students from the University of Ulsan in South Korea, representing Electrical, Chemical, Mechanical, and Civil Engineering. Guests saw a live go-kart demo and learned about path planning, LiDAR, computer vision, hardware integration, and mechanical design. Thank you to Parsa Ghasemi, Aspen Knox, Christian Gomez, Samuel Andryasian, Deyung Sun, and Dr. Behnam Bahr for preparing demos and explanations across perception, planning, and mechanical systems."
     },
     {
         badge: "Industry Visit",
@@ -779,40 +779,40 @@ const OUTREACH_EVENTS = [
         title: "SCAIR 2025 Poster Presentation",
         date: "2025",
         image: "images/gallery/AVL_Gallery_SCAIR_2025_Poster.jpg",
-        imageAlt: "Aspen Knox and AVL presenting a poster at the 2025 Southern California AI and Robotics Symposium",
-        description: "Aspen Knox presented AVL's poster at the 2025 Southern California AI and Robotics Symposium (SCAIR) on simplified multimodal imitation learning for day-night autonomous driving. Thank you to Dr. Sedat Ozer for organizing the event, and to Dr. Behnam Bahr and the Autonomous Vehicle Laboratory team for their support."
+        imageAlt: "Aspen Knox and ASL presenting a poster at the 2025 Southern California AI and Robotics Symposium",
+        description: "Aspen Knox presented ASL's poster at the 2025 Southern California AI and Robotics Symposium (SCAIR) on simplified multimodal imitation learning for day-night autonomous driving. Thank you to Dr. Sedat Ozer for organizing the event, and to Dr. Behnam Bahr and the Autonomous Systems Lab team for their support."
     },
     {
         badge: "Campus Event",
         title: "Cybersecurity and Awareness Fair 2025",
         date: "2025",
         image: "images/gallery/AVL_Gallery_Cybersecurity_Fair_2025.jpg",
-        imageAlt: "AVL presenting at the 2025 Cal Poly Pomona Cybersecurity and Awareness Fair",
-        description: "AVL presented lab work at the 2025 Cal Poly Pomona Cybersecurity and Awareness Fair, sharing autonomous systems research with students and campus visitors."
+        imageAlt: "ASL presenting at the 2025 Cal Poly Pomona Cybersecurity and Awareness Fair",
+        description: "ASL presented lab work at the 2025 Cal Poly Pomona Cybersecurity and Awareness Fair, sharing autonomous systems research with students and campus visitors."
     },
     {
         badge: "Campus Event",
         title: "Jubilee",
         date: "2026",
         image: "images/gallery/AVL_Gallery_Jubilee.jpg",
-        imageAlt: "AVL team showcasing lab projects at Jubilee",
-        description: "The AVL team showcased lab projects and connected with industry professionals and students at Jubilee. Thank you to ESC for organizing the event, and to Aspen Knox, Parsa Ghasemi, Benjamin Ramirez, Ryan Simpson, Christian Gomez, Karoline Braga, William Saunders, Tyrese Rogers, and Johnny Qiu for representing AVL."
+        imageAlt: "ASL team showcasing lab projects at Jubilee",
+        description: "The ASL team showcased lab projects and connected with industry professionals and students at Jubilee. Thank you to ESC for organizing the event, and to Aspen Knox, Parsa Ghasemi, Benjamin Ramirez, Ryan Simpson, Christian Gomez, Karoline Braga, William Saunders, Tyrese Rogers, and Johnny Qiu for representing ASL."
     },
     {
         badge: "Campus Visit",
         title: "Civil Engineering Traffic Simulation Class Visit",
         date: "2026",
         image: "images/gallery/AVL_Gallery_Civil_Traffic_Sim_1.jpg",
-        imageAlt: "Civil Engineering Traffic Simulation class touring the Autonomous Vehicle Lab",
-        description: "AVL hosted students from Cal Poly Pomona's Civil Engineering Traffic Simulation class for a lab tour. Guests saw our autonomous vehicle platforms and driving simulator, and learned how AVL members design, build, test, and improve autonomous systems across electrical and mechanical engineering. The visit connected classroom topics like sensing, automation, control, and systems integration to real vehicles and hands-on student work."
+        imageAlt: "Civil Engineering Traffic Simulation class touring the Autonomous Systems Lab",
+        description: "ASL hosted students from Cal Poly Pomona's Civil Engineering Traffic Simulation class for a lab tour. Guests saw our autonomous vehicle platforms and driving simulator, and learned how ASL members design, build, test, and improve autonomous systems across electrical and mechanical engineering. The visit connected classroom topics like sensing, automation, control, and systems integration to real vehicles and hands-on student work."
     },
     {
         badge: "Sustainability",
         title: "Battery Take Back",
         date: "March 18, 2026",
         image: "images/gallery/AVL_Gallery_Battery_Take_Back.jpg",
-        imageAlt: "AVL Battery Take Back event with collected batteries and students",
-        description: "AVL hosted a campus battery take-back in Building 9, Room 101. Students and visitors dropped off household and lab batteries for responsible recycling, about 500 pounds in a single event."
+        imageAlt: "ASL Battery Take Back event with collected batteries and students",
+        description: "ASL hosted a campus battery take-back in Building 9, Room 101. Students and visitors dropped off household and lab batteries for responsible recycling, about 500 pounds in a single event."
     }
 ];
 
@@ -820,13 +820,13 @@ const OUTREACH_PHOTOS = [
     // 1) Department of Education
     {
         image: "images/gallery/AVL_Gallery_Ceja_Williams_Bahr.jpg?v=2",
-        alt: "Beatriz Ceja-Williams of the U.S. Department of Education with Dr. Behnam Bahr and AVL students in the lab",
+        alt: "Beatriz Ceja-Williams of the U.S. Department of Education with Dr. Behnam Bahr and ASL students in the lab",
         caption: "U.S. Department of Education visit with Beatriz Ceja-Williams"
     },
     // Fall 2026: ME Advisory Board, Vachhani seminar
     {
         image: "images/gallery/AVL_Gallery_ME_Advisory_Board.jpg",
-        alt: "Mechanical Engineering Advisory Board members with AVL students and autonomous vehicles on the Cal Poly Pomona lawn",
+        alt: "Mechanical Engineering Advisory Board members with ASL students and autonomous vehicles on the Cal Poly Pomona lawn",
         caption: "Mechanical Engineering Advisory Board visiting the lab and students"
     },
     {
@@ -862,48 +862,48 @@ const OUTREACH_PHOTOS = [
     },
     {
         image: "images/gallery/AVL_Gallery_Battery_Take_Back.jpg",
-        alt: "AVL Battery Take Back event with collected batteries and students",
+        alt: "ASL Battery Take Back event with collected batteries and students",
         caption: "Battery Take Back event"
     },
     // 4) Big events
     {
         image: "images/gallery/AVL_Gallery_SCAIR_2025_Poster.jpg",
-        alt: "Aspen Knox and AVL presenting a poster at the 2025 Southern California AI and Robotics Symposium",
+        alt: "Aspen Knox and ASL presenting a poster at the 2025 Southern California AI and Robotics Symposium",
         caption: "Presenting with Aspen Knox at SCAIR 2025 on multimodal imitation learning"
     },
     {
         image: "images/gallery/AVL_Gallery_Cybersecurity_Fair_2025.jpg",
-        alt: "AVL presenting at the 2025 Cal Poly Pomona Cybersecurity and Awareness Fair",
+        alt: "ASL presenting at the 2025 Cal Poly Pomona Cybersecurity and Awareness Fair",
         caption: "Presenting at the 2025 Cal Poly Pomona Cybersecurity and Awareness Fair"
     },
     {
         image: "images/gallery/AVL_Gallery_Jubilee.jpg",
-        alt: "AVL team showcasing lab projects at Jubilee",
-        caption: "Showcasing AVL projects at Jubilee with industry and students"
+        alt: "ASL team showcasing lab projects at Jubilee",
+        caption: "Showcasing ASL projects at Jubilee with industry and students"
     },
     {
         image: "images/gallery/AVL_Gallery_University_of_Ulsan.jpg",
-        alt: "AVL hosting 60 students from the University of Ulsan in the Autonomous Systems Lab",
+        alt: "ASL hosting 60 students from the University of Ulsan in the lab",
         caption: "Hosting 60 University of Ulsan students for a live go-kart and autonomy demo"
     },
     {
         image: "images/gallery/AVL_Gallery_Civil_Traffic_Sim_1.jpg",
-        alt: "Civil Engineering Traffic Simulation class touring the Autonomous Vehicle Lab",
+        alt: "Civil Engineering Traffic Simulation class touring the Autonomous Systems Lab",
         caption: "Civil Engineering Traffic Simulation class lab tour"
     },
     {
         image: "images/gallery/AVL_Gallery_Civil_Traffic_Sim_2.jpg",
-        alt: "Civil Engineering Traffic Simulation students visiting AVL vehicles and driving simulator",
+        alt: "Civil Engineering Traffic Simulation students visiting ASL vehicles and driving simulator",
         caption: "Civil Engineering Traffic Simulation class visit"
     },
     {
         image: "images/gallery/AVL_Gallery_Club_Fair_2026.jpeg",
-        alt: "AVL table and members at Club Fair 2026",
-        caption: "AVL Club Fair, 2026"
+        alt: "ASL table and members at Club Fair 2026",
+        caption: "ASL Club Fair, 2026"
     },
     {
         image: "images/gallery/AVL_Gallery_Full_Old_Team.jpg",
-        alt: "AVL members with autonomous vehicles during a lab tour",
+        alt: "ASL members with autonomous vehicles during a lab tour",
         caption: "Showing our vehicles on a lab tour"
     }
 ];
@@ -922,7 +922,7 @@ const MINI_PROJECTS = [
         people: "Lab Use",
         image: "images/projects/AVL_Project_Sim_Chair.jpg",
         imageAlt: "Haptic sim chair with Sparco seat, Thrustmaster wheel, and D-BOX motion base",
-        description: "AVL's teleoperation station is a Sparco seat on a D-BOX four-actuator motion platform, with a Thrustmaster wheel and pedals and a triple-monitor driver view. Operators drive lab vehicles remotely over a Tailscale VPN while camera video and IMU motion come back to the chair. It can fit any autonomous vehicle in the lab.",
+        description: "ASL's teleoperation station is a Sparco seat on a D-BOX four-actuator motion platform, with a Thrustmaster wheel and pedals and a triple-monitor driver view. Operators drive lab vehicles remotely over a Tailscale VPN while camera video and IMU motion come back to the chair. It can fit any autonomous vehicle in the lab.",
         tags: ["D-BOX", "Thrustmaster", "ZED X", "Xsens IMU", "ROS 2", "Tailscale"],
         link: "",
         linkLabel: ""
@@ -933,7 +933,7 @@ const MINI_PROJECTS = [
         people: "Calvin Chu",
         image: "images/projects/AVL_Project_Calvin_Chu_ParallelParking.jpg",
         imageAlt: "Gazebo simulation of parallel-parking spot detection",
-        description: "A Gazebo and ROS 2 simulation for autonomous parallel parking, developed as a Mechanical Engineering master's project. The work focuses on parking-maneuver planning and control in simulation as a path toward hardware tests on AVL platforms.",
+        description: "A Gazebo and ROS 2 simulation for autonomous parallel parking, developed as a Mechanical Engineering master's project. The work focuses on parking-maneuver planning and control in simulation as a path toward hardware tests on ASL platforms.",
         tags: ["ROS 2", "Gazebo", "Nav2", "Parking"],
         link: "images/projects/AVL_Project_Calvin_Chu_ParallelParking.pdf",
         linkLabel: "Project paper"
@@ -944,7 +944,7 @@ const MINI_PROJECTS = [
         people: "Abhishek Vishwakarma",
         image: "images/projects/AVL_Project_Abhishek_Vishwakarma_PerceptionNav2.jpg",
         imageAlt: "Camera perception with drivable-area segmentation and vehicle detection",
-        description: "Integrates image segmentation with Nav2 so an autonomous vehicle can plan paths from camera perception. The project covers system design, real-time perception, and navigation on AVL software stacks.",
+        description: "Integrates image segmentation with Nav2 so an autonomous vehicle can plan paths from camera perception. The project covers system design, real-time perception, and navigation on ASL software stacks.",
         tags: ["YOLOv8", "Nav2", "ROS 2", "Perception"],
         link: "images/projects/AVL_Project_Abhishek_Vishwakarma_PerceptionNav2.pdf",
         linkLabel: "Project slides"
@@ -985,7 +985,7 @@ const SPONSORS = [
         type: "industry",
         logo: "images/sponsors/AVL_Sponsor_SendCutSend.png",
         url: "https://sendcutsend.com",
-        description: "STEM sponsor providing custom metal cutting and fabrication for AVL vehicle projects"
+        description: "STEM sponsor providing custom metal cutting and fabrication for ASL vehicle projects"
     }
 ];
 
@@ -1004,10 +1004,10 @@ const MEDIA_CONTENT = {
     featuredVideoUrl: "videos/AVL_Video_9-10-25.mp4",  // e.g., "videos/avl_demo.mp4"
     
     // Video details
-    videoTitle: "AVL Autonomous Driving Demo",
+    videoTitle: "ASL Autonomous Driving Demo",
     videoDescription: "Watch our autonomous vehicles navigate campus roads",
     
     // Instagram
-    instagramHandle: "autovehiclelab",
-    instagramUrl: "https://www.instagram.com/autovehiclelab/"
+    instagramHandle: "cppasl",
+    instagramUrl: "https://www.instagram.com/cppasl/"
 };

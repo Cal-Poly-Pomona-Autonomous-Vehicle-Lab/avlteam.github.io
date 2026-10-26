@@ -1,20 +1,49 @@
 /* ============================================================================
-   AVL WEBSITE STYLES: Redesign 2025
-   Theme: White & Blue minimalist, academic-tech
+   ASL WEBSITE STYLES: Redesign 2025
+   Theme: White with Cal Poly Green & Gold, academic-tech
    ============================================================================ */
 
 /* CSS Variables */
 :root {
-    /* Brand Colors */
-    --blue-primary: #1900ad;
-    --blue-accent: #4422cc;
-    --blue-light: #EDEAFF;
-    --blue-mid: #C5BDFF;
-    --blue-dark: #10007a;
+    /* Brand Colors: only colors from the Cal Poly Pomona brand book
+       (cpp-brand-guidelines.pdf, pp. 66-68), plus light tints of CPP Green.
+       The --blue-* names are kept so existing rules and inline styles still work. */
+    --cpp-green: #005030;
+    --cpp-gold: #FFB81C;
+    --avocado: #A4D65E;
+    --teal: #00838A;
+    --rose: #b52b4c;
+    --cpp-black: #121212;
+
+    --blue-primary: var(--cpp-green);
+    --blue-accent: var(--teal);
+    --blue-light: color-mix(in srgb, var(--cpp-green) 10%, #ffffff);
+    --blue-mid: color-mix(in srgb, var(--cpp-green) 30%, #ffffff);
+    --blue-dark: var(--teal);
+
+    /* Highlight on dark surfaces: page-banner labels, dark-mode links */
+    --highlight: var(--cpp-gold);
+    --highlight-rgb: 255, 184, 28;
+    /* Text on dark/green surfaces stays white for readability;
+       gold above is only for underlines, outlines, and tints */
+    --highlight-text: #ffffff;
+    --highlight-text-rgb: 255, 255, 255;
+    /* Light text on green/dark surfaces (footer, banners) */
+    --on-dark-rgb: 255, 255, 255;
+    --footer-bg: var(--cpp-green);
+    --hero-bg: var(--cpp-black);
+
+    /* Official "Poly Gradient": only ever Gold -> Avocado */
+    --poly-gradient: linear-gradient(90deg, var(--cpp-gold), var(--avocado));
+
+    /* Green wash over the home hero photo: clear at top, green at bottom */
+    --hero-tint-top: rgba(0, 80, 48, 0);
+    --hero-tint-mid: rgba(0, 80, 48, 0.06);
+    --hero-tint-bottom: rgba(0, 80, 48, 0.5);
 
     /* Neutrals */
     --white: #ffffff;
-    --surface: #F4F7FB;
+    --surface: color-mix(in srgb, var(--cpp-green) 4%, #ffffff);
     --border: #E5E7EB;
     --text-primary: #111827;
     --text-secondary: #374151;
@@ -27,7 +56,7 @@
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.05);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.10), 0 4px 8px rgba(0, 0, 0, 0.06);
-    --shadow-blue: 0 4px 20px rgba(25, 0, 173, 0.18);
+    --shadow-blue: 0 4px 20px rgba(0, 80, 48, 0.18);
 
     /* Typography */
     --font-display: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
@@ -84,11 +113,11 @@ body.dark-mode .nav-links a {
 
 body.dark-mode .nav-links a:hover,
 body.dark-mode .nav-links a.active {
-    color: #60B8FF;
+    color: var(--highlight-text);
 }
 
 body.dark-mode .nav-links a.active::after {
-    background: #60B8FF;
+    background: var(--highlight);
 }
 
 body.dark-mode .nav-social a {
@@ -96,12 +125,16 @@ body.dark-mode .nav-social a {
 }
 
 body.dark-mode .nav-social a:hover {
-    color: #60B8FF;
-    background: rgba(96,184,255,0.1);
+    color: var(--highlight-text);
+    background: rgba(var(--highlight-rgb),0.1);
 }
 
-body.dark-mode .nav-logo img {
-    filter: brightness(0) invert(1);
+body.dark-mode .nav-logo .nav-logo-light {
+    display: none;
+}
+
+body.dark-mode .nav-logo .nav-logo-dark {
+    display: block;
 }
 
 body.dark-mode .pub-poster-link,
@@ -125,7 +158,7 @@ body.dark-mode .grant-notice-card {
 }
 
 body.dark-mode .footer {
-    background: #000000;
+    background: var(--footer-bg);
 }
 
 /* Hero text must always be white: it sits on a photo, not a themed background */
@@ -139,7 +172,7 @@ body.dark-mode .scroll-indicator {
 }
 
 body.dark-mode .hero h1 .hero-accent {
-    color: #60B8FF;
+    color: transparent;
 }
 
 body.dark-mode .btn-white {
@@ -176,15 +209,26 @@ body.dark-mode .hiring-banner p {
     color: #ffffff !important;
 }
 
-/* Section labels (purple small caps) on dark backgrounds */
+/* Section labels (small caps) on dark backgrounds */
 body.dark-mode .section-label {
-    color: #8899ff;
+    color: var(--highlight-text);
+}
+
+/* Section title underline: gold reads clearly on dark */
+body.dark-mode .section-header h2::after {
+    background: var(--cpp-gold);
+}
+
+/* Poster / paper links under publication cards */
+body.dark-mode .pub-link,
+body.dark-mode .pub-link:hover {
+    color: var(--highlight-text);
 }
 
 /* Author names in publication cards */
 body.dark-mode .pub-authors,
 body.dark-mode .publication-card .pub-authors a {
-    color: #7799ee;
+    color: var(--highlight-text);
 }
 
 /* Publication filter tabs */
@@ -196,9 +240,9 @@ body.dark-mode .pub-filter-btn {
 }
 body.dark-mode .filter-btn.active,
 body.dark-mode .pub-filter-btn.active {
-    background: #3a55e8;
+    background: var(--cpp-green);
     color: #ffffff !important;
-    border-color: #3a55e8;
+    border-color: var(--cpp-green);
 }
 
 /* Focus area labels */
@@ -216,11 +260,7 @@ body.dark-mode .footer a,
 body.dark-mode .footer li,
 body.dark-mode .footer span,
 body.dark-mode .footer-copyright {
-    color: #a0a0a0;
-}
-body.dark-mode .footer-brand p,
-body.dark-mode .footer h4 {
-    color: #e0e0e0;
+    color: #ffffff;
 }
 
 /* Hiring banner (Join Us page): outer section stays surface, only inner banner is blue */
@@ -237,18 +277,18 @@ body.dark-mode .hiring-banner .btn-white:hover {
 
 /* btn-secondary in dark mode: outline button needs bright border/text */
 body.dark-mode .btn-secondary {
-    color: #7799ff;
-    border-color: #7799ff;
+    color: var(--highlight-text);
+    border-color: var(--highlight);
 }
 body.dark-mode .btn-secondary:hover {
-    background: rgba(119,153,255,0.15);
-    color: #9bb0ff;
-    border-color: #9bb0ff;
+    background: rgba(var(--highlight-rgb),0.15);
+    color: var(--highlight-text);
+    border-color: var(--highlight);
 }
 
 /* "Learn by Doing" quote: dark blue on dark bg = invisible */
 body.dark-mode .cal-poly-motto {
-    color: #7799ff !important;
+    color: var(--highlight-text) !important;
 }
 
 /* Any inline-styled blue section headings */
@@ -266,17 +306,17 @@ body.dark-mode .slide-caption {
 
 /* Gratitude signature: lighten from dark indigo to readable blue */
 body.dark-mode .gratitude-signature {
-    color: #7799ff !important;
+    color: var(--highlight-text) !important;
     border-top-color: #2e2e2e;
 }
 
 body.dark-mode .gratitude-kicker {
-    color: #7799ff;
+    color: var(--highlight-text);
 }
 
 /* Industry partner / sponsor type badge */
 body.dark-mode .sponsor-type {
-    color: #7799ff;
+    color: var(--highlight-text);
 }
 
 /* Inline blue sections: force white text on all children */
@@ -298,14 +338,14 @@ body.dark-mode .page-hero * {
 
 /* Project badge: light lavender bg becomes invisible on dark. Use subtle blue tint */
 body.dark-mode .project-badge {
-    background: rgba(100,120,255,0.18);
-    color: #9bb0ff !important;
-    border: 1px solid rgba(100,120,255,0.35);
+    background: rgba(var(--highlight-rgb),0.15);
+    color: var(--highlight-text) !important;
+    border: 1px solid rgba(var(--highlight-rgb),0.4);
 }
 
 /* Team card role text: dark blue on dark bg, needs to be bright */
 body.dark-mode .team-card-role {
-    color: #7799ff !important;
+    color: var(--highlight-text) !important;
 }
 
 /* Team card bio text */
@@ -318,7 +358,7 @@ body.dark-mode p[style*="color:var(--blue-primary)"],
 body.dark-mode p[style*="color: var(--blue-primary)"],
 body.dark-mode a[style*="color:var(--blue-primary)"],
 body.dark-mode a[style*="color: var(--blue-primary)"] {
-    color: #7799ff !important;
+    color: var(--highlight-text) !important;
 }
 
 /* btn-white inside blue-bg sections: the blue section rule sets a{color:#fff !important}
@@ -329,14 +369,14 @@ body.dark-mode [style*="background: var(--blue-primary)"] .btn-white:hover {
     background: #ffffff !important;
 }
 
-/* Lecture placeholder cards: bg is --blue-light (#EDEAFF, light lavender) in light mode.
+/* Lecture placeholder cards: bg is --blue-light (var(--blue-light), light green) in light mode.
    In dark mode that's still light, causing light-text-on-light-bg. Make it dark. */
 body.dark-mode .lecture-placeholder {
-    background: #1a1a2e !important;
-    border-color: #3a3a6e;
+    background: #1a1a1a !important;
+    border-color: #2e2e2e;
 }
 body.dark-mode .lecture-placeholder h3 {
-    color: #9bb0ff !important;
+    color: var(--highlight-text) !important;
 }
 body.dark-mode .lecture-placeholder p {
     color: #c0c0c0 !important;
@@ -358,7 +398,7 @@ body.dark-mode [style*="background: var(--surface)"] li {
 }
 body.dark-mode [style*="color:var(--blue-accent)"],
 body.dark-mode [style*="color: var(--blue-accent)"] {
-    color: #7799ff !important;
+    color: var(--highlight-text) !important;
 }
 
 .dark-mode-toggle {
@@ -381,8 +421,8 @@ body.dark-mode [style*="color: var(--blue-accent)"] {
 }
 
 body.dark-mode .dark-mode-toggle:hover {
-    color: #60B8FF;
-    background: rgba(96,184,255,0.1);
+    color: var(--highlight-text);
+    background: rgba(var(--highlight-rgb),0.1);
 }
 
 /* ============================================================================
@@ -481,7 +521,7 @@ section {
     transform: translateX(-50%);
     width: 48px;
     height: 3px;
-    background: var(--blue-accent);
+    background: var(--cpp-green);
     border-radius: var(--radius-pill);
 }
 
@@ -612,25 +652,6 @@ section {
     flex-shrink: 0;
 }
 
-.nav-logo-divider {
-    width: 1px;
-    height: 28px;
-    background: var(--border);
-    flex-shrink: 0;
-}
-
-.nav-cpp-link {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.nav-cpp-logo {
-    height: 44px;
-    width: auto;
-    object-fit: contain;
-}
-
 .nav-logo {
     display: flex;
     align-items: center;
@@ -638,8 +659,18 @@ section {
 }
 
 .nav-logo img {
-    height: 36px;
+    height: 52px;
     width: auto;
+}
+
+.nav-logo .nav-logo-dark {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .nav-logo img {
+        height: 34px;
+    }
 }
 
 .nav-links {
@@ -749,7 +780,7 @@ section {
     position: relative;
     overflow: hidden;
     padding-top: var(--nav-height);
-    background: #001840;
+    background: var(--hero-bg);
 }
 
 .hero-image {
@@ -766,8 +797,9 @@ section {
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.15) 0%,
-        rgba(0, 0, 0, 0.45) 100%
+        var(--hero-tint-top) 0%,
+        var(--hero-tint-mid) 45%,
+        var(--hero-tint-bottom) 100%
     );
 }
 
@@ -789,7 +821,7 @@ section {
     font-weight: 600;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: rgba(160, 210, 255, 0.9);
+    color: rgba(var(--highlight-text-rgb), 0.9);
     text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 24px rgba(0,0,0,0.8);
     margin-bottom: 1.25rem;
     animation: fadeUp 0.7s ease-out 0.1s both;
@@ -801,7 +833,7 @@ section {
     display: inline-block;
     width: 28px;
     height: 1px;
-    background: rgba(25, 0, 173, 0.5);
+    background: rgba(0, 80, 48, 0.5);
 }
 
 .hero h1 {
@@ -815,12 +847,16 @@ section {
 
 .hero h1 .hero-accent {
     font-style: normal;
-    color: #60B8FF;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 32px rgba(0,0,0,0.85), 0 0 40px rgba(96,184,255,0.4);
+    background: var(--poly-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.85)) drop-shadow(0 4px 20px rgba(0,0,0,0.5));
 }
 
 .hero-subtitle {
-    color: rgba(220, 235, 255, 0.88);
+    color: rgba(var(--on-dark-rgb), 0.9);
     font-size: clamp(1rem, 2vw, 1.2rem);
     max-width: 58ch;
     margin: 0 auto 2.25rem;
@@ -835,14 +871,14 @@ section {
     justify-content: center;
     gap: 0.5rem;
     font-size: 0.875rem;
-    color: rgba(180, 210, 255, 0.85);
+    color: rgba(var(--highlight-text-rgb), 0.85);
     margin-bottom: 2.5rem;
     text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 24px rgba(0,0,0,0.75);
     animation: fadeUp 0.7s ease-out 0.35s both;
 }
 
 .hero-meta a {
-    color: rgba(180, 210, 255, 0.85);
+    color: rgba(var(--highlight-text-rgb), 0.85);
     text-decoration: underline;
     text-underline-offset: 3px;
     text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 24px rgba(0,0,0,0.75);
@@ -935,18 +971,7 @@ section {
 }
 
 .page-hero-bg::before {
-    content: '';
-    position: absolute;
-    left: -72px;
-    top: 0;
-    bottom: 0;
-    width: min(300px, 38vw);
-    height: auto;
-    background: url('../images/brand/AVL_Logo_Dots.png') center / 100% 100% no-repeat;
-    filter: brightness(0) invert(1);
-    opacity: 0.09;
-    transform: skewX(16deg);
-    transform-origin: top left;
+    content: none;
 }
 
 .page-hero-bg::after {
@@ -958,13 +983,14 @@ section {
     height: min(280px, 34vw);
     transform: translateY(-38%);
     background-image:
-        url('../images/brand/AVL_Logo_White.png'),
         radial-gradient(rgba(255,255,255,0.28) 0.7px, transparent 0.7px),
         radial-gradient(rgba(255,255,255,0.16) 0.4px, transparent 0.4px);
-    background-size: contain, 10px 10px, 6px 6px;
-    background-repeat: no-repeat, repeat, repeat;
-    background-position: center, 0 0, 3px 3px;
-    opacity: 0.16;
+    background-size: 10px 10px, 6px 6px;
+    background-repeat: repeat, repeat;
+    background-position: 0 0, 3px 3px;
+    -webkit-mask-image: radial-gradient(circle, #000 0%, transparent 70%);
+    mask-image: radial-gradient(circle, #000 0%, transparent 70%);
+    opacity: 0.5;
 }
 
 .page-hero-content {
@@ -980,7 +1006,7 @@ section {
 }
 
 .page-hero p {
-    color: rgba(200, 225, 255, 0.85);
+    color: rgba(var(--on-dark-rgb), 0.85);
     font-size: 1.05rem;
     max-width: 55ch;
 }
@@ -1478,27 +1504,27 @@ section {
 }
 
 .pub-type-paper {
-    background: #EFF8FF;
-    color: #0077CC;
-    border: 1px solid #BAE0FF;
+    background: color-mix(in srgb, var(--teal) 10%, #ffffff);
+    color: var(--teal);
+    border: 1px solid color-mix(in srgb, var(--teal) 35%, #ffffff);
 }
 
 .pub-type-poster {
-    background: #F5F0FF;
-    color: #7C3AED;
-    border: 1px solid #DDD6FE;
+    background: color-mix(in srgb, var(--avocado) 20%, #ffffff);
+    color: var(--cpp-green);
+    border: 1px solid var(--avocado);
 }
 
 .pub-type-presentation {
-    background: #ECFDF5;
-    color: #059669;
-    border: 1px solid #A7F3D0;
+    background: color-mix(in srgb, var(--cpp-gold) 18%, #ffffff);
+    color: var(--cpp-black);
+    border: 1px solid var(--cpp-gold);
 }
 
 .pub-type-extended-abstract {
-    background: #FFFBEB;
-    color: #D97706;
-    border: 1px solid #FDE68A;
+    background: color-mix(in srgb, var(--rose) 10%, #ffffff);
+    color: var(--rose);
+    border: 1px solid color-mix(in srgb, var(--rose) 35%, #ffffff);
 }
 
 .pub-venue-badge {
@@ -1744,7 +1770,7 @@ section {
 }
 
 .hiring-banner h3 {
-    color: rgba(180, 215, 255, 0.9);
+    color: rgba(var(--highlight-text-rgb), 0.95);
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
@@ -1757,7 +1783,7 @@ section {
 }
 
 .hiring-banner p {
-    color: rgba(200, 225, 255, 0.85);
+    color: rgba(var(--on-dark-rgb), 0.85);
     max-width: 55ch;
     margin: 0 auto 1.5rem;
 }
@@ -1914,21 +1940,21 @@ section {
 }
 
 .workshop-level.beginner {
-    background: #ECFDF5;
-    color: #059669;
-    border: 1px solid #A7F3D0;
+    background: color-mix(in srgb, var(--avocado) 20%, #ffffff);
+    color: var(--cpp-green);
+    border: 1px solid var(--avocado);
 }
 
 .workshop-level.intermediate {
-    background: #FFFBEB;
-    color: #D97706;
-    border: 1px solid #FDE68A;
+    background: color-mix(in srgb, var(--cpp-gold) 18%, #ffffff);
+    color: var(--cpp-black);
+    border: 1px solid var(--cpp-gold);
 }
 
 .workshop-level.advanced {
-    background: #FFF1F2;
-    color: #E11D48;
-    border: 1px solid #FECDD3;
+    background: color-mix(in srgb, var(--rose) 10%, #ffffff);
+    color: var(--rose);
+    border: 1px solid color-mix(in srgb, var(--rose) 35%, #ffffff);
 }
 
 .workshop-card .workshop-professor {
@@ -1943,7 +1969,7 @@ section {
 }
 
 body.dark-mode .workshop-professor {
-    color: #7799ff;
+    color: var(--highlight-text);
 }
 
 .workshop-type {
@@ -2685,9 +2711,10 @@ body.dark-mode .sponsor-logo-invert img {
    ============================================================================ */
 
 .footer {
-    background: #0D1F3C;
+    background: var(--footer-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     padding: 4rem 0 2rem;
-    color: rgba(200, 220, 255, 0.75);
+    color: #ffffff;
 }
 
 .footer-content {
@@ -2698,15 +2725,15 @@ body.dark-mode .sponsor-logo-invert img {
 }
 
 .footer-brand img {
-    height: 40px;
+    height: 52px;
+    width: auto;
+    max-width: 100%;
     margin-bottom: 1.25rem;
-    filter: brightness(0) invert(1);
-    opacity: 0.9;
 }
 
 .footer-brand p {
     font-size: 0.88rem;
-    color: rgba(200, 220, 255, 0.65);
+    color: #ffffff;
     margin-bottom: 1.5rem;
     max-width: 28ch;
 }
@@ -2724,18 +2751,18 @@ body.dark-mode .sponsor-logo-invert img {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(200, 220, 255, 0.65);
+    color: #ffffff;
     transition: all 0.2s ease;
 }
 
 .footer-social a:hover {
     border-color: var(--blue-accent);
     color: var(--blue-accent);
-    background: rgba(0, 153, 230, 0.1);
+    background: rgba(var(--highlight-rgb), 0.12);
 }
 
 .footer-links h4 {
-    color: var(--white);
+    color: #ffffff;
     font-size: 0.82rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -2751,17 +2778,18 @@ body.dark-mode .sponsor-logo-invert img {
 }
 
 .footer-links a {
-    color: rgba(200, 220, 255, 0.65);
+    color: #ffffff;
     font-size: 0.88rem;
     transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
-    color: var(--white);
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .footer-contact p {
-    color: rgba(200, 220, 255, 0.65);
+    color: #ffffff;
     font-size: 0.88rem;
     margin-bottom: 0.65rem;
     display: flex;
@@ -2775,11 +2803,12 @@ body.dark-mode .sponsor-logo-invert img {
 }
 
 .footer-contact a {
-    color: rgba(200, 220, 255, 0.65);
+    color: #ffffff;
 }
 
 .footer-contact a:hover {
-    color: var(--white);
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .footer-bottom {
@@ -2793,7 +2822,7 @@ body.dark-mode .sponsor-logo-invert img {
 }
 
 .footer-bottom p {
-    color: rgba(200, 220, 255, 0.45);
+    color: #ffffff;
     font-size: 0.82rem;
     margin: 0;
     max-width: none;
@@ -2899,7 +2928,7 @@ body.grant-notice-open {
     align-items: center;
     justify-content: center;
     padding: max(1rem, env(safe-area-inset-top)) 1rem max(1rem, env(safe-area-inset-bottom));
-    background: rgba(25, 0, 173, 0.08);
+    background: rgba(0, 80, 48, 0.08);
 }
 
 .grant-notice-card {
@@ -3010,7 +3039,7 @@ body.grant-notice-open {
 }
 
 body.dark-mode .grant-notice-overlay {
-    background: rgba(25, 0, 173, 0.12);
+    background: rgba(0, 80, 48, 0.12);
 }
 
 body.dark-mode .grant-notice-close {

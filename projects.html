@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AVL Projects: MARVIN at IGVC, AVL-002 research go-kart, and Carl (Car 1) drive-by-wire platform at Cal Poly Pomona.">
+    <meta name="description" content="ASL Projects: MARVIN at IGVC, AVL-002 research go-kart, and Carl (Car 1) drive-by-wire platform at Cal Poly Pomona.">
     <meta name="keywords" content="IGVC, MARVIN, AVL-002, Carl, autonomous vehicles, robotics, Cal Poly Pomona, projects">
-    <meta name="author" content="AVL Team">
-    <meta property="og:title" content="Projects | AVL · Cal Poly Pomona">
-    <meta property="og:description" content="Active autonomous vehicle platforms at Cal Poly Pomona's AVL.">
+    <meta name="author" content="ASL Team">
+    <meta property="og:title" content="Projects | ASL · Cal Poly Pomona">
+    <meta property="og:description" content="Active autonomous vehicle platforms at Cal Poly Pomona's ASL.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/brand/AVL_Share.jpg">
+    <meta property="og:image" content="images/brand/ASL_Share.jpg">
 
-    <title>Projects | AVL · Cal Poly Pomona</title>
+    <title>Projects | ASL · Cal Poly Pomona</title>
 
-    <link rel="icon" type="image/png" href="images/brand/AVL_Logo_Dots.png">
+    <link rel="icon" type="image/png" href="images/brand/ASL_Favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css?v=20261010g">
+    <link rel="stylesheet" href="css/styles.css?v=20261022f">
 </head>
 <body>
 
@@ -28,7 +28,7 @@
         <div class="page-hero-bg"></div>
         <div class="container">
             <div class="page-hero-content">
-                <span class="section-label" style="color:rgba(160,210,255,0.85);">Active Development</span>
+                <span class="section-label" style="color:rgba(var(--highlight-text-rgb),0.95);">Active Development</span>
                 <h1>Projects</h1>
                 <p>Vehicle platforms plus independent student work across teleoperation, parking, and perception.</p>
             </div>
@@ -57,7 +57,7 @@
                         </figure>
                     </div>
                     <div class="project-content">
-                        <p>MARVIN is AVL's entry for the Intelligent Ground Vehicle Competition. The platform uses a camera-only perception stack on ROS 2 Humble, running on an NVIDIA Jetson Orin Nano with three ZED X stereo cameras. TwinLiteNet segmentation and YOLOv8 detection are fused into a bird's-eye occupancy costmap for Nav2 MPPI local control.</p>
+                        <p>MARVIN is ASL's entry for the Intelligent Ground Vehicle Competition. The platform uses a camera-only perception stack on ROS 2 Humble, running on an NVIDIA Jetson Orin Nano with three ZED X stereo cameras. TwinLiteNet segmentation and YOLOv8 detection are fused into a bird's-eye occupancy costmap for Nav2 MPPI local control.</p>
                         <p>An NVIDIA Isaac Autonomy Sim digital twin is used to develop vehicle-dynamics and waypoint-following before hardware tests. MARVIN is also the vehicle behind the lab's haptic teleoperation work, so competition navigation and remote driving share the same platform.</p>
                         <div class="project-skills">
                             <h4>Focus Areas</h4>
@@ -110,12 +110,12 @@
                     </div>
                     <div class="project-visuals">
                         <figure class="project-image-card">
-                            <img src="images/projects/AVL_Project_Carl_Team_CARS2026.jpg" alt="AVL team with Carl at CPP CARS 2026" loading="lazy">
-                            <figcaption>AVL team with Carl</figcaption>
+                            <img src="images/projects/AVL_Project_Carl_Team_CARS2026.jpg" alt="ASL team with Carl at CPP CARS 2026" loading="lazy">
+                            <figcaption>ASL team with Carl</figcaption>
                         </figure>
                     </div>
                     <div class="project-content">
-                        <p>Carl is an electric go-kart AVL is converting into a drive-by-wire research platform. A 24 V distributed control network uses an STM32 NUCLEO-F767ZI master and Teensy 4.1 nodes to command four wheel motors over CAN 2.0, with encoder feedback for speed estimation and closed-loop control.</p>
+                        <p>Carl is an electric go-kart ASL is converting into a drive-by-wire research platform. A 24 V distributed control network uses an STM32 NUCLEO-F767ZI master and Teensy 4.1 nodes to command four wheel motors over CAN 2.0, with encoder feedback for speed estimation and closed-loop control.</p>
                         <p>A Jetson Nano sits onboard for wireless access, data logging, and the path to autonomy. High-level commands reach the STM32 over UART; the master then arbitrates throttle and steering onto the CAN bus. Phase 1 is electronic drive-by-wire. Phase 2 adds perception, localization, and planning.</p>
                         <div class="project-skills">
                             <h4>Focus Areas</h4>
@@ -139,7 +139,7 @@
             <div class="section-header">
                 <span class="section-label">Student Work</span>
                 <h2>Independent &amp; Senior Projects</h2>
-                <p>Lab stations and student-led work built on AVL hardware and simulation</p>
+                <p>Lab stations and student-led work built on ASL hardware and simulation</p>
             </div>
             <div class="mini-projects-grid" id="mini-projects-container"></div>
         </div>
@@ -174,9 +174,9 @@
     <!-- FOOTER -->
     <footer class="footer" id="footer"></footer>
 
-    <script src="js/data.js?v=20261021a"></script>
-    <script src="js/components.js?v=20260828b"></script>
-    <script src="js/main.js?v=20261009e"></script>
+    <script src="js/data.js?v=20261022c"></script>
+    <script src="js/components.js?v=20261022g"></script>
+    <script src="js/main.js?v=20261022a"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             renderNavbar('projects.html');

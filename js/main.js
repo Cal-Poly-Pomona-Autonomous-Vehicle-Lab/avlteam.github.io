@@ -1,5 +1,5 @@
 /**
- * AVL Website - Main JavaScript
+ * ASL Website - Main JavaScript
  * Handles dynamic content rendering and navigation
  */
 
@@ -814,7 +814,7 @@ function renderMediaSection() {
     // If we have a direct video URL, use video element
     else if (MEDIA_CONTENT.featuredVideoUrl && MEDIA_CONTENT.featuredVideoUrl.length > 0) {
         videoContainer.innerHTML = `
-            <video controls poster="images/brand/AVL_Video_Poster.png">
+            <video controls poster="images/brand/ASL_Video_Poster.png">
                 <source src="${MEDIA_CONTENT.featuredVideoUrl}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>

@@ -1,5 +1,5 @@
 /**
- * AVL Website: Shared Components
+ * ASL Website: Shared Components
  * Injects navbar and footer into every page to eliminate copy-paste.
  * Usage: include this script, then call renderNavbar() and renderFooter()
  * from main.js or directly in each page's DOMContentLoaded handler.
@@ -45,12 +45,9 @@ function renderNavbar(activePage) {
     navEl.innerHTML = `
         <div class="container">
             <div class="nav-logo-group">
-                <a href="https://www.cpp.edu/" target="_blank" rel="noopener noreferrer" class="nav-cpp-link" title="Cal Poly Pomona">
-                    <img src="images/brand/AVL_CPP_Engineering.png" alt="Cal Poly Pomona" class="nav-cpp-logo">
-                </a>
-                <div class="nav-logo-divider"></div>
-                <a href="index.html" class="nav-logo">
-                    <img src="images/brand/AVL_Logo_Blue.png" alt="AVL Logo">
+                <a href="index.html" class="nav-logo" aria-label="Cal Poly Pomona Autonomous Systems Lab, home">
+                    <img src="images/brand/ASL_Logo_Color.png" alt="Cal Poly Pomona | Autonomous Systems Lab" class="nav-logo-light">
+                    <img src="images/brand/ASL_Logo_Reversed.png" alt="" aria-hidden="true" class="nav-logo-dark">
                 </a>
             </div>
 
@@ -62,7 +59,7 @@ function renderNavbar(activePage) {
                     <a href="https://discord.gg/2D5fEg94eM" target="_blank" aria-label="Discord" title="Join our Discord">
                         ${discordSvg}
                     </a>
-                    <a href="https://www.instagram.com/autovehiclelab/" target="_blank" aria-label="Instagram" title="Follow us on Instagram">
+                    <a href="https://www.instagram.com/cppasl/" target="_blank" aria-label="Instagram" title="Follow us on Instagram">
                         ${instagramSvg}
                     </a>
                     <a href="https://github.com/Cal-Poly-Pomona-Autonomous-Vehicle-Lab" target="_blank" aria-label="GitHub" title="Check out our code on GitHub">
@@ -179,11 +176,11 @@ function renderFooterHtml() {
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="images/brand/AVL_Wordmark.png" alt="AVL Logo">
-                    <p>AVL is the student team of Cal Poly Pomona's Autonomous Systems Lab, advancing autonomous vehicle research through hands-on innovation.</p>
+                    <img src="images/brand/ASL_Logo_Reversed.png" alt="Cal Poly Pomona | Autonomous Systems Lab">
+                    <p>ASL is Cal Poly Pomona's autonomous vehicle research lab and student club, advancing autonomy through hands-on work. Formerly the Autonomous Vehicle Laboratory (AVL).</p>
                     <div class="footer-social">
                         <a href="https://discord.gg/2D5fEg94eM" target="_blank" aria-label="Discord">${discordSvg}</a>
-                        <a href="https://www.instagram.com/autovehiclelab/" target="_blank" aria-label="Instagram">${instagramSvg}</a>
+                        <a href="https://www.instagram.com/cppasl/" target="_blank" aria-label="Instagram">${instagramSvg}</a>
                         <a href="https://github.com/Cal-Poly-Pomona-Autonomous-Vehicle-Lab" target="_blank" aria-label="GitHub">${githubSvg}</a>
                     </div>
                 </div>
@@ -218,13 +215,13 @@ function renderFooterHtml() {
                     <p>${emailSvg}<span><a href="mailto:autovehiclelab@gmail.com">autovehiclelab@gmail.com</a></span></p>
                     <p>${locationSvg}<span>Building 9, Room 101, Cal Poly Pomona</span></p>
                     <p>${linkSvg}<a href="https://www.cpp.edu/engineering/autonomous-systems/avl-team.shtml" target="_blank">CPP Official Page</a></p>
-                    <p>AVL is the student team of Cal Poly Pomona's Autonomous Systems Lab.</p>
+                    <p>Research lab and student club at Cal Poly Pomona · Building 9, Room 101</p>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; <span id="current-year">${new Date().getFullYear()}</span> Autonomous Vehicle Laboratory. All rights reserved.</p>
-                <p>Built with care by the AVL Team</p>
+                <p>&copy; <span id="current-year">${new Date().getFullYear()}</span> Autonomous Systems Lab. All rights reserved.</p>
+                <p>Built with care by the ASL Team</p>
             </div>
         </div>
     `;
@@ -251,7 +248,7 @@ function renderGrantNotice(activePage) {
         <div class="grant-notice-card">
             <button type="button" class="grant-notice-close" aria-label="Close thank you message">&times;</button>
             <div class="grant-notice-photo">
-                <img src="images/gallery/AVL_Gallery_Ceja_Williams_Bahr.jpg?v=2" alt="Beatriz Ceja-Williams of the U.S. Department of Education with Dr. Behnam Bahr and AVL students in the lab">
+                <img src="images/gallery/AVL_Gallery_Ceja_Williams_Bahr.jpg?v=2" alt="Beatriz Ceja-Williams of the U.S. Department of Education with Dr. Behnam Bahr and ASL students in the lab">
             </div>
             <div class="grant-notice-body">
                 <span class="grant-notice-kicker">Department of Education</span>
