@@ -532,7 +532,7 @@ function renderLearnSection() {
 
             modulesHtml = `
                 <div class="modules-toggle" onclick="toggleModules(${index})">
-                    <span>View ${workshop.modules.length} Modules</span>
+                    <span>View ${workshop.modules.length} ${workshop.modules.length === 1 ? 'Link' : 'Modules'}</span>
                     <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>

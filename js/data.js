@@ -571,7 +571,7 @@ const LEARNING_RESOURCES = [
     },
     {
         title: "Electric Vehicle & Energy Storage",
-        professor: "",
+        professor: "Dr. Ha Thu Le",
         description: "Electric vehicle fundamentals covering motor types, charging systems, regenerative braking, and battery technologies.",
         level: "Intermediate",
         modules: [
@@ -701,6 +701,26 @@ const LEARNING_RESOURCES = [
             { title: "Module 6: Set Covering Problem: Mathematical Formulation", url: "https://www.youtube.com/watch?v=EF-fwwfsB8g&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=6" },
             { title: "Module 7: TSP (Traveling Salesman Problem): Mathematical Formulation", url: "https://www.youtube.com/watch?v=krqaZvxwp08&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=7" },
             { title: "Module 8: Mathematical Model Formulation Basic Examples", url: "https://www.youtube.com/watch?v=YF-ms538UdA&list=PLMquv9hqkirD26OjQwguYYsg7k78a1Lqe&index=8" }
+        ]
+    },
+    {
+        // Dr. Chang maintains the lecture list on the course site, so we link there only
+        title: "Robot Motion Planning (ME 5751)",
+        professor: "Dr. Yizhe Chang",
+        description: "Differential-drive kinematics, proportional control for point tracking, map representation and the brushfire algorithm, Dijkstra and A* search, and probabilistic roadmaps. Lectures live on the course site and are updated regularly.",
+        level: "Advanced",
+        modules: [
+            { title: "Course Site: All Lectures (Modules 0-4 and new additions)", url: "https://sites.google.com/view/videocppme5751/lectures" }
+        ]
+    },
+    {
+        title: "Traffic Fundamentals for Autonomous Vehicles",
+        professor: "Dr. Yangsong Gu",
+        description: "How traffic works and how to read it, from the perspective of an autonomous vehicle. Each video includes built-in quiz questions. More modules are being added through November 2026.",
+        level: "Intermediate",
+        modules: [
+            { title: "Module 1: Introduction", url: "https://streaming.cpp.edu/media/t/1_slhvn0bw" },
+            { title: "Module 2: Reading Traffic", url: "https://streaming.cpp.edu/media/t/1_4pmb2j1l" }
         ]
     }
 ];
