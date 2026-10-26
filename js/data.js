@@ -572,6 +572,7 @@ const LEARNING_RESOURCES = [
     {
         title: "Electric Vehicle & Energy Storage",
         professor: "Dr. Ha Thu Le",
+        loginRequired: true,
         description: "Electric vehicle fundamentals covering motor types, charging systems, regenerative braking, and battery technologies.",
         level: "Intermediate",
         modules: [
@@ -591,6 +592,7 @@ const LEARNING_RESOURCES = [
     },
     {
         title: "Practical Application of Electric Motors",
+        loginRequired: true,
         professor: "Dr. Sean Monemi",
         description: "Hands-on electrical machine analysis including power measurement, 3-phase systems, generators, and motor characteristics.",
         level: "Intermediate",
@@ -724,11 +726,11 @@ const LEARNING_RESOURCES = [
         ]
     },
     {
-        // OneDrive links require a CPP login until the folder is shared publicly
         title: "Connected and Autonomous Vehicles",
         professor: "Dr. Yunsheng Wang",
-        description: "Connected vehicle fundamentals, vehicle communication, V2I, and an overview of autonomous vehicles and ADAS. Videos currently require a Cal Poly Pomona login.",
+        description: "Connected vehicle fundamentals, vehicle communication, V2I, and an overview of autonomous vehicles and ADAS.",
         level: "Intermediate",
+        loginRequired: true,
         modules: [
             { title: "Module 1: Introduction: Navigating the Future of Transportation", url: "https://livecsupomona-my.sharepoint.com/:v:/r/personal/yunshengwang_cpp_edu/Documents/Teaching/DOEdu/Lecture%20video/Module%201/video1063269611.mp4?d=wcd580b59b3534913a0e0c8d2ca774d18&csf=1&web=1&e=a9mwNp" },
             { title: "Module 2: Overview of Connected Vehicle", url: "https://livecsupomona-my.sharepoint.com/:v:/r/personal/yunshengwang_cpp_edu/Documents/Teaching/DOEdu/Lecture%20video/Module%202/video1726665739.mp4?d=w1d0a47fef7704dce8a59f61723705629&csf=1&web=1&e=8cVpP2" },

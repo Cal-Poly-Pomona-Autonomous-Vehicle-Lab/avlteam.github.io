@@ -545,6 +545,15 @@ function renderLearnSection() {
 
         const levelBadge = workshop.level ? `<span class="workshop-level ${workshop.level.toLowerCase()}">${workshop.level}</span>` : '';
         const professorLine = workshop.professor ? `<p class="workshop-professor">${workshop.professor}</p>` : '';
+        // loginRequired: videos are on a CPP OneDrive and open only after signing in
+        const loginTag = workshop.loginRequired ? `
+                <span class="workshop-login" title="These videos open after signing in with a Cal Poly Pomona account">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="11" width="18" height="11" rx="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                    CPP login required
+                </span>` : '';
 
         return `
             <div class="workshop-card">
@@ -553,6 +562,7 @@ function renderLearnSection() {
                     ${levelBadge}
                 </div>
                 <h3>${workshop.title}</h3>
+                ${loginTag}
                 <p>${workshop.description}</p>
                 ${modulesHtml}
             </div>
