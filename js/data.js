@@ -722,6 +722,22 @@ const LEARNING_RESOURCES = [
             { title: "Module 1: Introduction", url: "https://streaming.cpp.edu/media/t/1_slhvn0bw" },
             { title: "Module 2: Reading Traffic", url: "https://streaming.cpp.edu/media/t/1_4pmb2j1l" }
         ]
+    },
+    {
+        // OneDrive links require a CPP login until the folder is shared publicly
+        title: "Connected and Autonomous Vehicles",
+        professor: "Dr. Yunsheng Wang",
+        description: "Connected vehicle fundamentals, vehicle communication, V2I, and an overview of autonomous vehicles and ADAS. Videos currently require a Cal Poly Pomona login.",
+        level: "Intermediate",
+        modules: [
+            { title: "Module 1: Introduction: Navigating the Future of Transportation", url: "https://livecsupomona-my.sharepoint.com/:v:/r/personal/yunshengwang_cpp_edu/Documents/Teaching/DOEdu/Lecture%20video/Module%201/video1063269611.mp4?d=wcd580b59b3534913a0e0c8d2ca774d18&csf=1&web=1&e=a9mwNp" },
+            { title: "Module 2: Overview of Connected Vehicle", url: "https://livecsupomona-my.sharepoint.com/:v:/r/personal/yunshengwang_cpp_edu/Documents/Teaching/DOEdu/Lecture%20video/Module%202/video1726665739.mp4?d=w1d0a47fef7704dce8a59f61723705629&csf=1&web=1&e=8cVpP2" },
+            { title: "Module 3: Vehicle Communication", url: "https://livecsupomona-my.sharepoint.com/:v:/r/personal/yunshengwang_cpp_edu/Documents/Teaching/DOEdu/Lecture%20video/Module%203/video1534292962.mp4?d=w1c260918eb2b4c8aa1f829dc108065c6&csf=1&web=1&e=yJmJh9" },
+            { title: "Module 4: Connected Vehicle: Environment and Challenges", url: "https://livecsupomona-my.sharepoint.com/:v:/r/personal/yunshengwang_cpp_edu/Documents/Teaching/DOEdu/Lecture%20video/Module%204/video1148000401.mp4?d=wd5883a221091481c83ec1a62d789f082&csf=1&web=1&e=VSQLQC" },
+            { title: "Module 5: Vehicle to Infrastructure (V2I)", url: "https://livecsupomona-my.sharepoint.com/:v:/r/personal/yunshengwang_cpp_edu/Documents/Teaching/DOEdu/Lecture%20video/Module%205/video1990771136.mp4?d=wbaa70a1790de430fb5ec977b0e8f8eec&csf=1&web=1&e=g65fhi" },
+            { title: "Module 6: Overview of Autonomous Vehicle", url: "https://livecsupomona-my.sharepoint.com/:v:/r/personal/yunshengwang_cpp_edu/Documents/Teaching/DOEdu/Lecture%20video/Module%206/video1329207146.mp4?d=w78fea8cdbf5b4600ab4d5fc2cc6580c4&csf=1&web=1&e=Trjpnu" },
+            { title: "Module 7: Advanced Driver Assistance Systems (ADAS)", url: "https://livecsupomona-my.sharepoint.com/personal/yunshengwang_cpp_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fyunshengwang%5Fcpp%5Fedu%2FDocuments%2FTeaching%2FDOEdu%2FLecture%20video%2FModule%207%2Fvideo1883054651%2Emp4" }
+        ]
     }
 ];
 
