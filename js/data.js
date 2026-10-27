@@ -134,14 +134,6 @@ const TEAM_MEMBERS = {
             email: "sandryasian@cpp.edu"
         },
         {
-            name: "Tyrese Rogers",
-            role: "Research Assistant - Mechanical Engineering",
-            image: "images/team/AVL_Tyrese_Rogers.jpg",
-            bio: "Designing a holonomic e-corner module with independent drive, steering, and suspension, including 3D-printed airless lattice tires and FEA validation.",
-            linkedin: "https://www.linkedin.com/in/tyrese-rogers-0933152a5/",
-            email: "tyreserogers101@gmail.com"
-        },
-        {
             name: "William Saunders",
             role: "Research Assistant - Mechanical Engineering",
             image: "placeholder",
@@ -834,7 +826,7 @@ const OUTREACH_EVENTS = [
         date: "2026",
         image: "images/gallery/AVL_Gallery_Jubilee.jpg",
         imageAlt: "ASL team showcasing lab projects at Jubilee",
-        description: "The ASL team showcased lab projects and connected with industry professionals and students at Jubilee. Thank you to ESC for organizing the event, and to Aspen Knox, Parsa Ghasemi, Benjamin Ramirez, Ryan Simpson, Christian Gomez, Karoline Braga, William Saunders, Tyrese Rogers, and Johnny Qiu for representing ASL."
+        description: "The ASL team showcased lab projects and connected with industry professionals and students at Jubilee. Thank you to ESC for organizing the event, and to Aspen Knox, Parsa Ghasemi, Benjamin Ramirez, Ryan Simpson, Christian Gomez, Karoline Braga, William Saunders, and Johnny Qiu for representing ASL."
     },
     {
         badge: "Campus Visit",
